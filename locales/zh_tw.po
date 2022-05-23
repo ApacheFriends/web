@@ -1,0 +1,449 @@
+# Loco Gettext template
+msgid ""
+msgstr ""
+"Project-Id-Version: en.yml conversion\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Wed, 22 Jan 2014 01:45:15 +0000\n"
+"PO-Revision-Date: 2014-01-24 14:16+0800\n"
+"Last-Translator: joysong <zhusong@hotmail.com>\n"
+"Language-Team: \n"
+"Language: zh_tw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Loco https://localise.biz\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: en.download.title
+msgid "Download"
+msgstr "下載"
+
+#: en.download.description
+msgid "XAMPP is an easy to install Apache distribution containing MariaDB, PHP, and Perl. Just download and start the installer. It's that easy."
+msgstr "XAMPP是一個易於安裝的Apache發行版本，其中包含MariaDB、PHP和Perl。僅僅需要下載並啟動安裝程式。就這麼簡單。"
+
+#: en.download.whats_included
+msgid "What's Included?"
+msgstr "包含什麼內容？"
+
+#: en.download.requirements.title
+msgid "Requirements"
+msgstr "需求"
+
+#: en.download.requirements.linux
+msgid "Most all distributions of Linux are supported, including Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+msgstr "支持大部分Linux發行版本，包括Debian、RedHat、CentOS、Ubuntu、Fedora、Gentoo、Arch、SUSE。"
+
+#: en.download.requirements.windows
+msgid "XAMPP 1.8.2 (with PHP 5.4): Windows 2003, 2008, 2012, XP,  Vista, 7, 8"
+msgstr "XAMPP 1.8.2 (包含 PHP 5.4)： Windows 2003、2008、2012、XP、Vista、7、8"
+
+#: en.download.requirements.windows.1
+msgid "XAMPP 1.8.3 (with PHP 5.5): (Important: XP or 2003 not supported) 2008, 2012, Vista, 7, 8."
+msgstr "XAMPP 1.8.3 (包含PHP 5.5)：(重要：不支持XP或2003) 2008、2012、Vista、7、8。"
+
+#: en.download.requirements.apple
+msgid "Mac OS X 10.6 or later."
+msgstr "Mac OS X 10.6或更高。"
+
+#: en.download.more
+msgid "More Downloads"
+msgstr "更多下載"
+
+#: en.download.includes
+msgid "Includes"
+msgstr "包含"
+
+#: en.download.version
+msgid "Version"
+msgstr "版本"
+
+#: en.download.checksum
+msgid "Checksum"
+msgstr "校驗碼"
+
+#: en.download.size
+msgid "Size"
+msgstr "大小"
+
+#: en.download.success
+msgid "Awesome!"
+msgstr "真棒！"
+
+#: en.download.starting
+msgid "Your download will start automatically. If it doesn't, %{download}."
+msgstr "你的下載將自動開始。如果沒有，%{download}。"
+
+#: en.click_here
+msgid "click here"
+msgstr "按一下這裡"
+
+#: en.release_notes
+msgid "Release Notes"
+msgstr "發行備註"
+
+#: en.reading.title
+msgid "Reading"
+msgstr "讀取中"
+
+#: en.reading.intro
+msgid "Be sure to read the install instructions and FAQs:"
+msgstr "請確保你仔細閱讀了安裝說明和常見問題："
+
+#: en.reading.description
+msgid "You can find additional help on our %{forums} or %{stack_overflow}."
+msgstr "你可以在我們的%{forums}或%{stack_overflow}上找到更多幫助。"
+
+#: en.faqs.title
+msgid "FAQs"
+msgstr "常見問題"
+
+#: en.add_ons.title
+msgid "Add-ons"
+msgstr "擴展"
+
+#: en.add_ons.full_title
+msgid "XAMPP Add-ons"
+msgstr ""
+
+#: en.add_ons.description
+msgid "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP. Visit %{bitnami_xampp} to download the installer."
+msgstr "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP. Visit %{bitnami_xampp} to download the installer."
+
+#: en.add_ons.download_description
+msgid "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP."
+msgstr "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP."
+
+#: en.about.title
+msgid "About"
+msgstr "關於"
+
+#: en.about.description
+msgid "Many people know from their own experience that it's not easy to install an Apache web server and it gets harder if you want to add MariaDB, PHP and Perl. The goal of XAMPP is to build an easy to install distribution for developers to get into the world of Apache. To make it convenient for developers, XAMPP is configured with all features turned on. In the case of commercial use please take a look at the product licenses, from the XAMPP point of view commercial use is also free. There are currently distributions for Windows, Linux, and OS X."
+msgstr ""
+"許多人通過他們自己的經驗知道安裝Apache web伺服器並不容易。如果你想添加MariaDB、PHP和Perl，那就更難了。XAMPP的目標是為開發人員建"
+"立一個安裝簡單的發行版本，來進入Apache的世界。為了給開發人員提供方便，XAMPP設置成開啟全部功能。如需用於商業用途，請看一下產品許可，在XAMP"
+"P看來，商業用途也應免費。當前有適用於Windows、Linux和OS X的發行版本。"
+
+#: en.search
+msgid "Search"
+msgstr "搜尋"
+
+#: en.contact.title
+msgid "Contact"
+msgstr "連絡方式"
+
+#: en.contact.description
+msgid "Visit our %{forums} for any questions. Email %{email} for any security issues."
+msgstr "如有任何問題，請訪問我們的%{forums}。如有任何安全問題，請發郵件至%{email}。"
+
+#: en.sitemap
+msgid "Sitemap"
+msgstr "網站地圖"
+
+#: en.blog
+msgid "Blog"
+msgstr "部落格"
+
+#: en.news_and_releases
+msgid "News &amp; Release Notes"
+msgstr ""
+
+#: en.forums.title
+msgid "Forums"
+msgstr "論壇"
+
+#: en.forums.full_title
+msgid "Apache Friends Forums"
+msgstr ""
+
+#: en.forums.description
+msgid "Forums are supported by XAMPP users around the world. Our forums were originally published in German, but you will find English and other other localized editions, too."
+msgstr "論壇由全世界的XAMPP用戶提供。我們的論壇最初用德文發佈，但你也能找到英文和其他當地語系化版本。"
+
+#: en.forums.button
+msgid "Click here to access the forums."
+msgstr "按一下這裡進入論壇。"
+
+#: en.mailing_list.title
+msgid "Mailing List"
+msgstr "郵寄清單"
+
+#: en.mailing_list.description
+msgid "Do you want to be kept up-to-date on the latest news about XAMPP or our project? Our newsletter will inform you about new XAMPP releases as well as news about the Apache Friends project. It's a low frequency-list: only about one mail a month."
+msgstr ""
+"你想隨時瞭解XAMPP和我們項目的最新新聞嗎？我們的新聞簡報將在新XAMPP發佈以及Apache "
+"Friends專案有新聞時通知你。這是一個低頻率清單：我們一個月大約只發一封郵件。"
+
+#: en.mailing_list.widget.unprocessed
+msgid "Unfortunately, an error occurred. Please contact us to subscribe."
+msgstr "很遺憾，發生了一個錯誤。請連絡我們來訂閱。"
+
+#: en.mailing_list.widget.invalid
+msgid "The email you provided is not a valid email address. Please fix it and try again."
+msgstr "你提供的電子郵箱地址無效。請更正並重試，"
+
+#: en.mailing_list.widget.success
+msgid "Thanks for subscribing."
+msgstr "感謝訂閱。"
+
+#: en.mailing_list.widget.submit_text
+msgid "Subscribe"
+msgstr "訂閱"
+
+#: en.privacy_policy
+msgid "Privacy Policy"
+msgstr "隱私政策"
+
+#: en.fastly
+msgid "CDN provided by"
+msgstr "CDN提供"
+
+#: en.terms_of_use
+msgid "Terms of Use"
+msgstr "使用條款"
+
+#: en.copyright
+msgid "Copyright (c) %{year}, Apache Friends"
+msgstr "版權所有(c) %{year}, Apache Friends"
+
+#: en.xampp_title
+msgid "XAMPP <span>Apache + MariaDB + PHP + Perl</span>"
+msgstr "XAMPP <span>Apache + MariaDB + PHP + Perl</span>"
+
+#: en.what_is_xampp.title
+msgid "What is XAMPP?"
+msgstr "什麼是XAMPP？"
+
+#: en.what_is_xampp.intro
+msgid "XAMPP is the most popular PHP development environment"
+msgstr "XAMPP是最流行的PHP開發環境"
+
+#: en.what_is_xampp.description
+msgid "XAMPP is a completely free, easy to install Apache distribution containing MariaDB, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use."
+msgstr "XAMPP是完全免費且易於安裝的Apache發行版本，其中包含MariaDB、PHP和Perl。XAMPP開放源碼套件的設置讓安裝和使用出奇容易。"
+
+#: en.why_use_xampp.title
+msgid "Why use XAMPP?"
+msgstr "為什麼要使用XAMPP？"
+
+#: en.why_use_xampp.reasons
+msgid "The most popular PHP dev package"
+msgstr "最流行的PHP開發套件"
+
+#: en.why_use_xampp.reasons.1
+msgid "For Windows, Mac OS X &amp; Linux"
+msgstr "適用於Windows、Mac OS X和Linux"
+
+#: en.why_use_xampp.reasons.2
+msgid "Easy installation and configuration"
+msgstr "快速安裝和設置"
+
+#: en.why_use_xampp.reasons.3
+msgid "Completely free of charge"
+msgstr "完全免費"
+
+#: en.click_other_versions
+msgid "Click here for other versions"
+msgstr "按一下這裡獲得其他版本"
+
+#: en.xampp_for_os
+msgid "XAMPP for <strong>%{os}</strong>"
+msgstr "XAMPP for <strong>%{os}</strong>"
+
+#: en.read_more
+msgid "Read more&nbsp;&raquo;"
+msgstr "閱讀更多&nbsp;&raquo;"
+
+#: en.about_apache_friends.title
+msgid "About Apache Friends"
+msgstr "關於Apache Friends"
+
+#: en.about_apache_friends.description
+msgid "Apache Friends is a non-profit project to promote the Apache web server and is home to the XAMPP project. XAMPP is an easy to install Apache distribution containing MariaDB, PHP, and Perl."
+msgstr ""
+"Apache Friends 是一個推廣Apache "
+"伺服器的非盈利性項目。XAMPP是一個易於安裝的Apache發行版本，其中包含MariaDB、PHP和Perl。"
+
+#: en.community.title
+msgid "Community"
+msgstr "社區"
+
+#: en.community.description
+msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}."
+msgstr ""
+"XAMPP已經存在了大約十多年——在它背後有一個巨大的社區。你可以通過加入我們的%{forums}，把自己加入到%{mailing_list}，在%"
+"{facebook}上喜歡我們，在%{twitter}上關注我們的成就。"
+
+#: en.recent_discussions
+msgid "Recent Discussions"
+msgstr "最近討論"
+
+#: en.follow_xampp
+msgid "Follow XAMPP"
+msgstr "關注XAMPP"
+
+#: en.overheard
+msgid "Overheard"
+msgstr "監聽"
+
+#: en.irc.title
+msgid "IRC"
+msgstr "IRC"
+
+#: en.irc.description
+msgid "You can get in touch with us on our Freenode IRC channel <strong>#Apachefriends</strong>. In order to access the channel, you will need an IRC client."
+msgstr ""
+"您可以通過我們的Freenode "
+"IRC頻道<strong>#Apachefriends</strong>和我們保持聯系。為訪問該頻道，您將需要一款IRC用戶端。"
+
+#: en.tweets_about_xampp
+msgid "Tweets about XAMPP"
+msgstr "關於XAMPP的推文"
+
+#: en.get_social
+msgid "Get Social!"
+msgstr "加入社交！"
+
+#: en.stamps.title
+msgid "Get a XAMPP Stamp"
+msgstr "獲取一個XAMPP戳"
+
+#: en.stamps.micro_banner
+msgid "XAMPP Micro Banner"
+msgstr "XAMPP微型橫幅"
+
+#: en.stamps.powered_by
+msgid "Powered by XAMPP"
+msgstr "基於XAMPP技術"
+
+#: en.our_team.title
+msgid "Our Team"
+msgstr "我們的團隊"
+
+#: en.our_team.founders.title
+msgid "Founders"
+msgstr "創始人"
+
+#: en.our_team.founders.oswald_bio
+msgid "Oswald was one of the original co-founders of Apache Friends. He graduated 1999 from Technical University of Berlin with a Diplom-Informatiker degree (equivalent to a Master's degree in Computer Science). In the 90's he created and managed Germany's biggest IRCnet server irc.fu-berlin.de, and co-managed one of the world's largest anonymous FTP server ftp.cs.tu-berlin.de. From 1993 until 1998 he was member of the internationally renowned &quot;Projektgruppe Kulturraum Internet&quot;, a Berlin-based research project on net culture and network organization. In 2006, his third book, Das XAMPP-Handbuch, was published by Addison Wesley. From 2009 to 2011, he served as Technology Evangelist for Web Tier Products at Sun Microsystems/Oracle."
+msgstr ""
+"Oswald是Apache Friends的合夥創始人之一。他于1999年畢業于柏林科技大學，獲得 Diplom-"
+"Informatiker學位(等同于電腦科學碩士學位)。他在90年代創建並管理了德國最大的IRCnet伺服器irc.fu-"
+"berlin.de，並共同管理世界最大的匿名FTP伺服器之一ftp.cs.tu-"
+"berlin.de。從1993年到1998年，他是國際知名的&quot;Projektgruppe Kulturraum "
+"Internet&quot;成員，這是一個位於柏林的網路文化和網路組織研究機構。在2006年，他出的第三本書《Das XAMPP-"
+"Handbuch》由Addison Wesley出版。從2009年到2011年，他在Sun "
+"Microsystems/Oracle擔任網路層產品的技術佈道者。"
+
+#: en.our_team.founders.vogelgesang_bio
+msgid "Together with Oswald, Kay co-founded the Apache Friends project in 2002. He currently works as freelance System Engineer and wrote several books about web technologies like Apache, MySQL and XAMPP itself."
+msgstr ""
+"Kay在2002與Oswald並肩創建了Apache "
+"Friends項目。他現在以一名自由職業系統工程師的身份工作，撰寫數本有關Apache、MySQL和XAMPP本身等web技術的專著。"
+
+#: en.our_team.maintainers.title
+msgid "Current Maintainers"
+msgstr ""
+
+#: en.our_team.maintainers.beltran_bio
+msgid "Beltran is a project manager at Bitnami. He fell in love with open source and Linux since an early age and enjoys tinkering with web technologies and speaking at developer events. Beltran graduated from the Seville Engineering School with a Master's degree in Telecommunication."
+msgstr ""
+"Beltran是Bitnami的一名專案經理。他早年就愛上了開源和Linux，並樂於鼓弄web技術以及在開發人員活動上暢所欲言。Beltran畢業於塞爾"
+"維亞工學院，獲得了通信專業碩士學位。"
+
+#: en.our_team.maintainers.daniel_bio
+msgid "Daniel is a co-founder of Bitnami. Previously, he contributed to various web infrastructure open source projects, published multiple technical books on web technologies and became a member of the Apache Software Foundation. Daniel graduated from the Seville Engineering School with a Master's degree in Telecommunication and holds a Ms. Sc. on Optical Networking from DTU in Denmark."
+msgstr ""
+"Daniel是Bitnami合夥創始人。過去他致力於多種web架構的開源項目，出版過多部web技術的技術專著，並成為Apache軟體基金會的成員。Dan"
+"iel畢業於塞爾維亞工學院並獲得通信專業碩士學位，並持有位於丹麥的DTU獲得的光學網路理學碩士學位。"
+
+#: en.our_team.past_advisors.title
+msgid "Past Advisors"
+msgstr ""
+
+#: en.our_team.support_qa.title
+msgid "Support &amp; QA"
+msgstr ""
+
+#: en.our_team.retired.title
+msgid "Retired"
+msgstr ""
+
+#: en.licence.title
+msgid "The Licence"
+msgstr "許可"
+
+#: en.licence.description
+msgid "XAMPP is a compilation of free software (comparable to a Linux distribution), it's free of charge and it's free to copy under the terms of the GNU General Public Licence. But it is only the compilation of XAMPP that is published under GPL. Please check every single licence of the contained products to get an overview of what is, and what isn't, allowed. In the case of commercial use please take a look at the product licences (especially MySQL), from the XAMPP point of view commercial use is also free."
+msgstr ""
+"XAMPP 是一個免費軟體編譯版(類似於一份Linux發行版本)，它是免費的，根據GNU通用公共許可的條款進行複製免費。但只有XAMPP編譯版是根據GP"
+"L發佈的。請分別檢查所包含每個產品的獨立許可，以瞭解允許以及不允許做什麼。如果是商業用途，請看一下產品許可(尤其是 "
+"MySQL)，在XAMPP看來，商業應用也應該是免費的。"
+
+#: en.warranty.title
+msgid "Warranty"
+msgstr "擔保"
+
+#: en.warranty.description
+msgid "This program is distributed in the hope that it will be useful, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose. (See the %{gnu} for more details)"
+msgstr "發佈該軟體是因為我們希望它將會是有用的，但不做任何擔保；甚至沒有用作特殊目的的一些隱含擔保。(請參閱%{gnu}獲取更多資訊)"
+
+#: en.trademarks.title
+msgid "Trademarks"
+msgstr "商標"
+
+#: en.trademarks.description
+msgid "XAMPP and Apache Friends are registered trademarks of BitRock. Microsoft, DOS, and Windows are registered trademarks of Microsoft Corporation. Intel, Pentium, i386, i486 are registered trademarks of Intel Corporation. SUN, Sparc are registered trademarks of Oracle, Inc. Apple, Mac, and OS X are registered trademarks of Apple Inc."
+msgstr ""
+"XAMPP和Apache Friends是BitRock的注冊商標。Microsoft、DOS和Windows是Microsoft公司的注冊商標。Pen"
+"tium、i386、i486是Intel公司的注冊商標。SUN、Sparc是Oracle公司的注冊商標。Apple、Mac和OS "
+"X是Apple公司的注冊商標。"
+
+#: en.trademarks.remarks
+msgid "All other company and product names may be trademarks of their respective companies."
+msgstr "所有其他公司和產品的名稱可能是他們各自公司的商標。"
+
+#: en.thanks.title
+msgid "Special Thanks"
+msgstr "特別致謝"
+
+#: en.thanks.sourceforge
+msgid "SourceForge has been hosting XAMPP since the very start!"
+msgstr "SourceForge在項目伊始就為XAMPP提供存放空間！"
+
+#: en.documentation.title
+msgid "Documentation/FAQs"
+msgstr "文件/常見問題"
+
+#: en.documentation.description
+msgid "There is no real manual or handbook for XAMPP. We wrote the documentation in the form of FAQs. Have a burning question that's not answered here? Try the %{forums} or %{stack_overflow}."
+msgstr ""
+"現在還沒有關於XAMPP的正式說明書或手冊。我們已經編寫了常見問題形式的說明文件。有亟待解決的問題但在這裡找不到答案？請嘗試%{forums}或%"
+"{stack_overflow}。"
+
+#: en.twitter.title
+msgid "Tell Your Friends about XAMPP"
+msgstr "將XAMPP告訴你的好友"
+
+#: en.twitter.message
+msgid "I just got #XAMPP from @ApacheFriends https://www.apachefriends.org #opensource."
+msgstr "我剛從@ApacheFriends https://www.apachefriends.org #opensource知道了#XAMPP 。"
+
+#: en.twitter.submit
+msgid "Tweet!"
+msgstr "推文！"
+
+#: en.translations.title
+msgid "Translations"
+msgstr "翻譯"
+
+#: en.translations.intro
+msgid "Contribute to XAMPP translation at %{translate}."
+msgstr "在%{translate}為XAMPP的翻譯作出貢獻。"
+
+#: en.translations.description
+msgid "Can you help translate XAMPP for other community members? We need your help to translate XAMPP into different languages. We have set up a site, %{translate}, where users can contribute translations."
+msgstr ""
+"你能幫其他社區成員幫忙翻譯XAMPP麼？我們需要你幫忙把XAMPP翻譯成不同的語言。我們建立了一個網站，%{translate}，用戶可在這裡貢獻翻譯。"

@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>XAMPP FAQs for XAMPP-VM</title>
+
+    <meta name="description" content="Instructions on how to install XAMPP for OSX distributions." />
+    
+
+    <link href="/stylesheets/normalize-ef7858ef.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all-6943501a.css" rel="stylesheet" type="text/css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/javascripts/modernizr-6bfc3ff0.js" type="text/javascript"></script>
+
+    <link rel="alternate" type="application/rss+xml" title="Apache Friends RSS Feed" href="/feed.xml" />
+
+    <link href="/images/favicon-18f9bd42.png" rel="icon" type="image/png" />
+
+      <script type="text/javascript">
+        //<![CDATA[
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-76894-1', 'auto');
+          ga('send', 'pageview');
+        //]]>
+      </script>
+
+  </head>
+
+  <body class="de de_faq_stackman">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=277385395761685";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <header class="header contain-to-grid">
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/de/index.html">Apache Friends</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Left Nav Section -->
+          <ul class="left">
+              <li class="item "><a href="/de/download.html">Herunterladen</a></li>
+              <li class="item "><a href="/de/add-ons.html">Erweiterungen</a></li>
+              <li class="item "><a href="/de/hosting.html">Hosting</a></li>
+              <li class="item "><a href="/de/community.html">Gemeinschaft</a></li>
+              <li class="item "><a href="/de/about.html">Über</a></li>
+            </ul>
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="item has-form">
+                <form action="/de/search.html" method="get">
+                <div class="row collapse">
+                  <div class="large-8 small-9 columns">
+                    <label class="visuallyhidden" for="search-field">Suchen..</label>
+                    <input id="search-field" type="text" name="q" placeholder="Suchen..">
+                  </div>
+                  <div class="search-button large-4 small-3 columns">
+                    <input type="submit" class="success button expand" value="Suchen"/>
+                  </div>
+                </div>
+                </form>
+              </li>
+              <li id="locales" class="item has-dropdown">
+<a href="#">                  <img src="/images/flags/de-1daf2d67.png" /> DE
+</a>                <ul class="dropdown">
+                  <li>
+<a href="/de/faq_stackman.html">                      <img src="/images/flags/de-1daf2d67.png" /> DE
+</a>                  </li>
+                  <li>
+<a href="/faq_stackman.html">                      <img src="/images/flags/en-dd9e149e.png" /> EN
+</a>                  </li>
+                  <li>
+<a href="/es/faq_stackman.html">                      <img src="/images/flags/es-a88880bf.png" /> ES
+</a>                  </li>
+                  <li>
+<a href="/fr/faq_stackman.html">                      <img src="/images/flags/fr-0f67f12d.png" /> FR
+</a>                  </li>
+                  <li>
+<a href="/hu/faq_stackman.html">                      <img src="/images/flags/hu-9a189d12.png" /> HU
+</a>                  </li>
+                  <li>
+<a href="/it/faq_stackman.html">                      <img src="/images/flags/it-c786c15b.png" /> IT
+</a>                  </li>
+                  <li>
+<a href="/jp/faq_stackman.html">                      <img src="/images/flags/jp-3c5b1754.png" /> JP
+</a>                  </li>
+                  <li>
+<a href="/pl/faq_stackman.html">                      <img src="/images/flags/pl-e383eba9.png" /> PL
+</a>                  </li>
+                  <li>
+<a href="/pt_br/faq_stackman.html">                      <img src="/images/flags/pt_br-e39a2058.png" /> PT BR
+</a>                  </li>
+                  <li>
+<a href="/ro/faq_stackman.html">                      <img src="/images/flags/ro-f141b663.png" /> RO
+</a>                  </li>
+                  <li>
+<a href="/ru/faq_stackman.html">                      <img src="/images/flags/ru-24b172c5.png" /> RU
+</a>                  </li>
+                  <li>
+<a href="/tr/faq_stackman.html">                      <img src="/images/flags/tr-e1821d04.png" /> TR
+</a>                  </li>
+                  <li>
+<a href="/ur/faq_stackman.html">                      <img src="/images/flags/ur-952dd97a.png" /> UR
+</a>                  </li>
+                  <li>
+<a href="/zh_cn/faq_stackman.html">                      <img src="/images/flags/zh_cn-9c7185e0.png" /> ZH CN
+</a>                  </li>
+                  <li>
+<a href="/zh_tw/faq_stackman.html">                      <img src="/images/flags/zh_tw-92fe4f80.png" /> ZH TW
+</a>                  </li>
+                </ul>
+              </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>XAMPP-VM <span>Häufig gestellte Fragen</span></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="large-12 columns">
+    <dl class="accordion">
+
+      <dt>What is the difference between XAMPP for OS X and XAMPP-VM?</dt>
+      <dd>
+        <p>
+        <ul>
+          <li>XAMPP for OS X is a native installer for OS X. It installs Apache, PHP and other XAMPP components directly on your OS X system, in the /Applications/XAMPP folder.</li>
+          <li>XAMPP-VM is a virtual machine for OS X. It includes Apache, PHP and other XAMPP components and runs them in a Linux-based virtual machine on your OS X system.</li>
+        </ul>
+        </p>
+        <p>For more information, refer to the blog post at <a href="https://www.apachefriends.org/blog/new_xampp_20170628.html">https://www.apachefriends.org/blog/new_xampp_20170628.html</a>.</p>.
+      </dd>
+
+      <dt>How do I install XAMPP-VM for Mac OS X?</dt>
+      <dd>
+      <p>To install XAMPP-VM, just do the following:</p>
+      <ul>
+        <li>Download the disk image (DMG image) from the Apache Friends website.</li>
+        <li>Double-click the image file and drag the XAMPP-VM icon to the Applications folder.</li>
+        <li>Launch XAMPP-VM by double-clicking the XAMPP-VM icon in the Applications folder.</li>
+        <li>Enter your system's administrator credentials when prompted.</li>
+        <img src="/images/screenshots/xampp-macosx-launch-credentials-73542324.jpg" />
+        </ul>
+        <p>You should see the XAMPP-VM stack manager, as shown below:</p>
+        <img src="/images/screenshots/xampp-macosx-stack-manager-7d07b69d.jpg" />
+      </dd>
+
+      <dt>Does XAMPP-VM include MySQL or MariaDB?</dt>
+      <dd>
+        <p>XAMPP-VM ships MariaDB instead of MySQL. The commands and tools are the same for both.</p>
+      </dd>
+
+      <dt>How do I start XAMPP-VM?</dt>
+      <dd>
+      <p>To start XAMPP-VM:</p>
+      <ul>
+        <li>Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.</li>
+        <li>Click the "Start" button in the "General" tab of the stack manager. Wait for the status icon to turn green.
+        <img src="/images/screenshots/xampp-macosx-stack-manager-general-e1ad564a.jpg" />
+        </li>
+        <li>Navigate to the "Network" tab and enable port forwarding (port 80 of the stack to port 8080 of the host system) over SSH.
+        <img src="/images/screenshots/xampp-macosx-stack-manager-network-0701ac7c.jpg" />
+        </li>
+      </ul>
+      </dd>
+
+      <dt>How do I stop XAMPP-VM?</dt>
+      <dd>
+      <p>To stop XAMPP-VM, click the "Stop" button in the "General" tab of the stack manager. Once the status icon turns red, close the stack manager window.</p>
+      </dd>
+
+      <dt>Can I start and stop XAMPP-VM services individually?</dt>
+      <dd>
+      <p>Yes. When you start the XAMPP-VM virtual machine, XAMPP services will also automatically start. You can navigate to the "Services" tab of the stack manager at any time to stop, start, restart or check the status of individual services.</p>
+      </dd>
+
+      <dt>Wie kann ich testen, ob alles funktioniert?</dt>
+      <dd>
+      <p>Verify that you have enabled port forwarding (from port 80 of the stack to port 8080 of the host system) in the "Network" tab of the stack manager and type the following URL in a web browser:</p>
+      <p><code>http://localhost:8080</code></p>
+      <p>You should see the XAMPP-VM start page, as shown below.</p>
+        <img src="/images/screenshots/xampp-macosx-start-b70c2269.jpg" />
+      </dd>
+
+      <dt>Is XAMPP-VM production ready?</dt>
+      <dd>
+      <p>XAMPP-VM is not meant for production use but only for development environments. The way XAMPP-VM is configured is to be open as possible to allow the developer anything he/she wants. For development environments this is great but in a production environment it could be fatal.</p>
+      <p>Here a list of missing security in XAMPP-VM:</p>
+      <ol>
+        <li>Der MySQL-Administrator (root) hat kein Passwort.</li>
+        <li>Der MySQL-Daemon ist übers Netzwerk erreichbar.</li>
+        <li>ProFTPD nutzt das Passwort "lampp" für den Benutzer "daemon".</li>
+      </ol>
+      To fix most of the security weaknesses:
+      <ul>
+        <li>Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.</li>
+        <li>Ensure that all services are running in the "Services" tab of the stack manager (or start them as needed).</li>
+        <li>Open a new terminal from the "General" tab of the stack manager and run the following command in it:
+          <p><code>/opt/lampp/lampp security</code></p>
+        </li>
+      </ul>
+      It will kick off a a small security check to make the XAMPP-VM installation secure.
+      </dd>
+
+      <dt>Apache doesn't seem to start. What can I do?</dt>
+      <dd>
+        <p>Diese Fehler kann mehrere Ursachen haben. Apache zeigt diese Fehlermeldung unter verschiedenen Umständen an. Um den genauen Grund herauszufinden, müssen wir etwas nachforschen:</p>
+        <ul>
+          <li>Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.</li>
+          <li>Open a new terminal from the "General" tab of the stack manager and run the following command in it:
+            <p><code>tail -2 /opt/lampp/logs/error_log</code></p>
+          </li>
+        </ul>
+        <p>Wenn Sie irgendwelche Fehlermeldungen erhalten, ersuchen Sie <a href="/community.html">unsere Community-Seiten</a> zur Hilfe.</p>
+      </dd>
+
+      <dt>How can I make my XAMPP-VM installation more secure?</dt>
+      <dd>
+        <p>In the default installation, XAMPP-VM has no passwords set and it is not recommended to run XAMPP-VM with this configuration accessible by others.To make the installation more secure:</p>
+        <ul>
+          <li>Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.</li>
+          <li>Ensure that all services are running in the "Services" tab of the stack manager (or start them as needed).</li>
+          <li>Open a new terminal from the "General" tab of the stack manager and run the following command in it:
+            <p><code>tail -2 /opt/lampp/logs/error_log</code></p>
+          </li>
+          <li>You should see the following dialog on your screen. Enter responses to each prompt.
+           <p><code>
+XAMPP: Quick security check...</br>
+XAMPP: MySQL is accessable via network.</br>
+XAMPP: Normaly that's not recommended. Do you want me to turn it off? [yes] yes</br>
+XAMPP: Turned off.</br>
+XAMPP: Stopping MySQL...</br>
+XAMPP: Starting MySQL...</br>
+XAMPP: The MySQL/phpMyAdmin user pma has no password set!!!</br>
+XAMPP: Do you want to set a password? [yes] yes</br>
+XAMPP: Password: ******</br>
+XAMPP: Password (again): ******</br>
+XAMPP: Setting new MySQL pma password.</br>
+XAMPP: Setting phpMyAdmin's pma password to the new one.</br>
+XAMPP: MySQL has no root passwort set!!!</br>
+XAMPP: Do you want to set a password? [yes] yes</br>
+XAMPP: Write the passworde somewhere down to make sure you won't forget it!!!</br>
+XAMPP: Password: ******</br>
+XAMPP: Password (again): ******</br>
+XAMPP: Setting new MySQL root password.</br>
+XAMPP: Setting phpMyAdmin's root password to the new one.</br>
+XAMPP: The FTP password for user 'nobody' is still set to 'lampp'.</br>
+XAMPP: Do you want to change the password? [yes] yes</br>
+XAMPP: Password: ******</br>
+XAMPP: Password (again): ******</br>
+XAMPP: Reload ProFTPD...</br>
+XAMPP: Done.</br>
+          </code></p></li>
+        </ul>
+        <p>After calling this command, your XAMPP-VM installation should be more secure.</p>
+      </dd>
+
+      <dt>Wie aktiviere ich eAccelerator?</dt>
+      <dd>
+        <p>To activate eAccelerator for PHP:</p>
+        <ul>
+          <li>Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.</li>
+          <li>Mount the /opt/lampp directory from the "Volumes" tab of the stack manager and click the "Explore" button to open the file manager.</li>
+          <li>Find the following lines in your /opt/lampp/etc/php.ini file:
+            <p><code>;extension="eaccelerator.so"</br>
+              ;eaccelerator.shm_size="16"</br>
+              ;eaccelerator.cache_dir="/opt/lampp/tmp/eaccelerator"</br>
+              ;eaccelerator.enable="1"</br>
+              ;eaccelerator.optimizer="1"</br>
+              ;eaccelerator.check_mtime="1"</br>
+              ;eaccelerator.debug="0"</br>
+              ;eaccelerator.filter=""</br>
+              ;eaccelerator.shm_max="0"</br>
+              ;eaccelerator.shm_ttl="0"</br>
+              ;eaccelerator.shm_prune_period="0"</br>
+              ;eaccelerator.shm_only="0"</br>
+              ;eaccelerator.compress="1"</br>
+              ;eaccelerator.compress_level="9"</code></p>
+          </li>
+          <li>Remove the semicolon at the beginning of each line and restart XAMPP.</li>
+        </ul>
+        <p>Die Erweiterung sollte nun aktiv sein.For more information about eAccelerator, check the eAccelerator home page: <a href="http://eaccelerator.net">http://eaccelerator.net</a>.</p>
+      </dd>
+
+      <dt>Wie kann ich die OCI8/Oracle-Erweiterung für PHP aktivieren?</dt>
+      <dd>
+        <p>To activate the OCI8/Oracle extension for PHP:</p>
+        <ul>
+          <li>Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.</li>
+          <li>Ensure that all services are running in the "Services" tab of the stack manager (or start them as needed).</li>
+          <li>Open a new terminal from the "General" tab of the stack manager and run the following command in it:
+            <p><code>/opt/lampp/lampp oci8</code></p>
+          </li>
+          <li>You should see the following dialog on your screen. Enter the path to the Oracle client libraries when prompted.
+          <p><code>
+Please enter the path to your Oracle or Instant Client installation:</br>
+installing symlinks...</br>
+patching php.ini...</br>
+OCI8 add-on activation likely successful.</br>
+LAMPP: Stopping Apache with SSL...</br>
+LAMPP: Starting Apache with SSL...</code></p>
+          </li>
+        </ul>
+        <p>Die Erweiterung sollte nun aktiv sein.</p>
+      </dd>
+
+      <dt>How do I copy files to the Apache server document root?</dt>
+      <dd>
+        <p>To copy files from the host system to the XAMPP-VM Apache server document root, follow these steps:</p>
+        <ul>
+          <li>Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.</li>
+          <li>Mount the /opt/lampp directory from the "Volumes" tab of the stack manager and click the "Explore" button to open the file manager.</li>
+          <img src="/images/screenshots/xampp-macosx-stack-manager-volumes-4dd47fba.jpg" />
+          <li>Navigate to the /opt/lampp/htdocs directory in the file manager. This directory is the XAMPP-VM Apache server document root. Copy files to it from the host system using the file manager in the usual way.</li>
+        </ul>
+      </dd>
+
+      <dt>How do I access phpMyAdmin from the host system?</dt>
+      <dd>
+      <p>To access phpMyAdmin from the host system, follow these steps:</p>
+        <ul>
+          <li>Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.</li>
+          <li>Ensure that all services are running in the "Services" tab of the stack manager (or start them as needed).</li>
+          <li>Navigate to the "Network" tab and ensure that port forwarding (port 80 of the stack to port 8080 of the host system) over SSH is enabled.</li>
+          <li>Browse to http://localhost:8080/phpmyadmin to access phpMyAdmin.</li>
+        </ul>
+      <p>If you see an "Access denied" error, ensure that your phpMyAdmin configuration correctly reflects your MySQL credentials.
+      </p>
+
+
+      <dt>How do I enable access to phpMyAdmin from the outside?</dt>
+      <dd>
+      <p>In the basic configuration of XAMPP-VM, phpMyAdmin is accessible only from the host system via a secure tunnel, at http://127.0.0.1:8080/phpmyadmin or http://localhost:8080/phpmyadmin.</p>
+      <p>IMPORTANT: Enabling external access for phpMyAdmin in production environments is a significant security risk. You are strongly advised to only allow access from localhost. A remote attacker could take advantage of any existing vulnerability for executing code or for modifying your data.</p>
+      To enable remote access to phpMyAdmin, follow these steps:
+      <ul>
+        <li>Edit the /opt/lampp/etc/extra/httpd-xampp.conf file.</li>
+        <li>Within this file, find the lines below.
+          <p><code>
+              Alias /phpmyadmin "/opt/lampp/phpmyadmin/"
+              &lt;Directory "/opt/lampp/phpmyadmin"&gt;
+                AllowOverride AuthConfig
+                Require local
+          </code></p>
+        </li>
+        <li>Then replace 'Require local' with 'Require all granted'.</li>
+          <p><code>
+              Alias /phpmyadmin "/opt/lampp/phpmyadmin/"
+              &lt;Directory "/opt/lampp/phpMyAdmin"&gt;
+                AllowOverride AuthConfig
+                Require all granted
+          </code></p>
+        <li>Save the file and restart the Apache service using the stack manager.</li>
+      </ul>
+      </dd>
+
+      <dt>How do I install XAMPP-VM add-ons?</dt>
+      <dd id='how-do-i-install-xampp-add-ons'>
+        <p>To install a new Bitnami add-on for XAMPP-VM, follow these steps:</p>
+        <ul>
+          <li>Download the Linux installer for the add-on from the Bitnami website.</li>
+          <img src="/images/screenshots/xampp-macosx-download-installer-85c1af51.jpg" />
+          <li>Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.</li>
+          <li>Ensure that all services are running in the "Services" tab of the stack manager (or start them as needed).</li>
+          <li>Navigate to the "Network" tab and ensure that port forwarding (port 80 of the stack to port 8080 of the host system) over SSH is enabled.</li>
+          <img src="/images/screenshots/xampp-macosx-stack-manager-network-0701ac7c.jpg" />
+          <li>Mount the /opt/lampp directory from the "Volumes" tab of the stack manager and click the "Explore" button to open the file manager.</li>
+          <img src="/images/screenshots/xampp-macosx-stack-manager-volumes-4dd47fba.jpg" />
+          <li>Copy the Linux installer from the host system to the /opt/lampp/temp directory on the mounted volume.</li>
+          <li>Open a new terminal from the "General" tab of the stack manager and run the following commands in it. Replace INSTALLER_FILENAME with the name of the downloaded installer.
+            <p><code>cd /opt/lampp/temp
+            chmod +x ./INSTALLER_FILENAME.sh
+            ./INSTALLER_FILENAME.sh
+            </code></p>
+          <p>This will start the installer in text mode, as shown below:</p>
+          <img src="/images/screenshots/xampp-macosx-run-installer-b20fb669.jpg" />
+          </li>
+          <li>Enter the required details when prompted and wait for the installation to complete.</li>
+        </ul>
+        <p>You should now be able to access the add-on through your browser. For example, to access WordPress, browse to http://localhost:8080/wordpress.</p>
+        <img src="/images/screenshots/xampp-macosx-wordpress-490ede6c.jpg" />
+      </dd>
+
+      <dt>Where are the XAMPP-VM virtual machine files and logs?</dt>
+      <dd>
+        <p>The XAMPP-VM virtual machine files and logs are stored within your home directory on the OS X host, in the ~/.bitnami/stackman/machines/xampp/vm and ~/.bitnami/stackman/machines/xampp/log directories respectively.</p>
+      </dd>
+
+      <dt>Where are the main XAMPP configuration files?</dt>
+      <dd>
+        <p>The main XAMPP configuration files are located as follows:</p>
+        <ul>
+          <li>Apache configuration file: /opt/lampp/etc/httpd.conf, /opt/lampp/etc/extra/httpd-xampp.conf</li>
+          <li>PHP configuration file: /opt/lampp/etc/php.ini</li>
+          <li>MySQL configuration file: /opt/lampp/etc/my.cnf</li>
+          <li>ProFTPD configuration file: /opt/lampp/etc/proftpd.conf</li>
+        </ul>
+      </dd>
+
+      <dt>How do I send email with XAMPP?</dt>
+      <dd>
+        <p>To send email with XAMPP, use the PEAR Mail and Net_SMTP packages, which allow you to send email using an external SMTP account (such as a Gmail account). Follow these steps:</p>
+        <ul>
+          <li>Install the Mail and Net_SMTP PEAR modules:
+          <code>
+          pear install Net_SMTP Mail
+          </code>
+          Note that if these packages are already installed in your system you see the messages below when executing that command:
+          <code>
+          Ignoring installed package pear/Net_SMTP
+          Ignoring installed package pear/Mail
+          Nothing to install
+          </code>
+          </li>
+          <li>
+          Create the following example script in your "htdocs" directory to send an email:
+          <code>
+          &lt;?php
+          require_once "Mail.php";
+
+          $from = "your-gmail-username@gmail.com";
+          $to = 'recipients@example.com';
+
+          $host = "ssl://smtp.gmail.com";
+          $port = "465";
+          $username = 'your-gmail-username@gmail.com';
+          $password = 'your-gmail-password';
+
+          $subject = "test";
+          $body = "test";
+
+          $headers = array ('From' => $from, 'To' => $to,'Subject' => $subject);
+          $smtp = Mail::factory('smtp',
+             array ('host' => $host,
+               'port' => $port,
+               'auth' => true,
+               'username' => $username,
+               'password' => $password));
+
+          $mail = $smtp->send($to, $headers, $body);
+
+          if (PEAR::isError($mail)) {
+            echo($mail->getMessage());
+          } else {
+            echo("Message successfully sent!\n");
+          }
+          ?>
+          </code>
+          <p>Remember to replace the dummy values shown with your actual Gmail address and account password. If you don't plan to use Gmail's SMTP server, replace the SMTP host details with appropriate values for your organization or ISP's SMTP server.</p>
+          </li>
+          <li>
+          Execute the script by browsing to it using your Web browser. You should see a notification that the message was successfully sent, and the message should be delivered to the recipient email address.
+          </li>
+        </ul>
+      </dd>
+
+      <dt>How do I backup/restore my XAMPP-VM system?</dt>
+      <dd>
+        <p><strong>Achtung:</strong> Die Sicherungs- und Wiederherstellungsfunktion ist noch in der Entwicklung und könnte nicht richtig arbeiten.</p>
+        <p>You can create the backup as follows:</p>
+        <ul>
+          <li>Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.</li>
+          <li>Ensure that all services are running in the "Services" tab of the stack manager (or start them as needed).</li>
+          <li>Open a new terminal from the "General" tab of the stack manager and run the following command in it:
+            <p><code>/opt/lampp/lampp backup</code></p>
+          oder
+            <p><code>/opt/lampp/lampp backup secret</code></p>
+          Wobei "secret" Ihr MySQL-root-Passwort ist. Dieser Befehl erzeugt die folgende Ausgabe:
+            <p><code>Backing up databases...</br>
+Backing up configuration, log and htdocs files...</br>
+Calculating checksums...</br>
+Building final backup file...</br>
+Backup finished.</br>
+Take care of /Applications/XAMPP/xamppfiles/backup/xampp-backup-22-01-14.sh</code></p>
+          Die Datei /Applications/XAMPP/xamppfiles/backup/xampp-backup-22-01-14.sh (aus obigem Beispiel) enthält Ihre gesicherten Daten. Kopieren Sie diese Datei an einen sicheren Ort.</li>
+          <li>Mount the /opt/lampp directory from the "Volumes" tab of the stack manager and click the "Explore" button to open the file manager.</li>
+          <li>Move the backup file to a safe place on the host system.</li>
+        </ul>
+
+        <p>To restore the backup on a new system, you need the same version of XAMPP-VM as on your original/source system. Follow these steps to restore the backup:</p>
+        <ul>
+          <li>Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.</li>
+          <li>Ensure that all services are running in the "Services" tab of the stack manager (or start them as needed).</li>
+          <li>Mount the /opt/lampp directory from the "Volumes" tab of the stack manager and click the "Explore" button to open the file manager.</li>
+          <li>Copy the backup file from the host system to the mounted directory.</li>
+          <li>Open a new terminal from the "General" tab of the stack manager, change to the directory containing the backup file and run the following command (change the file name in the command to reflect the actual backup file name):
+            <p><code>./xampp-backup-22-01-14.sh</code> </p>
+          Sie werden in etwa Folgendes sehen:
+  <p><code>Checking integrity of files...
+Restoring configuration, log and htdocs files...
+Checking versions...
+Installed: XAMPP 1.4.2
+Backup from: XAMPP 1.4.2
+Restoring MySQL databases...
+Restoring MySQL user databases...
+Backup complete. Have fun!
+You may need to restart XAMPP to complete the restore</code></p></li>
+        </ul>
+      </dd>
+
+      <dt>How do I increase the size of the XAMPP-VM disk?</dt>
+      <dd>
+        <p><strong>IMPORTANT: Ensure that you have booted the XAMPP-VM virtual machine at least once before following the steps below. Resizing the disk without a first boot may cause the virtual machine to fail afterwards.</strong></p>
+        <p>To increase the size of the XAMPP-VM disk, follow these steps:</p>
+        <ul>
+          <li>Shut down XAMPP-VM and make a complete backup of the disk, so that you can easily recover in case of errors.</li>
+          <li>Install QEMU on the OS X host:
+            <p><code>brew update
+            brew install qemu</code> </p>
+          </li>
+          <li>Check the disk for errors:
+            <p><code>qemu-img check ~/.bitnami/stackman/machines/xampp/vm/machine.qcow2</code> </p>
+          </li>
+          <li>If any errors were found, repair them before attempting to resize the disk:
+            <p><code>qemu-img check -r all ~/.bitnami/stackman/machines/xampp/vm/machine.qcow2</code> </p>
+          </li>
+          <li>Resize the disk. Here's an example of making it 10GB larger:
+            <p><code>qemu-img resize ~/.bitnami/stackman/machines/xampp/vm/machine.qcow2 +10G</code> </p>
+          </li>
+          <li>Start XAMPP-VM.</li>
+          <li>Once XAMPP-VM has started, click the "Open Terminal" button in the XAMPP control panel. From within the terminal, increase the size of the primary partition and update the filesystem iwith the fdisk and resize2fs commands. Refer to the output below for an example displaying the necessary commands and expected results:
+            <p><code>
+            root@debian:~# df -h .
+            Filesystem      Size  Used Avail Use% Mounted on
+            /dev/vda1        15G  1.4G   13G  10% /
+
+            root@debian:~# sudo fdisk /dev/vda
+
+            Welcome to fdisk (util-linux 2.25.2).
+            Changes will remain in memory only, until you decide to write them.
+            Be careful before using the write command.
+
+            Command (m for help): p
+            Disk /dev/vda: 24.9 GiB, 26737418240 bytes, 52221520 sectors
+            Units: sectors of 1 * 512 = 512 bytes
+            Sector size (logical/physical): 512 bytes / 512 bytes
+            I/O size (minimum/optimal): 512 bytes / 512 bytes
+            Disklabel type: dos
+            Disk identifier: 0x00000000
+
+            Device     Boot Start      End  Sectors  Size Id Type
+            /dev/vda1  *     2048 31248383 31246336 14.9G 83 Linux
+
+            Command (m for help): d
+            Selected partition 1
+            Partition 1 has been deleted.
+
+            Command (m for help): p
+            Disk /dev/vda: 24.9 GiB, 26737418240 bytes, 52221520 sectors
+            Units: sectors of 1 * 512 = 512 bytes
+            Sector size (logical/physical): 512 bytes / 512 bytes
+            I/O size (minimum/optimal): 512 bytes / 512 bytes
+            Disklabel type: dos
+            Disk identifier: 0x00000000
+
+            Command (m for help): n
+            Partition type
+               p   primary (0 primary, 0 extended, 4 free)
+               e   extended (container for logical partitions)
+            Select (default p): p
+            Partition number (1-4, default 1): 1
+            First sector (2048-52221519, default 2048):
+            Last sector, +sectors or +size{K,M,G,T,P} (2048-52221519, default 52221519):
+
+            Created a new partition 1 of type 'Linux' and of size 24.9 GiB.
+
+            Command (m for help): p
+            Disk /dev/vda: 24.9 GiB, 26737418240 bytes, 52221520 sectors
+            Units: sectors of 1 * 512 = 512 bytes
+            Sector size (logical/physical): 512 bytes / 512 bytes
+            I/O size (minimum/optimal): 512 bytes / 512 bytes
+            Disklabel type: dos
+            Disk identifier: 0x00000000
+
+            Device     Boot Start      End  Sectors  Size Id Type
+            /dev/vda1        2048 52221519 52219472 24.9G 83 Linux
+
+            Command (m for help): w
+            The partition table has been altered.
+            Calling ioctl() to re-read partition table.
+            Re-reading the partition table failed.: Device or resource busy
+
+            The kernel still uses the old table. The new table will be used at the next reboot or after you run partprobe(8) or kpartx(8).
+
+            root@debian:~# partx -u /dev/vda1
+            root@debian:~# sudo resize2fs /dev/vda1
+            resize2fs 1.42.12 (29-Aug-2014)
+            Filesystem at /dev/vda1 is mounted on /; on-line resizing required
+            old_desc_blocks = 1, new_desc_blocks = 2
+            The filesystem on /dev/vda1 is now 6527434 (4k) blocks long.
+
+            root@debian:~# df -h .
+            Filesystem      Size  Used Avail Use% Mounted on
+            /dev/vda1        25G  1.4G   22G   6% /
+            </code> </p>
+          </li>
+          <li>Restart XAMPP-VM. You should now be able to use the larger disk.</li>
+        </ul>
+      </dd>
+
+      <dt>How do I change the XAMPP-VM required memory?</dt>
+      <dd>
+        <p><strong>WARNING: Install <a href="https://stedolan.github.io/jq/">JQ</a> on your Mac before running the commands suggested on this section.</strong></p>
+        <p><code>brew update
+        brew install jq
+        </code> </p>
+        <p>To check the required memory of your VM, open a terminal and run the command below. Replace the APP_NAME placeholder with the correct directory name:</p>
+        <p><code>$ cat ~/.bitnami/stackman/machines/APP_NAME/metadata.json | jq '.requiredMemory'</code></p>
+        <p>To change the VM required memory, follow these steps:</p>
+        <ul>
+          <li>Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.</li>
+          <li>Click the "Stop" button in the "General" tab of the stack manager. Once the status icon turns red, close the stack manager window.</li>
+          <li>Open a terminal and change the "requiredMemory" running the command below. Replace the MEMORY placeholder with the value you want to set.
+            <p><code>$ cat ~/.bitnami/stackman/machines/APP_NAME/metadata.json | jq '.requiredMemory = MEMORY' | tee ~/.bitnami/stackman/machines/APP_NAME/metadata.json</code></p>
+          </li>
+          <li>Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.</li>
+          <li>Click the "Start" button in the "General" tab of the stack manager. Wait for the status icon to turn green.
+          <li>Once XAMPP-VM has started, click the "Open Terminal" button in the XAMPP control panel. From within the terminal, verify the allocated memory running the command below:
+            <p><code>$ free -h</code></p>
+          </li>
+        </ul>
+      </dd>
+
+      <dt>How do I upgrade XAMPP-VM?</dt>
+      <dd>
+
+        <p>If you download a new version of XAMPP-VM and try to run it, you may see a warning message about overwriting data. This warning appears when you already have a previous version of XAMPP-VM deployed on your OS X system. It ensures that you do not accidentally overwrite your existing XAMPP-VM data.</p>
+        <p>To upgrade XAMPP-VM in this scenario, follow these steps:</p>
+        <ul>
+          <li>Back up all the data that you need from the existing XAMPP-VM deployment, including all files, databases, custom plugins, media and other assets.</li>
+          <li>Remove or rename the previous XAMPP-VM image files by deleting the ~/.bitnami/stackman/machines/xampp directory.</li>
+          <li>Deploy the new version of XAMPP-VM.</li>
+          <li>Restore all the data backed up from the previous version, by copying it to the correct place in the new version.</li>
+        </ul>
+
+      </dd>
+
+      <dt>How do I uninstall XAMPP-VM?</dt>
+      <dd>
+        <p>To uninstall XAMPP-VM, follow these steps:</p>
+        <ul>
+          <li>Delete the XAMPP-VM icon from the Applications folder.</li>
+          <li>Remove all XAMPP-VM data by deleting the ~/.bitnami folder within your home directory on the OS X host.</li>
+        </ul>
+      </dd>
+    </dl>
+
+  </div>
+    <div class="large-4 columns">
+      <aside>
+        <h4>Häufig gestellte Fragen</h4>
+        <ul>
+          <li><a href="/de/faq_linux.html">Linux Häufig gestellte Fragen</a></li>
+          <li><a href="/de/faq_windows.html">Windows Häufig gestellte Fragen</a></li>
+          <li><a href="/de/faq_osx.html">OS X Häufig gestellte Fragen</a></li>
+        </ul>
+        <h4>Unterstützung</h4>
+        <p>Besuchen Sie unsere <a href="/de/community.html">unsere Community-Seiten</a> für weitere Hilfe.</p>
+      </aside>
+    </div>
+</div>
+
+    </div>
+
+    <footer class="footer row">
+      <div class="columns">
+        <div class="footer_lists-container row collapse">
+          <div class="footer_social columns large-2">
+            <ul class="social">
+  <li class="twitter"><a href="https://twitter.com/apachefriends">Follow us on Twitter</a></li>
+  <li class="facebook"><a href="https://www.facebook.com/we.are.xampp">Like us on Facebook</a></li>
+</ul>
+
+            <p class="footer_copyright">Copyright (c) 2022, Apache Friends</p>
+          </div>
+          <ul class="footer_links columns large-9">
+            <li><a href="https://www.apachefriends.org/blog.html">Blog</a></li>
+            <li><a href="/privacy_policy.html">Datenschutzbestimmungen</a></li>
+            <li>
+<a target="_blank" href="http://www.fastly.com/">                CDN bereitgestellt durch
+                <img width="48" data-2x="/images/fastly-logo@2x-dad6aac3.png" src="/images/fastly-logo-08360cb5.png" />
+</a>            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/javascripts/all-d8620939.js" type="text/javascript"></script>
+  </body>
+</html>

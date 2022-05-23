@@ -1,0 +1,28 @@
+---
+title: #{t("XAMPP Documentation")}
+description:
+keywords:
+---
+
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1><%= t("XAMPP Documentation") %></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <ul id="docs-list">
+      <% docs.each do |doc| %>
+        <li>
+          <h3><%= link_to doc.title, doc %></h3>
+          <% link_to(doc.pdf, relative: true, class: 'pdf', target: '_blank') do %>
+            Download PDF
+            <span><%= doc.pdf_name %></span>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+== Step 5: Test PHP and MariaDB
+
+****
+At the end of this step, you will have logged in to your cloud server and verified that PHP, MariaDB and phpMyAdmin are working correctly.
+****
+
+You can now connect to the cloud server and test PHP to make sure it's working correctly and has all the extensions you need. The easiest way to do this is with https://www.chiark.greenend.org.uk/~sgtatham/putty/[PuTTY], a free SSH client for Windows and UNIX platforms.
+
+ * Download the PuTTY ZIP archive from https://www.chiark.greenend.org.uk/~sgtatham/putty/[its website]. 
+ * Extract the contents to a folder on your desktop. 
+ * Double-click the _putty.exe_ file to bring up the PuTTY configuration window. 
+ * Enter the host name of your cloud server into the "Host Name (or IP address)" field, as well as into the "Saved Sessions" field. 
+ * Click "Save" to save the new session so you can reuse it later.
+
+image::{cloud}/image51.jpg[]
+
+ * In the "Connection → SSH → Tunnels" section, create a secure tunnel for the phpMyAdmin application by forwarding source port "8888" to destination port "localhost:80". 
+ * Click the "Add" button to add the secure tunnel configuration to the session.
+
+image::{cloud}/image52.jpg[]
+
+ * Go back to the "Session" section and save your changes by clicking the "Save" button. 
+ * Click the "Open" button to open an SSH session to the server. 
+ * PuTTY will first ask you to confirm the server's host key and add it to the cache. Go ahead and click "Yes" to this request.
+
+image::{cloud}/image53.jpg[]
+
+ * Enter your SSH username and password when prompted. This information is available on the Bitnami detail page for your cloud server. You should then be logged in to your cloud server.
+
+image::{cloud}/image54.jpg[]
+
+By default, LAMP packaged by Bitnami includes running Apache and MariaDB servers, and all the packages that come with the stack are located in the _/opt/bitnami_ directory. Most importantly, there's also a _phpinfo.php_ file in the _/opt/bitnami/docs_ directory, which you can copy to the Apache web server root to verify PHP's capabilities.
+
+----
+shell> cd /opt/bitnami
+shell> cp docs/phpinfo.php apache2/htdocs/
+----
+
+Once the file has been copied, browse to _http://[your-cloud-server-hostname]/phpinfo.php_ and you should see the output of the _phpinfo()_ command.
+
+image::common/phpinfo.jpg[]
+
+With this, you know that your PHP installation is configured and working correctly.
+
+You can also check that MariaDB is working: simply launch the MariaDB command-line client by typing 'mysql' at the shell prompt.
+
+----
+shell> mysql
+----
+
+The client should start up and connect to the local MariaDB server, displaying a welcome message as shown below.
+
+image::common-mariadb-login.jpg[]
+
+You should also be able to access phpMyAdmin through the secure SSH tunnel you created, by browsing to http://127.0.0.1:8888/phpmyadmin. 
+
+image::common/phpinfo.jpg[]
+
+To log in, use username 'root' and default password 'bitnami'.
+
+image::{cloud}/image58.jpg[]
+
+In case you'd like to troubleshoot errors or modify the configuration for Apache, PHP or MariaDB - for example, https://docs.bitnami.com/aws/apps/ghost/administration/change-data-directory-mariadb/[adjusting the maximum upload file size in PHP] or [changing the path to the MariaDB data directory] - here are the locations for key configuration and log files in LAMP packaged by Bitnami:
+
+|===
+||Configuration file(s)|Log file(s)
+|Apache|_/opt/bitnami/apache2/conf/httpd.conf_|_/opt/bitnami/apache2/logs/error_log_
+|PHP|_/opt/bitnami/php/etc/php.ini_|__-__
+|MariaDB|_/opt/bitnami/mariadb/conf/my.cnf_|_/opt/bitnami/mariadb/logs/mysqld.log_
+|===
+
+Usually, you'll need to restart your server(s) for your changes to take effect. LAMP packaged by Bitnami includes a control script that lets you easily stop, start and restart Apache, MariaDB and PHP. The script is located at _/opt/bitnami/ctlscript.sh_. Call it without any arguments to restart all services:
+
+----
+shell> sudo /opt/bitnami/ctlscript.sh restart
+----
+
+Or use it to restart a specific service only by passing the service name as argument - for example 'mysql':
+
+----
+shell> sudo /opt/bitnami/ctlscript.sh restart mariadb
+----
+
+image::common/mariadb-restart.jpg[]
+ 

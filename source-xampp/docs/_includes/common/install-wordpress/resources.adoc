@@ -1,0 +1,6 @@
+To learn more about WordPress, XAMPP and Bitnami, use the links below:
+
+ * https://bitnami.com/[Bitnami]
+ * https://www.apachefriends.org/[XAMPP]
+ * https://bitnami.com/stack/xampp[Bitnami WordPress Add-On for XAMPP]
+ * https://make.wordpress.org/support/user-manual/[WordPress User Manual]

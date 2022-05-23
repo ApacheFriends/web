@@ -1,0 +1,34 @@
+== Step 4: Provision an Azure Cloud Server
+
+****
+At the end of this step, your Azure cloud server will be running and you will be able to access it through your Web browser.
+****
+
+To provision your Azure cloud server:
+
+ * Select "Library" in the Launchpad menu 
+ * Look through the list of applications and images available in Bitnami until you find LAMP Stack
+ * Select it and click "Launch in account".
+
+image::{cloud}/image41.jpg[]
+
+ * Define the region and size for your Azure server. Choose from an "Extra Small" server, which uses shared virtual cores to an "Extra Large" server, which has 8 dedicated virtual cores, depending on the needs of your application. For more information, refer to https://azure.microsoft.com/en-us/pricing/details/virtual-machines[Azure's virtual machines and pricing sheet].
+
+TIP: "Extra Small" servers work just fine for most PHP application development tasks.
+
+image::{cloud}/image42.jpg[]
+
+ * Confirm your selection by hitting the "Create Virtual machine" button at the end of the page. 
+
+The Bitnami Launchpad will now assign the new server a host name and begin spinning it up. The process usually takes a few minutes: a status indicator on the page provides a progress update.
+
+image::{cloud}/image43.jpg[]
+
+Once the cloud server has been provisioned, the status indicator will show that it's "running", and the host name specified in the Bitnami Launchpad will become an active link.
+
+image::{cloud}/image44.jpg[]
+
+At this point, you should be able to browse to the cloud server, either by clicking the link in the Bitnami Launchpad or entering the cloud server host name directly into your browser's address bar. You should see a welcome page like the one below (just so you know, it's served up by Apache, which is part of LAMP packaged by Bitnami).
+
+image::{cloud}/image45.jpg[]
+

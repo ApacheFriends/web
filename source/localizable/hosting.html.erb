@@ -1,0 +1,35 @@
+---
+title: XAMPP Hosting
+description:
+keywords:
+---
+
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1><%= t("XAMPP Hosting") %></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-8 columns">
+    <div style="text-align: center; margin-bottom: 1em;">
+      <%= retina_image_tag 'xampp-cloud.png', width: 465 %>
+    </div>
+    <p><%= t("XAMPP provides an ideal local development environment, but is not meant for production deployments. We want to make hosting PHP applications created with XAMPP as easy as possible. We are starting by providing in-depth tutorials on how to run <strong>XAMPP in the cloud</strong> using %{azure}, %{google} and %{aws}.", azure: link_to('Microsoft Azure', './docs/hosting-xampp-on-azure.html'), google: link_to('Google Cloud Platform', './docs/hosting-xampp-on-google.html'), aws: link_to('Amazon Web Services', './docs/hosting-xampp-on-aws.html')) %>
+    <%= t("You can also %{migrate}.", migrate: link_to('migrate your WordPress application from XAMPP to a high-availability, production-ready WordPress deployment on Amazon Web Services', './docs/migrate-wordpress-xampp-aws-ha.html')) %>
+    </p>
+    <p><%= t("Please contact us at hello (at) apachefriends.org if you have feedback about the guides or would like to contribute a translation.") %></p>
+  </div>
+  <div class="large-4 columns">
+    <aside>
+      <h3><%= t("Documentation") %></h3>
+      <ul>
+        <li><%= link_to t('Host your Application in the %{name} Cloud with XAMPP and Bitnami', name: 'Amazon'), './docs/hosting-xampp-on-aws.html' %>
+        <li><%= link_to t('Host your Application in the %{name} Cloud with XAMPP and Bitnami', name: 'Azure'), './docs/hosting-xampp-on-azure.html' %>
+        <li><%= link_to t('Host your Application in the %{name} Cloud with XAMPP and Bitnami', name: 'Google'), './docs/hosting-xampp-on-google.html' %>
+        <li><%= link_to t('Migrate from XAMPP WordPress to Bitnami WordPress Production-Ready on AWS'), './docs/migrate-wordpress-xampp-aws-ha.html' %>
+      </ul>
+    </aside>
+  </div>
+</div>

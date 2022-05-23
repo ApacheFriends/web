@@ -1,0 +1,76 @@
+$topbar-height: 60px;
+$topbar-title-font-size: 1em;
+$topbar-bg-color: $bitnami-blue;
+$topbar-link-bg-hover: $dark-brand-blue;
+$topbar-link-bg-active: $topbar-link-bg-hover;
+$topbar-dropdown-link-color: $body-font-color;
+$topbar-dropdown-bg: $dark-brand-blue;
+$topbar-dropdown-link-bg: $dark-brand-blue;
+// TODO: These two hover variables do not work in current version,
+// but are defined in the documentation for other versions
+// $topbar-dropdown-link-color-hover: white;
+$topbar-dropdown-link-bg-hover: $bitnami-blue;
+
+// We set a different breakpoint to the transition between mobile and desktop topbar view
+$topbar-breakpoint: 1024px;
+$topbar-breakpoint-max-width: 1023px; // To use only when we want some style only for mobile
+$topbar-media-query: "screen and (min-width: #{$topbar-breakpoint})";
+
+.top-bar-section {
+  .dropdown {
+    border-bottom: 2px solid $light;
+
+    li {
+      border-bottom: 1px solid $light;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+      a:not(.button):hover {
+        background: $topbar-dropdown-link-bg-hover;
+      }
+    }
+  }
+
+  li.has-form {
+    padding: 8px 15px 0;
+  }
+
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  @media (max-width: $topbar-breakpoint-max-width) {
+    & > ul > li.item > a:not(.button) {
+      // forcing the initial padding defined for items inside a topbar list
+      padding: 12px $topbar-height / 3;
+    }
+    li.has-form {
+      background: $dark-brand-blue;
+    }
+  }
+
+  @media #{$topbar-media-query} {
+    ul.dropdown > li a {
+      background: #fff;
+    }
+
+    ul.dropdown > li a:not(.button):hover {
+      background: $light-gray;
+      color: $anchor-font-color;
+    }
+  }
+}
+
+.top-bar.expanded .top-bar-section {
+  & > ul > li a:not(.button):hover {
+    background: $topbar-dropdown-link-bg-hover;
+  }
+}

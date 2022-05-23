@@ -1,0 +1,34 @@
+<% wrap_layout :layout do %>
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Documentation</h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="sub-nav">
+      <li>
+        <% link_to(current_resource.pdf, class: 'pdf', target: '_blank') do %>
+          Download PDF
+          <span><%= current_resource.pdf_name %></span>
+        <% end %>
+      </li>
+    </ul>
+    <article class="asciidoctor">
+      <% if current_resource.sections.count > 0 %>
+        <aside>
+          <h3>Contents</h3>
+          <ol class="sections">
+            <% current_resource.sections.each do |anchor, title| %>
+              <li><%= link_to title, current_resource, anchor: anchor.gsub(/^([^_])/, '\1') %></li>
+            <% end %>
+          </ol>
+        </aside>
+      <% end %>
+      <%= yield %>
+    </article>
+  </div>
+</div>
+<% end %>

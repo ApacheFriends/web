@@ -1,0 +1,52 @@
+= Backup and Restore MySQL/MariaDB Databases
+
+include::{docdir}/_includes/common/backup-restore-mysql/introduction.adoc[]
+
+include::{docdir}/_includes/common/backup-restore-mysql/phpmyadmin.adoc[]
+
+NOTE: By default, PHP (and therefore phpMyAdmin) is configured to only accept uploads up to 128 MB in size. If your database is larger than this, you need to modify the PHP configuration file to accept a larger upload size. To do this, edit the _php.ini_ file in the _etc\_ subdirectory of your XAMPP installation directory and increase the values of the _post_max_size_ and _upload_max_filesize_ variables. Save your changes and restart Apache for the changes to take effect.
+
+== Using Command-Line Tools
+
+MySQL and MariaDB include two command-line tools that you can use to quickly backup and restore databases. The _mysqldump_ tool is used to export the contents of a database to a text file, while the _mysql_ client can be used to import data from a text file into a MySQL/MariaDB database.
+
+To backup a MySQL/MariaDB database from the command line, follow these steps:
+
+ . Ensure that the MySQL/MariaDB server is running.
+
+ . Open a new Linux terminal.
+
+ . Use the command below to export the contents of the selected database. In this example, we're backing up the WordPress database, which is named _bitnami_wordpress_, to a file named _bitnami_wordpress.sql_. This text file is your backup, so store it safely!
++
+ /opt/lampp/bin/mysqldump --user=root --password="" bitnami_wordpress > bitnami_wordpress.sql
++
+image::backup-restore-mysql/image11.png[]
+
+At a later point, you may wish to restore the database. To restore the data to a fresh MySQL/MariaDB database from the command line, follow these steps:
+
+ . Ensure that the MySQL/MariaDB server is running.
+
+ . Open a new Linux terminal.
+ 
+ . Use the _mysql_ client to create a new, empty database to hold your data. In this example, the new database is named _myblog_.
++
+ /opt/lampp/bin/mysql --user=root --password="" -e "CREATE DATABASE myblog"
++
+Remember to use the correct database access credentials in the command. On a fresh XAMPP installation without any changes, you can usually log in as root with a blank password.
+
+ . Use the _mysql_ client to import the contents of the backup file into the new database.
++
+ /opt/lampp/bin/mysql --user=root --password="" --database=myblog < bitnami_wordpress.sql
++
+The command-line client will now import the data from the backup file. 
++
+image::backup-restore-mysql/image12.png[]
+
+If you browse the contents of the database, you should now see your original data.
+
+image::backup-restore-mysql/image13.png[]
+
+You should now update your application's configuration and point it to your newly-created database. For example, with the Bitnami WordPress module, you will need to edit the _wp-config.php_ file in the _apps/wordpress/htdocs/_ subdirectory of your XAMPP installation directory. Within this file, you will need to update the _DB_NAME_ constant to use the new database name.
+
+image::backup-restore-mysql/image14.png[]
+

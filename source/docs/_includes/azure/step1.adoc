@@ -1,0 +1,25 @@
+== Step 1: Register with Microsoft Azure
+
+****
+At the end of this step, you will have signed up for the Microsoft Azure free trial.
+****
+
+Begin by creating an Azure account, by browsing to https://bitnami.com/redirect/to?from=%2Fazure&url=http%3A%2F%2Fwww.windowsazure.com%2Fen-us%2Fpricing%2Ffree-trial%2F%3FWT.mc_id%3DAEF469A45[http://azure.microsoft.com] and choosing the "Free Trial" option for a one month free trial. You will need an existing Microsoft account to log in and sign up for the free trial; if you don't have one, you can https://signup.live.com/signup.aspx?lic=1[create one here] (remember to keep track of your account username and password, because you'll need them in the next step).
+
+image::{cloud}/image11.jpg[]
+
+Once you've signed in, sign up for the Azure free trial by providing some basic personal information and your mobile phone number. Azure will send a verification code to your mobile number, which you'll need to enter into the registration form. Once that's done, proceed to the next stage by entering your credit card information.
+
+image::{cloud}/image12.jpg[]
+
+If you're wondering why you need to provide credit card information for a free trial, or if you're worried about being billed for services, relax. By default, Azure trial accounts are configured with a spending limit of $0, which means that your card will never be billed unless you remove or modify the spending limit. Azure needs your credit card information for security purposes, to avoid service misuse and to confirm your identity.
+
+IMPORTANT: When your spending limit is set to $0, Azure will automatically deactivate your cloud servers so that you don't incur any charges if your usage exceeds your free quota. http://msdn.microsoft.com/en-us/library/azure/dn465781.aspx[Read more about the Azure spending limit].
+
+Once your payment information is entered, review Azure's terms of service, free trial details and privacy statement, and indicate your agreement by ticking the box. Then, hit the big green "Sign up" button.
+
+image::{cloud}/image13.jpg[]
+
+The Azure account registration machine will churn away for a minute or so, and you will then be redirected to your Azure account management page, which allows you to manage your subscriptions, edit your profile and get support. You should see that your free trial is now active in the subscription list.
+
+image::{cloud}/image14.jpg[]

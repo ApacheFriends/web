@@ -1,0 +1,33 @@
+= Obtain Read/Write Access to the Web Server Document Root Directory
+
+By default, the Web server document root directory (_/opt/lampp/htdocs_) is configured to only allow write access to the root user. However, in most cases, you will be using XAMPP as a non-root user and this can be inconvenient if you need to quickly modify or add files to your XAMPP installation.
+
+In these situations, you can give one or more user accounts privileges to write to the Web server document root directory. Follow these steps:
+
+ . Open a new Linux terminal and ensure you are logged in as root.
+
+ . Create a new group named _xamppusers_. This group will contain those user accounts allowed read/write access to the Web server document root directory.
++
+ groupadd xamppusers
++
+image::read-write-htdocs/image1.png[]
+
+ . Add your account (in this example, _susan_) to the new group. Add other users if needed.
++
+ usermod -a -G xamppusers susan
++
+image::read-write-htdocs/image2.png[]
+
+ . Change the ownership and permissions of the _htdocs/_ subdirectory so that it is writable by the the new _xamppusers_ group.
++
+ cd /opt/lampp 
+ chown root.xamppusers htdocs
+ chmod 775 htdocs
++
+image::read-write-htdocs/image3.png[]
++
+TIP: If you're using XAMPP in a single-user scenario and there will only be one user ever accessing the Web server document root directory, you can skip creating a new group and instead simply transfer full ownership of the _htdocs/_ directory to that user. To do this, use a command like _chown susan.susan htdocs_.
+
+You should now be able to log in again as the specified user account and read/write to the Web server document root.
+
+image::read-write-htdocs/image4.png[]

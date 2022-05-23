@@ -1,0 +1,20 @@
+The previous steps discussed how to create and use an SQLite database using the command-line client. However, more often than not, you'll be using an SQLite database in combination with a PHP-powered Web application. XAMPP includes the PHP SQLite extension, so doing this is not very difficult at all.
+
+To connect to your SQLite database and execute queries on it with PHP, use your text editor to create an example script named _sqlite.php_ in the _htdocs_ subdirectory of your XAMPP installation directory and fill it with the following code:
+
+ <?php
+ $db = new SQLite3('mydb.sq3');
+ $sql = "SELECT * FROM items WHERE price < 3.00";
+ $result = $db->query($sql);  
+ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
+   echo $row['name'] . ': $' . $row['price'] . '<br/>';
+ }
+ unset($db);
+
+The first line of code creates a new SQLite3 object, using the _mydb.sq3_ database file you created earlier. Then, the object's _query()_ method is used to execute a SELECT query on the database, and the result object's _fetchArray()_ method is used to iterate over the result set. Adding the SQLITE3_ASSOC parameter to the _fetchArray()_ method tells PHP to return the results as an associative array, making it easy to access individual fields of the result set and display them on a Web page.
+
+Once done, save your changes and ensure that your Apache server is running. Then, browse to http://localhost/sqlite.php to execute the script. You should see something like this:
+
+image::use-sqlite/image3.png[]
+ 
+TIP: To find out more about SQLite’s powerful features, http://sqlite.org/docs/[read the SQLite documentation].

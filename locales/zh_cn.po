@@ -1,0 +1,1266 @@
+# Loco Gettext template
+msgid ""
+msgstr ""
+"Project-Id-Version: en.yml conversion\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Wed, 22 Jan 2014 01:45:15 +0000\n"
+"PO-Revision-Date: 2015-07-21 05:57+0000\n"
+"Last-Translator: popcorner <memoword@163.com>\n"
+"Language-Team: \n"
+"Language: zh_cn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: en.download.title
+msgid "Download"
+msgstr "下载"
+
+#: en.download.description
+msgid "XAMPP is an easy to install Apache distribution containing MariaDB, PHP, and Perl. Just download and start the installer. It's that easy."
+msgstr "XAMPP是一个易于安装的Apache发行版，其中包含MariaDB、PHP和Perl。仅仅需要下载并启动安装程序。就这么简单。"
+
+#: en.download.whats_included
+msgid "What's Included?"
+msgstr "包含什么内容？"
+
+#: en.download.requirements.title
+msgid "Requirements"
+msgstr "需求"
+
+#: en.download.requirements.linux
+msgid "Most all distributions of Linux are supported, including Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+msgstr "支持绝大多数的Linux发行版，包括Debian、RedHat、CentOS、Ubuntu、Fedora、Gentoo、Arch、SUSE等。"
+
+#: en.download.requirements.windows
+msgid "XAMPP 1.8.2 (with PHP 5.4): Windows 2003, 2008, 2012, XP,  Vista, 7, 8"
+msgstr "XAMPP 1.8.2 (包含 PHP 5.4)： Windows 2003、2008、2012、XP、Vista、7、8"
+
+#: en.download.requirements.windows.1
+msgid "XAMPP 1.8.3 (with PHP 5.5): (Important: XP or 2003 not supported) 2008, 2012, Vista, 7, 8."
+msgstr "XAMPP 1.8.3 (包含PHP 5.5)：(重要：不支持XP或2003) 2008、2012、Vista、7、8。"
+
+#: en.download.requirements.apple
+msgid "Mac OS X 10.6 or later."
+msgstr "Mac OS X 10.6或更高。"
+
+#: en.download.more
+msgid "More Downloads"
+msgstr "更多下载"
+
+#: en.download.includes
+msgid "Includes"
+msgstr "包含"
+
+#: en.download.version
+msgid "Version"
+msgstr "版本"
+
+#: en.download.checksum
+msgid "Checksum"
+msgstr "校验码"
+
+#: en.download.size
+msgid "Size"
+msgstr "大小"
+
+#: en.download.success
+msgid "Awesome!"
+msgstr "真棒！"
+
+#: en.download.starting
+msgid "Your download will start automatically. If it doesn't, %{download}."
+msgstr "你的下载将自动开始。如果没有，%{download}。"
+
+#: en.click_here
+msgid "click here"
+msgstr "点击这里"
+
+#: en.release_notes
+msgid "Release Notes"
+msgstr "发行说明"
+
+#: en.reading.title
+msgid "Reading"
+msgstr "读取中"
+
+#: en.reading.intro
+msgid "Be sure to read the install instructions and FAQs:"
+msgstr "请确保你仔细阅读了安装说明和常见问题："
+
+#: en.reading.description
+msgid "You can find additional help on our %{forums} or %{stack_overflow}."
+msgstr "你可以在我们的%{forums}或%{stack_overflow}上找到更多帮助。"
+
+#: en.faqs.title
+msgid "FAQs"
+msgstr "常见问题"
+
+#: en.add_ons.title
+msgid "Add-ons"
+msgstr "扩展"
+
+#: en.add_ons.full_title
+msgid "XAMPP Add-ons"
+msgstr "XAMMP扩展组件"
+
+#: en.add_ons.description
+msgid "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP. Visit %{bitnami_xampp} to download the installer."
+msgstr "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP. Visit %{bitnami_xampp} to download the installer."
+
+#: en.add_ons.download_description
+msgid "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP."
+msgstr "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP."
+
+#: en.hosting.title
+msgid "Hosting"
+msgstr "托管"
+
+#: en.hosting.full_title
+msgid "XAMPP Hosting"
+msgstr "XAMPP托管"
+
+#: en.documentation.title
+msgid "Documentation"
+msgstr "文档"
+
+#: en.documentation.full_title
+msgid "XAMPP Documentation"
+msgstr "XAMPP文档"
+
+#: en.about.title
+msgid "About"
+msgstr "关于"
+
+#: en.about.description
+msgid "Many people know from their own experience that it's not easy to install an Apache web server and it gets harder if you want to add MariaDB, PHP and Perl. The goal of XAMPP is to build an easy to install distribution for developers to get into the world of Apache. To make it convenient for developers, XAMPP is configured with all features turned on. In the case of commercial use please take a look at the product licenses, from the XAMPP point of view commercial use is also free. There are currently distributions for Windows, Linux, and OS X."
+msgstr ""
+"许多人通过他们自己的经验知道安装Apache web服务器并不容易。如果你想添加MariaDB、PHP和Perl，那就更难了。XAMPP的目标是为开发人员建"
+"立一个安装简单的发行版，来进入Apache的世界。为了给开发人员提供方便，XAMPP配置成开启全部功能。如需用于商业用途，请看一下产品许可，在XAMPP"
+"看来，商业用途也应免费。当前有适用于Windows、Linux和OS X的发行版。"
+
+#: en.search
+msgid "Search"
+msgstr "搜索"
+
+#: en.contact.title
+msgid "Contact"
+msgstr "联系方式"
+
+#: en.contact.description
+msgid "Visit our %{forums} for any questions. Email %{email} for any security issues."
+msgstr "如有任何问题，请访问我们的%{forums}。如有任何安全问题，请发邮件至%{email}。"
+
+#: en.sitemap
+msgid "Sitemap"
+msgstr "站点地图"
+
+#: en.blog
+msgid "Blog"
+msgstr "博客"
+
+#: en.news_and_releases
+msgid "News &amp; Release Notes"
+msgstr "新闻与发行说明"
+
+#: en.forums.title
+msgid "Forums"
+msgstr "论坛"
+
+#: en.forums.full_title
+msgid "Apache Friends Forums"
+msgstr "Apache之友论坛"
+
+#: en.forums.description
+msgid "Forums are supported by XAMPP users around the world. Our forums were originally published in German, but you will find English and other other localized editions, too."
+msgstr "论坛由全世界的XAMPP用户提供。我们的论坛最初用德文发布，但你也能找到英文和其他本地化版本。"
+
+#: en.forums.button
+msgid "Click here to access the forums."
+msgstr "点击这里进入论坛。"
+
+#: en.mailing_list.title
+msgid "Mailing List"
+msgstr "邮件列表"
+
+#: en.mailing_list.description
+msgid "Do you want to be kept up-to-date on the latest news about XAMPP or our project? Our newsletter will inform you about new XAMPP releases as well as news about the Apache Friends project. It's a low frequency-list: only about one mail a month."
+msgstr ""
+"你想随时了解XAMPP和我们项目的最新新闻吗？我们的新闻简报将在新XAMPP发布以及Apache "
+"Friends项目有新闻时通知你。这是一个低频率列表：我们一个月大约只发一封邮件。"
+
+#: en.mailing_list.widget.unprocessed
+msgid "Unfortunately, an error occurred. Please contact us to subscribe."
+msgstr "很遗憾，发生了一个错误。请联系我们来订阅。"
+
+#: en.mailing_list.widget.invalid
+msgid "The email you provided is not a valid email address. Please fix it and try again."
+msgstr "你提供的电子邮箱地址无效。请更正并重试，"
+
+#: en.mailing_list.widget.success
+msgid "Thanks for subscribing."
+msgstr "感谢订阅。"
+
+#: en.mailing_list.widget.submit_text
+msgid "Subscribe"
+msgstr "订阅"
+
+#: en.privacy_policy
+msgid "Privacy Policy"
+msgstr "隐私政策"
+
+#: en.fastly
+msgid "CDN provided by"
+msgstr "CDN提供"
+
+#: en.terms_of_use
+msgid "Terms of Use"
+msgstr "使用条款"
+
+#: en.copyright
+msgid "Copyright (c) %{year}, Apache Friends"
+msgstr "版权所有(c) %{year}, Apache Friends"
+
+#: en.xampp_title
+msgid "XAMPP <span>Apache + MariaDB + PHP + Perl</span>"
+msgstr "XAMPP <span>Apache + MariaDB + PHP + Perl</span>"
+
+#: en.what_is_xampp.title
+msgid "What is XAMPP?"
+msgstr "什么是XAMPP？"
+
+#: en.what_is_xampp.intro
+msgid "XAMPP is the most popular PHP development environment"
+msgstr "XAMPP是最流行的PHP开发环境"
+
+#: en.what_is_xampp.description
+msgid "XAMPP is a completely free, easy to install Apache distribution containing MariaDB, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use."
+msgstr "XAMPP是完全免费且易于安装的Apache发行版，其中包含MariaDB、PHP和Perl。XAMPP开放源码包的设置让安装和使用出奇容易。"
+
+#: en.why_use_xampp.title
+msgid "Why use XAMPP?"
+msgstr "为什么要使用XAMPP？"
+
+#: en.why_use_xampp.reasons
+msgid "The most popular PHP dev package"
+msgstr "最流行的PHP开发包"
+
+#: en.why_use_xampp.reasons.1
+msgid "For Windows, Mac OS X &amp; Linux"
+msgstr "适用于Windows、Mac OS X和Linux"
+
+#: en.why_use_xampp.reasons.2
+msgid "Easy installation and configuration"
+msgstr "易于安装和配置"
+
+#: en.why_use_xampp.reasons.3
+msgid "Completely free of charge"
+msgstr "完全免费"
+
+#: en.click_other_versions
+msgid "Click here for other versions"
+msgstr "点击这里获得其他版本"
+
+#: en.xampp_for_os
+msgid "XAMPP for <strong>%{os}</strong>"
+msgstr "XAMPP for <strong>%{os}</strong>"
+
+#: en.read_more
+msgid "Read more&nbsp;&raquo;"
+msgstr "阅读更多&nbsp;&raquo;"
+
+#: en.about_apache_friends.title
+msgid "About Apache Friends"
+msgstr "关于Apache Friends"
+
+#: en.about_apache_friends.description
+msgid "Apache Friends is a non-profit project to promote the Apache web server and is home to the XAMPP project. XAMPP is an easy to install Apache distribution containing MariaDB, PHP, and Perl."
+msgstr ""
+"Apache Friends 是一个推广Apache "
+"服务器的非盈利性项目。XAMPP是一个易于安装的Apache发行版，其中包含MariaDB、PHP和Perl。"
+
+#: en.community.title
+msgid "Community"
+msgstr "社区"
+
+#: en.community.description
+msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}."
+msgstr ""
+"XAMPP已经存在了大约十多年——在它背后有一个巨大的社区。你可以通过加入我们的%{forums}，把自己加入到%{mailing_list}，在%"
+"{facebook}上喜欢我们，在%{twitter}上关注我们的成就。"
+
+#: en.recent_discussions
+msgid "Recent Discussions"
+msgstr "最近讨论"
+
+#: en.follow_xampp
+msgid "Follow XAMPP"
+msgstr "关注XAMPP"
+
+#: en.overheard
+msgid "Overheard"
+msgstr "监听"
+
+#: en.irc.title
+msgid "IRC"
+msgstr "IRC"
+
+#: en.irc.description
+msgid "You can get in touch with us on our Freenode IRC channel <strong>#Apachefriends</strong>. In order to access the channel, you will need an IRC client."
+msgstr ""
+"您可以通过我们的Freenode "
+"IRC频道<strong>#Apachefriends</strong>和我们保持联系。为访问该频道，您将需要一款IRC客户端。 "
+
+#: en.tweets_about_xampp
+msgid "Tweets about XAMPP"
+msgstr "关于XAMPP的推文"
+
+#: en.get_social
+msgid "Get Social!"
+msgstr "加入社交！"
+
+#: en.stamps.title
+msgid "Get a XAMPP Stamp"
+msgstr "获取一个XAMPP戳"
+
+#: en.stamps.micro_banner
+msgid "XAMPP Micro Banner"
+msgstr "XAMPP微型横幅"
+
+#: en.stamps.powered_by
+msgid "Powered by XAMPP"
+msgstr "基于XAMPP技术"
+
+#: en.our_team.title
+msgid "Our Team"
+msgstr "我们的团队"
+
+#: en.our_team.founders.title
+msgid "Founders"
+msgstr "创始人"
+
+#: en.our_team.founders.oswald_bio
+msgid "Oswald was one of the original co-founders of Apache Friends. He graduated 1999 from Technical University of Berlin with a Diplom-Informatiker degree (equivalent to a Master's degree in Computer Science). In the 90's he created and managed Germany's biggest IRCnet server irc.fu-berlin.de, and co-managed one of the world's largest anonymous FTP server ftp.cs.tu-berlin.de. From 1993 until 1998 he was member of the internationally renowned &quot;Projektgruppe Kulturraum Internet&quot;, a Berlin-based research project on net culture and network organization. In 2006, his third book, Das XAMPP-Handbuch, was published by Addison Wesley. From 2009 to 2011, he served as Technology Evangelist for Web Tier Products at Sun Microsystems/Oracle."
+msgstr ""
+"Oswald是Apache Friends的合伙创始人之一。他于1999年毕业于柏林科技大学，获得 Diplom-"
+"Informatiker学位(等同于计算机科学硕士学位)。他在90年代创建并管理了德国最大的IRCnet服务器irc.fu-"
+"berlin.de，并共同管理世界最大的匿名FTP服务器之一ftp.cs.tu-"
+"berlin.de。从1993年到1998年，他是国际知名的&quot;Projektgruppe Kulturraum "
+"Internet&quot;成员，这是一个位于柏林的网络文化和网络组织研究机构。在2006年，他出的第三本书《Das XAMPP-"
+"Handbuch》由Addison Wesley出版。从2009年到2011年，他在Sun "
+"Microsystems/Oracle担任网络层产品的技术布道者。"
+
+#: en.our_team.founders.vogelgesang_bio
+msgid "Together with Oswald, Kay co-founded the Apache Friends project in 2002. He currently works as freelance System Engineer and wrote several books about web technologies like Apache, MySQL and XAMPP itself."
+msgstr ""
+"Kay在2002与Oswald并肩创建了Apache "
+"Friends项目。他现在以一名自由职业系统工程师的身份工作，撰写数本有关Apache、MySQL和XAMPP本身等web技术的专著。"
+
+#: en.our_team.maintainers.title
+msgid "Current Maintainers"
+msgstr "当前维护者"
+
+#: en.our_team.maintainers.beltran_bio
+msgid "Beltran is a project manager at Bitnami. He fell in love with open source and Linux since an early age and enjoys tinkering with web technologies and speaking at developer events. Beltran graduated from the Seville Engineering School with a Master's degree in Telecommunication."
+msgstr ""
+"Beltran是Bitnami的一名项目经理。他早年就爱上了开源和Linux，并乐于鼓弄web技术以及在开发人员活动上畅所欲言。Beltran毕业于塞尔"
+"维亚工学院，获得了通信专业硕士学位。"
+
+#: en.our_team.maintainers.daniel_bio
+msgid "Daniel is a co-founder of Bitnami. Previously, he contributed to various web infrastructure open source projects, published multiple technical books on web technologies and became a member of the Apache Software Foundation. Daniel graduated from the Seville Engineering School with a Master's degree in Telecommunication and holds a Ms. Sc. on Optical Networking from DTU in Denmark."
+msgstr ""
+"Daniel是Bitnami合伙创始人。 过去他致力于多种web架构的开源项目，出版过多部web技术的技术专著，并成为Apache软件基金会的成员。Da"
+"niel毕业于塞尔维亚工学院并获得通信专业硕士学位，并持有位于丹麦的DTU获得的光学网络理学硕士学位。"
+
+#: en.our_team.past_advisors.title
+msgid "Past Advisors"
+msgstr "Past Advisors"
+
+#: en.our_team.support_qa.title
+msgid "Support &amp; QA"
+msgstr "支持与问答"
+
+msgid "Security"
+msgstr "安全"
+
+msgid "We want to thank the following individuals for reporting vulnerabilities responsibly and helping improve XAMPP."
+msgstr "我们对以下负责地报告漏洞以及帮助改进XAMPP的个人表示感谢。"
+
+msgid "Retired"
+msgstr "过往记录"
+
+#: en.licence.title
+msgid "The Licence"
+msgstr "许可"
+
+#: en.licence.description
+msgid "XAMPP is a compilation of free software (comparable to a Linux distribution), it's free of charge and it's free to copy under the terms of the GNU General Public Licence. But it is only the compilation of XAMPP that is published under GPL. Please check every single licence of the contained products to get an overview of what is, and what isn't, allowed. In the case of commercial use please take a look at the product licences (especially MySQL), from the XAMPP point of view commercial use is also free."
+msgstr ""
+"XAMPP 是一个免费软件编译版(类似于一份Linux发行版)，它是免费的，根据GNU通用公共许可的条款进行复制免费。 "
+"但只有XAMPP编译版是根据GPL发布的。请分别检查所包含每个产品的独立许可，以了解允许以及不允许做什么。如果是商业用途，请看一下产品许可(尤其是 "
+"MySQL)，在XAMPP看来，商业应用也应该是免费的。"
+
+#: en.warranty.title
+msgid "Warranty"
+msgstr "担保"
+
+#: en.warranty.description
+msgid "This program is distributed in the hope that it will be useful, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose. (See the %{gnu} for more details)"
+msgstr "发布该软件是因为我们希望它将会是有用的，但不做任何担保；甚至没有用作特殊目的的一些隐含担保。(请参阅%{gnu}获取更多信息)"
+
+#: en.trademarks.title
+msgid "Trademarks"
+msgstr "商标"
+
+#: en.trademarks.description
+msgid "XAMPP and Apache Friends are registered trademarks of BitRock. Microsoft, DOS, and Windows are registered trademarks of Microsoft Corporation. Intel, Pentium, i386, i486 are registered trademarks of Intel Corporation. SUN, Sparc are registered trademarks of Oracle, Inc. Apple, Mac, and OS X are registered trademarks of Apple Inc."
+msgstr ""
+"XAMPP和Apache Friends是BitRock的注册商标。Microsoft、DOS和Windows是Microsoft公司的注册商标。Pen"
+"tium、i386、i486是Intel公司的注册商标。SUN、Sparc是Oracle公司的注册商标。Apple、Mac和OS "
+"X是Apple公司的注册商标。"
+
+#: en.trademarks.remarks
+msgid "All other company and product names may be trademarks of their respective companies."
+msgstr "所有其他公司和产品的名称可能是他们各自公司的商标。"
+
+#: en.thanks.title
+msgid "Special Thanks"
+msgstr "特别致谢"
+
+#: en.thanks.sourceforge
+msgid "SourceForge has been hosting XAMPP since the very start!"
+msgstr "SourceForge在项目伊始就为XAMPP提供存放空间！"
+
+#: en.documentation.title
+msgid "Documentation/FAQs"
+msgstr "文档/常见问题"
+
+#: en.documentation.description
+msgid "There is no real manual or handbook for XAMPP. We wrote the documentation in the form of FAQs. Have a burning question that's not answered here? Try the %{forums} or %{stack_overflow}."
+msgstr ""
+"现在还没有关于XAMPP的正式说明书或手册。我们已经编写了常见问题形式的说明文档。有亟待解决的问题但在这里找不到答案？请尝试%{forums}或%"
+"{stack_overflow}。"
+
+#: en.twitter.title
+msgid "Tell Your Friends about XAMPP"
+msgstr "将XAMPP告诉你的好友"
+
+#: en.twitter.message
+msgid "I just got #XAMPP from @ApacheFriends https://www.apachefriends.org #opensource."
+msgstr ""
+"我刚刚从从@ApacheFriends的网站https://www.apachefriends.org 下载了#XAMPP，它是#opensource "
+"#开源 的。"
+
+#: en.twitter.submit
+msgid "Tweet!"
+msgstr "推文！"
+
+#: en.translations.title
+msgid "Translations"
+msgstr "翻译"
+
+#: en.translations.intro
+msgid "Contribute to XAMPP translation at %{translate}."
+msgstr "在%{translate}为XAMPP的翻译作出贡献。"
+
+#: en.translations.description
+msgid "Can you help translate XAMPP for other community members? We need your help to translate XAMPP into different languages. We have set up a site, %{translate}, where users can contribute translations."
+msgstr ""
+"你能帮其他社区成员帮忙翻译XAMPP么？我们需要你帮忙把XAMPP翻译成不同的语言。我们建立了一个网站，%{translate}，用户可在这里贡献翻译。"
+
+msgid "How do I install XAMPP?"
+msgstr "如何安装XAMPP？"
+
+msgid "Choose your flavor for your linux OS, the 32-bit or 64-bit version."
+msgstr "请选择您的Linux操作系统版本,32位或64位."
+
+msgid "Change the permissions to the installer"
+msgstr "为安装程序更改权限"
+
+msgid "Run the installer"
+msgstr "运行安装程序"
+
+msgid "That's all. XAMPP is now installed below the /opt/lampp directory."
+msgstr "XAMPP安装完成，安装目录：/opt/lampp            "
+
+msgid "How do I start XAMPP?"
+msgstr "如何启动XAMPP？"
+
+msgid "To start XAMPP simply call this command:"
+msgstr "使用该命令启动XAMPP："
+
+msgid "You should now see something like this on your screen:"
+msgstr "现在你可以在屏幕上看到类似这样的东西："
+
+msgid "If you get any error messages visit %{community} for help."
+msgstr "如果收到任何错误信息，请访问 %{社区} 寻求帮助。"
+
+msgid "Also, note that there is a graphical tool that you can use to manage your servers easily. You can start this tool with the following commands:"
+msgstr "同时注意有一个图形化的工具使你易于维护你的服务器。你可以通过下面这些命令起动此工具。"
+
+msgid "How do I stop XAMPP?"
+msgstr "如何停止运行XAMPP？"
+
+msgid "To stop XAMPP simply call this command:"
+msgstr "使用该命令停止运行XAMPP："
+
+msgid "You should now see something like this on your screen:"
+msgstr "现在你可以在屏幕上看到类似这样的东西："
+
+msgid "Also, note that there is a graphical tool that you can use to start/stop your servers easily. You can start this tool with the following commands:"
+msgstr "同时注意有一个图形化的工具使你易于起动或停止你的服务器。你可以通过下面这些命令起动此工具。"
+
+msgid "How can I test that everything worked?"
+msgstr "我如何检查是否一切正常？"
+
+msgid "Type in the following URL at your favourite web browser:"
+msgstr "在你喜欢的浏览器中输入下面的链接："
+
+msgid "Now you should see the XAMPP start page containing some links to check the status of the installed software and some small programming examples."
+msgstr "现在你因该看到XAMPP的起动页面，该页面报含一些所安装软件的状态检查信息和一些编程小例子。"
+
+msgid "Is XAMPP production ready?"
+msgstr "XAMPP准备好了吗？"
+
+msgid "XAMPP is not meant for production use but only for development environments. The way XAMPP is configured is to be open as possible to allow the developer anything he/she wants. For development environments this is great but in a production environment it could be fatal."
+msgstr ""
+"XAMPP是一个非常优秀而又实用的开发测试环境，XAMPP的配置是开放的，允许开发者任意去修改或配置适合您的开发环境。XAMPP并非商业运行环境，用于商"
+"业运作将是一个致命的环境！"
+
+msgid "Here a list of missing security in XAMPP:"
+msgstr "如下是XAMPP不安全的配置："
+
+msgid "The MySQL administrator (root) has no password."
+msgstr "MySQL数据库管理帐号 (root)没设置密码。"
+
+msgid "The MySQL daemon is accessible via network."
+msgstr "MySQL数据库可以通过网络打开。"
+
+msgid "ProFTPD uses the password \"lampp\" for user \"daemon\"."
+msgstr "ProFTPD uses the password \"lampp\" for user \"daemon\"."
+
+msgid "PhpMyAdmin is accessible via network."
+msgstr "PhpMyAdmin可以通过网络打开。"
+
+msgid "Examples are accessible via network."
+msgstr "Examples可以通过网络打开。"
+
+msgid "To fix most of the security weaknesses simply call the following command:"
+msgstr "解决简单问题的安全命令："
+
+msgid "It starts a small security check and makes your XAMPP installation secure. For example this protects the XAMPP demo pages by a username ('lampp') and password combination."
+msgstr ""
+"为了让您安装的XAMMP更安全即将启动一个安全检查过程，例如，这可以防止通过默认的用户名('lampp') "
+"和默认的密码组合非法访问XAMPP的演示页面。"
+
+msgid "What is the meaning of the error messages I see when starting XAMPP?"
+msgstr "看到有XAMPP启动时的错误信息?"
+
+msgid "You may get several error messages while starting XAMPP:"
+msgstr "你可能会得到一些XAMPP启动错误信息"
+
+msgid "The LAMPP startup script did not start XAMPP-Apache because there is an Apache instance already running. To start XAMPP properly, first you have to stop this daemon."
+msgstr ""
+"由于另外一个Apache正在运行，所以没能成功启动XAMPP-Apache。如想正常启动XAMPP-Apache，先把另外一个Apache停止运行。"
+
+msgid "This is mostly due to the same reasons as the above error. The LAMPP startup script found a MySQL daemon already running on your system. To start LAMPP properly, you have to stop this daemon first."
+msgstr "这又是相同的一个原因，另外一个MYSQL正在运行，所以没能成功启动MYSQL。如想正常启动，先把另外一个MYSQL停止运行。"
+
+msgid "Apache doesn't seems to start. What can I do? "
+msgstr "不知道怎么打开Apache，怎么办？"
+
+msgid "This error can exist for multiple reasons. Apache displays this error under several circumstances. To find the exact reason we have to do some research:"
+msgstr "这个错误可能存在多种原因，Apache提示有多种错误的话，我们找出的错误："
+
+msgid "What do I do if the error message is \"Cannot restore segment prot after reloc: Permission denied?\""
+msgstr ""
+"如果错误信息是“Cannot restore segment prot after reloc: Permission "
+"denied?（重定位后无法恢复段保护：权限不足？）”我该怎么办？"
+
+msgid "Some Linux distributions have SELinux activated by default and this is preventing the successful start of XAMPP. You should deactivate it in order to start the XAMPP servers:"
+msgstr "有些Linux版本默认启动了SELinux，这会导致XAMPP无法成功启动。你应该关闭SELinux以启动XMAPP服务器："
+
+msgid "Now XAMPP should work fine again."
+msgstr "XAMMP现在应该重新工作正常了。"
+
+msgid "After I rebooted my Linux box XAMPP stopped running! How can I fix this?"
+msgstr "我重启我的Linux机器后，XAMPP不工作了！怎么修复？"
+
+msgid "Correct. That's normal Linux behaviour (which applies to any other Unix-like system). It's the admin's job to make sure a particular application is started at bootup."
+msgstr "正确。这是正常的Linux的行为（任何其它类Unix系统都会有类似的行为） 。这是管理员为确保一个特定的应用程序随操作系统启动应做的工作。"
+
+msgid "There is no real standard way to configure the boot process of a Linux system, but most of them should allow you to start XAMPP at boot time using the following steps."
+msgstr "Linux操作系统的启动过程配置没有真正的标准方法，但是其中许多应该可以允许你通过下面的步骤确保XAMMP在系统启动后运行。"
+
+msgid "If your Linux distro uses \"update-rc.d\" tool to install the services:"
+msgstr "如果你的Linux发行版使用的是\"update- rc.d\"工具来安装服务:"
+
+msgid "If your Linux distro uses \"chkconfig\" tool to install the services you can run the following commands:"
+msgstr "如果你的Linux版本是使用“chkconfig”工具来安装服务的，你可以使用以下命令："
+
+msgid "How can I make my XAMPP installation more secure?"
+msgstr "如何让XAMPP更安全？"
+
+msgid "In the default installation, XAMPP has no passwords set and it is not recommended to run XAMPP with this configuration accessible by others."
+msgstr "默认安装时，XAMPP没有设置密码，但是我们不推荐这种可以被其他人访问的配置来运行XAMPP"
+
+msgid "Simply type the following command (as root) to start a simple security check:"
+msgstr "只需（以root用户）输入以下命令就可以进行简单的安全检察："
+
+msgid "Now you should see the following dialog on your screen:"
+msgstr "现在您应该可以在屏幕上看到如下对话框："
+
+msgid "(1) Setting a password will protect the XAMPP demo pages (http://localhost/xampp/) using this password. The user name is 'lampp'!"
+msgstr "（1）设置密码就会用这个密码来保护XAMPP演示的页面（http://localhost/xampp/）。用户名为‘lampp’！"
+
+msgid "After calling this command your XAMPP installation should be more secure."
+msgstr "通过调用这条命令您的XAMPP安装过程会更加安全。"
+
+msgid "How do I activate eAccelerator?"
+msgstr "我如何启用eAccelerator（e加速器）？"
+
+msgid "To activate eAccelerator simply find the following lines in your /opt/lampp/etc/php.ini:"
+msgstr "要启动eAccelerator（e加速器）只需在你的/opt/lampp/etc/php.ini配置文件中找到如下行："
+
+msgid "Remove the semicolon at the beginning of each line and restart XAMPP. eAccelerator is now active. For more information about eAccelerator, check the eAccelerator home page: %{eaccelerator}."
+msgstr ""
+"删除每一行开始的分号，重启XAMPP。eAccelerator现在是活动的。想要获取更多关于eAccelerator的信息，请访问eAccelerato"
+"r的主页：%{eaccelerator}。"
+
+msgid "How do I activate the OCI8/Oracle extension for PHP?"
+msgstr "如何为PHP激活OCI8/Oracle扩展？"
+
+msgid "To activate the OCI8/Oracle extension for PHP please execute the following command:"
+msgstr "启动OCI8/Oracle的PHP扩展，请执行以下命令："
+
+msgid "The following dialog will start:"
+msgstr "下面的对话框就会启动："
+
+msgid "Now the extension should be active."
+msgstr "现在扩展程序将会激活。"
+
+msgid "XAMPP runs, but why are none of the images being displayed?"
+msgstr "XAMPP运行了，但是为什么图片全都不能显示？"
+
+msgid "That's a special problem with some Linux systems. Please open your /opt/lampp/etc/httpd.conf and look for these two lines:"
+msgstr "某些Linux系统会有这个特殊问题。请打开你的/opt/lampp/etc/httpd.conf配置文件，并且找到这两行："
+
+msgid "Remove the # in both lines and restart your Apache. Your images should be back."
+msgstr "去掉#（井号），然后重启Apache。图片应该会显示出来。"
+
+msgid "How do I backup/restore my XAMPP system?"
+msgstr "我如何备份/恢复我的XAMPP系统？"
+
+msgid "Warning:"
+msgstr "警告："
+
+msgid "The backup and restore functionality is still under development and may not work correctly."
+msgstr "备份和恢复功能目前还处于开发阶段，所以目前可能还不能工作。"
+
+msgid "You can create the backup by calling:"
+msgstr "你可以通过调用如下命令来创建备份："
+
+msgid "or"
+msgstr "或"
+
+msgid "Where \"secret\" is your MySQL root password. This command will create the following output:"
+msgstr "”secret“代表你的MySQL root密码。这行命令会产生以下输出："
+
+msgid "The file /opt/lampp/backup/xampp-backup-22-01-14.sh (in the example above) contains your backup data. Store this file in a safe place."
+msgstr ""
+"这个文件 /opt/lampp/backup/xampp-backup-22-01-14.sh "
+"（在上面的例子中）包含了你的备份数据。请将此文件保存至安全处。"
+
+msgid "On the new machine you need the same version of XAMPP as on your original/source machine."
+msgstr "在新机器上，你需要一个和你的最初/源机器上相同版本的AXMPP."
+
+msgid "You should see something like this:"
+msgstr "你会看到一些类似这样的东西："
+
+msgid "That's all. Keep in mind that it's a beta feature."
+msgstr "这样就可以了。记住那只是一个测试版本的功能。"
+
+msgid "Frequently Asked Questions"
+msgstr "经常提到的问题"
+
+msgid "How do I do install XAMPP for Mac OS X?"
+msgstr "我如何在Mac OS X上安装XAMPP？"
+
+msgid "To install XAMPP just do the following:"
+msgstr "要安装XAMPP只需参考如下操作："
+
+msgid "Open the DMG-Image."
+msgstr "打开 DMG-Image。"
+
+msgid "Double-click on the image to start the installation process."
+msgstr "双击图片，开始安装。"
+
+msgid "That's all. XAMPP is now installed below the /Applications/XAMPP directory."
+msgstr "完成了。XAMPP现在已经在/Applications/XAMPP目录下安装完毕。"
+
+msgid "To start XAMPP simply open XAMPP Control and start Apache, MySQL and ProFTPD. The name of the XAMPP Control is \"manager-osx\"."
+msgstr "要启动XAMPP只需打开XAMPP控制台并启动Apache、MySQL和ProFTPD。XAMPP控制台的名称是“manager-osx”。"
+
+msgid "To stop XAMPP simply open XAMPP Control and stop the servers. The name of the XAMPP Control is \"manager-osx\"."
+msgstr ""
+"要关闭XAMPP只需打开XAMPP控制台，然后关闭服务器。XAMPP控制台的名称是“manager-osx”。 "
+"                               "
+
+msgid "Type in the following URL in a web browser:"
+msgstr "在浏览器中输入以下链接："
+
+msgid "It will kick off a a small security check to make the XAMPP installation secure."
+msgstr "这会启动一个基本的安全检查，以便于确保XAMPP安装的安全。"
+
+msgid "The file /Applications/XAMPP/xamppfiles/backup/xampp-backup-22-01-14.sh (in the example above) contains your backuped data. Get this file to a save place."
+msgstr ""
+"文件 /Applications/XAMPP/xamppfiles/backup/xampp-"
+"backup-22-01-14.sh（在上面的例子中）包含了你的备份的数据。请将它保存在安全的地方。"
+
+msgid "XAMPP for Windows exists in three different flavors:"
+msgstr "XAMPP在Windows平台有三个不同版本："
+
+msgid "Installer:"
+msgstr "安装程序："
+
+msgid "Probably the easiest way to install XAMPP."
+msgstr "大概是安装XAMPP最容易的方法了。"
+
+msgid "For purists: XAMPP as ordinary ZIP archive."
+msgstr "为纯净软件爱好者提供的：XAMPP的标准zip压缩包。"
+
+msgid "For purists with low bandwidth: XAMPP as 7zip archive."
+msgstr "为网速慢的纯净软件爱好者提供的：XAMPP的7zip压缩包。"
+
+msgid "Note: If you extract the files, there can be false-positives virus warnings."
+msgstr "注意：如果你解压文件的话，可能会被杀软误报毒。"
+
+msgid "Using the installer:"
+msgstr "使用安装程序："
+
+msgid "Using the installer from the Downloads page is the easiest way to install XAMPP. After the installation is complete, you will find XAMPP under Start | Programs | XAMPP. You can use the XAMPP Control Panel to start/stop all server and also install/uninstall services."
+msgstr ""
+"使用下载页面的安装包是安装XAMPP的最简便的方式。安装过程结束之后，你会在开始菜单-程序-XAMPP下面找到XAMPP。你可以使用XAMPP的控制面板"
+"来启动/停止任意一个服务器或者安装/卸载服务。"
+
+msgid "The XAMPP control panel for start/stop Apache, MySQL, FileZilla & Mercury or install these server as services."
+msgstr "XAMPP控制面板可以用于启动/停止Apache, MySQL, FileZilla和Mercury以及将它们安装为服务。"
+
+msgid "Unzip the zip archives into the folder of your choice. XAMPP is extracting to the subdirectory \"C:\\xampp\" below the selected target directory. Now start the file \"setup_xampp.bat\", to adjust the XAMPP configuration to your system."
+msgstr ""
+"解压ZIP压缩文件到您选择的文件夹中。 "
+"XAMPP被提取到子目录\"C:\\xampp\"选定的目标目录下。然后启动文件“setup_xampp.bat”进行配置以便XAMPP的配置调整到系统中。"
+
+msgid "If you choose a root directory \"C:\\\" as target, you must not start \"setup_xampp.bat\"."
+msgstr "如果你选择根目录\"C:\\\"作为安装目标，你绝对不要启动\"setup_xampp.bat\"。"
+
+msgid "Like with the installer version, you can now use the \"XAMPP Control Panel\" for additional tasks."
+msgstr "就像安装版一样，你现在可以使用XAMPP控制面板来完成更多工作。"
+
+msgid "How can I start XAMPP without setup?"
+msgstr "我如何免安装启动XAMPP？"
+
+msgid "If you extract XAMPP in a top level folder like \"C:\\" or \"D:\\", you can start most servers like Apache or MySQL directly without execution of the file \"setup_xampp.bat\"."
+msgstr ""
+"如果你将XAMPP解压到一个根目录，比如\"C:\\\"或者是\"D:\\\"，你就可以直接启动大多数服务器例如Apache或者MySQL而无需执行文件\"setup"
+"_xampp.bat\"。"
+
+msgid "Not using the setup script, or selecting relative paths in the setup script, is preferred if you are installing XAMPP on a usb drive. Because on each pc such a drive can have an other drive letter. You can switch from absolute to relative paths at any time with the setup script."
+msgstr ""
+"如果你想在一个U盘上面安装XAMPP的话，不使用安装脚本，或者在安装脚本里面选择相对路径应该会是更好的做法。因为在不同的PC上面U盘的盘符应该都是不一样"
+"的。你可以通过安装脚本在任何时候从绝对路径切换到相对路径。"
+
+msgid "Using the installer from our Downloads page is the easiest way to install XAMPP. After the installation is complete, you will find XAMPP under   Start | Programs | XAMPP. You can use the XAMPP Control Panel to start/stop all server and also install/uninstall services."
+msgstr ""
+"下载页面上的安装包版本应该是安装XAMPP的最简单的方式了。安装过程结束之后，你会在开始菜单-程序-XAMPP下找到XAMPP。你可以使用XAMPP的控"
+"制面板来启动/停止任意一个服务器或者是安装/卸载服务。"
+
+msgid "The universal control center is the \"XAMPP Control Panel\" (thanks  www.nat32.com). It is started with:"
+msgstr "通用的控制中心位于XAMPP控制面板(感谢www.nat32.com)。它开始于："
+
+msgid "How do I start and stop XAMPP?"
+msgstr "我如何启动和停止XAMPP？"
+
+msgid "You can also use some batchfiles to start/stop the servers:"
+msgstr "您也可以使用一些批处理文件来启动/停止服务器："
+
+msgid "Apache &amp; MySQL start:"
+msgstr "Apache &amp; MySQL 启动:"
+
+msgid "Apache &amp; MySQL stop:"
+msgstr "Apache &amp; MySQL 停止:"
+
+msgid "Apache start:"
+msgstr "启动Apache"
+
+msgid "Apache stop:"
+msgstr "停止Apache"
+
+msgid "MySQL start:"
+msgstr "启动MySQL："
+
+msgid "MySQL stop:"
+msgstr "停止MySQL："
+
+msgid "Mercury Mailserver start:"
+msgstr "启动Mercury邮件服务器："
+
+msgid "Mercury Mailserver stop:"
+msgstr "停止Mercury邮件服务器："
+
+msgid "FileZilla Server start:"
+msgstr "启动FileZilla服务器："
+
+msgid "FileZilla Server stop:"
+msgstr "停止FileZilla服务器："
+
+msgid "How can I install a server as a service?"
+msgstr "我如何将一个服务器安装成为服务？"
+
+msgid "Each server in XAMPP you can install also as Windows service. You can also install it from the XAMPP Control Panel. In this case it is necessary to run the scripts or the Control Panel with Administrator privileges."
+msgstr ""
+"你可以将XAMPP中的每一个服务器安装成为Windows服务。你也可以从XAMPP控制面板里面安装它。在这种情况下必须通过管理员权限运行控制面板或脚本。"
+
+msgid "Apache service install: \xampp\apache\apache_installservice.bat"
+msgstr "安装Apache服务：\\xampp\\apache\\apache_installservice.bat"
+
+msgid "Apache service uninstall: \xampp\apache\apache_uninstallservice.bat"
+msgstr "卸载Apache服务：\\xampp\\apache\\apache_uninstallservice.bat"
+
+msgid "MySQL service install: \xampp\mysql\mysql_installservice.bat"
+msgstr "安装MySQL服务: \\xampp\\mysql\\mysql_installservice.bat"
+
+msgid "MySQL service uninstall: \xampp\mysql\mysql_uninstallservice.bat"
+msgstr "卸载MySQL服务: \\xampp\\mysql\\mysql_uninstallservice.bat"
+
+msgid "FileZilla service (un)install: \xampp\filezilla_setup.bat"
+msgstr "安装/卸载FileZilla服务: \\xampp\\filezilla_setup.bat"
+
+msgid "Mercury: No service installation available"
+msgstr "Mercury: 没有服务可供安装"
+
+msgid "The XAMPP demopage is accessible via network."
+msgstr "可以通过网络打开XAMPP演示网页。"
+
+msgid "The default users of Mercury and FileZilla are known."
+msgstr "Mercury和FileZilla的默认用户是已知的。"
+
+msgid "All points can be a huge security risk. Especially if XAMPP is accessible via network and people outside your LAN. It can also help to use a firewall or a (NAT) router. In case of a router or firewall, your PC is normally not accessible via network. It is up to you to fix these problems. As a small help there is the \"XAMPP Security console\"."
+msgstr ""
+"所有的点都可能成为一个巨大的安全隐患。尤其是如果XAMPP是可以通过网络或你的局域网外的人访问的话。使用防火墙或一个（带NAT的）路由器也是有帮助的。在"
+"有路由器或者防火墙的情况下，你的电脑正常情况下是无法从外部互联网访问的。是否修复这些问题要取决于你。XAMPP安全控制台可以提供一点小的帮助。"
+
+msgid "Please secure XAMPP before publishing anything online. A firewall or an external router are only sufficient for low levels of security. For slightly more security, you can run the \"XAMPP Security console\" and assign passwords."
+msgstr ""
+"请在发布任何东西到网上之前做好XAMPP的安全。一个防火墙或者一个外部路由器只能让你达到一个比较低的安全水平。需要高一点的安全的话，你可以运行下XAMP"
+"P安全控制台并设置密码。"
+
+msgid "If you want have your XAMPP accessible from the internet, you should go to the following URI which can fix some problems:"
+msgstr "如果你想要让你的XAMPP通过互联网访问的话，你需要访问下述网站来修复一些问题："
+
+msgid "With the security console you can set a password for the MySQL user \"root\" and phpMyAdmin. You can also enable a authentication for the XAMPP demopages."
+msgstr "借助安全控制台，您可以设置MySQL的“root”用户和phpMyAdmin的密码。您还可以给XAMPP的演示页启用一个认证。"
+
+msgid "This web based tool does not fix any additional security issues! Especially the FileZilla FTP server and the Mercury mail server you must secure yourself."
+msgstr "这个基于网络的工具不能修复任何附加的安全问题！尤其是FileZilla FTP服务器和Mercury邮件服务器，你必须自行保护它们。"
+
+msgid "How do I uninstall XAMPP?"
+msgstr "如何卸载XAMPP？"
+
+msgid "If you installed XAMPP using the installer version, please use the Uninstaller. The Uninstaller will delete all XAMPP entries from your registry and it will uninstall some installed services included with XAMPP. We highly recommend that you use the Uninstall program for removing XAMPP installations from the Installer version.Please backup all the data you want to keep before uninstalling XAMPP."
+msgstr ""
+"如果你使用安装包版本安装了XAMPP，请使用卸载工具卸载。卸载工具会删除掉所有的XAMPP的文件并会卸载掉已经安装的服务，包括XAMPP自身。我们强烈推"
+"荐你使用卸载程序移除XAMPP的安装。请在卸载之前备份你所有想保留的文件。"
+
+msgid "If you installed XAMPP using the ZIP and 7zip versions, shut down all XAMPP servers and exit all panels. If you installed any services, uninstall and shut them down too. Now simply delete the entire folder where XAMPP is installed. There are no registry entries and no environment variables to  clean up."
+msgstr ""
+"如果你使用zip或者7zip版本安装了XAMPP，请关掉所有的XAMPP服务器并退出控制面板。如果你安装了服务，也需要卸载并关闭他们。现在只需要简单的把"
+"XAMPP所在文件夹一删就完事了，不会再有需要清理的任何注册表项或者环境变量啦。"
+
+msgid "What is the \"lite\" version of XAMPP?"
+msgstr "XAMPP的“lite”版本是什么玩意？"
+
+msgid "XAMPP Lite (means \"light\" as in \"light-weight\") is a smaller bundle of XAMPP components, which is recommended for quick work using only PHP and MySQL. Some servers or tools such as Mercury Mail and FileZilla FTP are missing in the Lite version."
+msgstr ""
+"XAMPP Lite（意思是“轻的”或者“轻量级的”）是一个更小的XAMPP的组件合集，推荐用来做一些只需要PHP和MySQL的快速的工作。像Mercu"
+"ry邮件或者是FileZilla的FTP服务器在这个版本里都是没有的。"
+
+msgid "Where should I place my web content?"
+msgstr "我应该把我的web内容放在哪里呢？"
+
+msgid "The main directory for all WWW documents is \xampp\htdocs. If you put a file \"test.html\" in this directory, you can access it with the URI \"http://localhost/test.html\"."
+msgstr ""
+"所有www文档的根目录都是\\xampp\\htdocs。如果你在目录里放一个文件“test.html”，你可以通过这个URL访问它：http://loca"
+"lhost/test.html。"
+
+msgid "And \"test.php\"? Just use \"http://localhost/test.php\". A simple testscript can be:"
+msgstr "至于\"test.php\"呢？用\"http://localhost/test.php\"就可以啦。一个简单的测试脚本可以这么写："
+
+msgid "A new subdirectory for your web? Just make a new directory (e.g. \"new\") inside the directory \"\xampp\htdocs\" (best without whitespaces and only ASCII), create a test file in this directory and access it with \"http://localhost/new/test.php\"."
+msgstr ""
+"想给你的web服务器设一个新的子目录？只需要在目录\\xampp\\htdocs新建个文件夹就行了（最好不要空格并且只使用英文字母和数字），并且建一个测试文"
+"件然后访问它，例如http://localhost/new/test.php。"
+
+msgid "Further specifics"
+msgstr "更多细节"
+
+msgid "Executable:"
+msgstr "可执行的："
+
+msgid "Allowed endings:"
+msgstr "允许的结尾："
+
+msgid "basic package"
+msgstr "基本的包"
+
+msgid "Can I move the XAMPP installation?"
+msgstr "我可以移动XAMPP安装文件么？"
+
+msgid "Yes. After moving of the XAMPP directory, you must execute \"setup_xampp.bat\". The paths in the configuration files will be adjusted with this step."
+msgstr "是的，当移动XAMPP文件目录之后，你必须执行一下\"setup_xampp.bat\"。在配置文件里的路径会在这一步之后被改变。"
+
+msgid "If you have installed any server as Windows service, you must first remove the Windows service, and after the moving you can install the service again."
+msgstr "如果你已经将任意一个服务器安装成了Windows服务，你必须先移除服务，移动之后你可以重新安装服务。"
+
+msgid "Warning: The configuration files from your own scripts, like PHP applications, are not adjusted. But it's possible to write a \"plug-in\" for the installer. With such a plug-in, the installer can adjust such files too."
+msgstr ""
+"警告：你自己的脚本的配置文件，例如你的PHP应用，是不会被调整的。但是你可以为安装工具写一个插件，借助这样一个插件，安装工具就也可以同时调整这些文件了。"
+
+msgid "What are \"Automatic start pages\" for the WWW directories?"
+msgstr "访问WWW目录的时候指向的“默认起始页”的名称是什么呢？"
+
+msgid "The standard filename for the Apache function \"DirectoryIndex\" is \"index.html\" or \"index.php\". Every time you are just browsing to a folder (e.g. \"http://localhost/xampp/\"), and Apache can find such a file, Apache is displaying this file instead of a directory listing."
+msgstr ""
+"Apache的\"DirectoryIndex\"（目录起始页）功能的预设文件名是“index.html”或者“index.php”。每次当你访问一个文件夹"
+"的时候（例如http://localhost/xampp/），Apache会先找一下指定名称的文件，并且找的话会默认显示那个文件而不会再显示目录的文件列"
+"表啦。"
+
+msgid "Where can I change the configuration?"
+msgstr "我可以在哪儿修改配置呢？"
+
+msgid "Almost all settings in XAMPP you can change with configuration files. Just open the file in a textedit and change the setting you want. Only FileZilla and Mercury should be configured with the application config tool."
+msgstr ""
+"XAMPP几乎所有的设置都可以在配置文件里修改。只需要在文本编辑器里打开文件然后就可以按你的需要修改设置了。只有Filezilla和Mercury需要使"
+"用应用配置工具里自定义设置。"
+
+msgid "Why can't XAMPP work on Windows XP SP2?"
+msgstr "为啥XAMPP不能在Windows XP SP2下工作呢？"
+
+msgid "Microsoft delivers a better firewall with service pack 2 (SP2), which starts automatically. This firewall now blocks the necessary ports 80 (http) and 443 (https) and Apache can't start."
+msgstr ""
+"微软在service pack 2 "
+"(SP2)里面提供了一个更加高大上的会自动启动的防火墙，这个防火墙会拦截掉Apache必需的80和443端口，然后Apache就启动不了了。"
+
+msgid "The fast solution:"
+msgstr "最快的解决方案："
+
+msgid "Disable the Microsoft firewall with the toolbar and try to start XAMPP onces more. The better solution is to define an exception within the security center."
+msgstr "把微软那个防火墙给它关了，然后再启动一下XAMPP试试。更好的解决办法是在安全中心里面给XAMPP定义一个例外。"
+
+msgid "The following ports are used for basic functionality:"
+msgstr "下述端口是提供给基本功能用的："
+
+msgid "Why doesn't XAMPP work on Vista?"
+msgstr "为什么XAMPP不能在Vista上工作？"
+
+msgid "our community pages"
+msgstr "我们的社区页面"
+
+msgid "User Account Control (UAC)"
+msgstr "用户帐户控制（UAC）"
+
+msgid "In the directory \"C:\program files\" you don't have full write privileges, even as Admin. Or you have only limited privileges (e.g. for \".\xampp\htdocs\"). In this case you can't edit a file."
+msgstr ""
+"在目录\"C:\\program files\"当中你是没有完整的写权限的，即便管理员也不行。或者你就只有有限的权限（例如\".\\xampp\\htdocs\"）了"
+"。在这种情况下你就不能编辑文件了。"
+
+msgid "Solution:"
+msgstr "解决方案："
+
+msgid "Raise your privileges within explorer (right click / security) or deactivate the user account control (UAC)."
+msgstr "通过浏览器（右键-安全）来提高你的权限或者禁用用户帐户控制（UAC）"
+
+msgid "You have installed Apache/MySQL in \"C:\xampp\" as Windows service. But you can't start/stop the services with the \"XAMPP Control Panel\" or can't uninstall them."
+msgstr ""
+"你已经在\"C:\\xampp\"将Apache/MySQL安装成Windows服务但你不能通过\"XAMPP控制面板\"启动/停止这些服务或者不能卸载它们。"
+
+msgid "Use the service management console from Windows or deactivate UAC."
+msgstr "从Windows使用服务管理控制台或禁用UAC。"
+
+msgid "Disabling the User Account Control (UAC)"
+msgstr "禁用用户帐户控制（UAC）"
+
+msgid "To deactivate the UAC, use the program \"msconfig\". In \"msconfig\" go to \"Tools\", select \"disable user account control\" and verify your selection. Now you must restart Windows. At the same time, you can enable the UAC again."
+msgstr ""
+"为了禁用UAC，你需要使用程序“msconfig”。在msconfig当中找到“工具”，选择“禁用用户账户控制”然后保存你的更改。现在你必须重启一下电脑"
+"。同时你也可以再次启动UAC。"
+
+msgid "How do I check the md5 checksum?"
+msgstr "我如何检查md5校验值呢？"
+
+msgid "To compare files, often checksums are used. A standard to create this checksum md5 (Message Digest Algorithm 5)."
+msgstr "想要比较文件，通常使用的办法是计算校验值。md5（消息摘要算法5）就是其中的一个生成校验值的标准。"
+
+msgid "With this md5 checksum you can test, if your download of the XAMPP package is correct or not. Of course you need a program which can create these checksums. For Windows you can use a tool from Microsoft:"
+msgstr ""
+"使用这个md5校验值你可以检查出来你下载的XAMPP包是不是完好的。当然你需要有一个工具来生成这个校验值。Windows用户可以使用微软的一个工具："
+
+msgid "Availability and description of the File Checksum Integrity Verifier utility"
+msgstr "可用性和文件校验和完整性验证程序的描述"
+
+msgid "It's also possible to use any other program which can create md5 checksums, like the GNU md5sum."
+msgstr "也可以使用其他能够生成md5的程序，例如GNU md5sum。"
+
+msgid "As you have installed such a program (e.g. fciv.exe), you can do following steps:"
+msgstr "安装好这样的一个程序（例如fciv.exe）之后，你可以完成如下的步骤："
+
+msgid "Download XAMPP (f.e. xampp-win32-1.8.2-0.exe)"
+msgstr "下载XAMPP（例如xampp-win32-1.8.2-0.exe）"
+
+msgid "Create the checksum with:"
+msgstr "用于生成校验值的："
+
+msgid "And now you can compare this checksum with that one you can find on the XAMPP for Windows homepage."
+msgstr "然后你就可以用你的校验值和在XAMPP主页找到的校验值进行比较了。"
+
+msgid "If both checksums equal, all is ok. If not, the download is broken or the file has been changed."
+msgstr "如果两个校验值是一样的，就是好的。否则，要么下载文件损坏了要么是文件被修改过。"
+
+msgid "Why have changes in my php.ini not taken effect?"
+msgstr "为啥我在php.ini里做的修改没有生效?"
+
+msgid "If a change in the \"php.ini\" has no effect, it's possible PHP is using a different one. You can verify this with phpinfo(). Go to the URI  http://localhost/xampp/phpinfo.php and search for \"Loaded Configuration File\". This value shows you the \"php.ini\" PHP is really using."
+msgstr ""
+"如果在\"php.ini\"里做的修改没有生效，很可能是因为PHP用的是另外一个。你可以通过phpinfo()来检查这一点。访问这个网址 "
+"http://localhost/xampp/phpinfo.php 并找到Loaded Configuration "
+"File。这个值会告诉你PHP实际使用的php.ini。"
+
+msgid "Note:"
+msgstr "注意："
+
+msgid "After changing the \"php.ini\" you have to restart Apache so that Apache/PHP can read the new settings."
+msgstr "在修改php.ini之后你必须重启Apache这样Apache/PHP才能够读取设置。"
+
+msgid "Help! There is a virus in XAMPP!"
+msgstr "卧槽！XAMPP里头有病毒！"
+
+msgid "Some antivirus programs mistake XAMPP for a virus, typically flagging the file xampp-manager.exe This is a false positive meaning that the antivirus erroneously identified it as a virus, when it is not. Before we release each new version of XAMPP we run it through virus scanning software. At the moment we are using"
+msgstr ""
+"有些杀软会误报你懂的。通常他们会把xampp-manager.exe这个文件当成病毒。误报的意思就是本来不是病毒的东西被杀软错误的看做了病毒。我们每次发"
+"布新版XAMPP的时候都会用杀软扫一遍的。我们目前使用的是"
+
+msgid "You can also use the online tool"
+msgstr "You can also use the online tool"
+
+msgid "for scanning XAMPP or send us an email to security (at) apachefriends (dot) org if you find any issue."
+msgstr "for scanning XAMPP or send us an email to security (at) apachefriends (dot) org if you find any issue."
+
+msgid "How do I configure my antivirus application?"
+msgstr "我如何配置我的杀软？"
+
+msgid "We have included all dependences and servers required for running the bundled web application, so you will find that XAMPP installs large numbers of files. If you are installing a XAMPP application on a Windows machine with an antivirus app enabled, this may slow down the installation significantly, and there is also a chance that one of the servers (web server, database server) may be blocked by the antivirus software. If you have an antivirus tool enabled, check the following settings for running XAMPP without performance issues:"
+msgstr ""
+"我们已经添加好了所有运行这个打包好的web应用所需的必要组件和服务器软件，所以你会发现XAMPP会安装一大堆文件。如果你在一个开着杀软的Windows的"
+"机器上安装XAMPP应用，可能会明显的拖缓安装进程的速度，而且还可能会有服务器（如web服务器，数据库服务器）被杀软阻塞了。如果你有开着的杀软，请检查下"
+"列可以保证运行XAMPP而不造成性能问题的设置："
+
+msgid "Add exceptions in the firewall: for Apache, MySQL or any other server."
+msgstr "给防火墙添加例外：针对Apache，MySQL或者其他任何的服务器。"
+
+msgid "Scan files when executing: If you have enabled the antivirus scan for all files, the executable files for the servers may slow down."
+msgstr "执行的时候扫描文件：如果你对所有文件都启动了杀软的扫描功能，服务器的可执行文件可能会被拖慢。"
+
+msgid "Scan the traffic for different URLs: If you are developing with XAMPP on your own machine, you can exclude \"localhost\" traffic in the Antivirus settings."
+msgstr "扫描不同网址的流量：如果你在自己的机器上用XAMPP做开发，你可以在杀软的设置里排除掉localhost的流量监测。"
+
+msgid "Why doesn't the Apache server start on my system?"
+msgstr "为什么Apache服务器在我的系统上启动不了呢？"
+
+msgid "This problem can be one of several reasons:"
+msgstr "这个问题可能是由这几种原因之一造成的："
+
+msgid "You have started more then one HTTP Server (IIS, Sambar, ZEUS and so on). Only one Server can use port 80. This error message indicate the problem:"
+msgstr ""
+"你开启了不止一个HTTP的服务器(IIS, Sambar, ZEUS以及别的什么)。只有一个服务器可以占用80端口。这个错误消息指出了这个问题："
+
+msgid "You have other software, such as the Internet Telephone \"Skype\" which also blocks the port 80. If the problem is \"Skype\", you can go in Skype to Actions --> Options --> Connection --> remove the check mark at \"use port 80 for an alternate port\" and restart Skype. Now it should work."
+msgstr ""
+"你有其他的软件，例如也会阻断80端口的互联网电话软件“skype”。如果问题来源于skype，你可以进入skype找到操作 - >选项 - >连接 - "
+">取消勾选“使用端口80作为备用端口”，然后重新启动Skype。现在应该可以正常工作了。"
+
+msgid "You have a firewall which blocks the Apache port. Not all firewalls are compatible with Apache, and sometimes deactivating the firewall is not enough and you must deinstall it. This error message indicates a firewall:"
+msgstr ""
+"你有一个阻断了Apache端口的防火墙。不是所有的防火墙都兼容Apache，而有的时候禁用防火墙是不够的，还得卸载掉它才行。这个错误信息是指向防火墙的："
+
+msgid "Also if Apache can start, but your browser can't connect to it it could be due to one of the following:"
+msgstr "此外，如果Apache可以启动，但您的浏览器无法连接到它可能是由于以下原因之一："
+
+msgid "Some virus scanners can cause this in the same way that firewalls can interfere."
+msgstr "有些病毒扫描程序可能会像防火墙一样产生干扰并导致这个问题。"
+
+msgid "You have XP Professional without service pack 1. You must have at least SP1 for XAMPP."
+msgstr "你的XP Professional没有安装sp1。你必须至少安装一个SP1才能用XAMPP。"
+
+msgid "Tip:"
+msgstr "提示："
+
+msgid "If you have problems with used ports, you can try the tool \"xampp-portcheck.exe\". Maybe it can help."
+msgstr ""
+"If you have problems with used ports, you can try the tool \"xampp-"
+"portcheck.exe\". Maybe it can help."
+
+msgid "Why is my CPU load for Apache almost 99%?"
+msgstr "为什么我的Apache占用的CPU负载接近99%呢？"
+
+msgid "There is one of two scenarios at play here. Either your CPU is maxing out, or you can browser connect to the server, but not see anything (the system is trying unsucessfully to load the page). In either case you can find the following message in the Apache log file:"
+msgstr ""
+"有两种情况，要么是你的CPU确实达到上限了，要么你的浏览器能够连接到服务器但是啥也看不到（系统尝试加载页面但是失败了），不管是哪种情况你都可以在Apac"
+"he的log文件里面找到下述信息："
+
+msgid "The MPM falls back to a safer implementation, but some client requests were not processed correctly. In order to avoid this error, use \"AcceptFilter\" with accept filter \"none\" in the \"\xampp\apache\conf\extra\httpd-mpm.conf\" file."
+msgstr ""
+"多道处理模块（MPM）回归到一个更加安全的执行模式，从而导致一些客户端的请求没有没有正确的执行。为了避免这样的错误，可以在\"\\xampp\\apache\\"
+"conf\\extra\\httpd-mpm.conf\"文件当中将可接受的过滤器\"AcceptFilter\"置为\"none\"。"
+
+msgid "Why are pictures and style-sheets not displayed?"
+msgstr "为什么图片和样式表显示不出来？"
+
+msgid "Sometimes there are problems with displaying pictures and style-sheets. Especially if these files are located on a network drive. In this case you can enable (or add) one if the following lines in the file \"\xampp\apache\conf\httpd.conf\":"
+msgstr ""
+"有时候显示图片和样式表会有问题，特别是如果这些文件位于网络驱动器上的时候。在这种情况下，您可以启用（或增加）一行，如果文件\"\\xampp\\apache\\"
+"conf\\httpd.conf\"中的以下行:"
+
+msgid "This problem can also be caused by programs for regulating bandwidth, like NetLimiter."
+msgstr "这个问题也可能是由带宽调整软件，例如NetLimiter导致的。"
+
+msgid "How can I set a root password in MySQL?"
+msgstr "我如何在MySQL里面设置一个root的密码？"
+
+msgid "The easiest way is to use the security console, which you can access at http://localhost/security/ This console creates a password for the MySQL user root and adjusts the phpMyAdmin configuration."
+msgstr ""
+"最简单的方式是使用安全控制台，你可以在http://localhost/security/访问它。这个控制台给MySQL创建一个root的密码并调整ph"
+"pMyAdmin的设置。"
+
+msgid "Another approach is to configure it with the \"XAMPP Shell\" (command prompt). Open the shell and execute this command:"
+msgstr "另一种方法是通过XAMPP Shell（命令提示符）进行配置，打开并执行这个命令："
+
+msgid "Can I use my own MySQL server?"
+msgstr "我可以使用自己的MySQL服务器么？"
+
+msgid "Yes. Simply don't start the MySQL from the XAMPP package. Please note that two servers cannot be started on the same port. If you have set a password for \"root\", please do not forget to edit the file \"\xampp\phpMyAdmin\config.inc.php\"."
+msgstr ""
+"可以的，只是不要启动XAMPP包里的MySQL就够了。请注意两个服务器不能在同一个端口上同时启动如果你已经设置了一个root的密码，请不要忘记修改这个文"
+"件：\\xampp\\phpMyAdmin\\config.inc.php。"
+
+msgid "How do I restrict access to phpMyAdmin from the outside?"
+msgstr "我如何限制phpMyAdmin的外部访问呢？"
+
+msgid "In the basic configuration of XAMPP, phpMyAdmin have public access."
+msgstr "在XAMPP的基本设置当中，phpMyAdmin是可以公开访问的。"
+
+msgid "You can change the MySQL root password and choose the authentication method for phpMyAdmin from the security console at http://localhost/security/"
+msgstr ""
+"你可以修改MySQL的root密码并通过位于http://localhost/security/的安全控制台选择phpMyAdmin的认证方法。"
+
+msgid "Before you can access the MySQL server, phpMyAdmin will prompt you for a user name and password. Don't forget to set a password for the user \"root\" first."
+msgstr "当你能访问MySQL服务器之前，phpMyAdmin会提示你输入用户名和密码。不要忘记先给用户\"root\"设个密码哦。"
+
+msgid "Where is the IMAP support for PHP?"
+msgstr "PHP的IMAP支持在哪儿呢？"
+
+msgid "As default, the IMAP support for PHP is deactivated in XAMPP due to some mysterious initialization errors with some home versions like Windows 98. If you work with NT systems, you can open the file \"\xampp\php\php.ini\" to activate the php exstension by removing the beginning semicolon at the line \";extension=php_imap.dll\". It should be:"
+msgstr ""
+"默认的话，在XAMPP里面PHP对IMAP的支持是被停用的，因为对于某些家用的系统版本比如Windows "
+"98会出现一些诡异的初始化错误。如果你用的是Windows NT系统的话，你可以打开文件\"\\xampp\\php\\php.ini\"并去掉\";extensi"
+"on=php_imap.dll\"这一行前面的分号来激活这个PHP扩展。它应该是这样的："
+
+msgid "Now restart Apache and IMAP should work. You can use the same steps for every extension, which is not enabled in the default configuration."
+msgstr "现在重启一下Apache然后IMAP就好使啦。你可以使用同样的步骤来操作任何一个在默认配置里没有激活的扩展。"
+
+msgid "Why don't some PHP open source apps work with XAMPP on Windows?"
+msgstr "为什么一些PHP开源应用不能在Windows版的XAMPP工作呢？"
+
+msgid "A lot of PHP applications or extensions that have been written for Linux haven’t been ported to Windows."
+msgstr "许多PHP应用或者扩展都是为linux写的，还没有被移植到Windows。"
+
+msgid "Can I delete the \"install\" directory after installation?"
+msgstr "Can I delete the \"install\" directory after installation?"
+
+msgid "It's better not to. The scripts here are still needed for all additional packages (add-ons) and upgrades of XAMPP."
+msgstr "最好不要这样。所有的附加组件和XAMPP的升级仍然是需要使用这个脚本的。"
+
+msgid "How do I activate the eaccelerator?"
+msgstr "我如何激活eaccelerator？"
+
+msgid "Like other (Zend) extensions, you can activate it in \"php.ini\". In this file, enable the line \";zend_extension = \"\xampp\php\ext\php_eaccelerator.dll\"\". It should be:"
+msgstr ""
+"就像很多(Zend)扩展一样，你可以在\"php.ini\"里激活它。在这个文件里，启用这一行\";zend_extension = "
+"\"\\xampp\\php\\ext\\php_eaccelerator.dll\"\"。它应该是这样子的："
+
+msgid "How do I fix a connection error to my MS SQL server?"
+msgstr "我如何修复我的MS SQL服务器的连接错误？"
+
+msgid "If the mssql extension was loaded in the php.ini, sometimes problems appear when only TCP/IP is used. You can fix that problem with a newer \"ntwdblib.dll\" from Microsoft. Please replace the older file in \"\xampp\apache\bin\" and \"\xampp\php\" with the new one. Because of the license, we can't package a newer version of this file with XAMPP."
+msgstr ""
+"如果mssql扩展加载到了php.ini，有时候当只有TCP/IP使用的时候会出问题。你可以从微软获取一个新的“ntwdblib.dll”来修复这个问题"
+"。请用新的替换掉位于\"\\xampp\\apache\\bin\"和\"\\xampp\\php\"的旧的文件。因为许可证问题，我们不能把这个文件的更新版本打包进XAM"
+"PP。"
+
+msgid "How do I work with the PHP mcrypt extension?"
+msgstr "我如何使用PHP mcrypt扩展？"
+
+msgid "For this, we have opened a topic in the forum with examples and possible solutions: %{mcrypt}"
+msgstr "为了这个，我们已经在社区里开了一个话题，关于例子和有效的解决方案：%{mcrypt}"
+
+msgid "MCrypt topic"
+msgstr "MCrypt主题"
+
+msgid "Do Microsoft Activer Server Pages (ASP) work with XAMPP?"
+msgstr "微软的ASP可以在XAMPP上使用么？"
+
+msgid "No. And Apache::ASP with the Perl Add-On is not the same. Apache::ASP only knows Perl-Script, but ASP from the Internet Information Server (IIS) also knows the normal VBScript. But for ASP .NET, there is a 3rd party Apache module available."
+msgstr ""
+"不行。那个和带有Perl的Apache::ASP附加组件是不一样的。Apache::ASP只能运行Perl脚本，但是IIS上的ASP文件还会有正常的VB"
+"Script。不过对于ASP .NET，有一个第三方的Apache扩展模块可以使用。"
+
+msgid "Support"
+msgstr "支持"
+
+msgid "Visit our %{community} for additional help."
+msgstr "访问我们的 %{community} 来寻求更多帮助。"
+
+msgid "Installing from ZIP"
+msgstr "通过ZIP安装"
+
+msgid "Mostly due to the same reasons as the above error, the LAMPP startup script found a MySQL daemon already running on your system. To start LAMPP properly, you have to stop this daemon first."
+msgstr ""
+"这主要是由于和上述错误同样的原因，LAMPP启动脚本发现一个MySQL守护进程已经在你的系统上运行。要正确启动LAMPP，你必须先停止该守护进程。"
+
+msgid "Unzip the zip archives into the folder of your choice. XAMPP is extracting to the subdirectory \"C:\xampp\" below the selected target directory. Now start the file \"setup_xampp.bat\", to adjust the XAMPP configuration to your system."
+msgstr ""
+"解压ZIP压缩文件到您选择的文件夹中。 "
+"XAMPP被提取到子目录\"C:\\xampp\"选定的目标目录下。然后启动文件“setup_xampp.bat”进行配置以便XAMPP的配置调整到系统中。"
+
+msgid "If you choose a root directory \"C:\\" as target, you must not start \"setup_xampp.bat\"."
+msgstr "如果你选择根目录\"C:\\\"作为安装目标，你绝对不要启动\"setup_xampp.bat\"。"
+
+msgid "show"
+msgstr "展示"
+
+msgid "Applications"
+msgstr "应用"
+
+msgid "Installing an App on XAMPP"
+msgstr "在XAMPP上安装应用"
+
+msgid "See how easy it is to install your favorite apps with XAMPP:"
+msgstr "来看看在XAMPP上安装你喜欢的应用是多么的简单："
+
+#~ msgid "The XAMPP control panel for start/stop Apache, MySQL, FilaZilla & Mercury or install these server as services."
+#~ msgstr "XAMPP的控制面板可以用于启动/停止Apache, MySQL, FilaZilla和Mercury或者将这些服务器安装为系统服务。"
+
+#~ msgid "I just got #XAMPP from @ApacheFriends http://apachefriends.org #opensource."
+#~ msgstr "我刚从@ApacheFriends http://apachefriends.org #opensource知道了#XAMPP 。"

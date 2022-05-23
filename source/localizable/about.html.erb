@@ -1,0 +1,113 @@
+---
+title: About the XAMPP project
+description: Apache Friends was founded by Kai Seidler and Kay Vogelgesang and is now maintained by a volunteer team.
+keywords: about, xampp, team, founders, contact
+---
+
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1><%= t("About") %></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-8 columns">
+    <p><%= t("Many people know from their own experience that it's not easy to install an Apache web server and it gets harder if you want to add MariaDB, PHP and Perl. The goal of XAMPP is to build an easy to install distribution for developers to get into the world of Apache. To make it convenient for developers, XAMPP is configured with all features turned on. In the case of commercial use please take a look at the product licenses, from the XAMPP point of view commercial use is also free. There are currently distributions for Windows, Linux, and OS X.") %></p>
+    <h3><%= t("Our Team") %></h3>
+    <h4><%= t("Founders") %></h4>
+    <dl>
+      <dt><%= link_to "Kai 'Oswald' Seidler", "http://oswaldism.de/", :target => "_blank" %></dt>
+      <dd>
+        <%= image_tag "team/kai-seidler.jpg" %>
+        <p><%= t("Oswald was one of the original co-founders of Apache Friends. He graduated 1999 from Technical University of Berlin with a Diplom-Informatiker degree (equivalent to a Master's degree in Computer Science). In the 90's he created and managed Germany's biggest IRCnet server irc.fu-berlin.de, and co-managed one of the world's largest anonymous FTP server ftp.cs.tu-berlin.de. From 1993 until 1998 he was member of the internationally renowned &quot;Projektgruppe Kulturraum Internet&quot;, a Berlin-based research project on net culture and network organization. In 2006, his third book, Das XAMPP-Handbuch, was published by Addison Wesley. From 2009 to 2011, he served as Technology Evangelist for Web Tier Products at Sun Microsystems/Oracle.") %></p>
+      </dd>
+      <dt><%= link_to "Kay Vogelgesang", "http://www.onlinetech.de/", :target => "_blank" %></dt>
+      <dd>
+        <%= image_tag "team/kay-vogelgesang.jpg" %>
+        <p><%= t("Together with Oswald, Kay co-founded the Apache Friends project in 2002. He currently works as freelance System Engineer and wrote several books about web technologies like Apache, MySQL and XAMPP itself.") %></p>
+      </dd>
+    </dl>
+    <h4><%= t("Current Maintainers") %></h4>
+    <dl>
+      <dt><%= link_to "Beltran Rueda", "http://twitter.com/beltranrubo", :target => "_blank" %></dt>
+      <dd>
+        <%= image_tag "team/beltran-rueda.png" %>
+        <p><%= t("Beltran is a project manager at Bitnami. He fell in love with open source and Linux since an early age and enjoys tinkering with web technologies and speaking at developer events. Beltran graduated from the Seville Engineering School with a Master's degree in Telecommunication.") %></p>
+      </dd>
+      <dt><%= link_to "Daniel Lopez Ridruejo", "https://bitnami.com/", :target => "_blank" %></dt>
+      <dd>
+        <%= image_tag "team/daniel-lopez.png" %>
+        <p><%= t("Daniel is a co-founder of Bitnami. Previously, he contributed to various web infrastructure open source projects, published multiple technical books on web technologies and became a member of the Apache Software Foundation. Daniel graduated from the Seville Engineering School with a Master's degree in Telecommunication and holds a Ms. Sc. on Optical Networking from DTU in Denmark.") %></p>
+      </dd>
+    </dl>
+    <h4><%= t("Past Advisors") %></h4>
+    <ul>
+      <li><%= link_to "Paul Hinz", "https://twitter.com/paulhinz", :target => "_blank" %></li>
+      <li><%= link_to "Ariane Notenbaum", "http://overcomingtheminotaur.blogspot.de/", :target => "_blank" %></li>
+    </ul>
+    <h4><%= t("Translations") %></h4>
+    <ul>
+      <li><%= link_to "&Uacute;r Bal&aacute;zs", "http://www.urbalazs.hu/", :target => "_blank" %> Hungarian</li>
+      <li><%= link_to "Cristian Militaru", "https://www.facebook.com/cristian.militaru.73", :target => "_blank" %> Romanian</li>
+      <li><%= link_to "Jaros&#322;aw Maciejewski", "https://www.facebook.com/jaroslaw.maciejewski", :target => "_blank" %> Polish</li>
+      <li><%= link_to "Atalay &#350;ahin", "http://atalaysahin.com", :target => "_blank" %> Turkish</li>
+      <li><%= link_to "Muhammad Adeel", "" %> Urdu</li>
+      <li><%= link_to "Gregory Raya", "www.gregoriraya.eu", :target => "_blank" %> Catalan</li>
+    </ul>
+    <h4><%= t("Security") %></h4>
+    <p>
+      <%= t "We want to thank the following individuals for reporting vulnerabilities responsibly and helping improve XAMPP." %>
+    </p>
+    <ul>
+      <li><%= link_to "Camilo Galdos", "https://twitter.com/SeguridadBlanca", :target => "_blank"%> (<%= link_to "DeepSecurity", "https://deepsecurity.pe", :target => "_blank"%>)</li>
+      <li><%= link_to "Bikash Dash", "https://vulnerableghost.com/", :target => "_blank" %></li>
+      <li>Maximilian Barz</li>
+      <li><%= link_to "Osanda Malith Jayathissa", "https://twitter.com/OsandaMalith", :target => "_blank" %></li>
+      <li><%= link_to "Kamil Sevi", "https://twitter.com/kamilsevi", :target => "_blank" %></li>
+      <li>Simone Memoli (Toxic Security Team)</li>
+      <li><%= link_to "Muhammad Talha Khan", "http://www.facebook.com/mtk911", :target => "_blank" %></li>
+      <li>Vlad Ciornei</li>
+      <li><%= link_to "Minh Nguyen (Sangteamtham)", "http://sangte.blogspot.com", :target => "_blank" %></li>
+      <li>Avinash Kumar Thapa (-Acid)</li>
+      <li><%= link_to "John Page (hyp3rlinx)", "http://hyp3rlinx.altervista.org", :target => "_blank" %></li>
+      <li><%= link_to "CongRong（Tr3jer)", "https://www.thinkings.org/", :target => "_blank" %></li>
+      <li>Kusol Watchara-Apanukorn / Nissana Sirijira-al</li>
+    </ul>
+    <h4><%= t("Support &amp; QA") %></h4>
+    <ul>
+      <li><%= link_to "Benny Stein", "http://www.lud3r.de/", :target => "_blank" %></li>
+      <li><%= link_to "Christian 'kleinweby' Speich", "http://www.kleinweby.de/", :target => "_blank" %></li>
+      <li><%= link_to "Henning 'boppy' Bopp", "http://www.boppy.de/", :target => "_blank" %></li>
+      <li>Stefan 'DeepSurfer' K&ouml;nig</li>
+      <li>nemesis</li>
+    </ul>
+    <h4><%= t("Retired") %></h4>
+    <ul>
+      <li><%= link_to "DJ DHG", "http://dj%20dhg/", :target => "_blank" %></li>
+      <li>PF4</li>
+      <li>Carsten Wiedmann</li>
+      <li>Antivirus</li>
+      <li>Apache-User</li>
+      <li>Kristian W. Marcroft</li>
+    </ul>
+    <h3><%= t("The Licence") %></h3>
+    <p><%= t("XAMPP is a compilation of free software (comparable to a Linux distribution), it's free of charge and it's free to copy under the terms of the GNU General Public Licence. But it is only the compilation of XAMPP that is published under GPL. Please check every single licence of the contained products to get an overview of what is, and what isn't, allowed. In the case of commercial use please take a look at the product licences (especially MySQL), from the XAMPP point of view commercial use is also free.") %></p>
+    <h3><%= t("Warranty") %></h3>
+    <p><%= t("This program is distributed in the hope that it will be useful, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose. (See the %{gnu} for more details)", gnu: link_to("GNU General Public Licence", "http://www.gnu.org/licenses/gpl.html", :target => "_blank")) %> </p>
+    <h3><%= t("Trademarks") %></h3>
+    <p><%= t("XAMPP and Apache Friends are registered trademarks of BitRock. Microsoft, DOS, and Windows are registered trademarks of Microsoft Corporation. Intel, Pentium, i386, i486 are registered trademarks of Intel Corporation. SUN, Sparc are registered trademarks of Oracle, Inc. Apple, Mac, and OS X are registered trademarks of Apple Inc.") %></p>
+    <p><%= t("All other company and product names may be trademarks of their respective companies.") %></p>
+  </div>
+  <div class="large-4 columns">
+    <aside>
+      <h4><%= t("Special Thanks") %></h4>
+      <% link_to "http://sourceforge.net/projects/xampp/" do %>
+        <%= retina_image_tag "sourceforge-logo.png", :width => "250" %>
+      <% end %>
+      <p><%= t("SourceForge has been hosting XAMPP since the very start!") %></p>
+      <h4><%= t("Contact") %></h4>
+      <p><%= t("Visit our %{forums} for any questions. Email %{email} for any security issues.", forums: link_to("forums", settings.forum_domain), email: link_to("security@apachefriends.org", "mailto: security@apachefriends.org")) %></p>
+    </aside>
+  </div>
+</div>

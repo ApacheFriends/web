@@ -1,0 +1,62 @@
+= Configure Wildcard-Based Subdomains
+
+include::{docdir}/_includes/common/configure-wildcard-subdomains/introduction.adoc[]
+ . Open a new Linux terminal and ensure you are logged in as _root_.
+
+ . Change to your XAMPP installation directory (typically, _/opt/lampp_) and open the _httpd.conf_ file in the _etc/_ subdirectory using a text editor.
+
+ . Within the file, find the following line and uncomment it by removing the hash symbol (#) at the beginning of the line.
++
+ Include etc/extra/httpd-vhosts.conf
+
+ . Open the _httpd-vhosts.conf_ file in the _etc/extra/_ subdirectory of your XAMPP installation directory using a text editor. 
+
+ . Replace the contents of this file with the following directives:
+
+ UseCanonicalName Off
+ <VirtualHost *:80>
+        DocumentRoot "/opt/lampp/htdocs/"
+        ServerName localhost
+ </VirtualHost>
+ <VirtualHost *:80>
+        ServerAlias *.localhost
+        VirtualDocumentRoot "/opt/lampp/htdocs/%1/"
+ </VirtualHost>
+
+image::configure-wildcard-subdomains/image1.png[]
+
+In this configuration, the first virtual host block configures how requests are handled by default. The second block configures wildcard virtual hosting for subdomains, such that requests for _subdomain.localhost_ are automatically served by the _subdomain/_ directory of the _/opt/lampp/htdocs/_ directory. In particular, notice the %1 placeholder, which matches the subdomain name from the request URL.
+
+ . Restart Apache using the XAMPP control panel for your changes to take effect.
+
+image::configure-wildcard-subdomains/image2.png[]
+
+At this point, your wildcard subdomains are configured. You can easily test this by creating two new subdirectories at _/opt/lampp/htdocs/app01/_ and _/opt/lampp/htdocs/app02/_. Within each subdirectory, create a file named _index.html_ and fill it with some sample HTML content. Use different content for each file, so that you can easily distinguish that they're being served from different directories - for example:
+
+ <!-- index.html in app01 directory -->
+ <html>
+  <head></head>
+  <body>
+   <h1>Welcome to app01.localhost!</h1>
+  </body>
+ </html>
+
+ <!-- index.html in app02 directory -->
+ <html>
+  <head></head>
+  <body>
+   <h1>Hello from app02.localhost!</h1>
+  </body>
+ </html>
+
+Since these domains do not actually exist, you also need to map them to the local IP address. Open the file _/etc/hosts_ in a text editor and add the following line to it:
+
+ 127.0.0.1           app01.localhost   app02.localhost
+
+image::configure-wildcard-subdomains/image3.png[]
+
+TIP: Instead of performing this step for each new subdomain, use a local DNS server like dnsmasq to automatically resolve requests for _*.localhost_ to the local IP address. http://www.thekelleys.org.uk/dnsmasq/doc.html[Find out more about dnsmasq], and http://stackoverflow.com/questions/22313142/wildcard-subdomains-with-dnsmasq[read this Stack Overflow thread for information on how to configure wildcard subdomains with dnsmasq].
+
+At this point, you should be able to enter the URLs http://app01.localhost or http://app02.localhost in your browser's address bar, and you should then see the corresponding HTML page. 
+
+image::configure-wildcard-subdomains/image4.png[]

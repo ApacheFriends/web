@@ -1,0 +1,67 @@
+= Start a New Zend Framework 2 Project
+
+include::{docdir}/_includes/common/create-framework-project-zf2/introduction.adoc[]
+
+NOTE: This guide assumes that you have already downloaded and installed Git for Windows, and that the git binary is in your Windows PATH. If you don't have Git for Windows, you can http://git-scm.com/download/win[download and install it from here]. It also assumes that the new Zend Framework 2 application will be accessible at the URL http://localhost/myapp/.
+
+Follow these steps:
+
+ . https://github.com/zendframework/ZendSkeletonApplication[Download the Zend Framework 2 skeleton application] as a ZIP archive from Github.
++
+image::create-framework-project-zf2/image1.png[]
+
+ . Within your XAMPP installation directory (usually _C:\xampp_), create a new directory named _apps\_ (if it doesn't already exist). Then, within this new _apps\_ directory, create a directory to hold your Zend Framework 2 application and its related XAMPP configuration files. In this example, call the directory _myapp\_.
+
+ . Extract the contents of the ZIP archive to the _myapp\_ directory. This will produce a _zendframework-ZendSkeletonApplication-[xx]\_ subdirectory in the _myapp\_ directory. Rename this newly-created subdirectory to _htdocs_. 
++
+NOTE: This new _htdocs_ directory will be the main working directory for your Zend Framework 2 project.
+
+ . Within the _myapp\_ directory, create a new _conf\_ subdirectory.
+
+ .. Within the new _conf\_ subdirectory, use your text editor to create and populate a file named _httpd-prefix.conf_ with the following content:
+
+ Alias /myapp/ "C:/xampp/apps/myapp/htdocs/public/"
+ Alias /myapp "C:/xampp/apps/myapp/htdocs/public"
+ Include "C:/xampp/apps/myapp/conf/httpd-app.conf"
+
+ .. Within the _conf\_ subdirectory, also create and populate a file named _httpd-app.conf_ with the following content:
+
+ <Directory C:/xampp/apps/myapp/htdocs/public>
+    Options +FollowSymLinks
+    AllowOverride All
+    Require all granted
+ </Directory>
+
+ . Edit the _httpd-xampp.conf_ file in the _apache\conf\extra\_ subdirectory of your XAMPP installation directory and add the following line at the end to include the _httpd-prefix.conf_ file created earlier.
++
+ Include "C:/xampp/apps/myapp/conf/httpd-prefix.conf"
++
+NOTE: Remember to update the above file and directory paths so that they're valid for your system.
+
+ . Check that you have a directory structure like this:
++
+image::create-framework-project-zf2/image2.png[]
+
+ . Restart the Apache server using the XAMPP control panel.
+
+ . Launch a new Windows command shell using the "Shell" button in the XAMPP control panel.
++
+image::create-framework-project-zf2/image3.png[]
+
+ . Within the command shell, change to the _myapp\htdocs\_ directory and run the following commands to update https://getcomposer.org/[Composer] (the PHP dependency manager) and install the Zend Framework 2 components.
++
+ php composer.phar self-update
+ php composer.phar install
++
+Here's an example of what you might see as Composer downloads and installs dependencies.
++
+image::create-framework-project-zf2/image4.png[]
+
+ . Once Composer is done, you should be able to access the Zend Framework 2 skeleton application by browsing to http://localhost/myapp. Here is an example of the default welcome page you should see:
++
+image::create-framework-project-zf2/image5.png[]
+
+You can now begin developing your Zend Framework 2 application by modifying the skeleton application code. For more information, http://framework.zend.com/manual/2.3/en/user-guide/overview.html[refer to the Zend Framework 2 User Guide].
+
+
+

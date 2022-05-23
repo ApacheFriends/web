@@ -1,0 +1,58 @@
+= Auto-Start XAMPP
+
+By default, you have to start XAMPP or its components manually every time you reboot your system. However, you can also configure XAMPP components to start automatically on system boot. Follow the steps below for your platform.
+
+== Debian-like Distributions (Debian, Ubuntu, ...)
+
+ . Copy the _/opt/lampp/lampp_ script to the _/etc/init.d_ directory. 
++
+ sudo cp /opt/lampp/lampp /etc/init.d
+
+ . Add or modify the following lines at the beginning of the _/etc/init.d/lampp_ script.
++
+  ### BEGIN INIT INFO
+  # Provides:          xampp
+  # Required-Start:    $remote_fs $syslog
+  # Required-Stop:     $remote_fs $syslog
+  # Default-Start:     2 3 4 5
+  # Default-Stop:      0 1 6
+  # Short-Description: Start XAMPP at boot time
+  # Description:       Enable services provided by XAMPP.
+  ### END INIT INFO
+
+ . Add the script to the default runlevels and enable it.
++
+ sudo update-rc.d -f lampp defaults
+ sudo update-rc.d -f lampp enable
+
+  . Reboot your system and XAMPP should start automatically. 
+  
+To revert the changes, use the commands below:
+
+ cd /etc/init.d
+ sudo update-rc.d -f lampp remove
+
+== RedHat-like Distributions (Red Hat, Fedora Core, CentOS, Suse, ...)
+
+ . Copy the _/opt/lampp/lampp_ script to the _/etc/init.d_ directory. 
++
+ sudo cp /opt/lampp/lampp /etc/init.d
+ 
+ . Add or modify the following lines at the top of the /etc/init.d/lampp script:
++
+ #!/bin/sh
+ #
+ # chkconfig: 2345 80 30
+ # description: XAMPP
++
+This will execute the script in runlevels 2, 3, 4 and 5, with priority 80 to start and 30 to stop.
+ 
+ . Install the script as a service.
++
+ sudo chkconfig --add lampp
+
+   . Reboot your system and XAMPP should start automatically. 
+
+To revert the changes, use the command below:
+
+ sudo chkconfig --del lampp

@@ -1,0 +1,3 @@
+http://git-scm.com/[Git] is a popular distributed version control system. As you work with XAMPP, you might often find yourself needing to download and install applications or code libraries from a developer's public git repository.
+
+This guide walks you through the process, showing you how to use a git client to transfer code from a public online git repository to your XAMPP server. As an example, this guide assumes that you wish to download the latest version of http://www.slimframework.com/[Slim], a popular PHP micro-framework for Web application development that also has its own Github repository.

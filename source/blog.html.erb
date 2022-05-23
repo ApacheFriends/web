@@ -1,0 +1,44 @@
+---
+pageable: true
+per_page: 10
+---
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Blog</h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div data-alert class="panel large-12 columns">
+    <%= link_to "&times;".html_safe, "#", class: "close right" %>
+    <p><%= link_to "Subscribe to the Apache Friends blog via RSS", "/feed.xml" %>.</p> 
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <% if paginate && num_pages > 1 %>
+      <p>Page <%= page_number %> of <%= num_pages %></p>
+
+      <% if prev_page %>
+        <p><%= link_to 'Previous page', prev_page %></p>
+      <% end %>
+    <% end %>
+
+    <% page_articles.each_with_index do |article, i| %>
+      <article>
+        <header>
+          <h2><%= link_to article.title, article %> <time datetime="<%= article.date %>"><%= article.date.strftime('%b %e') %></time></h2>
+        </header>
+        <%= article.summary(400) %>
+        <p class="text-right"><%= link_to "Read more&nbsp;&raquo;", article %></span>
+      </article>
+    <% end %>
+
+    <% if paginate %>
+      <% if next_page %>
+        <p><%= link_to 'Next page', next_page %></p>
+      <% end %>
+    <% end %>
+  </div>
+</div>

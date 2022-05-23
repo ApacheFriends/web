@@ -1,0 +1,63 @@
+== Understand Azure's Dashboard and Monitoring Tools
+
+To help you get the most out of your cloud server, Azure makes a number of administrative and monitoring tools available. These help you keep track of your application's performance in the cloud and optimize your server and software configuration as needed.
+
+To see these tools in action: 
+
+ * Browse to the https://azure.bitnami.com/[Bitnami Launchpad for Azure] and sign in if required using your Bitnami account.
+ * Select the "Virtual Machines" menu item.
+ * Select your cloud server from the resulting list. 
+ * On the server detail page, click the "Manage on Azure" button. You will be redirected to the Azure management console.
+
+image::{cloud}/image81.jpg[]
+
+ * Sign in to Azure if required using your existing Microsoft account. 
+
+Once you do this, you'll arrive at the Azure dashboard, which lists all your virtual machines and cloud services. Select the cloud server you created with the Bitnami Launchpad to arrive at the dashboard, which provides an overview of CPU usage, disk activity and network traffic over the last hour, 24 hours or 7 days. You'll notice that the toolbar below the activity monitor provides controls to restart or shut down the cloud server.
+
+image::{cloud}/image82.jpg[]
+
+You can also use the Azure dashboard to resize your virtual server. To do this:
+
+ * Select the "Configure" tab of the dashboard.
+ * Select a new "Virtual Machine Size" on the resulting page.
+
+image::{cloud}/image83.jpg[]
+
+ * Click the "Save" command in the toolbar at the bottom of the page.
+
+Azure will resize and restart your cloud server with the new configuration.
+
+You can also define alerts, so that you're automatically informed if any of the above metrics crosses a particular threshold. To do this:
+
+ * Select the "Monitor" tab of the dashboard.
+ * Select a metric on the resulting page. 
+ * Click the "Add Rule" command in the toolbar at the bottom of the screen.
+
+image::{cloud}/image84.jpg[]
+
+ * Specify a name for the new alert.
+
+image::{cloud}/image85.jpg[]
+
+ * Define the alert threshold for the selected metric, the evaluation window and the email address to be notified when the alert is triggered.
+
+image::{cloud}/image86.jpg[]
+
+When the above rule is submitted, Azure will automatically send you an email when your cloud server's CPU usage exceeds 65%.
+
+You can also monitor the uptime of your XAMPP application, by configuring an HTTP endpoint that is automatically checked from up to three different geographical locations. To do this:
+
+ * Select the "Configure" tab of your virtual machine dashboard.
+ * Create a new availability set and give it a name. 
+
+NOTE: An availability set is a group of Azure cloud servers, designed to provide redundancy if one goes down. In the event of a server fault or maintenance event, Azure will use the servers in the availability set to ensure continuous service. http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-manage-availability/[Read more about availability sets].
+
+ * Set the application's index page URL (or any other URL you wish) as a monitoring. endpoint. 
+ * Save your changes.
+
+image::{cloud}/image87.jpg[]
+
+Azure will restart your cloud server and configure the URL you specified as a monitoring endpoint. This will also add new metrics for response time and uptime to your list of available metrics, which you can plot in your dashboard or configure alerts against.
+
+image::{cloud}/image88.jpg[]

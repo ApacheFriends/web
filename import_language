@@ -1,0 +1,148 @@
+#!/usr/bin/env ruby
+# encoding: UTF-8
+
+require 'rubygems'
+require 'bundler/setup' 
+require 'net/http'
+require 'yaml'
+
+lang = ARGV[0]
+if lang.to_s.empty?
+  puts "Usage #{$0} <language|all>"
+  exit
+end
+if lang == "all"
+  puts "Updating all languages"
+  for l in Dir["locales/*.po"].map{|f| f.match(/locales\/(.*)\.po/)[1]}.sort
+    system("ruby #{$0} #{l}")
+  end
+end
+
+entities = nil
+if ARGV.delete("--encode")
+  require "htmlentities"
+  entities = HTMLEntities.new
+end
+
+source_url = "https://translate.apachefriends.org/download/#{lang}/apachefriends/template.po"
+source_filename = "./locales/#{lang}.po"
+destination_filename = "./locales/#{lang}.yml"
+
+# Update PO FILE
+response = nil
+begin 
+  source_url = response['location'] if response
+  uri = URI.parse(source_url)
+  http = Net::HTTP.new(uri.host, uri.port)
+  http.use_ssl = true
+  response = http.get(uri.request_uri)
+end while response.is_a?(Net::HTTPRedirection)
+unless response.is_a?(Net::HTTPSuccess)
+  puts "Error fetching PO file from #{source_url} #{response}"
+  exit 1
+end
+source = response.body.force_encoding("UTF-8")
+source.gsub!(/\r\n/, "\n")          # dos2unix
+# fix urdu placeholders and Apache/Mysql/PHP etc translations
+if lang == "ur"
+  source.gsub!('٪', '%')
+  source.gsub!(/{([^}]*)}\s*%/, '%{\1}')
+  source.gsub!(/% "/, '%"') 
+  source.gsub!(/\\\s*اپاچی\s*/, '\\apache')
+  source.gsub!('اپاچی', 'Apache')
+  source.gsub!('ایس کیو ایل', 'MySQL')
+  source.gsub!('پی ایچ پی', 'PHP')
+  source.gsub!('پرل', 'Perl')
+  source.gsub!('ونڈوز', 'Windows')
+  source.gsub!('وسٹا', 'Vista')
+  source.gsub!('میک', 'Mac')
+  source.gsub!(/xampp\s*کی\s*\\/, 'xampp\\')
+  source.gsub!(/xampp([^\.\/\\])/, 'XAMPP\1')
+  source.gsub!(/C\\/, 'C:\\\\')
+  source.gsub!(/([CD]):\s*\\/, '\1:\\')
+end
+# fix windows FAQ
+source.gsub!(/\\ ?(\\ ?){1,}([^"])/, '\\\\\2')
+File.write(source_filename, source)
+puts "Updated #{source_filename}"
+
+
+# Transform to YAML format
+puts "Skip #{destination_filename} generation"
+=begin
+result = Hash.new({})
+StringIO.new(source).slice_before(/#:/).each do |term|
+  key    = term[0][/^#:\s*(.*)$\n/,1]
+
+  msgid = ""
+  msgstr = ""
+  term[1..-1].each do |line|
+    next if line =~ /^\s*#[^:]/
+    if line[0..5] != "msgstr" && msgstr.empty?
+      msgid += line
+    else
+      msgstr += line
+    end
+  end
+
+  msgid  = msgid.split("\n").map{|l| l.strip.gsub(/^msgid\s*/, '').gsub(/(^"|"$)/, '')}.join
+  msgstr = msgstr.split("\n").map{|l| l.strip.gsub(/^msgstr\s*/, '').gsub(/(^"|"$)/, '')}.join
+
+  next unless key && msgid
+
+  # encode if required (and msgstr does not contain HTML)
+  msgstr = entities.encode(msgstr, :decimal) if entities && !msgstr[/<\/?.*>/]
+  #puts msgstr
+  
+  if key =~ /\.[0-9]*$/
+    k = key.split('.')[1..-2].join('.')
+    result[k] = (result[k].is_a?(Array) ? result[k] : [result[k]]) + [msgstr]
+  else
+    k = key.split('.')[1..-1].join('.')
+    result[k] = msgstr
+  end
+end
+
+scoped = Hash.new
+scoped[lang] = {}
+result.each_pair do |key,value|  
+  h = scoped[lang]
+  keys = key.split(".")
+  keys[0..-2].each do |k|
+    h[k] ||= {}
+    h = h[k]
+  end
+  h[keys.last] = value
+end
+
+File.open(destination_filename, 'w') { |f| f.puts scoped.to_yaml }
+puts "Updated #{destination_filename} based on #{source_filename}"
+=end
+
+# Add flag if it is missing
+country = lang[-2..-1].downcase
+country = 'pk' if country == 'ur'
+unless File.exist?("source/images/flags/#{lang}.png")
+  require 'tempfile'
+  require 'zip'
+
+  puts "Adding source/images/flags/#{lang}.png"
+  response = Net::HTTP.get_response(URI("http://www.famfamfam.com/lab/icons/flags/famfamfam_flag_icons.zip"))
+  unless response.is_a?(Net::HTTPSuccess)
+    puts "Error fetching #{country}.png flag from http://www.famfamfam.com/lab/icons"
+  end
+  begin
+    tempfile = Tempfile.new("flags.zip")
+    tempfile.binmode
+    tempfile.write(response.body)    
+    File.open("source/images/flags/#{lang}.png", "wb") do |f|
+      Zip::File.open(tempfile) do |archive|
+        f.write(archive.read("png/#{country}.png"))
+      end
+    end
+  rescue Exception => e
+    puts "Error fetching #{country}.png flag from http://www.famfamfam.com/lab/icons #{e.to_s}"    
+    exit
+  end
+end
+

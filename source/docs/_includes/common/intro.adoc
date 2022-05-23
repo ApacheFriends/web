@@ -1,0 +1,5 @@
+== Introduction
+
+If you're a PHP developer building a public-facing Web application, there are a number of good reasons why the cloud should be on your radar. It's highly scalable, allowing you to quickly scale up if you application turns out to be a hit. It's cost-efficient, because you only pay for the resources - bandwidth, CPU cycles, memory - you use. And it's secure, because cloud providers have invested a great deal of time and thought into ring-fencing applications and user data.
+
+However, if you're new to the cloud or do most of your development locally, getting your PHP application from your local https://www.apachefriends.org/[XAMPP] box to the cloud can be a bit challenging. That's where this tutorial comes in. Over the next few pages, I'll walk you, step by step, through the process of deploying a PHP/MySQL application running on your local XAMPP server, to a cloud server running https://bitnami.com/stack/lamp[LAMP packaged by Bitnami]. Keep reading!

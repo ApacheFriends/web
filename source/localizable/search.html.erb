@@ -1,0 +1,28 @@
+---
+title: Apache Friends XAMPP Search
+---
+
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1><%= I18n.t('Search').titleize %></h1>
+    </div>
+  </div>
+</div>
+<div class="row" id="search-results">
+  <div class="large-12 columns">
+   <script>
+     (function() {
+     var cx = '007848491433058414523:dtinkib8ghu';
+     var gcse = document.createElement('script');
+     gcse.type = 'text/javascript';
+     gcse.async = true;
+     gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                 '//www.google.com/cse/cse.js?cx=' + cx;
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(gcse, s);
+     })();
+   </script>
+   <gcse:searchresults-only gl="<%= I18n.locale %>"></gcse:searchresults-only>
+  </div>
+</div>

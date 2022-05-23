@@ -1,0 +1,222 @@
+linux:
+- version: 7.4.29
+  php_version: 7.4.29
+  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 7.4.29 + SQLite 2.8.17/3.38.5
+    + multibyte (mbstring) support, Perl 5.34.1, ProFTPD 1.3.6, phpMyAdmin 5.2.0,
+    OpenSSL 1.1.1o, GD 2.2.5, Freetype2 2.4.8, libpng 1.6.37, gdbm 1.8.3, zlib 1.2.11,
+    expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf
+    class 0.11.7, ncurses 5.9, pdf class 0.11.7, mod_perl 2.0.12, FreeTDS 0.91, gettext
+    0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
+    cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
+    1.5.2, APR-utils 1.5.4
+  requirements: Most all distributions of Linux are supported, including Debian, RedHat,
+    CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE.
+  downloads:
+    x64:
+      checksum_md5: c2df7e009a8d428ac8ddc1b2495ec286
+      checksum_sha1: c70ba064b5922035ba96cba2e2a747e6c8865798
+      checksum_sha256: 0fccb4823d9279ae665c29497d81bc9de231c68a75dbb102af069a414e980768
+      size: 153 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/7.4.29/xampp-linux-x64-7.4.29-1-installer.run?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/7.4.29/xampp-linux-x64-7.4.29-1-installer.run
+- version: 8.0.19
+  php_version: 8.0.19
+  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 8.0.19 & PEAR + SQLite 2.8.17/3.38.5
+    + multibyte (mbstring) support, Perl 5.34.1, ProFTPD 1.3.6, phpMyAdmin 5.2.0,
+    OpenSSL 1.1.1o, GD 2.2.5, Freetype2 2.4.8, libpng 1.6.37, gdbm 1.8.3, zlib 1.2.11,
+    expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf
+    class 0.11.7, ncurses 5.9, pdf class 0.11.7, mod_perl 2.0.12, FreeTDS 0.91, gettext
+    0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
+    cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
+    1.5.2, APR-utils 1.5.4
+  requirements: Most all distributions of Linux are supported, including Debian, RedHat,
+    CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE.
+  downloads:
+    x64:
+      checksum_md5: e7529e68d1f124e9033d8f3c4e76924f
+      checksum_sha1: a8b83fff3dca5557ad85185ac973b668732735cc
+      checksum_sha256: 30286d183ba36d7fc60d6ea4f86a5044da73d199993e3eb04b9497d1ab411a19
+      size: 152 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/8.0.19/xampp-linux-x64-8.0.19-0-installer.run?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/8.0.19/xampp-linux-x64-8.0.19-0-installer.run
+- version: 8.1.6
+  php_version: 8.1.6
+  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 8.1.6 & PEAR + SQLite 2.8.17/3.38.5
+    + multibyte (mbstring) support, Perl 5.34.1, ProFTPD 1.3.6, phpMyAdmin 5.2.0,
+    OpenSSL 1.1.1o, GD 2.2.5, Freetype2 2.4.8, libpng 1.6.37, gdbm 1.8.3, zlib 1.2.11,
+    expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf
+    class 0.11.7, ncurses 5.9, pdf class 0.11.7, mod_perl 2.0.12, FreeTDS 0.91, gettext
+    0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
+    cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
+    1.5.2, APR-utils 1.5.4
+  requirements: Most all distributions of Linux are supported, including Debian, RedHat,
+    CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE.
+  downloads:
+    x64:
+      checksum_md5: 807a1fa6799b631d78b4fdfe50870e38
+      checksum_sha1: 4f9a48f5000cafe3408b18062604b9d8cdb23c93
+      checksum_sha256: 4d9a90ec073ad3437e7dcbb8e68d075ea9bbefa7e1e0aea678e47df67fdd7816
+      size: 152 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-linux-x64-8.1.6-0-installer.run?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/8.1.6/xampp-linux-x64-8.1.6-0-installer.run
+windows:
+- version: 7.4.29
+  php_version: 7.4.29
+  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 7.4.29, phpMyAdmin 5.2.0, OpenSSL
+    1.1.1, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System
+    4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.78 (with mod_proxy_ajp as connector),
+    Strawberry Perl 5.32.1.1 Portable
+  requirements: 'Windows 2008, 2012, Vista, 7, 8 (Important: XP or 2003 not supported)'
+  downloads:
+    x64:
+      checksum_md5: e7cc3f8ff98a8f05b04d465f72747774
+      checksum_sha1: 4304e515895038e73dcf50e7dfadbbba34ffbcec
+      checksum_sha256: 811361c4127c64d405cc8f18c80006526614c2ff16c08ca4fcce7e5e9592f37b
+      size: 159 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/7.4.29/xampp-windows-x64-7.4.29-1-VC15-installer.exe?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/7.4.29/xampp-windows-x64-7.4.29-1-VC15-installer.exe
+- version: 8.0.19
+  php_version: 8.0.19
+  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 8.0.19, phpMyAdmin 5.2.0, OpenSSL
+    1.1.1, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System
+    4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.78 (with mod_proxy_ajp as connector),
+    Strawberry Perl 5.32.1.1 Portable
+  requirements: 'Windows 2008, 2012, Vista, 7, 8 (Important: XP or 2003 not supported)'
+  downloads:
+    x64:
+      checksum_md5: cfebea222ca868bb496f4c62b94654b3
+      checksum_sha1: 9727eef62c7d5589126cf8f87966addb7cdd5db7
+      checksum_sha256: c1c739ca8046a35b5f9db6db639be4ad87d057bde0db29888a4766bc7acd2f2e
+      size: 161 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/8.0.19/xampp-windows-x64-8.0.19-0-VS16-installer.exe?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.0.19/xampp-windows-x64-8.0.19-0-VS16-installer.exe
+- version: 8.1.6
+  php_version: 8.1.6
+  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 8.1.6, phpMyAdmin 5.2.0, OpenSSL
+    1.1.1, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System
+    4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.78 (with mod_proxy_ajp as connector),
+    Strawberry Perl 5.32.1.1 Portable
+  requirements: 'Windows 2008, 2012, Vista, 7, 8 (Important: XP or 2003 not supported)'
+  downloads:
+    x64:
+      checksum_md5: 64cbffd072e4771d84f77ae7236b6672
+      checksum_sha1: ad545da7b99e6a5be3d8a8096095b22f887aeb9a
+      checksum_sha256: ea3be132739e02a4c5b83014085daa3e1266cdd3f6bcd8f506ab434f37f0f85d
+      size: 164 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-windows-x64-8.1.6-0-VS16-installer.exe?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.1.6/xampp-windows-x64-8.1.6-0-VS16-installer.exe
+apple:
+- version: 7.4.29
+  php_version: 7.4.29
+  whats_included: Apache 2.4.53, MariaDB 10.4.21, PHP 7.4.29 + SQLite 2.8.17/3.38.5
+    + multibyte (mbstring) support, Perl 5.34.1, ProFTPD 1.3.6, phpMyAdmin 5.2.0,
+    OpenSSL 1.1.1o, GD 2.2.5, Freetype2 2.4.8, libpng 1.6.37, gdbm 1.8.3, zlib 1.2.11,
+    expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf
+    class 0.11.7, ncurses 5.9, pdf class 0.11.7, mod_perl 2.0.12, FreeTDS 0.91, gettext
+    0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
+    cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
+    1.5.2, APR-utils 1.5.4
+  requirements: Mac OS X 10.6 or later.
+  downloads:
+    x64:
+      checksum_md5: c0d69fc34787a4dc829ca7e9d5c58954
+      checksum_sha1: b7f4cd593acc9d04c606710756bc4de9dc4dc6e8
+      checksum_sha256: c21aa7631a6ed075a1aae991c11188238cf7c9bca6e19c2cd4fe41884651686b
+      size: 163 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/7.4.29/xampp-osx-7.4.29-1-installer.dmg?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/7.4.29/xampp-osx-7.4.29-1-installer.dmg
+- version: 8.0.19
+  php_version: 8.0.19
+  whats_included: Apache 2.4.53, MariaDB 10.4.21, PHP 8.0.19 & PEAR + SQLite 2.8.17/3.38.5
+    + multibyte (mbstring) support, Perl 5.34.1, ProFTPD 1.3.6, phpMyAdmin 5.2.0,
+    OpenSSL 1.1.1o, GD 2.2.5, Freetype2 2.4.8, libpng 1.6.37, gdbm 1.8.3, zlib 1.2.11,
+    expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf
+    class 0.11.7, ncurses 5.9, pdf class 0.11.7, mod_perl 2.0.12, FreeTDS 0.91, gettext
+    0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
+    cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
+    1.5.2, APR-utils 1.5.4
+  requirements: Mac OS X 10.6 or later.
+  downloads:
+    x64:
+      checksum_md5: 37385630ad699277b07cf41f483c08ac
+      checksum_sha1: 27819f2bced6f890967bf782c7ceb48133088967
+      checksum_sha256: 5ee829e61ff9715761da6a0b4a3c26814f545baec2602a8ebba26ee0783fe010
+      size: 162 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/8.0.19/xampp-osx-8.0.19-0-installer.dmg?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/8.0.19/xampp-osx-8.0.19-0-installer.dmg
+- version: 8.1.6
+  php_version: 8.1.6
+  whats_included: Apache 2.4.53, MariaDB 10.4.21, PHP 8.1.6 & PEAR + SQLite 2.8.17/3.38.5
+    + multibyte (mbstring) support, Perl 5.34.1, ProFTPD 1.3.6, phpMyAdmin 5.2.0,
+    OpenSSL 1.1.1o, GD 2.2.5, Freetype2 2.4.8, libpng 1.6.37, gdbm 1.8.3, zlib 1.2.11,
+    expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf
+    class 0.11.7, ncurses 5.9, pdf class 0.11.7, mod_perl 2.0.12, FreeTDS 0.91, gettext
+    0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
+    cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
+    1.5.2, APR-utils 1.5.4
+  requirements: Mac OS X 10.6 or later.
+  downloads:
+    x64:
+      checksum_md5: 1c01fcd8fd4285e5aee8dce7526b0765
+      checksum_sha1: 5089cf70a73a2a025c7cb9b2b8341a7af17f7698
+      checksum_sha256: 7dbe27c23f176b1ec32b1415b225f31ed081d820cab25233dac99241d7a84222
+      size: 163 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-osx-8.1.6-0-installer.dmg?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/8.1.6/xampp-osx-8.1.6-0-installer.dmg
+- version: 7.4.29
+  php_version: 7.4.29
+  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 7.4.29 + SQLite 2.8.17/3.38.5
+    + multibyte (mbstring) support, Perl 5.34.1, ProFTPD 1.3.6, phpMyAdmin 5.2.0,
+    OpenSSL 1.1.1o, GD 2.2.5, Freetype2 2.4.8, libpng 1.6.37, gdbm 1.8.3, zlib 1.2.11,
+    expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf
+    class 0.11.7, ncurses 5.9, pdf class 0.11.7, mod_perl 2.0.12, FreeTDS 0.91, gettext
+    0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
+    cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
+    1.5.2, APR-utils 1.5.4
+  requirements: Mac OS X 10.6 or later.
+  downloads:
+    x64:
+      checksum_md5: 75ed765a396aca5df7ff485e73244751
+      checksum_sha1: e55c53a16e49552ba2cd58643cb20b4871395588
+      checksum_sha256: 91cfd7d2ded2f6dfb73e1c703de47b39cada3878d915396b65a6c80e01967db9
+      size: 360 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/7.4.29/xampp-osx-7.4.29-1-vm.dmg?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/7.4.29/xampp-osx-7.4.29-1-vm.dmg
+- version: 8.0.19
+  php_version: 8.0.19
+  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 8.0.19 & PEAR + SQLite 2.8.17/3.38.5
+    + multibyte (mbstring) support, Perl 5.34.1, ProFTPD 1.3.6, phpMyAdmin 5.2.0,
+    OpenSSL 1.1.1o, GD 2.2.5, Freetype2 2.4.8, libpng 1.6.37, gdbm 1.8.3, zlib 1.2.11,
+    expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf
+    class 0.11.7, ncurses 5.9, pdf class 0.11.7, mod_perl 2.0.12, FreeTDS 0.91, gettext
+    0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
+    cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
+    1.5.2, APR-utils 1.5.4
+  requirements: Mac OS X 10.6 or later.
+  downloads:
+    x64:
+      checksum_md5: f7e34419b6a260fec76654f6d3becb10
+      checksum_sha1: bea9b59bc31e993414bb23afcb0fb4524cf19e8c
+      checksum_sha256: 5d9cd561908c51d12f2df1b7598dde8b35d0e2b943ab4df2b69c52b5c0850875
+      size: 360 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/8.0.19/xampp-osx-8.0.19-0-vm.dmg?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/8.0.19/xampp-osx-8.0.19-0-vm.dmg
+- version: 8.1.6
+  php_version: 8.1.6
+  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 8.1.6 & PEAR + SQLite 2.8.17/3.38.5
+    + multibyte (mbstring) support, Perl 5.34.1, ProFTPD 1.3.6, phpMyAdmin 5.2.0,
+    OpenSSL 1.1.1o, GD 2.2.5, Freetype2 2.4.8, libpng 1.6.37, gdbm 1.8.3, zlib 1.2.11,
+    expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf
+    class 0.11.7, ncurses 5.9, pdf class 0.11.7, mod_perl 2.0.12, FreeTDS 0.91, gettext
+    0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
+    cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
+    1.5.2, APR-utils 1.5.4
+  requirements: Mac OS X 10.6 or later.
+  downloads:
+    x64:
+      checksum_md5: 2b499b18a5880a1e8b8a5460e6ebfb06
+      checksum_sha1: cd2dc8892601caa2c86b5465b52dd6426d2d7cbe
+      checksum_sha256: 11be67f9c8bd955a07bbc93af9cf126fda20ba2b60eef66f8c92bb655776cedb
+      size: 361 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-osx-8.1.6-0-vm.dmg?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/8.1.6/xampp-osx-8.1.6-0-vm.dmg

@@ -1,0 +1,5 @@
+Apache makes it easy to have multiple websites or web applications running on the same physical server, and access each using a custom domain name. This is known as _virtual hosting_, and each virtual host can be mapped to a different subdirectory of the server.
+
+This feature is especially useful in development scenarios, as it allows developers to isolate and access different applications using unique domain names. For example, the domains _http://app01.localhost_ and _http://app02.localhost_ could point to two separate applications on the same server. Or, you could create separate domains, such as _http://client1/_, _http://client2/_ and so on, for multiple client websites hosted on the same server.
+
+NOTE: Virtual hosts created in this manner will not be accessible from other systems, unless those systems are separately configured to associate the custom domain used by the virtual host with the IP address of the XAMPP server.

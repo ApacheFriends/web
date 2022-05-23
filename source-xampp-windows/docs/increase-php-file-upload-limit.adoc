@@ -1,0 +1,19 @@
+= Increase the PHP File Upload Limit
+
+To increase the allowed file size for uploads through PHP, follow these steps:
+
+ . Edit the _php.ini_ file in the _php/_ subdirectory of your XAMPP installation directory (usually, _C:\xampp_). Within this file, find the _post_max_size_ and _upload_max_filesize_ variables and change them to reflect the new file upload limit. For example, to restrict uploads to not more than 16M, change these variables as shown below:
++
+ ; Maximum size of POST data that PHP will accept.
+ ; http://php.net/post-max-size
+ post_max_size=16M
+ ...
+ ; Maximum allowed size for uploaded files.
+ ; http://php.net/upload-max-filesize
+ upload_max_filesize=16M
+
+ . Save your changes to the file.
+
+ . Restart the Apache server.
+
+The new file upload limit will now come into effect.

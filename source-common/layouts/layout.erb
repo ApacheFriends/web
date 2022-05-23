@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="<%= I18n.locale %>"<%= ' dir="rtl"'.html_safe if rtl_language? %>>
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_resource.try(:title) || current_page.data.title || "Apache Friends" %></title>
+
+    <% if current_page.data.description %><meta name="description" content="<%= current_page.data.description %>" /><% end %>
+    <% if current_page.data.keywords %><meta name="keywords" content="<%= current_page.data.keywords %>" /><% end %>
+
+    <%= stylesheet_link_tag "normalize", (rtl_language? ? "all-rtl" : "all") %>
+    <%= stylesheet_link_tag "//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" %>
+
+    <%= javascript_include_tag "modernizr" %>
+
+    <% unless is_xampp? %>
+    <link rel="alternate" type="application/rss+xml" title="Apache Friends RSS Feed" href="/feed.xml" />
+    <% end %>
+
+    <%= favicon_tag "favicon.png" %>
+
+    <% unless is_xampp? %>
+      <script type="text/javascript">
+        //<![CDATA[
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-76894-1', 'auto');
+          ga('send', 'pageview');
+        //]]>
+      </script>
+    <% end %>
+
+  </head>
+
+  <body class="<%= page_classes %><%= ' index' if page_classes =~ /(.._)index/ %>">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=<%= fb_app_id %>";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <header class="header contain-to-grid">
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><%= link_to "Apache Friends", localized_path("/index.html") %></h1>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <% if false # hide %>
+              <li class="has-dropdown <%= "active" if page_classes.include?("download") %>">
+                <%= localized_link_to "Download", "/download.html" %>
+                <ul class="dropdown">
+                  <li><%= localized_link_to "Release Notes", "/download.html#releasenotes" %></li>
+                  <li><%= localized_link_to "FAQs", "/download.html#faqs" %></li>
+                  <li><%= localized_link_to "Add-ons", "/add-ons.html" %></li>
+                </ul>
+              </li>
+            <% end %>
+            <% unless is_xampp? %>
+              <li class="item <%= "active" if page_classes.include?("download") %>"><%= af_localized_link_to "Download", "/download.html" %></li>
+              <li class="item <%= "active" if page_classes.include?("addons") %>"><%= af_localized_link_to "Add-ons", "/add-ons.html" %></li>
+              <li class="item <%= "active" if page_classes.include?("hosting") %>"><%= af_localized_link_to "Hosting", "/hosting.html" %></li>
+              <li class="item <%= "active" if page_classes.include?("community") %>"><%= af_localized_link_to "Community", "/community.html" %></li>
+              <li class="item <%= "active" if page_classes.include?("about") %>"><%= af_localized_link_to "About", "/about.html" %></li>
+            </ul>
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="item has-form">
+                <form action="<%= localized_path("/search.html") %>" method="get">
+                <div class="row collapse">
+                  <div class="large-8 small-9 columns">
+                    <label class="visuallyhidden" for="search-field"><%= t('Search') %>..</label>
+                    <input id="search-field" type="text" name="q" placeholder="<%= t('Search') %>..">
+                  </div>
+                  <div class="search-button large-4 small-3 columns">
+                    <input type="submit" class="success button expand" value="<%= t('Search') %>"/>
+                  </div>
+                </div>
+                </form>
+              </li>
+            <% else %>
+              <li class="item <%= "active" if page_classes.include?("applications") %>"><%= link_to "Applications", "/applications.html" %></li>
+              <li class="item <%= "active" if page_classes.include?("faq") %>"><%= localized_link_to "FAQs", "/faq.html" %></li>
+              <li class="item <%= "active" if page_classes.include?("howto") || page_classes.include?("docs") %>"><%= localized_link_to "HOW-TO Guides", "/howto.html" %></li>
+              <li class="item <%= "active" if page_classes.include?("phpinfo") %>"><%= link_to "PHPInfo", "#{http_prefix}/phpinfo.php", target: "_blank" %></li>
+              <li class="item <%= "active" if page_classes.include?("phpMyAdmin") %>"><%= link_to "phpMyAdmin", "/phpmyadmin/" %></li>
+            <% end %>
+            <% if path_is_localized? %>
+              <li id="locales" class="item has-dropdown">
+                <% link_to "#" do %>
+                  <%= image_tag("flags/#{I18n.locale}.png") + " " + I18n.locale.to_s.upcase.gsub('_', ' ') %>
+                <% end %>
+                <ul class="dropdown">
+                <% langs.each do |lang| %>
+                  <li>
+                    <% link_to localized_path(current_page.path.sub(/^#{I18n.locale}\//,"").sub(/\/$/, '/index.html'), lang) do %>
+                      <%= image_tag("flags/#{lang}.png") + " " + lang.to_s.upcase.gsub('_', ' ') %>
+                    <% end %>
+                  </li>
+                <% end %>
+                </ul>
+              </li>
+            <% end %>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <%= yield %>
+    </div>
+
+    <footer class="footer row">
+      <div class="columns">
+        <div class="footer_lists-container row collapse">
+          <div class="footer_social columns large-2">
+            <%= partial "social" %>
+            <p class="footer_copyright"><%= t('Copyright (c) %{year}, Apache Friends', year: Date.today.year) %></p>
+          </div>
+          <ul class="footer_links columns large-9">
+            <% if false %>
+              <li><%= link_to t("Contact"), "#" %></li>
+              <li><%= link_to t('Sitemap'), "#" %></li>
+            <% end %>
+            <li><%= link_to t('Blog'), "https://www.apachefriends.org/blog.html" %></li>
+            <li><%= link_to t('Privacy Policy'), "/privacy_policy.html" %></li>
+            <li>
+              <% link_to "http://www.fastly.com/", target: "_blank" do %>
+                <%= t('CDN provided by') %>
+                <%= retina_image_tag('fastly-logo.png', :width => 48) %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <%= javascript_include_tag  "all" %>
+  </body>
+</html>

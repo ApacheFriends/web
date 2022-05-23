@@ -1,0 +1,31 @@
+= Enable Remote Access to phpMyAdmin
+
+include::{docdir}/_includes/common/access-phpmyadmin-remotely/introduction.adoc[]
+
+To enable remote access to phpMyAdmin from other hosts, follow these steps:
+
+ . Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.
+ 
+ . Ensure that Apache and MySQL services are running in the "Services" tab of the stack manager (or start them as needed).
+ 
+ . Open a new terminal from the "General" tab of the stack manager.
+ 
+ . Edit the _/opt/lampp/etc/extra/httpd-xampp.conf_ file.
+ 
+ . Within this file, find the block below:
++ 
+  <Directory "/opt/lampp/phpmyadmin">
+    AllowOverride AuthConfig
+    Require local
+    ...
++  
+Update this block and replace _Require local_ with _Require all granted_, so that it looks like this:
++
+  <Directory "/opt/lampp/phpmyadmin">
+    AllowOverride AuthConfig
+    Require all granted
+    ...
+  
+ . Save the file and restart the Apache service using the stack manager.
+
+You should now be able to access phpMyAdmin from other hosts.  

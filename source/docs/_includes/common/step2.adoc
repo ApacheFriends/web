@@ -1,0 +1,22 @@
+== Step 2: Register with Bitnami
+
+****
+At the end of this step, you will have created a Bitnami account.
+****
+
+The next step is to create a Bitnami account, so that you can launch a cloud server with LAMP packaged by Bitnami image. If you have a Google, Microsoft or Github account, you can use your credentials from those services with Oauth to create your Bitnami account.
+
+If you don't have accounts with those services (or you don't want to use them), you can use your email address and password to create a Bitnami account, as described below:
+
+ * Head to https://bitnami.com/account/sign_up[the Bitnami sign-up page].
+ * Enter your name and email address.
+ * Choose a password.
+ * Review and agree to the Bitnami terms of service.
+
+Then, use the "Sign up" button to create your account.
+
+image::common/image21.png[]
+
+Bitnami will send you an email with a verification link which you'll need to click or browse to, to activate your account. This will also sign you in to your Bitnami account.
+
+image::common/image22.png[]

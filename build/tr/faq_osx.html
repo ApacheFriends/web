@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>XAMPP FAQs for Mac OS X</title>
+
+    <meta name="description" content="Instructions on how to install XAMPP for OSX distributions." />
+    
+
+    <link href="/stylesheets/normalize-ef7858ef.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all-6943501a.css" rel="stylesheet" type="text/css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/javascripts/modernizr-6bfc3ff0.js" type="text/javascript"></script>
+
+    <link rel="alternate" type="application/rss+xml" title="Apache Friends RSS Feed" href="/feed.xml" />
+
+    <link href="/images/favicon-18f9bd42.png" rel="icon" type="image/png" />
+
+      <script type="text/javascript">
+        //<![CDATA[
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-76894-1', 'auto');
+          ga('send', 'pageview');
+        //]]>
+      </script>
+
+  </head>
+
+  <body class="tr tr_faq_osx">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=277385395761685";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <header class="header contain-to-grid">
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/tr/index.html">Apache Friends</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Left Nav Section -->
+          <ul class="left">
+              <li class="item "><a href="/tr/download.html">İndir</a></li>
+              <li class="item "><a href="/tr/add-ons.html">Eklentiler</a></li>
+              <li class="item "><a href="/tr/hosting.html">Sunucu                </a></li>
+              <li class="item "><a href="/tr/community.html">Topluluk</a></li>
+              <li class="item "><a href="/tr/about.html">Hakkında</a></li>
+            </ul>
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="item has-form">
+                <form action="/tr/search.html" method="get">
+                <div class="row collapse">
+                  <div class="large-8 small-9 columns">
+                    <label class="visuallyhidden" for="search-field">Arama..</label>
+                    <input id="search-field" type="text" name="q" placeholder="Arama..">
+                  </div>
+                  <div class="search-button large-4 small-3 columns">
+                    <input type="submit" class="success button expand" value="Arama"/>
+                  </div>
+                </div>
+                </form>
+              </li>
+              <li id="locales" class="item has-dropdown">
+<a href="#">                  <img src="/images/flags/tr-e1821d04.png" /> TR
+</a>                <ul class="dropdown">
+                  <li>
+<a href="/de/faq_osx.html">                      <img src="/images/flags/de-1daf2d67.png" /> DE
+</a>                  </li>
+                  <li>
+<a href="/faq_osx.html">                      <img src="/images/flags/en-dd9e149e.png" /> EN
+</a>                  </li>
+                  <li>
+<a href="/es/faq_osx.html">                      <img src="/images/flags/es-a88880bf.png" /> ES
+</a>                  </li>
+                  <li>
+<a href="/fr/faq_osx.html">                      <img src="/images/flags/fr-0f67f12d.png" /> FR
+</a>                  </li>
+                  <li>
+<a href="/hu/faq_osx.html">                      <img src="/images/flags/hu-9a189d12.png" /> HU
+</a>                  </li>
+                  <li>
+<a href="/it/faq_osx.html">                      <img src="/images/flags/it-c786c15b.png" /> IT
+</a>                  </li>
+                  <li>
+<a href="/jp/faq_osx.html">                      <img src="/images/flags/jp-3c5b1754.png" /> JP
+</a>                  </li>
+                  <li>
+<a href="/pl/faq_osx.html">                      <img src="/images/flags/pl-e383eba9.png" /> PL
+</a>                  </li>
+                  <li>
+<a href="/pt_br/faq_osx.html">                      <img src="/images/flags/pt_br-e39a2058.png" /> PT BR
+</a>                  </li>
+                  <li>
+<a href="/ro/faq_osx.html">                      <img src="/images/flags/ro-f141b663.png" /> RO
+</a>                  </li>
+                  <li>
+<a href="/ru/faq_osx.html">                      <img src="/images/flags/ru-24b172c5.png" /> RU
+</a>                  </li>
+                  <li>
+<a href="/tr/faq_osx.html">                      <img src="/images/flags/tr-e1821d04.png" /> TR
+</a>                  </li>
+                  <li>
+<a href="/ur/faq_osx.html">                      <img src="/images/flags/ur-952dd97a.png" /> UR
+</a>                  </li>
+                  <li>
+<a href="/zh_cn/faq_osx.html">                      <img src="/images/flags/zh_cn-9c7185e0.png" /> ZH CN
+</a>                  </li>
+                  <li>
+<a href="/zh_tw/faq_osx.html">                      <img src="/images/flags/zh_tw-92fe4f80.png" /> ZH TW
+</a>                  </li>
+                </ul>
+              </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>OS X <span>Sıkça Sorulan Sorular</span></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="large-12 columns">
+    <dl class="accordion">
+    
+      <dt>What is the difference between XAMPP for OS X and XAMPP-VM?</dt>
+      <dd>
+        <p>
+        <ul>
+          <li>XAMPP for OS X is a native installer for OS X. It installs Apache, PHP and other XAMPP components directly on your OS X system, in the /Applications/XAMPP folder.</li>
+          <li>XAMPP-VM is a virtual machine for OS X. It includes Apache, PHP and other XAMPP components and runs them in a Linux-based virtual machine on your OS X system.</li>
+        </ul>
+        </p>
+        <p>For more information, refer to the blog post at <a href="https://www.apachefriends.org/blog/new_xampp_20170628.html">https://www.apachefriends.org/blog/new_xampp_20170628.html</a>.</p>.
+      </dd> 
+    
+      <dt>XAMPP'ı Mac OS X'e nasıl yüklerim?</dt>
+      <dd>
+      <p>XAMPP'ı yüklemek için aşağıdakileri yap:</p>
+      <ul>
+        <li>DMG görüntüsünü aç.</li>
+        <li>Yükleme işlemini başlatmak için resme çift tıkla.</li></ul>
+      <p>Bu kadardı. XAMPP /Applications/XAMPP dizinine kuruldu.</p>
+      </dd>
+      <dt>Does XAMPP include MySQL or MariaDB?</dt>
+      <dd>
+        <p>Since XAMPP 5.5.30 and 5.6.14, XAMPP ships MariaDB instead of MySQL. The commands and tools are the same for both.</p>
+      </dd>
+      <dt>XAMPP'ı nasıl başlatırım?</dt>
+      <dd>
+      <p>XAMPP'ı kolayca başlatmak için XAMPP Control'ü aç ve Apache, MySQL ve ProFTPD'yi başlat. XAMPP Control'ün ismi "manager-osx".</p>      
+      </dd>
+      <dt>XAMPP'ı nasıl durdururum?</dt>
+      <dd>
+      <p>XAMPP'ı durdurmak için XAMPP Control'ü açın ve sunucuları durdurun. XAMPP Control'ün adı "manager-osx".</p>      
+      </dd>
+      <dt>Herşeyin çalıştığını nasıl test edebilirim?</dt>
+      <dd>
+      <p>Web tarayıcınıza şu URL'yi girin:</p>
+      <p><code>http://localhost</code></p>
+
+      <p>You should see the XAMPP start page, as shown below.</p>
+        <img src="/images/screenshots/xampp-macosx-start-b70c2269.jpg" />    
+      </dd>
+      <dt>                                    XAMPP hazır mı?                                </dt>
+      <dd><p>XAMPP, normal kullanım için değildir, sadece yazılım geliştirme için kullanılır. Bu nedenle bir yazılımcının mümkün olduğunca ihtiyacı olan ayarlar yapılmıştır. Yazıloım geliştirmek için ideal bir ortam olmasına rağmen yazılım yayınlaması için kullanıldığında istenmeyen sorunlara neden olabilir.</p>
+      <p>XAMPP içindeki güvenlik eksikliklerinin listesi:</p>
+      <ol>
+        <li>                                    MySQL yöneticisi (root) şifresi yok.                                </li>
+        <li>MySQL ortamı, ağ üzerinden ulaşılabilir.</li>
+        <li>ProFTPD uses the password "lampp" for user "daemon".</li>
+      </ol>
+      <p>Birçok güvenlik açığını kolayca düzeltmek için şu komutu çağırın:</p>
+      <p><code>sudo /Applications/XAMPP/xamppfiles/xampp security</code></p>
+      <p>Bu XAMPP yüklemesini güvenli yapacak küçük bir güvenlik kontrolünü başlatacaktır.</p></dd>
+
+      <dt>XAMPP'ı başlatırken gördüğüm hata mesajları ne anlama geliyor?</dt>
+      <dd>
+        <p>XAMPP'ı başlatırken çeşitli hata mesajları alabilirsiniz:</p>
+        <p><code>LAMPP-Apache is already running.<br />
+            An Apache daemon is already running.</code></p>
+        <p>LAMPP başlangıç scripti XAMPP-Apache'yi başlatamadı çünkü Apache zaten çalışıyor. XAMPP'ı düzgün çalıştırabilmek için önce mevcut Apache'yi durdurmalısınız.</p>
+        <p><code>LAMPP-MySQL is already running.<br />
+            A MySQL daemon is already running.</code></p>
+        <p>Bu durum çoğunlukla yukarıdaki hata ile aynı nedenlerden kaynaklanmakta. LAMPP başlangıç scripti çalışmakta olan bir MySQL tespit etti. LAMPP'ı düzgün çalıştırabilmek için önce mevcut MySQL'li durdurmalısınız.</p>
+      </dd>
+
+      <dt>Apache doesn't seem to start. What can I do?</dt>
+      <dd>
+        <p>Bu hata birkaç nedenden dolayı gerçekleşmiş olabilir. Apache bu hatayı çeşitli durumlarda gösterir. Kesin nedeni bulabilmek için biraz araştırma yapmalıyız:</p>
+        <p><code>tail -2 /Applications/XAMPP/logs/error_log</code></p>
+        <p>Eğer herhangi bir hata mesajı alırsanız <a href="/community.html">Yazın sayfaları</a> adresini yardım için ziyaret edin.</p>
+      </dd>
+
+      <dt>XAMPP yüklememi daha güvenli nasıl yapabilirim?</dt>
+      <dd>
+        <p>Varsayılan yüklemede XAMPP'in ayarlanmış şifresi yoktur ve XAMPP'in bu şekilde başkaları tarafından erişilebilir halde başlatılması tavsiye edilmez.</p>
+        <p>Basit bir güvenli kontrolü yapmak için şu komutu (root olarak) yazın:</p>
+        <p><code>sudo /Applications/XAMPP/xamppfiles/xampp security</code></p>
+        <p>Ekranda şu diyaloğu görmelisiniz:</p>
+        <p><code>
+XAMPP: Quick security check...</br>
+XAMPP: MySQL is accessable via network.</br>
+XAMPP: Normaly that's not recommended. Do you want me to turn it off? [yes] yes</br>
+XAMPP: Turned off.</br>
+XAMPP: Stopping MySQL...</br>
+XAMPP: Starting MySQL...</br>
+XAMPP: The MySQL/phpMyAdmin user pma has no password set!!!</br>
+XAMPP: Do you want to set a password? [yes] yes</br>
+XAMPP: Password: ******</br>
+XAMPP: Password (again): ******</br>
+XAMPP: Setting new MySQL pma password.</br>
+XAMPP: Setting phpMyAdmin's pma password to the new one.</br>
+XAMPP: MySQL has no root passwort set!!!</br>
+XAMPP: Do you want to set a password? [yes] yes</br>
+XAMPP: Write the passworde somewhere down to make sure you won't forget it!!!</br>
+XAMPP: Password: ******</br>
+XAMPP: Password (again): ******</br>
+XAMPP: Setting new MySQL root password.</br>
+XAMPP: Setting phpMyAdmin's root password to the new one.</br>
+XAMPP: The FTP password for user 'nobody' is still set to 'lampp'.</br>
+XAMPP: Do you want to change the password? [yes] yes</br>
+XAMPP: Password: ******</br>
+XAMPP: Password (again): ******</br>
+XAMPP: Reload ProFTPD...</br>
+XAMPP: Done.</br>
+  </code></p>
+        <p>(1) Bir şifre belirlemek, bu şifreyi kullanan  XAMPP demo sayfalarını (http://localhost/xampp/) koruyacaktır. Kullanıcı adı 'lampp' !</p>
+        <p>Bu komutu çağırdıktan sonra XAMPP yüklemeniz daha güvenli olacaktır.</p>
+      </dd>
+
+      <dt>PHP için OCI8/Oracle eklentisini nasıl aktifleştiririm?</dt>
+      <dd>
+        <p>PHP için OCI8/Oracle extension eklentisini aktifleştirmek için lütfen şu komutu çalıştırın:</p>
+        <p><code>sudo /Applications/XAMPP/xamppfiles/lampp oci8</code></p>
+        <p>Takip eden diyalog başlayacaktır:</p>
+        <p><code>Please enter the path to your Oracle or Instant Client installation:</br>
+[/Applications/XAMPP/xamppfiles/lib/instantclient-11.2.0.3.0] </br>
+installing symlinks...</br>
+patching php.ini...</br>
+OCI8 add-on activation likely successful.</br>
+LAMPP: Stopping Apache with SSL...</br>
+LAMPP: Starting Apache with SSL...</code></p>
+        <p>Eklenti şimdi aktif olacaktır.</p>
+      </dd>
+
+      <dt>How do I enable access to phpMyAdmin from the outside?</dt>
+      <dd>
+        <p>In the basic configuration of XAMPP, phpMyAdmin is accessible only from the same host that XAMPP is running on, at http://127.0.0.1 or http://localhost.</p>
+        <p>IMPORTANT: Enabling external access for phpMyAdmin in production environments is a significant security risk. You are strongly advised to only allow access from localhost. A remote attacker could take advantage of any existing vulnerability for executing code or for modifying your data.</p>
+        <p>To enable remote access to phpMyAdmin, follow these steps:</p>
+        <ul>
+          <li>Edit the xamppfiles/etc/extra/httpd-xampp.conf file in your XAMPP installation directory.</li>
+          <li>Within this file, find the lines below. 
+            <p><code>
+                Alias /phpmyadmin "/Applications/XAMPP/xamppfiles/phpmyadmin"
+                &lt;Directory "/Applications/XAMPP/xamppfiles/phpmyadmin"&gt;
+                  AllowOverride AuthConfig
+                  Require local
+            </code></p>
+          </li>
+          <li>Then replace 'Require local' with 'Require all granted'.</li>
+            <p><code>
+                Alias /phpmyadmin "/Applications/XAMPP/xamppfiles/phpmyadmin"
+                &lt;Directory "/Applications/XAMPP/xamppfiles/phpmyadmin"&gt;
+                  AllowOverride AuthConfig
+                  Require all granted
+            </code></p>
+          <li>Restart the Apache server using the XAMPP control panel.</li>
+        </ul>
+      </dd>
+
+      <dt>Where are the main XAMPP configuration files?</dt>
+      <dd>
+        <p>The main XAMPP configuration files are located as follows:</p>
+        <ul>
+          <li>Apache configuration file: /Applications/XAMPP/xamppfiles/etc/httpd.conf, /Applications/XAMPP/xamppfiles/etc/extra/httpd-xampp.conf</li>
+          <li>PHP configuration file: /Applications/XAMPP/xamppfiles/etc/php.ini</li>
+          <li>MySQL configuration file: /Applications/XAMPP/xamppfiles/etc/my.cnf</li>
+          <li>ProFTPD configuration file: /Applications/XAMPP/xamppfiles/etc/proftpd.conf</li>
+        </ul>
+      </dd>
+
+      <dt>How do I send email with XAMPP?</dt>
+      <dd>
+        <p>To send email with XAMPP, use the PEAR Mail and Net_SMTP packages, which allow you to send email using an external SMTP account (such as a Gmail account). Follow these steps:</p>
+        <ul>
+          <li>Install the Mail and Net_SMTP PEAR modules:
+          <code>
+          pear install Net_SMTP Mail
+          </code>
+          Note that if these packages are already installed in your system you see the messages below when executing that command:
+          <code>
+          Ignoring installed package pear/Net_SMTP
+          Ignoring installed package pear/Mail
+          Nothing to install
+          </code>
+          </li>
+          <li>
+          Create the following example script in your "htdocs" directory to send an email:
+          <code>
+          &lt;?php
+          require_once "Mail.php";
+
+          $from = "your-gmail-username@gmail.com";
+          $to = 'recipients@example.com';
+
+          $host = "ssl://smtp.gmail.com";
+          $port = "465";
+          $username = 'your-gmail-username@gmail.com';
+          $password = 'your-gmail-password';
+
+          $subject = "test";
+          $body = "test";
+
+          $headers = array ('From' => $from, 'To' => $to,'Subject' => $subject);
+          $smtp = Mail::factory('smtp',
+             array ('host' => $host,
+               'port' => $port,
+               'auth' => true,
+               'username' => $username,
+               'password' => $password));
+
+          $mail = $smtp->send($to, $headers, $body);
+
+          if (PEAR::isError($mail)) {
+            echo($mail->getMessage());
+          } else {
+            echo("Message successfully sent!\n");
+          }
+          ?>
+          </code>
+          <p>Remember to replace the dummy values shown with your actual Gmail address and account password. If you don't plan to use Gmail's SMTP server, replace the SMTP host details with appropriate values for your organization or ISP's SMTP server.</p>
+          </li>
+          <li>
+          Execute the script by browsing to it using your Web browser. You should see a notification that the message was successfully sent, and the message should be delivered to the recipient email address.
+          </li>
+        </ul>
+      </dd>
+      
+      <dt>XAMPP sistemimi nasıl yedeklerim/geri yüklerim?</dt>
+      <dd>
+        <p><strong>Uyarı:</strong> Yedekleme ve geri yükleme özellikleri hala geliştirmededir ve doğru çalışmayabilir.</p>
+        <p>Şunu çağırarak yedek oluşturabilirsiniz:</p>
+        <p><code>sudo /Applications/XAMPP/xamppfiles/xampp backup</code></p>
+        <p>ya da</p>
+        <p><code>sudo /Applications/XAMPP/xamppfiles/xampp backup secret</code></p>
+        <p>"secret" sizin MySQL root şifrenizdir. Bu komut şu çıktıyı verecektir:</p>
+        <p><code>Backing up databases...</br>
+Backing up configuration, log and htdocs files...</br>
+Calculating checksums...</br>
+Building final backup file...</br>
+Backup finished.</br>
+Take care of /Applications/XAMPP/xamppfiles/backup/xampp-backup-22-01-14.sh</code></p>
+
+        <p>/Applications/XAMPP/xamppfiles/backup/xampp-backup-22-01-14.sh dosyası (yukarıdaki örnek) yedeklenmiş veriyi içerir. Dosyayı güvenli bir yere taşı.</p>
+
+        <p>Yeni makinada orjinal/kaynak makinanızdaki ile aynı XAMPP versiyonunuza ihtiyacınız vardır. </p>
+        <p><code>sudo sh xampp-backup-22-01-14.sh</code></p>
+        <p>Şunun gibi birşey görmelisiniz:</p>
+        <p><code>Checking integrity of files...</br>
+Restoring configuration, log and htdocs files...</br>
+Checking versions...</br>
+Installed: XAMPP 1.4.2</br>
+Backup from: XAMPP 1.4.2</br>
+Restoring MySQL databases...</br>
+Restoring MySQL user databases...</br>
+Backup complete. Have fun!</br>
+You may need to restart XAMPP to complete the restore.</br>
+  </code></p>
+        <p>Hepsi bu kadar. Unutmayın, bu bir beta özelliktir.</p>
+      </dd>
+    </dl>
+
+  </div>
+    <div class="large-4 columns">
+      <aside>
+        <h4>SSS</h4>
+        <ul>
+          <li><a href="/tr/faq_linux.html">Linux SSS</a></li>
+          <li><a href="/tr/faq_windows.html">Windows SSS</a></li>
+          <li><a href="/tr/faq_osx.html">OS X SSS</a></li>
+        </ul>
+        <h4>Yardım</h4>
+        <p>Ek yardım için% {} topluluk ziyaret edin.</p>
+      </aside>
+    </div>
+</div>
+
+    </div>
+
+    <footer class="footer row">
+      <div class="columns">
+        <div class="footer_lists-container row collapse">
+          <div class="footer_social columns large-2">
+            <ul class="social">
+  <li class="twitter"><a href="https://twitter.com/apachefriends">Follow us on Twitter</a></li>
+  <li class="facebook"><a href="https://www.facebook.com/we.are.xampp">Like us on Facebook</a></li>
+</ul>
+
+            <p class="footer_copyright">Copyright (c) 2022, Apache Friends</p>
+          </div>
+          <ul class="footer_links columns large-9">
+            <li><a href="https://www.apachefriends.org/blog.html">Blog</a></li>
+            <li><a href="/privacy_policy.html">Gizlilik Politikası</a></li>
+            <li>
+<a target="_blank" href="http://www.fastly.com/">                Cdn sağladığı
+                <img width="48" data-2x="/images/fastly-logo@2x-dad6aac3.png" src="/images/fastly-logo-08360cb5.png" />
+</a>            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/javascripts/all-d8620939.js" type="text/javascript"></script>
+  </body>
+</html>

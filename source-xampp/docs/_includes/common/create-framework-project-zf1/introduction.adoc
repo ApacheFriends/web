@@ -1,0 +1,3 @@
+XAMPP makes it easy to start developing with PHP, and http://framework.zend.com/[Zend Framework] is one of the most popular PHP development frameworks. This guide walks you through the process of initializing a new Zend Framework 1 project with XAMPP.
+
+NOTE: This guide assumes that the new Zend Framework application will be accessible at the URL http://localhost/myapp/.

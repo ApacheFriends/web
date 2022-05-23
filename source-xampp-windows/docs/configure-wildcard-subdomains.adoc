@@ -1,0 +1,60 @@
+= Configure Wildcard-Based Subdomains
+
+include::{docdir}/_includes/common/configure-wildcard-subdomains/introduction.adoc[]
+ . Change to your XAMPP installation directory (typically, _C:\xampp_) and open the _httpd.conf_ file in the _apache\conf\_ subdirectory using your favourite text editor. Within the file, find the following line and uncomment it by removing the hash symbol (#) at the beginning of the line.
+
+ LoadModule vhost_alias_module modules/mod_vhost_alias.so
+
+ . Next, edit the _httpd-vhosts.conf_ file in the _apache\conf\extra\_ subdirectory of your XAMPP installation directory.
+
+ . Replace the contents of this file with the following directives:
+
+ UseCanonicalName Off
+ <VirtualHost *:80>
+        DocumentRoot "C:/xampp/htdocs/"
+        ServerName localhost
+ </VirtualHost>
+ <VirtualHost *:80>
+        ServerAlias *.localhost
+        VirtualDocumentRoot "C:/xampp/htdocs/%1/"
+ </VirtualHost>
++
+image::configure-wildcard-subdomains/image1.png[]
++
+In this configuration, the first virtual host block configures how requests are handled by default. The second block configures wildcard virtual hosting for subdomains, such that requests for _subdomain.localhost_ are automatically served by the _subdomain\_ directory of the _C:\xampp\htdocs\_ directory. In particular, notice the %1 placeholder, which matches the subdomain name from the request URL.
+
+ . Restart Apache using the XAMPP control panel for your changes to take effect.
++
+image::configure-wildcard-subdomains/image2.png[] 
+
+At this point, your wildcard subdomains are configured. You can easily test this by using the Windows Explorer to create two new subdirectories at _C:\xampp\htdocs\app01\_ and _C:\xampp\htdocs\app02\_. Within each subdirectory, create a file named _index.html_ and fill it with some sample HTML content. Use different content for each file, so that you can easily distinguish that they're being served from different directories - for example:
+
+ <!-- index.html in app01 directory -->
+ <html>
+  <head></head>
+  <body>
+   <h1>Welcome to app01.localhost!</h1>
+  </body>
+ </html>
+
+ <!-- index.html in app02 directory -->
+ <html>
+  <head></head>
+  <body>
+   <h1>Hello from app02.localhost!</h1>
+  </body>
+ </html>
+
+Since these domains do not actually exist in reality, you also need to map them to the local IP address. Open the file _C:\windows\system32\drivers\etc\hosts_ in a text editor and add the following line to it:
+
+ 127.0.0.1           app01.localhost   app02.localhost
+
+image::configure-wildcard-subdomains/image3.png[]
+
+TIP: You will need to do this every time you want to configure a new wildcard virtual host, because the Windows _hosts_ file does not support wildcard entries. To avoid this step, you can use a DNS server or local DNS proxy that supports wildcards and therefore takes care of automatically resolving requests for _*.localhost_ to the local IP address.
+
+NOTE: On some versions of Windows, you will not be able to edit the _C:\windows\system32\drivers\etc\hosts_ file without administrator privileges. You can edit the file by right-clicking the Notepad icon and selected the "Run as administrator" menu option, then entering administrator credentials (if required) and clicking "OK" or "Yes" to proceed.
+
+At this point, you should be able to enter the URLs http://app01.localhost or http://app02.localhost in your browser's address bar, and you should then see the corresponding HTML page. 
+
+image::configure-wildcard-subdomains/image4.png[] 

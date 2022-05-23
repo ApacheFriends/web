@@ -1,0 +1,33 @@
+= Use a Different PHP Version
+
+In many cases, you might want to use XAMPP with a different PHP version than the one that comes pre-installed. You might do this to get the benefits of a newer version of PHP, or to reproduce bugs using an earlier version of PHP.
+
+To use a different version of PHP with XAMPP, follow these steps:
+
+ . Download a binary build of the PHP version that you wish to use from the PHP website, and extract the contents of the compressed archive file to your XAMPP installation directory (usually, _C:\xampp_). Ensure that you give it a different directory name to avoid overwriting the existing PHP version. For example, in this tutorial, we'll call the new directory _C:\xampp\php5-6-0_.
++
+NOTE: Ensure that the PHP build you download matches the Apache build (VC9 or VC11) in your XAMPP platform.
+
+ . Within the new directory, rename the _php.ini-development_ file to _php.ini_. If you prefer to use production settings, you could instead rename the _php.ini-production_ file to _php.ini_. 
+
+ . Edit the _httpd-xampp.conf_ file in the _apache\conf\extra\_ subdirectory of your XAMPP installation directory. Within this file, search for all instances of the old PHP directory path and replace them with the path to the new PHP directory created in Step 1.
++
+In particular, be sure to change the lines
++
+ LoadFile "/xampp/php/php5ts.dll"
+ LoadFile "/xampp/php/libpq.dll"
+ LoadModule php5_module "/xampp/php/php5apache2_4.dll"
++
+to
++
+ LoadFile "/xampp/php5-6-0/php5ts.dll"
+ LoadFile "/xampp/php5-6-0/libpq.dll"
+ LoadModule php5_module "/xampp/php5-6-0/php5apache2_4.dll"
++
+NOTE: Remember to adjust the file and directory paths above to reflect valid paths on your system.
+
+ . Restart your Apache server through the XAMPP control panel for your changes to take effect.
+
+The new version of PHP should now be active. To verify this, browse to the URL http://localhost/xampp/phpinfo.php, which displays the output of the _phpinfo()_ command, and check the version number at the top of the page.
+
+image::use-different-php-version/image1.png[]

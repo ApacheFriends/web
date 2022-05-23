@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Heartbleed OpenSSL Bug</title>
+
+    
+    
+
+    <link href="/stylesheets/normalize-ef7858ef.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all-6943501a.css" rel="stylesheet" type="text/css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/javascripts/modernizr-6bfc3ff0.js" type="text/javascript"></script>
+
+    <link rel="alternate" type="application/rss+xml" title="Apache Friends RSS Feed" href="/feed.xml" />
+
+    <link href="/images/favicon-18f9bd42.png" rel="icon" type="image/png" />
+
+      <script type="text/javascript">
+        //<![CDATA[
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-76894-1', 'auto');
+          ga('send', 'pageview');
+        //]]>
+      </script>
+
+  </head>
+
+  <body class="blog blog_heartbleed-bug">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=277385395761685";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <header class="header contain-to-grid">
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/index.html">Apache Friends</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Left Nav Section -->
+          <ul class="left">
+              <li class="item "><a href="/download.html">Download</a></li>
+              <li class="item "><a href="/add-ons.html">Add-ons</a></li>
+              <li class="item "><a href="/hosting.html">Hosting</a></li>
+              <li class="item "><a href="/community.html">Community</a></li>
+              <li class="item "><a href="/about.html">About</a></li>
+            </ul>
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="item has-form">
+                <form action="/search.html" method="get">
+                <div class="row collapse">
+                  <div class="large-8 small-9 columns">
+                    <label class="visuallyhidden" for="search-field">Search..</label>
+                    <input id="search-field" type="text" name="q" placeholder="Search..">
+                  </div>
+                  <div class="search-button large-4 small-3 columns">
+                    <input type="submit" class="success button expand" value="Search"/>
+                  </div>
+                </div>
+                </form>
+              </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Blog</h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-8 columns">
+    <article>
+      <header>
+        <h1>Heartbleed OpenSSL Bug</h1>
+      </header>
+      <p>The Heartbleed Bug is a serious vulnerability in the popular OpenSSL cryptographic software library. This weakness allows stealing the information protected, under normal conditions, by the SSL/TLS encryption used to secure.</p>
+
+<p>OpenSSL versions from 1.0.1 through 1.0.1f (inclusive) are vulnerable and make it possible to steal information, including everything from the encrypted content and to the secret key used for the encryption. The attack is also indetectable. 
+This security issue has been described in detail on the following page:</p>
+
+<p><a href="http://heartbleed.com/">http://heartbleed.com/</a></p>
+
+<p>If you are running any of the affected versions and are running a SSL-enabled website, meaning that you can access it using the https:// prefix instead of http://,  you will need to patch the libraries in your system and replace the certificates and keys that may have been compromised. Please notice that remote access using ssh is NOT affected.</p>
+
+<h2 id="how-to-check-if-you-are-affected">How to check if you are affected</h2>
+
+<p>Navigate to your XAMPP page and visit the <em>phpinfo()</em> link in the <em>Php</em> section of the left panel:</p>
+
+<p><img alt="phpinfo section" title="phpinfo section" src="/images/blog/phpinfo-section-1-d58c7f30.png" /></p>
+
+<p>And look for "SSL Version":</p>
+
+<p><img alt="phpinfo" title="heartbleed bug" src="/images/blog/heartbleed-affected-d748d2e5.png" /></p>
+
+<p>If the version is between 1.0.1 and 1.0.1f (both included), you are running a vulnerable version. The previous image shows an affected one, from XAMPP 1.8.3-3 for Windows. If you are running XAMPP 1.8.2 on Windows you are NOT vulnerable.</p>
+
+<h2 id="how-to-fix-it">How to fix it</h2>
+
+<p>We have released new XAMPP versions for all platforms fixing the bug but if you need to patch existing installations, you can follow the below instructions:</p>
+
+<h3 id="xampp-for-windows">XAMPP for Windows</h3>
+
+<p>If you are running XAMPP 1.8.2 on Windows you are NOT vulnerable. To patch your current 1.8.3 installation you will need to replace some files in your installation following the below steps:</p>
+
+<ol>
+  <li>
+    <p>Download the Windows patch files <a href="http://sourceforge.net/projects/xampp/files/security/2014-04%20Heartbleed/xampp-opensslfix-win32.zip/download">xampp-opensslfix-win32.zip</a></p>
+  </li>
+  <li>
+    <p>Stop Apache using the XAMPP control panel</p>
+  </li>
+  <li>
+    <p>Uncompress the xampp-opensslfix-win32.zip file in your desktop. It contains a folder with the following list of files:
+<code>libeay32.dll
+ssleay32.dll
+openssl.exe
+</code></p>
+  </li>
+  <li>
+    <p>Navigate to your Apache bin directory, typically under:
+<code>c:\xampp\apache\bin
+</code></p>
+  </li>
+  <li>
+    <p>Create a directory to story a copy of the files that will be replaced named 'opensslbackup'</p>
+  </li>
+  <li>
+    <p>Move the below list of files (located in the c:\xampp\apache\bin directory) to the folder you just created (opensslbackup)
+<code>c:\xampp\apache\bin\libeay32.dll
+c:\xampp\apache\bin\ssleay32.dll
+c:\xampp\apache\bin\openssl.exe
+</code></p>
+  </li>
+  <li>
+    <p>Copy the files under the xampp-opensslfix-win32 folder you uncompressed in step 3 to c:\xampp\apache\bin</p>
+  </li>
+  <li>
+    <p>Navigate to your PHP directory, typically under:
+<code>c:\xampp\php</code></p>
+  </li>
+  <li>
+    <p>Create a directory to story a copy of the files that will be replaced named 'opensslbackup'</p>
+  </li>
+  <li>
+    <p>Move the below list of files (located in the c:\xampp\php directory) to the folder you just created (opensslbackup)
+<code>c:\xampp\php\libeay32.dll
+c:\xampp\php\ssleay32.dll
+</code></p>
+  </li>
+  <li>
+    <p>Copy the files under the xampp-opensslfix-win32 folder you uncompressed in step 3 to c:\xampp\php</p>
+  </li>
+  <li>
+    <p>Start Apache using the XAMPP control panel</p>
+  </li>
+  <li>
+    <p>Verify that the "SSL Version" has been updated to a safe one (at least 1.0.1g) using the phpinfo() information as explained in the previous section</p>
+  </li>
+</ol>
+
+<p><img alt="phpinfo" title="heartbleed bug fixed" src="/images/blog/heartbleed-fixed-0598ef17.png" /></p>
+
+<h3 id="xampp-for-linux">XAMPP for Linux</h3>
+
+<p><a name="linuxfiles"></a></p>
+
+<p>To patch your current installation you will need to replace some files in your installation. The first step would be to download the proper patch files for your architecture. If you are not sure, you can use the below command:</p>
+
+<p><code>file /opt/lampp/bin/openssl</code></p>
+
+<p>If the output looks like:</p>
+
+<p><code>/opt/lampp/bin/openssl: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.9, stripped
+</code></p>
+
+<p>Then you need the 64 bit version: <a href="http://sourceforge.net/projects/xampp/files/security/2014-04%20Heartbleed/xampp-opensslfix-linux-x64.tar.gz/download">xampp-opensslfix-linux-x64.tar.gz</a></p>
+
+<p>And if it looks like:</p>
+
+<p><code>/opt/lampp/bin/openssl: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.9, stripped
+</code></p>
+
+<p>You will need the x86 version: <a href="http://sourceforge.net/projects/xampp/files/security/2014-04%20Heartbleed/xampp-opensslfix-linux.tar.gz/download">xampp-opensslfix-linux.tar.gz</a></p>
+
+<p>Once you have the proper patch, you can either use the patch.sh script contained in them or follow the steps manually:</p>
+
+<h4 id="automated-method">Automated Method</h4>
+
+<p>This method will try to automatically patch your XAMPP installation. If it fails at some point and your installation seems to still be outdated, you will have to check the manual method:</p>
+
+<ol>
+  <li>
+    <p>Download the Linux patch files (grab the proper version depending on your platform as explained <a href="#linuxfiles">above</a>). </p>
+  </li>
+  <li>
+    <p>Uncompress the downloaded file under /tmp
+<code>tar -xzf xampp-opensslfix-linux.tar.gz -C /tmp/
+</code></p>
+  </li>
+  <li>
+    <p>Execute the patch.sh script:
+<code>sudo /tmp/xampp-opensslfix-linux/patch.sh 
+</code>
+In most of the cases, the output of the script will be:
+<code>Current OpenSSL version is: OpenSSL 1.0.1f 6 Jan 2014
+You seem to be running an INSECURE OpenSSL version. Press any key to continue with the patching process.
+Stopping Apache
+XAMPP: Stopping Apache...ok.
+Backing up files
+Patching files
+Starting Apache
+XAMPP: Starting Apache...ok.
+New OpenSSL version is OpenSSL 1.0.1g 7 Apr 2014
+Successfully patched!
+</code></p>
+  </li>
+</ol>
+
+<h4 id="manual-method">Manual Method</h4>
+
+<ol>
+  <li>Download the Linux patch files (grab the proper version depending on your platform as explained <a href="#linuxfiles">above</a>).</li>
+  <li>
+    <p>Stop Apache:
+<code>sudo /opt/lampp/xampp stopapache
+</code></p>
+  </li>
+  <li>
+    <p>Uncompress the xampp-opensslfix-linux.tar.gz (or xampp-opensslfix-linux-x64.tar.gz) file under /tmp/
+<code>tar -xzf xampp-opensslfix-linux.tar.gz -C /tmp/
+</code></p>
+  </li>
+  <li>
+    <p>Navigate to your XAMPP directory:
+<code>cd /opt/lampp/</code></p>
+  </li>
+  <li>
+    <p>Create a directory to story a copy of the files that will be replaced named 'opensslbackup'
+<code>sudo mkdir -p /opt/lampp/opensslbackup/</code></p>
+  </li>
+  <li>
+    <p>Move the below list of files to the folder you just created (opensslbackup)
+<code>sudo mv /opt/lampp/lib/libssl* /opt/lampp/opensslbackup/
+sudo mv /opt/lampp/lib/libcrypto* /opt/lampp/opensslbackup/
+sudo mv /opt/lampp/lib/engines /opt/lampp/opensslbackup/
+sudo mv /opt/lampp/bin/openssl /opt/lampp/opensslbackup/
+</code></p>
+  </li>
+  <li>
+    <p>Copy the files under the xampp-opensslfix-linux folder you uncompressed in step 3 to your XAMPP installation
+<code>sudo cp -rp /tmp/xampp-opensslfix-linux/lib/* /opt/lampp/lib/
+sudo cp -rp /tmp/xampp-opensslfix-linux/bin/openssl /opt/lampp/bin/
+</code></p>
+  </li>
+  <li>
+    <p>Start Apache
+<code>sudo /opt/lampp/xampp startapache
+</code></p>
+  </li>
+  <li>Verify that the "SSL Version" has been updated to a safe one (at least 1.0.1g) using the phpinfo() information as explained in the previous section</li>
+</ol>
+
+<p><img alt="phpinfo" title="heartbleed bug fixed" src="/images/blog/heartbleed-fixed-0598ef17.png" /></p>
+
+<p>Or using the below command:</p>
+
+<p><code>sudo /opt/lampp/bin/openssl version
+</code></p>
+
+<p>It should now show a version higher to 1.0.1f:</p>
+
+<p><code>OpenSSL 1.0.1g 7 Apr 2014
+</code></p>
+
+<h3 id="xampp-for-os-x">XAMPP for OS X</h3>
+
+<p><a name="osxfiles"></a></p>
+
+<p>To patch your current installation you will need to replace some files in your installation. The first step would be to download the patch files for OS X:  <a href="http://sourceforge.net/projects/xampp/files/security/2014-04%20Heartbleed/xampp-opensslfix-osx.tar.gz/download">xampp-opensslfix-osx.tar.gz</a> 
+nce you have the patch, you can either use the patch.sh script contained in them or follow the steps manually:</p>
+
+<h4 id="automated-method-1">Automated Method</h4>
+
+<p>This method will try to automatically patch your XAMPP installation. If it fails at some point and your installation seems to still be outdated, you will have to check the manual method:</p>
+
+<ol>
+  <li>
+    <p>Download the Linux patch files (<a href="http://sourceforge.net/projects/xampp/files/security/2014-04%20Heartbleed/xampp-opensslfix-osx.tar.gz/download">xampp-opensslfix-osx.tar.gz</a></p>
+  </li>
+  <li>
+    <p>Uncompress the downloaded file under /tmp
+<code>tar -xzf xampp-opensslfix-osx.tar.gz -C /tmp/</code></p>
+  </li>
+  <li>
+    <p>Execute the patch.sh script:
+<code>sudo /tmp/xampp-opensslfix-osx/patch.sh</code></p>
+  </li>
+</ol>
+
+<p>In most of the cases, the output of the script will be:
+<code>Current OpenSSL version is: OpenSSL 1.0.1f 6 Jan 2014
+You seem to be running an INSECURE OpenSSL version. Press any key to continue with the patching process.
+Stopping Apache
+XAMPP: Stopping Apache...ok.
+Backing up files
+Patching files
+Starting Apache
+XAMPP: Starting Apache...ok.
+New OpenSSL version is OpenSSL 1.0.1g 7 Apr 2014
+Successfully patched!
+</code></p>
+
+<h4 id="manual-method-1">Manual Method</h4>
+
+<ol>
+  <li>Download the Linux patch files (<a href="http://sourceforge.net/projects/xampp/files/security/2014-04%20Heartbleed/xampp-opensslfix-osx.tar.gz/download">xampp-opensslfix-osx.tar.gz</a>)</li>
+  <li>
+    <p>Stop Apache:
+<code>sudo /Applications/XAMPP/xamppfiles/xampp stopapache</code></p>
+  </li>
+  <li>
+    <p>Uncompress the xampp-opensslfix-osx.tar.gz file under /tmp/
+<code>tar -xzf xampp-opensslfix-osx.tar.gz -C /tmp</code></p>
+  </li>
+  <li>
+    <p>Navigate to your XAMPP directory:
+<code>cd /Applications/XAMPP/xamppfiles/</code></p>
+  </li>
+  <li>
+    <p>Create a directory to story a copy of the files that will be replaced named 'opensslbackup'
+<code>sudo mkdir -p /Applications/XAMPP/xamppfiles/opensslbackup/</code></p>
+  </li>
+  <li>
+    <p>Move the below list of files to the folder you just created (opensslbackup)
+<code>sudo mv /Applications/XAMPP/xamppfiles/lib/libssl* /Applications/XAMPP/xamppfiles/opensslbackup/
+sudo mv /Applications/XAMPP/xamppfiles/lib/libcrypto* /Applications/XAMPP/xamppfiles/opensslbackup/
+sudo mv /Applications/XAMPP/xamppfiles/lib/engines /Applications/XAMPP/xamppfiles/opensslbackup/
+sudo mv /Applications/XAMPP/xamppfiles/bin/openssl /Applications/XAMPP/xamppfiles/opensslbackup/
+</code></p>
+  </li>
+  <li>
+    <p>Copy the files under the xampp-opensslfix-osx folder you uncompressed in step 3 to your XAMPP installation
+<code>sudo cp -rp /tmp/xampp-opensslfix-osx/lib/* /Applications/XAMPP/xamppfiles/lib/
+sudo cp -rp /tmp/xampp-opensslfix-osx/bin/openssl /Applications/XAMPP/xamppfiles/bin/
+</code></p>
+  </li>
+  <li>
+    <p>Start Apache
+<code>sudo /Applications/XAMPP/xamppfiles/xampp startapache</code></p>
+  </li>
+  <li>Verify that the "SSL Version" has been updated to a safe one (at least 1.0.1g) using the phpinfo() information as explained in the previous section</li>
+</ol>
+
+<p><img alt="phpinfo" title="heartbleed bug fixed" src="/images/blog/heartbleed-fixed-0598ef17.png" /></p>
+
+<p>Or using the below command:</p>
+
+<p><code>sudo /Applications/XAMPP/xamppfiles/bin/openssl version</code></p>
+
+<p>It should now show a version higher to 1.0.1f:</p>
+
+<p><code>OpenSSL 1.0.1g 7 Apr 2014</code></p>
+
+
+      <footer>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="apachefriends" data-hashtags="xampp">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+        <div class="fb-like" data-href="https://www.apachefriends.org/blog/heartbleed-bug.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+      </footer> 
+    </article>
+  </div>
+  <div class="large-4 columns">
+    <aside>
+      <h3>Recent Articles</h3>
+      <ol id="articles">
+          <li><a href="/blog/new_xampp_20220516.html">New XAMPP release 7.4.29 , 8.0.19 , 8.1.6</a> <span>May 16</span></li>
+          <li><a href="/blog/new_xampp_20220420.html">New XAMPP release 7.4.29 , 8.0.18 , 8.1.5</a> <span>Apr 20</span></li>
+          <li><a href="/blog/new_xampp_20220329.html">New XAMPP release 7.4.28 , 8.0.17 , 8.1.4</a> <span>Mar 29</span></li>
+          <li><a href="/blog/new_xampp_20220318.html">New XAMPP release 7.4.28 , 8.0.17 , 8.1.4</a> <span>Mar 18</span></li>
+          <li><a href="/blog/new_xampp_20220124.html">New XAMPP release 7.4.27 , 8.0.15 , 8.1.2</a> <span>Jan 24</span></li>
+          <li><a href="/blog/new_xampp_20211224.html">New XAMPP release 7.4.27 , 8.0.14 , 8.1.1</a> <span>Dec 24</span></li>
+          <li><a href="/blog/new_xampp_20211223.html">New XAMPP release 7.4.27 , 8.0.14 , 8.1.1</a> <span>Dec 23</span></li>
+          <li><a href="/blog/new_xampp_20211216.html">New XAMPP release 7.4.26 , 8.0.13 , 8.1.0</a> <span>Dec 16</span></li>
+          <li><a href="/blog/new_xampp_20211125.html">New XAMPP release 7.3.33 , 7.4.26</a> <span>Nov 25</span></li>
+          <li><a href="/blog/new_xampp_20211021.html">New XAMPP release 7.3.31 , 7.4.25</a> <span>Oct 21</span></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+
+    </div>
+
+    <footer class="footer row">
+      <div class="columns">
+        <div class="footer_lists-container row collapse">
+          <div class="footer_social columns large-2">
+            <ul class="social">
+  <li class="twitter"><a href="https://twitter.com/apachefriends">Follow us on Twitter</a></li>
+  <li class="facebook"><a href="https://www.facebook.com/we.are.xampp">Like us on Facebook</a></li>
+</ul>
+
+            <p class="footer_copyright">Copyright (c) 2022, Apache Friends</p>
+          </div>
+          <ul class="footer_links columns large-9">
+            <li><a href="https://www.apachefriends.org/blog.html">Blog</a></li>
+            <li><a href="/privacy_policy.html">Privacy Policy</a></li>
+            <li>
+<a target="_blank" href="http://www.fastly.com/">                CDN provided by
+                <img width="48" data-2x="/images/fastly-logo@2x-dad6aac3.png" src="/images/fastly-logo-08360cb5.png" />
+</a>            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/javascripts/all-d8620939.js" type="text/javascript"></script>
+  </body>
+</html>

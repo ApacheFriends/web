@@ -1,0 +1,81 @@
+---
+title: XAMPP Installers and Downloads for Apache Friends
+description: XAMPP is an easy to install Apache distribution containing MariaDB, PHP and Perl.
+keywords: xampp, apache, php, perl, mysql, open source distribution
+---
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1><%= image_tag("xampp-logo.svg") %><%= t('XAMPP <span>Apache + MariaDB + PHP + Perl</span>') %></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 columns">
+      <h2><%= t("What is XAMPP?") %></h2>
+      <h3><%= t("XAMPP is the most popular PHP development environment") %></h3>
+      <p><%= t("XAMPP is a completely free, easy to install Apache distribution containing MariaDB, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use.") %></p>
+    </div>
+    <div class="large-6 columns text-right">
+      <div class="video-wrapper" style="background-image: url(https://img.youtube.com/vi/h6DEDm7C37A/hqdefault.jpg);">
+        <a href="https://www.youtube-nocookie.com/embed/h6DEDm7C37A" target="_blank" rel="noreferrer noopener">
+          <div class=play-button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather">
+              <circle cx="12" cy="12" r="7" class="circle"/>
+              <polygon points="10 8 16 12 10 16 10 8"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="download" class="row">
+    <div class="large-3 columns">
+      <div id="arrow">
+        <h2><%= t("Download") %></h2>
+        <%= link_to t('Click here for other versions'), "/download.html" %>
+      </div>
+    </div>
+    <% downloads.each do |os, downloads| %>
+      <div class="large-3 columns">
+        <%
+          last_main_version = downloads.last
+          x32_url = last_main_version["downloads"]["x32"].try(:[], "url")
+          x64_url = last_main_version["downloads"]["x64"].try(:[], "url")
+        %>
+        <% link_to x32_url || x64_url, :target => "_blank", :"data-x64-href" => x32_url && x64_url, :"data-delayed-href" => localized_path("/download_success.html") do %>
+          <%= image_tag("#{os}-logo.png") + t('XAMPP for <strong>%{os}</strong>', os: DownloadBuilder::FRIENDLY_NAMES[os] || os.titleize).html_safe %>
+          <span><%= last_main_version["version"] %> (PHP <%= last_main_version["php_version"] %>)</span>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div id="breaking" class="row panel">
+  <div class="large-4 columns">
+    <% article = blog.articles.first %>
+    <h4><%= link_to article.title, article %></h4>
+  </div>
+  <div class="large-8 columns clearfix">
+    <%= article.summary(200, '...') + link_to(t('Read more&nbsp;&raquo;'), article, class: "right") %>
+  </div>
+</div>
+<div class="row">
+  <div id="about" class="large-4 columns">
+    <h3><%= t("About Apache Friends") %></h3>
+    <p><%= t("Apache Friends is a non-profit project to promote the Apache web server and is home to the XAMPP project. XAMPP is an easy to install Apache distribution containing MariaDB, PHP, and Perl.") + " " + link_to("Read more&nbsp;&raquo;", "about.html") %></p>
+  </div>
+  <div id="documentation" class="large-4 columns">
+    <h3><%= t("Community") %></h3>
+    <p><%= t("XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}.",
+      twitter: link_to("Twitter", "https://twitter.com/apachefriends"),
+      facebook: link_to("Facebook", "https://www.facebook.com/we.are.xampp"),
+      mailing_list: localized_link_to("Mailing List", "/community.html#mailing_list"),
+      forums: link_to(t("Forums"), "https://community.apachefriends.org")
+    ) %></p>
+  </div>
+  <div id="discussions" class="large-4 columns" data-feed-url="<%= forum_feed_url %>">
+    <h3><%= t('Recent Discussions') %></h3>
+    <p>Loading discussions&hellip;</p>
+    <ol class="no-number"></ol>
+  </div>
+</div>

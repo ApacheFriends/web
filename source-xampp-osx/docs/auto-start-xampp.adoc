@@ -1,0 +1,37 @@
+= Auto-Start XAMPP
+ 
+By default, you have to start XAMPP or its components manually every time you reboot your system. However, you can also configure XAMPP components to start automatically on system boot. Follow the steps below.
+
+ . Log in to the system as an administrator.
+
+ . Create a file named _org.apachefriends.xampp.plist_ in the _/Library/LaunchDaemons_ directory. Fill this file with the following content:
++
+  <?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+  <plist version="1.0">
+    <dict>
+      <key>Label</key> 
+      <string>org.apachefriends.xampp</string>
+      <key>ProgramArguments</key>
+      <array>
+        <string>/Applications/XAMPP/xamppfiles/xampp</string>
+        <string>start</string>   
+      </array>
+      <key>UserName</key>
+      <string>root</string>
+      <key>RunAtLoad</key>
+      <true/>
+      <key>OnDemand</key>
+      <false/>
+    </dict>
+  </plist>
+   
+ . Save your changes to the file.
+ 
+ . Reboot your system and XAMPP should start automatically. 
+ 
+To start XAMPP immediately without rebooting, use the command below:
+
+  sudo launchctl load -w /Library/LaunchDaemons/org.apachefriends.xampp.plist
+ 
+To revert the changes, delete the _org.apachefriends.xampp.plist_ file.

@@ -1,0 +1,98 @@
+---
+title: Download XAMPP
+description: Download XAMPP for Windows, Linux, and OS X. Older versions of Solaris are also available.
+keywords: xampp, apache, php, perl, mysql, windows, linux, osx
+---
+
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1><%= t("Download") %></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-8 columns">
+    <p><%= t("XAMPP is an easy to install Apache distribution containing MariaDB, PHP, and Perl. Just download and start the installer. It's that easy.") %></p>
+    <ul id="downloads">
+      <% downloads.each do |os, releases| %>
+        <li id="download-<%= os %>">
+        <h3><%= image_tag "#{os}-logo.png" %><%= t('XAMPP for <strong>%{os}</strong>', os: DownloadBuilder::FRIENDLY_NAMES[os] || os.titleize) %> <span><%= releases.map{|r| r["version"]}[0..-2].join(", ") + " &amp; " + releases.last["version"] %></span></h3>
+          <table>
+            <tr>
+              <th width="25%"><%= t("Version") %></th>
+              <th width="17.5%" class="show-for-medium-up"></th>
+              <th width="20%" class="show-for-medium-up"><%= t("Checksum") %></th>
+              <th width="25%"></th>
+              <th width="12.5%" class="show-for-medium-up"><%= t("Size") %></th>
+            </tr>
+            <% releases.each_with_index do |release, i| %>
+              <tr>
+                <td rowspan="<%= release["downloads"].size %>"><%= release["version"] %> / PHP <%= release["php_version"] %></td>
+                <% if release["version"] == 'XAMPP-VM' %>
+                  <td class="show-for-medium-up" rowspan="<%= release["downloads"].size %>"><%= link_to t("More info about XAMPP-VM"), '/blog/new_xampp_20170628.html' %></td>
+                <% else %>
+                  <td class="show-for-medium-up" rowspan="<%= release["downloads"].size %>"><%= link_to t("What's Included?"), "#", :"data-dropdown" => "#{os}-notes-#{release['id']}" %></td>
+                <% end %>
+                <% release["downloads"].each_with_index do |(bits, download), i| %>
+                  <% if i > 0 %><tr><% end %>
+                    <td class="show-for-medium-up">
+                      <ul class="inline-list">
+                        <li><span data-tooltip class="has-tip" title="<%= download["checksum_md5"] %>">md5</span></li>
+                        <li><span data-tooltip class="has-tip" title="<%= download["checksum_sha1"] %>">sha1</span></li>
+                      </ul>
+                    </td>
+                    <td class="text-right">
+                      <%= download_link_to "#{t('Download')} (#{bits[1..-1]} bit)", download["url"], :class => "button" %>
+                    </td>
+                    <td class="show-for-medium-up"><%= download["size"] %></td>
+                <% end %>
+              </tr>
+            <% end %>
+          </table>
+          <ul class="inline-list">
+            <li><%= link_to t("Requirements"), "#", :"data-dropdown" => "#{os}-requirements" %></li>
+            <li><%= localized_link_to "Add-ons", "/add-ons.html" %></li>
+            <li><%= link_to "#{t('More Downloads')} &raquo;", "http://sourceforge.net/projects/xampp/files/" %></li>
+          </ul>
+          <% releases.each do |release| %>
+            <div class="notes" id="<%= "#{os}-notes-#{release["id"]}" %>" data-dropdown-content>
+              <p><strong><%= t("Includes") %>:</strong> <%= release["whats_included"] %></p>
+            </div>
+          <% end %>
+          <div class="notes" id="<%= os %>-requirements" data-dropdown-content>
+            <% releases.map{|r| r["requirements"]}.uniq.each do |requirements| %>
+              <p><%= requirements.gsub("\n", "<br />") %></p>
+            <% end %>
+          </div>
+          <% if os == 'windows' %>
+            <p>Windows XP or 2003 are not supported. You can download a compatible version of XAMPP for these platforms <%= link_to 'here', 'http://sourceforge.net/projects/xampp/files/XAMPP%20Windows/1.8.2/' %>.</p>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+    <h2><%= t("Add-ons") %></h2>
+    <hr />
+    <%= partial "add-ons" %>
+    <div class="right">
+      <%= link_to t("XAMPP Add-ons") + " &rarr;".html_safe, localized_path("/add-ons.html"), :class => "button small" %>
+    </div>
+  </div>
+  <div class="large-4 columns">
+    <aside>
+      <h4><%= t("Documentation/FAQs") %></h4>
+      <p><%= t("There is no real manual or handbook for XAMPP. We wrote the documentation in the form of FAQs. Have a burning question that's not answered here? Try the %{forums} or %{stack_overflow}.", forums: link_to(t("Forums"), "https://community.apachefriends.org"), stack_overflow: link_to("Stack Overflow", "http://stackoverflow.com/search?q=xampp")) %></p>
+      <ul>
+        <li><%= link_to "Linux #{t('FAQs')}",   localized_path("/faq_linux.html") %></li>
+        <li><%= link_to "Windows #{t('FAQs')}", localized_path("/faq_windows.html") %></li>
+        <li><%= link_to "OS X #{t('FAQs')}",    localized_path("/faq_osx.html") %></li>
+        <li><%= link_to "OS X XAMPP-VM #{t('FAQs')}",    localized_path("/faq_stackman.html") %></li>
+      </ul>
+      <h4><%= t("Add-ons") %></h4>
+      <% link_to localized_path("/add-ons.html") do %>
+          <%= retina_image_tag "stack-icons.png", :width => "60" %>
+      <% end %>
+      <p><%= t("Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP. Visit %{bitnami_xampp} to download the installer.", bitnami_xampp: link_to("Bitnami XAMPP", "https://bitnami.com/stack/xampp"), add_ons: link_to(t("Add-ons").downcase, localized_path("/add-ons.html"))) %></p>
+    </aside>
+  </div>
+</div>

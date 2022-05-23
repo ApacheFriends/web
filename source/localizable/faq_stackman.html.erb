@@ -1,0 +1,564 @@
+---
+title: XAMPP FAQs for XAMPP-VM
+description: Instructions on how to install XAMPP for OSX distributions.
+keywords:
+---
+
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>XAMPP-VM <span><%= t("Frequently Asked Questions") %></span></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <% if is_xampp? %>
+    <div class="large-8 columns">
+  <% else %>
+    <div class="large-12 columns">
+  <% end %>
+    <dl class="accordion">
+
+      <dt><%= t("What is the difference between XAMPP for OS X and XAMPP-VM?")%></dt>
+      <dd>
+        <p>
+        <ul>
+          <li><%= t("XAMPP for OS X is a native installer for OS X. It installs Apache, PHP and other XAMPP components directly on your OS X system, in the /Applications/XAMPP folder.")%></li>
+          <li><%= t("XAMPP-VM is a virtual machine for OS X. It includes Apache, PHP and other XAMPP components and runs them in a Linux-based virtual machine on your OS X system.")%></li>
+        </ul>
+        </p>
+        <p><%= t("For more information, refer to the blog post at %{xampp_vm_blog_url}.", xampp_vm_blog_url: link_to("https://www.apachefriends.org/blog/new_xampp_20170628.html", "https://www.apachefriends.org/blog/new_xampp_20170628.html"))%></p>.
+      </dd>
+
+      <dt><%= t("How do I install XAMPP-VM for Mac OS X?")%></dt>
+      <dd>
+      <p><%= t("To install XAMPP-VM, just do the following:")%></p>
+      <ul>
+        <li><%= t("Download the disk image (DMG image) from the Apache Friends website.")%></li>
+        <li><%= t("Double-click the image file and drag the XAMPP-VM icon to the Applications folder.")%></li>
+        <li><%= t("Launch XAMPP-VM by double-clicking the XAMPP-VM icon in the Applications folder.")%></li>
+        <li><%= t("Enter your system's administrator credentials when prompted.")%></li>
+        <%= image_tag "screenshots/xampp-macosx-launch-credentials.jpg" %>
+        </ul>
+        <p><%= t("You should see the XAMPP-VM stack manager, as shown below:")%></p>
+        <%= image_tag "screenshots/xampp-macosx-stack-manager.jpg" %>
+      </dd>
+
+      <dt><%= t("Does XAMPP-VM include MySQL or MariaDB?")%></dt>
+      <dd>
+        <p><%= t("XAMPP-VM ships MariaDB instead of MySQL. The commands and tools are the same for both.")%></p>
+      </dd>
+
+      <dt><%= t("How do I start XAMPP-VM?")%></dt>
+      <dd>
+      <p><%= t("To start XAMPP-VM:")%></p>
+      <ul>
+        <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
+        <li><%= t("Click the \"Start\" button in the \"General\" tab of the stack manager.")%> <%= t("Wait for the status icon to turn green.")%>
+        <%= image_tag "screenshots/xampp-macosx-stack-manager-general.jpg" %>
+        </li>
+        <li><%= t("Navigate to the \"Network\" tab and enable port forwarding (port 80 of the stack to port 8080 of the host system) over SSH.")%>
+        <%= image_tag "screenshots/xampp-macosx-stack-manager-network.jpg" %>
+        </li>
+      </ul>
+      </dd>
+
+      <dt><%= t("How do I stop XAMPP-VM?")%></dt>
+      <dd>
+      <p><%= t("To stop XAMPP-VM, click the \"Stop\" button in the \"General\" tab of the stack manager. Once the status icon turns red, close the stack manager window.")%></p>
+      </dd>
+
+      <dt><%= t("Can I start and stop XAMPP-VM services individually?")%></dt>
+      <dd>
+      <p><%= t("Yes. When you start the XAMPP-VM virtual machine, XAMPP services will also automatically start. You can navigate to the \"Services\" tab of the stack manager at any time to stop, start, restart or check the status of individual services.")%></p>
+      </dd>
+
+      <dt><%= t("How can I test that everything worked?")%></dt>
+      <dd>
+      <p><%= t("Verify that you have enabled port forwarding (from port 80 of the stack to port 8080 of the host system) in the \"Network\" tab of the stack manager and type the following URL in a web browser:")%></p>
+      <p><code>http://localhost:8080</code></p>
+      <p><%= t("Now you should see the XAMPP-VM start page.")%></p>
+        <%= image_tag "screenshots/xampp-macosx-start.jpg" %>
+      </dd>
+
+      <dt><%= t("Is XAMPP-VM production ready?")%></dt>
+      <dd>
+      <p><%= t("XAMPP-VM is not meant for production use but only for development environments. The way XAMPP-VM is configured is to be open as possible to allow the developer anything he/she wants. For development environments this is great but in a production environment it could be fatal.")%></p>
+      <p><%= t("Here a list of missing security in XAMPP-VM:")%></p>
+      <ol>
+        <li><%= t("The MySQL administrator (root) has no password.")%></li>
+        <li><%= t("The MySQL daemon is accessible via network.")%></li>
+        <li><%= t("ProFTPD uses the password \"lampp\" for user \"daemon\".")%></li>
+      </ol>
+      <%= t("To fix most of the security weaknesses:")%>
+      <ul>
+        <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
+        <li><%= t("Ensure that all services are running in the \"Services\" tab of the stack manager (or start them as needed).")%></li>
+        <li><%= t("Open a new terminal from the \"General\" tab of the stack manager and run the following command in it:")%>
+          <p><code>/opt/lampp/lampp security</code></p>
+        </li>
+      </ul>
+      <%= t("It will kick off a a small security check to make the XAMPP-VM installation secure.") %>
+      </dd>
+
+      <dt><%= t("Apache doesn't seems to start. What can I do?")%></dt>
+      <dd>
+        <p><%= t("This error can exist for multiple reasons. Apache displays this error under several circumstances. To find the exact reason we have to do some research:")%></p>
+        <ul>
+          <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
+          <li><%= t("Open a new terminal from the \"General\" tab of the stack manager and run the following command in it:")%>
+            <p><code>tail -2 /opt/lampp/logs/error_log</code></p>
+          </li>
+        </ul>
+        <p><%= t("If you get any error messages visit %{community} for help.",
+               community: link_to(t("our community pages"), "/community.html") ) %></p>
+      </dd>
+
+      <dt><%= t("How can I make my XAMPP-VM installation more secure?")%></dt>
+      <dd>
+        <p><%= t("In the default installation, XAMPP-VM has no passwords set and it is not recommended to run XAMPP-VM with this configuration accessible by others.")%><%= t("To make the installation more secure:")%></p>
+        <ul>
+          <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
+          <li><%= t("Ensure that all services are running in the \"Services\" tab of the stack manager (or start them as needed).")%></li>
+          <li><%= t("Open a new terminal from the \"General\" tab of the stack manager and run the following command in it:")%>
+            <p><code>tail -2 /opt/lampp/logs/error_log</code></p>
+          </li>
+          <li><%= t("You should see the following dialog on your screen. Enter responses to each prompt.")%>
+           <p><code>
+XAMPP: Quick security check...</br>
+XAMPP: MySQL is accessable via network.</br>
+XAMPP: Normaly that's not recommended. Do you want me to turn it off? [yes] yes</br>
+XAMPP: Turned off.</br>
+XAMPP: Stopping MySQL...</br>
+XAMPP: Starting MySQL...</br>
+XAMPP: The MySQL/phpMyAdmin user pma has no password set!!!</br>
+XAMPP: Do you want to set a password? [yes] yes</br>
+XAMPP: Password: ******</br>
+XAMPP: Password (again): ******</br>
+XAMPP: Setting new MySQL pma password.</br>
+XAMPP: Setting phpMyAdmin's pma password to the new one.</br>
+XAMPP: MySQL has no root passwort set!!!</br>
+XAMPP: Do you want to set a password? [yes] yes</br>
+XAMPP: Write the passworde somewhere down to make sure you won't forget it!!!</br>
+XAMPP: Password: ******</br>
+XAMPP: Password (again): ******</br>
+XAMPP: Setting new MySQL root password.</br>
+XAMPP: Setting phpMyAdmin's root password to the new one.</br>
+XAMPP: The FTP password for user 'nobody' is still set to 'lampp'.</br>
+XAMPP: Do you want to change the password? [yes] yes</br>
+XAMPP: Password: ******</br>
+XAMPP: Password (again): ******</br>
+XAMPP: Reload ProFTPD...</br>
+XAMPP: Done.</br>
+          </code></p></li>
+        </ul>
+        <p><%= t("After calling this command, your XAMPP-VM installation should be more secure.")%></p>
+      </dd>
+
+      <dt><%= t("How do I activate eAccelerator?") %></dt>
+      <dd>
+        <p><%= t("To activate eAccelerator for PHP:")%></p>
+        <ul>
+          <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
+          <li><%= t("Mount the /opt/lampp directory from the \"Volumes\" tab of the stack manager and click the \"Explore\" button to open the file manager.")%></li>
+          <li><%= t("Find the following lines in your /opt/lampp/etc/php.ini file:")%>
+            <p><code>;extension="eaccelerator.so"</br>
+              ;eaccelerator.shm_size="16"</br>
+              ;eaccelerator.cache_dir="/opt/lampp/tmp/eaccelerator"</br>
+              ;eaccelerator.enable="1"</br>
+              ;eaccelerator.optimizer="1"</br>
+              ;eaccelerator.check_mtime="1"</br>
+              ;eaccelerator.debug="0"</br>
+              ;eaccelerator.filter=""</br>
+              ;eaccelerator.shm_max="0"</br>
+              ;eaccelerator.shm_ttl="0"</br>
+              ;eaccelerator.shm_prune_period="0"</br>
+              ;eaccelerator.shm_only="0"</br>
+              ;eaccelerator.compress="1"</br>
+              ;eaccelerator.compress_level="9"</code></p>
+          </li>
+          <li><%= t("Remove the semicolon at the beginning of each line and restart XAMPP.")%></li>
+        </ul>
+        <p><%= t("Now the extension should be active.")%><%= t("For more information about eAccelerator, check the eAccelerator home page: %{eaccelerator}.", eaccelerator: link_to("http://eaccelerator.net", "http://eaccelerator.net"))%></p>
+      </dd>
+
+      <dt><%= t("How do I activate the OCI8/Oracle extension for PHP?")%></dt>
+      <dd>
+        <p><%= t("To activate the OCI8/Oracle extension for PHP:")%></p>
+        <ul>
+          <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
+          <li><%= t("Ensure that all services are running in the \"Services\" tab of the stack manager (or start them as needed).")%></li>
+          <li><%= t("Open a new terminal from the \"General\" tab of the stack manager and run the following command in it:")%>
+            <p><code>/opt/lampp/lampp oci8</code></p>
+          </li>
+          <li><%= t("You should see the following dialog on your screen. Enter the path to the Oracle client libraries when prompted.")%>
+          <p><code>
+Please enter the path to your Oracle or Instant Client installation:</br>
+installing symlinks...</br>
+patching php.ini...</br>
+OCI8 add-on activation likely successful.</br>
+LAMPP: Stopping Apache with SSL...</br>
+LAMPP: Starting Apache with SSL...</code></p>
+          </li>
+        </ul>
+        <p><%= t("Now the extension should be active.")%></p>
+      </dd>
+
+      <dt><%= t("How do I copy files to the Apache server document root?")%></dt>
+      <dd>
+        <p><%= t("To copy files from the host system to the XAMPP-VM Apache server document root, follow these steps:")%></p>
+        <ul>
+          <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
+          <li><%= t("Mount the /opt/lampp directory from the \"Volumes\" tab of the stack manager and click the \"Explore\" button to open the file manager.")%></li>
+          <%= image_tag "screenshots/xampp-macosx-stack-manager-volumes.jpg" %>
+          <li><%= t("Navigate to the /opt/lampp/htdocs directory in the file manager. This directory is the XAMPP-VM Apache server document root. Copy files to it from the host system using the file manager in the usual way.")%></li>
+        </ul>
+      </dd>
+
+      <dt><%= t("How do I access phpMyAdmin from the host system?")%></dt>
+      <dd>
+      <p><%= t("To access phpMyAdmin from the host system, follow these steps:")%></p>
+        <ul>
+          <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
+          <li><%= t("Ensure that all services are running in the \"Services\" tab of the stack manager (or start them as needed).")%></li>
+          <li><%= t("Navigate to the \"Network\" tab and ensure that port forwarding (port 80 of the stack to port 8080 of the host system) over SSH is enabled.")%></li>
+          <li><%= t("Browse to http://localhost:8080/phpmyadmin to access phpMyAdmin.")%></li>
+        </ul>
+      <p><%= t("If you see an \"Access denied\" error, ensure that your phpMyAdmin configuration correctly reflects your MySQL credentials.")%>
+      </p>
+
+
+      <dt><%= t("How do I enable access to phpMyAdmin from the outside?")%></dt>
+      <dd>
+      <p><%= t("In the basic configuration of XAMPP-VM, phpMyAdmin is accessible only from the host system via a secure tunnel, at http://127.0.0.1:8080/phpmyadmin or http://localhost:8080/phpmyadmin.")%></p>
+      <p><%= t("IMPORTANT: Enabling external access for phpMyAdmin in production environments is a significant security risk. You are strongly advised to only allow access from localhost. A remote attacker could take advantage of any existing vulnerability for executing code or for modifying your data.")%></p>
+      <%= t("To enable remote access to phpMyAdmin, follow these steps:")%>
+      <ul>
+        <li><%= t("Edit the /opt/lampp/etc/extra/httpd-xampp.conf file.")%></li>
+        <li><%= t("Within this file, find the lines below.")%>
+          <p><code>
+              Alias /phpmyadmin "/opt/lampp/phpmyadmin/"
+              &lt;Directory "/opt/lampp/phpmyadmin"&gt;
+                AllowOverride AuthConfig
+                Require local
+          </code></p>
+        </li>
+        <li><%= t("Then replace 'Require local' with 'Require all granted'.")%></li>
+          <p><code>
+              Alias /phpmyadmin "/opt/lampp/phpmyadmin/"
+              &lt;Directory "/opt/lampp/phpMyAdmin"&gt;
+                AllowOverride AuthConfig
+                Require all granted
+          </code></p>
+        <li><%= t("Save the file and restart the Apache service using the stack manager.")%></li>
+      </ul>
+      </dd>
+
+      <dt><%= t("How do I install XAMPP-VM add-ons?")%></dt>
+      <dd id='how-do-i-install-xampp-add-ons'>
+        <p><%= t("To install a new Bitnami add-on for XAMPP-VM, follow these steps:")%></p>
+        <ul>
+          <li><%= t("Download the Linux installer for the add-on from the Bitnami website.")%></li>
+          <%= image_tag "screenshots/xampp-macosx-download-installer.jpg" %>
+          <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
+          <li><%= t("Ensure that all services are running in the \"Services\" tab of the stack manager (or start them as needed).")%></li>
+          <li><%= t("Navigate to the \"Network\" tab and ensure that port forwarding (port 80 of the stack to port 8080 of the host system) over SSH is enabled.")%></li>
+          <%= image_tag "screenshots/xampp-macosx-stack-manager-network.jpg" %>
+          <li><%= t("Mount the /opt/lampp directory from the \"Volumes\" tab of the stack manager and click the \"Explore\" button to open the file manager.")%></li>
+          <%= image_tag "screenshots/xampp-macosx-stack-manager-volumes.jpg" %>
+          <li><%= t("Copy the Linux installer from the host system to the /opt/lampp/temp directory on the mounted volume.")%></li>
+          <li><%= t("Open a new terminal from the \"General\" tab of the stack manager and run the following commands in it. Replace INSTALLER_FILENAME with the name of the downloaded installer.")%>
+            <p><code>cd /opt/lampp/temp
+            chmod +x ./INSTALLER_FILENAME.sh
+            ./INSTALLER_FILENAME.sh
+            </code></p>
+          <p><%= t("This will start the installer in text mode, as shown below:")%></p>
+          <%= image_tag "screenshots/xampp-macosx-run-installer.jpg" %>
+          </li>
+          <li><%= t("Enter the required details when prompted and wait for the installation to complete.")%></li>
+        </ul>
+        <p><%= t("You should now be able to access the add-on through your browser. For example, to access WordPress, browse to http://localhost:8080/wordpress.")%></p>
+        <%= image_tag "screenshots/xampp-macosx-wordpress.jpg" %>
+      </dd>
+
+      <dt><%= t("Where are the XAMPP-VM virtual machine files and logs?")%></dt>
+      <dd>
+        <p><%= t("The XAMPP-VM virtual machine files and logs are stored within your home directory on the OS X host, in the ~/.bitnami/stackman/machines/xampp/vm and ~/.bitnami/stackman/machines/xampp/log directories respectively.")%></p>
+      </dd>
+
+      <dt><%= t("Where are the main XAMPP configuration files?")%></dt>
+      <dd>
+        <p><%= t("The main XAMPP configuration files are located as follows")%>:</p>
+        <ul>
+          <li><%= t("Apache configuration file")%>: /opt/lampp/etc/httpd.conf, /opt/lampp/etc/extra/httpd-xampp.conf</li>
+          <li><%= t("PHP configuration file")%>: /opt/lampp/etc/php.ini</li>
+          <li><%= t("MySQL configuration file")%>: /opt/lampp/etc/my.cnf</li>
+          <li><%= t("ProFTPD configuration file")%>: /opt/lampp/etc/proftpd.conf</li>
+        </ul>
+      </dd>
+
+      <dt><%= t("How do I send email with XAMPP?")%></dt>
+      <dd>
+        <p><%= t("To send email with XAMPP, use the PEAR Mail and Net_SMTP packages, which allow you to send email using an external SMTP account (such as a Gmail account). Follow these steps:")%></p>
+        <ul>
+          <li><%= t("Install the Mail and Net_SMTP PEAR modules:")%>
+          <code>
+          pear install Net_SMTP Mail
+          </code>
+          <%= t("Note that if these packages are already installed in your system you see the messages below when executing that command:")%>
+          <code>
+          Ignoring installed package pear/Net_SMTP
+          Ignoring installed package pear/Mail
+          Nothing to install
+          </code>
+          </li>
+          <li>
+          <%= t("Create the following example script in your \"htdocs\" directory to send an email:")%>
+          <code>
+          &lt;?php
+          require_once "Mail.php";
+
+          $from = "your-gmail-username@gmail.com";
+          $to = 'recipients@example.com';
+
+          $host = "ssl://smtp.gmail.com";
+          $port = "465";
+          $username = 'your-gmail-username@gmail.com';
+          $password = 'your-gmail-password';
+
+          $subject = "test";
+          $body = "test";
+
+          $headers = array ('From' => $from, 'To' => $to,'Subject' => $subject);
+          $smtp = Mail::factory('smtp',
+             array ('host' => $host,
+               'port' => $port,
+               'auth' => true,
+               'username' => $username,
+               'password' => $password));
+
+          $mail = $smtp->send($to, $headers, $body);
+
+          if (PEAR::isError($mail)) {
+            echo($mail->getMessage());
+          } else {
+            echo("Message successfully sent!\n");
+          }
+          ?>
+          </code>
+          <p><%= t("Remember to replace the dummy values shown with your actual Gmail address and account password. If you don't plan to use Gmail's SMTP server, replace the SMTP host details with appropriate values for your organization or ISP's SMTP server.")%></p>
+          </li>
+          <li>
+          <%= t("Execute the script by browsing to it using your Web browser. You should see a notification that the message was successfully sent, and the message should be delivered to the recipient email address.")%>
+          </li>
+        </ul>
+      </dd>
+
+      <dt><%= t("How do I backup/restore my XAMPP-VM system?")%></dt>
+      <dd>
+        <p><strong><%= t("Warning:")%></strong> <%= t("The backup and restore functionality is still under development and may not work correctly.")%></p>
+        <p><%= t("You can create the backup as follows:")%></p>
+        <ul>
+          <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
+          <li><%= t("Ensure that all services are running in the \"Services\" tab of the stack manager (or start them as needed).")%></li>
+          <li><%= t("Open a new terminal from the \"General\" tab of the stack manager and run the following command in it:")%>
+            <p><code>/opt/lampp/lampp backup</code></p>
+          <%= t("or")%>
+            <p><code>/opt/lampp/lampp backup secret</code></p>
+          <%= t("Where \"secret\" is your MySQL root password. This command will create the following output:")%>
+            <p><code>Backing up databases...</br>
+Backing up configuration, log and htdocs files...</br>
+Calculating checksums...</br>
+Building final backup file...</br>
+Backup finished.</br>
+Take care of /Applications/XAMPP/xamppfiles/backup/xampp-backup-22-01-14.sh</code></p>
+          <%= t("The file /Applications/XAMPP/xamppfiles/backup/xampp-backup-22-01-14.sh (in the example above) contains your backuped data. Get this file to a save place.")%></li>
+          <li><%= t("Mount the /opt/lampp directory from the \"Volumes\" tab of the stack manager and click the \"Explore\" button to open the file manager.")%></li>
+          <li><%= t("Move the backup file to a safe place on the host system.")%></li>
+        </ul>
+
+        <p><%= t("To restore the backup on a new system, you need the same version of XAMPP-VM as on your original/source system. Follow these steps to restore the backup:")%></p>
+        <ul>
+          <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
+          <li><%= t("Ensure that all services are running in the \"Services\" tab of the stack manager (or start them as needed).")%></li>
+          <li><%= t("Mount the /opt/lampp directory from the \"Volumes\" tab of the stack manager and click the \"Explore\" button to open the file manager.")%></li>
+          <li><%= t("Copy the backup file from the host system to the mounted directory.")%></li>
+          <li><%= t("Open a new terminal from the \"General\" tab of the stack manager, change to the directory containing the backup file and run the following command (change the file name in the command to reflect the actual backup file name):")%>
+            <p><code>./xampp-backup-22-01-14.sh</code> </p>
+          <%= t("You should see something like this:")%>
+  <p><code>Checking integrity of files...
+Restoring configuration, log and htdocs files...
+Checking versions...
+Installed: XAMPP 1.4.2
+Backup from: XAMPP 1.4.2
+Restoring MySQL databases...
+Restoring MySQL user databases...
+Backup complete. Have fun!
+You may need to restart XAMPP to complete the restore</code></p></li>
+        </ul>
+      </dd>
+
+      <dt><%= t("How do I increase the size of the XAMPP-VM disk?")%></dt>
+      <dd>
+        <p><strong><%= t("IMPORTANT: Ensure that you have booted the XAMPP-VM virtual machine at least once before following the steps below. Resizing the disk without a first boot may cause the virtual machine to fail afterwards.")%></strong></p>
+        <p><%= t("To increase the size of the XAMPP-VM disk, follow these steps:")%></p>
+        <ul>
+          <li><%= t("Shut down XAMPP-VM and make a complete backup of the disk, so that you can easily recover in case of errors.")%></li>
+          <li><%= t("Install QEMU on the OS X host:")%>
+            <p><code>brew update
+            brew install qemu</code> </p>
+          </li>
+          <li><%= t("Check the disk for errors:")%>
+            <p><code>qemu-img check ~/.bitnami/stackman/machines/xampp/vm/machine.qcow2</code> </p>
+          </li>
+          <li><%= t("If any errors were found, repair them before attempting to resize the disk:")%>
+            <p><code>qemu-img check -r all ~/.bitnami/stackman/machines/xampp/vm/machine.qcow2</code> </p>
+          </li>
+          <li><%= t("Resize the disk. Here's an example of making it 10GB larger:")%>
+            <p><code>qemu-img resize ~/.bitnami/stackman/machines/xampp/vm/machine.qcow2 +10G</code> </p>
+          </li>
+          <li><%= t("Start XAMPP-VM.")%></li>
+          <li><%= t("Once XAMPP-VM has started, click the \"Open Terminal\" button in the XAMPP control panel. From within the terminal, increase the size of the primary partition and update the filesystem iwith the fdisk and resize2fs commands. Refer to the output below for an example displaying the necessary commands and expected results:")%>
+            <p><code>
+            root@debian:~# df -h .
+            Filesystem      Size  Used Avail Use% Mounted on
+            /dev/vda1        15G  1.4G   13G  10% /
+
+            root@debian:~# sudo fdisk /dev/vda
+
+            Welcome to fdisk (util-linux 2.25.2).
+            Changes will remain in memory only, until you decide to write them.
+            Be careful before using the write command.
+
+            Command (m for help): p
+            Disk /dev/vda: 24.9 GiB, 26737418240 bytes, 52221520 sectors
+            Units: sectors of 1 * 512 = 512 bytes
+            Sector size (logical/physical): 512 bytes / 512 bytes
+            I/O size (minimum/optimal): 512 bytes / 512 bytes
+            Disklabel type: dos
+            Disk identifier: 0x00000000
+
+            Device     Boot Start      End  Sectors  Size Id Type
+            /dev/vda1  *     2048 31248383 31246336 14.9G 83 Linux
+
+            Command (m for help): d
+            Selected partition 1
+            Partition 1 has been deleted.
+
+            Command (m for help): p
+            Disk /dev/vda: 24.9 GiB, 26737418240 bytes, 52221520 sectors
+            Units: sectors of 1 * 512 = 512 bytes
+            Sector size (logical/physical): 512 bytes / 512 bytes
+            I/O size (minimum/optimal): 512 bytes / 512 bytes
+            Disklabel type: dos
+            Disk identifier: 0x00000000
+
+            Command (m for help): n
+            Partition type
+               p   primary (0 primary, 0 extended, 4 free)
+               e   extended (container for logical partitions)
+            Select (default p): p
+            Partition number (1-4, default 1): 1
+            First sector (2048-52221519, default 2048):
+            Last sector, +sectors or +size{K,M,G,T,P} (2048-52221519, default 52221519):
+
+            Created a new partition 1 of type 'Linux' and of size 24.9 GiB.
+
+            Command (m for help): p
+            Disk /dev/vda: 24.9 GiB, 26737418240 bytes, 52221520 sectors
+            Units: sectors of 1 * 512 = 512 bytes
+            Sector size (logical/physical): 512 bytes / 512 bytes
+            I/O size (minimum/optimal): 512 bytes / 512 bytes
+            Disklabel type: dos
+            Disk identifier: 0x00000000
+
+            Device     Boot Start      End  Sectors  Size Id Type
+            /dev/vda1        2048 52221519 52219472 24.9G 83 Linux
+
+            Command (m for help): w
+            The partition table has been altered.
+            Calling ioctl() to re-read partition table.
+            Re-reading the partition table failed.: Device or resource busy
+
+            The kernel still uses the old table. The new table will be used at the next reboot or after you run partprobe(8) or kpartx(8).
+
+            root@debian:~# partx -u /dev/vda1
+            root@debian:~# sudo resize2fs /dev/vda1
+            resize2fs 1.42.12 (29-Aug-2014)
+            Filesystem at /dev/vda1 is mounted on /; on-line resizing required
+            old_desc_blocks = 1, new_desc_blocks = 2
+            The filesystem on /dev/vda1 is now 6527434 (4k) blocks long.
+
+            root@debian:~# df -h .
+            Filesystem      Size  Used Avail Use% Mounted on
+            /dev/vda1        25G  1.4G   22G   6% /
+            </code> </p>
+          </li>
+          <li><%= t("Restart XAMPP-VM. You should now be able to use the larger disk.")%></li>
+        </ul>
+      </dd>
+
+      <dt><%= t("How do I change the XAMPP-VM required memory?")%></dt>
+      <dd>
+        <p><strong><%= t("WARNING: Install %{jq_url} on your Mac before running the commands suggested on this section.", jq_url: link_to(t("JQ"), "https://stedolan.github.io/jq/"))%></strong></p>
+        <p><code>brew update
+        brew install jq
+        </code> </p>
+        <p><%= t("To check the required memory of your VM, open a terminal and run the command below. Replace the APP_NAME placeholder with the correct directory name:")%></p>
+        <p><code>$ cat ~/.bitnami/stackman/machines/APP_NAME/metadata.json | jq '.requiredMemory'</code></p>
+        <p><%= t("To change the VM required memory, follow these steps:")%></p>
+        <ul>
+          <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
+          <li><%= t("Click the \"Stop\" button in the \"General\" tab of the stack manager. Once the status icon turns red, close the stack manager window.")%></li>
+          <li><%= t("Open a terminal and change the \"requiredMemory\" running the command below. Replace the MEMORY placeholder with the value you want to set.")%>
+            <p><code>$ cat ~/.bitnami/stackman/machines/APP_NAME/metadata.json | jq '.requiredMemory = MEMORY' | tee ~/.bitnami/stackman/machines/APP_NAME/metadata.json</code></p>
+          </li>
+          <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
+          <li><%= t("Click the \"Start\" button in the \"General\" tab of the stack manager.")%> <%= t("Wait for the status icon to turn green.")%>
+          <li><%= t("Once XAMPP-VM has started, click the \"Open Terminal\" button in the XAMPP control panel. From within the terminal, verify the allocated memory running the command below:")%>
+            <p><code>$ free -h</code></p>
+          </li>
+        </ul>
+      </dd>
+
+      <dt><%= t("How do I upgrade XAMPP-VM?")%></dt>
+      <dd>
+
+        <p><%= t("If you download a new version of XAMPP-VM and try to run it, you may see a warning message about overwriting data. This warning appears when you already have a previous version of XAMPP-VM deployed on your OS X system. It ensures that you do not accidentally overwrite your existing XAMPP-VM data.")%></p>
+        <p><%= t("To upgrade XAMPP-VM in this scenario, follow these steps:")%></p>
+        <ul>
+          <li><%= t("Back up all the data that you need from the existing XAMPP-VM deployment, including all files, databases, custom plugins, media and other assets.")%></li>
+          <li><%= t("Remove or rename the previous XAMPP-VM image files by deleting the ~/.bitnami/stackman/machines/xampp directory.")%></li>
+          <li><%= t("Deploy the new version of XAMPP-VM.")%></li>
+          <li><%= t("Restore all the data backed up from the previous version, by copying it to the correct place in the new version.")%></li>
+        </ul>
+
+      </dd>
+
+      <dt><%= t("How do I uninstall XAMPP-VM?")%></dt>
+      <dd>
+        <p><%= t("To uninstall XAMPP-VM, follow these steps:")%></p>
+        <ul>
+          <li><%= t("Delete the XAMPP-VM icon from the Applications folder.")%></li>
+          <li><%= t("Remove all XAMPP-VM data by deleting the ~/.bitnami folder within your home directory on the OS X host.")%></li>
+        </ul>
+      </dd>
+    </dl>
+
+  </div>
+  <% unless is_xampp? %>
+    <div class="large-4 columns">
+      <aside>
+        <h4><%= t('FAQs') %></h4>
+        <ul>
+          <li><%= link_to "Linux #{t('FAQs')}",   localized_path("/faq_linux.html") %></li>
+          <li><%= link_to "Windows #{t('FAQs')}", localized_path("/faq_windows.html") %></li>
+          <li><%= link_to "OS X #{t('FAQs')}",    localized_path("/faq_osx.html") %></li>
+        </ul>
+        <h4><%= t("Support")%></h4>
+        <p><%= t("Visit our %{community} for additional help.",
+               community: localized_link_to("our community pages", "/community.html"))%></p>
+      </aside>
+    </div>
+  <% end %>
+</div>

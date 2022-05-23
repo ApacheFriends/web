@@ -1,0 +1,58 @@
+= Deploy an Application Using Git
+
+include::{docdir}/_includes/common/deploy-git-app/introduction.adoc[]
+NOTE: This guide uses the command-line git client for Linux. If you don't already have this, you can install it easily by running the command _sudo apt-get install git_ or _sudo yum install git_ from your Linux terminal.
+
+To download files with git, you must first ensure that you have privileges to write to the _htdocs/_ subdirectory of the XAMPP installation directory (typically, _/opt/lampp_). Follow these steps:
+
+ . Open a new Linux terminal and ensure you are logged in as root.
+
+ . Create a new group named _gitusers_. This group will contain those user accounts allowed to download files via git.
++
+ groupadd gitusers
++
+image::deploy-git-app/image1.png[]
+
+ . Add your account (in this example, _susan_) to the new group. Add other users if needed.
++
+ usermod -a -G gitusers susan
++
+image::deploy-git-app/image2.png[]
+
+ . Change the ownership and permissions of the _htdocs/_ subdirectory so that it is writable by the the new _gitusers_ group.
++
+ cd /opt/lampp
+ 
+ chown root.gitusers htdocs
+ 
+ chmod 775 htdocs
++
+image::deploy-git-app/image3.png[]
++
+TIP: If you're using XAMPP in a single-user scenario and there will only be one user downloading files via git, you can skip creating a new group and instead simply transfer full ownership of the _htdocs/_ directory to that user. To do this, use a command like _chown susan.susan htdocs_.
+
+To download Slim (or any other application) from its git repository, follow these steps:
+
+ . Ensure that your Apache server is running and that you are logged in as a member of the _gitusers_ group.
+
+ . Obtain the repository's clone URL. On Github, this can be easily obtained by visiting the project's Github page and copying the clone URL from the right side of the page. For third-party or private git repositories, you can obtain the clone URL by asking the project team directly. Make a note of the clone URL, as you'll need it in subsequent steps.
+
+image::deploy-git-app/image4.png[]
+
+ . Open a new Linux terminal.
+
+ . Change to the _htdocs/_ subdirectory of your XAMPP installation directory (typically, _/opt/lampp_). Use the following command to clone the remote repository, remembering to replace the clone URL in the example below with the URL you obtained in the first step.
++
+ git clone https://github.com/codeguy/Slim.git
++
+image::deploy-git-app/image5.png[]
++
+The git client will begin downloading the code from the remote repository.
+
+ . Once the process is complete, you should see a new directory containing the downloaded code, and you can now begin using it.
++
+In this particular case, since the Slim framework includes a starter application, you can simply browse to the URL http://localhost/Slim and you should see the example application's welcome page, as shown below.
++
+image::deploy-git-app/image6.png[]
+
+NOTE: You can use the git command-line client to create a new branch of the codebase should you wish to make any changes to it. If you have appropriate privileges, you can also commit your changes back to the remote repository. http://git-scm.com/docs/gittutorial[Learn more about the git command-line client].

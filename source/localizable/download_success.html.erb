@@ -1,0 +1,68 @@
+---
+title: XAMPP Download Success
+---
+
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns text-center">
+      <h1><%= t("Awesome!") %></h1>
+      <p><%= t("Your download will start automatically. If it doesn't, %{download}.", download: link_to(t('click here'), "http://sourceforge.net/projects/xampp/files/")) %></p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-5 columns">
+    <h3><%= t("Reading") %></h3>
+    <p><%= t("Be sure to read the install instructions and FAQs:") %></p>
+    <ul>
+      <li><%= link_to "Linux #{t('FAQs')}",   localized_path("/faq_linux.html") %></li>
+      <li><%= link_to "Windows #{t('FAQs')}", localized_path("/faq_windows.html") %></li>
+      <li><%= link_to "OS X #{t('FAQs')}",    localized_path("/faq_osx.html") %></li>
+      <li><%= link_to "OS X XAMPP-VM #{t('FAQs')}", localized_path("/faq_stackman.html") %></li>
+    </ul>
+    <p><%= t("You can find additional help on our %{forums} or %{stack_overflow}.", forums: link_to(t("Forums").downcase, "https://community.apachefriends.org"), stack_overflow: link_to("Stack Overflow", "http://stackoverflow.com/search?q=xampp")) %></p>
+  </div>
+  <div class="large-7 columns">
+    <div class="row">
+      <div class="large-12 columns">
+        <h3><%= t("Tell Your Friends about XAMPP") %></h3>
+      </div>
+    </div>
+    <form method="get" action="http://twitter.com/intent/tweet" target="_blank" id="tweet" class="panel">
+      <div class="row">
+        <div class="large-9 columns">
+          <textarea name="text"><%= t("I just got #XAMPP from @ApacheFriends https://www.apachefriends.org #opensource.") %></textarea>
+        </div>
+        <div class="large-3 columns">
+          <input type="submit" value="<%= t("Tweet!") %>" class="button" />
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="large-12 columns">
+        <%= partial "social" %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 columns">
+    <h3><%= t("Add-ons") %></h3> 
+    <% link_to "https://bitnami.com/" do %>
+      <%= retina_image_tag "stack-icons.png", :width => "220" %>
+    <% end %>
+    <p><%= t("Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP. Visit %{bitnami_xampp} to download the installer.", bitnami_xampp: link_to("Bitnami XAMPP", "https://bitnami.com/stack/xampp"), add_ons: link_to(t("Add-ons").downcase, localized_path("/add-ons.html"))) %></p>
+  </div>
+  <div class="large-4 columns">
+    <h3><%= t("Community") %></h3>
+    <p><%= t("XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}.",
+      twitter: link_to("Twitter", "https://twitter.com/apachefriends"),
+      facebook: link_to("Facebook", "https://www.facebook.com/we.are.xampp"),
+      mailing_list: link_to(t("Mailing List"), "/community.html#mailing_list"),
+      forums: link_to(t("Forums"), "https://community.apachefriends.org")
+    ) %></p>
+  </div>
+  <div class="large-4 columns">
+    <%= partial "mailing_list" %>
+  </div>
+</div>

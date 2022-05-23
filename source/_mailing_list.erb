@@ -1,0 +1,14 @@
+<h3><a name="mailing_list"><%= t("Mailing List") %></a></h3>
+
+<form action='https://app.getvero.com/forms/1bf149bd13c54b14716453f7e8a38966' method='post'>
+  <label for='email'>Email</label><input name='email' type='email' required />
+  <label for='user_First Name'><%= t("First Name") %></label><input name='user[First Name]' type='text' required />
+  <label for='user_Last Name'><%= t("Last Name (Optional)") %></label><input name='user[Last Name]' type='text' />
+  <input name='user[email2]' type='hidden' />
+  <input name='redirect_on_success' type='hidden' value='https://www.apachefriends.org/newsletter-welcome.html' />
+  <input name='redirect_on_fail' type='hidden' value='https://www.apachefriends.org/newsletter-error.html' />
+	<p><%= t("Please see our <a href='/privacy_policy.html'>Privacy Policy</a> to learn how we use your personal information.") %></p>
+  <input type='submit' value=<%= t("Submit") %> class="button" />
+</form>
+<p><%= t("We will use the details you provide here to send the XAMPP Newsletter. You may easily unsubscribe at any time.") %></p>
+

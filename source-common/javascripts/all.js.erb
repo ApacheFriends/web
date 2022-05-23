@@ -1,0 +1,99 @@
+//= require foundation/js/foundation
+//= require_tree .
+
+$(document).foundation();
+
+<% unless is_xampp? %>
+$(document).ready(function() {
+  // Load latest forum posts
+  var discussions = $('#discussions'), limit = <%= settings.forum_post_count %>;
+  if ( $('#discussions').length !== 0 ) {
+    $.ajax({
+      url: discussions.data('feed-url') || "<%= settings.forum_domain %>/feed.php",
+      dataType: 'xml',
+      success: function(xml) {
+        $('> ol', discussions).empty(); $('> p', discussions).remove(); // clear any existing content
+        $(xml).find('entry').each(function(i) {
+          if (i > (limit - 1)) return; // stop if we have enough
+          var c = $(this).find('content').text().replace(/<img\b[^>]*>/ig, '');
+          $('> ol', discussions).append('<li><h5>' + $(this).find('title').text() + '</h5><p>' + truncate(c) + ' <a href="' + $(this).find('id').text() + '">Read more&nbsp;&raquo;</p></li>');
+        });
+      }
+    });
+  }
+<% end %>
+
+  // tweet it form
+  $('form#tweet').submit(function(event) {
+    window.open($(this).attr('action') + '?' + $(this).serialize(), '_blank', 'scrollbars=no,menubar=no,height=400,width=500,resizable=yes,toolbar=no,status=no');
+    event.preventDefault();
+  });
+ 
+  // substitute @2x images where available
+  if (window.isRetina()) {
+    console.log("loading retina images..");
+    var replacement;
+    $('img[data-2x]').each(function(i, img) {
+      replacement = $(img).clone().attr('src', $(img).data('2x')) || img;
+      // only replace once the replacement is loaded
+      replacement.load(function() {
+        $(img).replaceWith($(this));
+      });
+    });
+  }
+
+  if (window.isLinux64) {
+    $('a[data-x64-href]').each(function(i) {
+      $(this).attr('href', $(this).data('x64-href'));
+    });
+  }
+
+  $('a[data-delayed-href]').click(function(event) {
+    window.open($(this).data('delayed-href'), '_blank');
+    window.location = $(this).attr('href');
+    event.preventDefault();
+  });
+
+  // FAQ accordions
+  var panels = $('dl.accordion > dd').hide();
+  var draws = $('dl.accordion > dt').css('cursor', 'pointer');
+  draws.click(function() {
+    panels.slideUp();
+    var next = $(this).next()
+    if (next.is(':hidden'))
+      next.slideDown();
+    return false;
+  });
+
+  // Show section if anchor provided
+  var anchor = window.location.hash;
+  if(anchor !== ''){
+    $('dl.accordion > dd' + anchor).show();
+  }
+});
+
+function truncate(text, length) {
+  length = length || 100;
+  return $.trim(strip(text)).substring(0, length).trim(this) + "...";
+}
+
+function strip(html) {
+   var tmp = document.createElement("DIV");
+   tmp.innerHTML = html;
+   return tmp.textContent || tmp.innerText || "";
+}
+
+// Retina detection
+window.isRetina = function() {
+  var mediaQuery = "(-webkit-min-device-pixel-ratio: 1.5),\
+                    (min--moz-device-pixel-ratio: 1.5),\
+                    (-o-min-device-pixel-ratio: 3/2),\
+                    (min-resolution: 1.5dppx)";
+
+  return window.devicePixelRatio > 1 || (window.matchMedia && window.matchMedia(mediaQuery).matches)
+}
+
+// Linux x64 detection
+window.isLinux64 = function() {
+  return window.navigator.platform.substr(0, 5) == "Linux" && window.navigator.platform.substr(-2,2) == "64";
+}

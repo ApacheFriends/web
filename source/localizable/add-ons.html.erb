@@ -1,0 +1,31 @@
+---
+title: XAMPP Add-ons
+description:
+keywords:
+---
+
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1><%= t("XAMPP Add-ons") %></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-8 columns">
+    <%= partial "add-ons" %>
+  </div>
+  <div class="large-4 columns">
+    <aside>
+      <h4><%= t("Add-ons") %></h4>
+      <ul>
+        <li><%= link_to t("Applications"), "#xampp-applications" %></li>
+      </ul>
+      <h4><%= t("Installing an App on XAMPP") %></h4>
+      <p><%= t("See how easy it is to install your favorite apps with XAMPP:") %></p>
+      <% link_to("https://www.youtube-nocookie.com/embed/EsHEgSYKr4A", { target: "_blank", rel: "noopener noreferrer", "data-reveal-id": "addonsVideoModal" }) do %>
+        <%= image_tag "addons-video-thumb.png", :style => "margin-bottom: 1em;" %>
+      <% end %>
+    </aside>
+  </div>
+</div>

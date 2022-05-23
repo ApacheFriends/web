@@ -1,0 +1,47 @@
+:imagesdir: images/
+:cloud: azure
+= Host your Application in the Azure Cloud with XAMPP and Bitnami
+Vikram Vaswani
+v1.0
+:toc:
+
+[[introduction]]
+include::{docdir}/_includes/common/intro.adoc[]
+
+[[requirements]]
+include::{docdir}/_includes/azure/overview.adoc[]
+
+[[step_1]]
+include::{docdir}/_includes/azure/step1.adoc[]
+
+[[step_2]]
+include::{docdir}/_includes/common/step2.adoc[]
+
+[[step_3]]
+include::{docdir}/_includes/azure/step3.adoc[]
+
+[[step_4]]
+include::{docdir}/_includes/azure/step4.adoc[]
+
+[[step_5]]
+include::{docdir}/_includes/azure/step5.adoc[]
+
+[[step_6]]
+include::{docdir}/_includes/azure/step6.adoc[]
+
+[[step_7]]
+== Step 7: Deploy the XAMPP Application to the Cloud Server
+include::{docdir}/_includes/common/step7.adoc[]
+
+[[monitoring]]
+include::{docdir}/_includes/azure/monitoring.adoc[]
+
+[[performance]]
+include::{docdir}/_includes/common/performance.adoc[]
+
+[[useful_links]]
+include::{docdir}/_includes/azure/links.adoc[]
+include::{docdir}/_includes/common/links.adoc[]
+
+[[about_author]]
+include::{docdir}/_includes/common/about.adoc[]

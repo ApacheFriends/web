@@ -1,0 +1,23 @@
+== What You Will Need
+
+Before we begin, a few quick assumptions. This tutorial assumes that you have a XAMPP installation with a working PHP/MariaDB application. It also assumes that you're familiar with the https://mariadb.com/kb/en/mysql-command-line-client/[MariaDB command-line client] and that you have a working knowledge of transferring files between servers using FTP. 
+
+
+****
+If you don't have a custom PHP/MariaDB application at hand, use the example application included with this tutorial: it's a simple to-do list, created with https://getbootstrap.com/[Twitter Bootstrap] and PHP. You can download it link:/downloads/tasks-app-source.zip[from here].
+****
+
+Now, if you're new to the cloud, you might be wondering what Google Cloud Platform and Bitnami are. Very briefly, https://cloud.google.com/[Google Cloud Platform] is a cloud service offering, which allows you to easily create Windows and Linux virtual servers online. https://bitnami.com/[Bitnami] provides pre-packaged server images for these cloud servers, so that you can become productive with them the moment they come online. In short, Google provides the cloud infrastructure, and Bitnami provides the server images and software. And since Google Cloud Platform currently offers a 60-day free trial, you can easily experiment with it without worrying about being billed for usage.
+
+For this tutorial, I'll be using https://bitnami.com/stack/lamp[LAMP packaged by Bitnami], which is Linux-based and bundles PHP, MariaDB and Apache, together with key applications and components like phpMyAdmin, SQLite, Memcache, OpenSSL, APC and cURL. LAMP packaged by Bitnami also includes a number of common PHP frameworks, including the https://framework.zend.com/[Zend Framework], https://symfony.com/[Symfony], https://codeigniter.com[CodeIgniter], https://cakephp.org/[CakePHP], https://www.smarty.net/[Smarty] and https://laravel.com/[Laravel].
+
+To deploy your application to the Google cloud with LAMP packaged by Bitnami, here are the steps you'll follow:
+
+ * Register with Google Cloud Platform
+ * Register with Bitnami
+ * Connect your Google Cloud Platform and Bitnami accounts
+ * Provision a cloud server with LAMP packaged by Bitnami
+ * Validate the cloud server
+ * Deploy and test your application on the cloud server
+
+The next sections will walk you through these steps in detail.

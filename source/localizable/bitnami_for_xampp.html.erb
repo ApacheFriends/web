@@ -1,0 +1,61 @@
+---
+title: Bitnami for XAMPP
+description: Instructions on how to install and use Bitnami XAMPP modules.
+keywords:
+---
+
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1><%= t("Bitnami for XAMPP")%></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <p><%= t("Bitnami for XAMPP greatly simplifies the development of PHP applications on top of ApacheFriends XAMPP, by installing WordPress and many more open source applications on top of XAMPP.") %>
+    <h3><%= t("System Requirements") %></h3>
+    <p><%= t("Bitnami XAMPP modules require either XAMPP or a Bitnami LAMP, MAMP or WAMP stack already installed. They can be used with XAMPP (installer or zip file) v1.7.4 or later on Windows, v1.8.1 or later on Linux, and v1.8.2 or later on Mac OS X.") %></p>
+    <p><%= link_to t('Download Bitnami XAMPP modules'), 'https://bitnami.com/stack/xampp' %></p>
+    <aside>
+      <p><%= t("Bitnami for XAMPP works properly on top of the portable version. Due to application requirements, once you install an application, you cannot move or rename your XAMPP directory.") %></p>
+    </aside>
+    <h3><%= t("Installation") %></h3>
+    <p><%= t("Bitnami XAMPP modules require either XAMPP or a Bitnami LAMP, MAMP or WAMP stack already installed. They can be used with XAMPP (installer or zip file) v1.7.4 or later on Windows, v1.8.1 or later on Linux, and v1.8.2 or later on Mac OS X.") %></p>
+    <p><%= link_to t('Download Bitnami XAMPP modules'), 'https://bitnami.com/stack/xampp' %></p>
+    <aside>
+      <p><%= t("Ensure that the XAMPP MySQL server is running before beginning module installation.") %></p>
+    </aside>
+    <p><%= t("During the installation process, you will be prompted for the XAMPP installation directory. The default installation directory is typically C:\\xampp on Windows, /opt/lampp on Linux and /Applications/XAMPP on Mac OS X.") %></p>
+    <%= image_tag "bitnami-xampp/image1.png" %>
+    <p><%= t("Bitnami for XAMPP modules require the MySQL root password to create the application databases. The default XAMPP password for the MySQL root account is an empty string. If you have changed this password, you will be prompted for it during the module installation process.") %></p>
+    <%= image_tag "bitnami-xampp/image2.png" %>
+
+    <h3><%= t("File Locations") %></h3>
+    <p><%= t("Bitnami applications will be installed within your XAMPP installation directory, in the apps/ subdirectory. All the applications are configured with their files in the following locations:") %></p>
+    <ul>
+      <li><em><%= t("INSTALL-DIR/apps/APP-NAME/htdocs") %></em>: <%= t("Application files") %></li>
+      <li><em><%= t("INSTALL-DIR/apache/conf/httpd.conf") %></em>: <%= t("Apache configuration file") %></li>
+      <li><em><%= t("INSTALL-DIR/apps/APP-NAME/conf/httpd-prefix.conf") %></em> (<%= t("in previous versions, ") %><em><%= t("wordpress.conf") %></em>): <%= t("Apache configuration file for application") %></li>
+    </ul>
+
+    <p><%= t("To access an application, browse to the URL http://localhost/APP-NAME. For example, WordPress will be accessible at http://localhost/wordpress. You can also access applications from the XAMPP welcome page, under the \"Applications\" tab.") %></p>
+    <%= image_tag "bitnami-xampp/image3.png" %>
+    <p><%= link_to t('Find more information about how to configure Bitnami applications'), 'https://docs.bitnami.com/' %></p>
+
+    <h3><%= t("Credentials") %></h3>
+    <p><%= t("Administrator credentials for each application are configured from the installer. The default username is \"user\" and the password is the one configured during the installation process.") %></p>
+    <%= image_tag "bitnami-xampp/image4.png" %>
+
+    <h3><%= t("Graphical Manager") %></h3>
+    <p><%= t("Since XAMPP v1.8.2-beta2, XAMPP for Linux and Mac OS X ship a new graphical manager, as shown below:") %></p>
+    <%= image_tag "bitnami-xampp/image5.png" %>
+    <p><%= t("You can also continue using the regular /opt/lampp/lampp script from the command line on Linux, as shown below:") %></p>
+    <%= image_tag "bitnami-xampp/image6.png" %>
+
+    <h3><%= t("Shell") %></h3>
+    <p><%= t("Some applications include a command-line scripting tool, such as Drush for Drupal. Access these command-line tools from the XAMPP Shell, included with XAMPP for Windows.") %></p>
+    <%= image_tag "bitnami-xampp/image7.png" %>
+
+  </div>
+</div>

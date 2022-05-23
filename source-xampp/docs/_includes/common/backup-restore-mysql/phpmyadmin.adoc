@@ -1,0 +1,53 @@
+== Using phpMyAdmin
+
+XAMPP includes http://www.phpmyadmin.net/[phpMyAdmin], an open-source, browser-based tool for managing MySQL/MariaDB database servers. To backup a MySQL/MariaDB database using phpMyAdmin, follow these steps:
+
+ . Browse to http://localhost/phpMyAdmin or http://127.0.0.1/phpMyAdmin. If required, log in using your database access credentials. On a fresh XAMPP installation without any changes, you can log in as _root_ with a blank password.
+
+ . Select the database to be backed up from the list in the left navigation pane. In this case, we're backing up the WordPress database, which is named _bitnami_wordpress_.
++
+image::backup-restore-mysql/image1.png[]
+
+ . Select the "Export" command in the top navigation bar.
+
+ . On the resulting page, select "Quick" as the export method and "SQL" as the output format. Click "Go" to proceed.
++
+image::backup-restore-mysql/image2.png[]
+
+phpMyAdmin will export the database to a text file as a series of SQL statements. Once done, the browser will prompt you to download it to the desktop. This text file is your backup, so store it safely!
+
+image::backup-restore-mysql/image3.png[]
+
+At a later point, you may wish to restore the database. To restore the data to a fresh MySQL/MariaDB database using phpMyAdmin, follow these steps:
+
+ . Browse to http://localhost/phpMyAdmin or http://127.0.0.1/phpMyAdmin. If required, log in using your database access credentials. 
+
+ . Select the "New" command in the left navigation pane.
++
+image::backup-restore-mysql/image4.png[]
+
+ . On the resulting page, enter a name for the new database (in this case, _myblog_). Select the collation "utf8_general_ci". Click "Create" to create the database.
++
+image::backup-restore-mysql/image5.png[]
++
+Once the database has been created, it will appear in the left navigation pane.
++
+image::backup-restore-mysql/image6.png[]
+
+ . Select the new database from the left navigation pane. In the resulting page, select the "Import" command in the top navigation bar.
+
+ . Click the "Browse..." button and select the backup file created earlier. Click "Go" to proceed. 
++
+image::backup-restore-mysql/image7.png[]
++
+phpMyAdmin will import the data from the backup file. Once complete, you will see a screen indicating the status of the import.
++
+image::backup-restore-mysql/image8.png[]
+
+If you browse the contents of the database, you should now see your original data.
+
+image::backup-restore-mysql/image9.png[]
+
+You should now update your application's configuration and point it to your newly-created database. For example, with the Bitnami WordPress module, you will need to edit the _wp-config.php_ file in the _apps\wordpress\htdocs\_ subdirectory of your XAMPP installation directory. Within this file, you will need to update the _DB_NAME_ constant to use the new database name.
+
+image::backup-restore-mysql/image10.png[]

@@ -1,0 +1,343 @@
+---
+title: XAMPP FAQs for Linux
+description: Instructions on how to install XAMPP for Linux distributions.
+keywords: 
+---
+
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Linux <span><%= t("Frequently Asked Questions")%></span></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <% if is_xampp? %>
+    <div class="large-8 columns">
+  <% else %>
+    <div class="large-12 columns">
+  <% end %>
+    <dl class="accordion">
+      <dt><%= t("How do I install XAMPP?") %></dt>
+      <dd>
+        <p><%= t("Choose your flavor for your linux OS, the 32-bit or 64-bit version.") %></p>
+        <p><%= t("Change the permissions to the installer") %></p>
+        <p><code>chmod 755 xampp-linux-*-installer.run</code></p>
+        <p><%= t("Run the installer") %></p>
+        <p><code>sudo ./xampp-linux-*-installer.run</code></p>
+        <p><%= t("That's all. XAMPP is now installed below the /opt/lampp directory.") %></p>
+      </dd>
+      <dt><%= t("Does XAMPP include MySQL or MariaDB?")%></dt>
+      <dd>
+      <p><%= t("Since XAMPP 5.5.30 and 5.6.14, XAMPP ships MariaDB instead of MySQL. The commands and tools are the same for both.")%></p>
+      </dd>
+      <dt><%= t("How do I start XAMPP?") %></dt>
+      <dd>
+        <p><%= t("To start XAMPP simply call this command:") %></p>
+        <p><code>sudo /opt/lampp/lampp start</code></p>
+        <p><%= t("You should now see something like this on your screen:") %></p>
+        <p><code>Starting XAMPP 1.8.2...<br />
+          LAMPP: Starting Apache...<br />
+          LAMPP: Starting MySQL...<br />
+          LAMPP started.<br /><br />
+          Ready. Apache and MySQL are running.</code></p>
+        <p><%= t("If you get any error messages visit %{community} for help.",
+               community: link_to(t("our community pages"), "/community.html") ) %></p>
+        <p><%= t("Also, note that there is a graphical tool that you can use to manage your servers easily. You can start this tool with the following commands:") %></p>
+        <p><code>cd /opt/lampp<br>
+          sudo ./manager-linux.run (or manager-linux-x64.run)</code></p> 
+      </dd>
+      <dt><%= t("How do I stop XAMPP?") %></dt>
+      <dd>
+        <p><%= t("To stop XAMPP simply call this command:") %></p>
+        <p><code>sudo /opt/lampp/lampp stop</code></p>
+        <p><%= t("You should now see something like this on your screen:") %></p>
+        <p><code>Stopping XAMPP 1.8.2...<br />
+          LAMPP: Stopping Apache...<br />
+          LAMPP: Stopping MySQL...<br />
+          LAMPP stopped.<br /><br /></code></p>
+        <p><%= t("If you get any error messages visit %{community} for help.",
+               community: link_to(t("our community pages"), "/community.html") ) %></p>
+        <p><%= t("Also, note that there is a graphical tool that you can use to start/stop your servers easily. You can start this tool with the following commands:") %></p>
+        <p><code>cd /opt/lampp<br>
+          sudo ./manager-linux.run (or manager-linux-x64.run)</code></p> 
+      </dd>
+      <dt><%= t("How can I test that everything worked?") %></dt>
+      <dd>
+        <p><%= t("Type in the following URL at your favourite web browser:") %></p>
+        <p><code>http://localhost</code></p>
+        <p><%= t("Now you should see the XAMPP start page.")%></p>
+        <%= image_tag "screenshots/xampp-linux-start.jpg" %>
+      </dd>
+      <dt><%= t("Is XAMPP production ready?")%></dt>
+      <dd>
+        <p><%= t("XAMPP is not meant for production use but only for development environments. The way XAMPP is configured is to be open as possible to allow the developer anything he/she wants. For development environments this is great but in a production environment it could be fatal.")%></p>
+        <p><%= t("Here a list of missing security in XAMPP:")%></p>
+        <ol>
+          <li><%= t("The MySQL administrator (root) has no password.") %></li>
+          <li><%= t("The MySQL daemon is accessible via network.") %></li>
+          <li><%= t("ProFTPD uses the password \"lampp\" for user \"daemon\".")%></li>
+        </ol>
+        <p><%= t("To fix most of the security weaknesses simply call the following command:") %></p>
+        <p><code>sudo /opt/lampp/lampp security</code></p>
+        <p><%= t("It starts a small security check and makes your XAMPP installation secure. For example this protects the XAMPP demo pages by a username ('lampp') and password combination.")%></p>
+      </dd>
+      <dt><%= t("What is the meaning of the error messages I see when starting XAMPP?") %></dt>
+      <dd>
+        <p><%= t("You may get several error messages while starting XAMPP:")%></p>
+        <p><code>LAMPP-Apache is already running.<br />
+          An Apache daemon is already running.</code></p>
+        <p><%= t("The LAMPP startup script did not start XAMPP-Apache because there is an Apache instance already running. To start XAMPP properly, first you have to stop this daemon.")%></p>
+        <p><code>LAMPP-MySQL is already running.<br />
+          A MySQL daemon is already running.</code></p>
+        <p><%= t("Mostly due to the same reasons as the above error, the LAMPP startup script found a MySQL daemon already running on your system. To start LAMPP properly, you have to stop this daemon first.")%></p>
+      </dd>
+      <dt><%= t("Apache doesn't seems to start. What can I do?")%></dt>
+      <dd>
+        <p><%= t("This error can exist for multiple reasons. Apache displays this error under several circumstances. To find the exact reason we have to do some research:")%></p>
+        <p><code>tail -2 /opt/lampp/logs/error_log</code></p>
+        <p><%= t("If you get any error messages visit %{community} for help.",
+               community: link_to(t("our community pages"), "/community.html") ) %></p>
+      </dd>
+      <dt><%= t("What do I do if the error message is \"Cannot restore segment prot after reloc: Permission denied?\"")%></dt>
+      <dd>
+        <p><%= t("Some Linux distributions have SELinux activated by default and this is preventing the successful start of XAMPP. You should deactivate it in order to start the XAMPP servers:") %></p>
+        <p><code>sudo /usr/sbin/setenforce 0</code></p>
+        <p><%= t("Now XAMPP should work fine again.") %></p>
+      </dd>
+      <dt><%= t("After I rebooted my Linux box XAMPP stopped running! How can I fix this?") %></dt>
+      <dd>
+        <p><%= t("Correct. That's normal Linux behaviour (which applies to any other Unix-like system). It's the admin's job to make sure a particular application is started at bootup.")%></p>
+        <p><%= t("There is no real standard way to configure the boot process of a Linux system, but most of them should allow you to start XAMPP at boot time using the following steps.") %></p>
+        <p><strong>Debian, Ubuntu.</strong> <% t=("If your Linux distro uses \"update-rc.d\" tool to install the services:")%></p>
+        <p><code>sudo ln -s /opt/lampp/lampp /etc/init.d/lampp</br>
+          sudo update-rc.d lampp start 80 2 3 4 5 . stop 30 0 1 6 .</code></p>
+        <p><strong>RedHat, Fedora, CentOS.</strong> <%= t("If your Linux distro uses \"chkconfig\" tool to install the services you can run the following commands:")%></p>
+        <p><code>sudo ln -s /opt/lampp/lampp /etc/init.d/lampp<br/>
+          sudo chkconfig --add lampp</code></p>
+        <p><strong>SUSE</strong></p>
+        <p><code>sudo ln -s /opt/lampp/lampp /etc/init.d/lampp</br>
+          sudo chkconfig lampp 2345</code></p>
+      </dd>
+      <dt><%= t("How can I make my XAMPP installation more secure?") %></dt>
+      <dd>
+        <p><%= t("In the default installation, XAMPP has no passwords set and it is not recommended to run XAMPP with this configuration accessible by others.")%></p>
+        <p><%= t("Simply type the following command (as root) to start a simple security check:")%></p>
+        <p><code>sudo /opt/lampp/lampp security</code></p>
+        <p><%= t("Now you should see the following dialog on your screen:")%></p>
+        <p><code>
+          XAMPP: Quick security check...</br>
+          XAMPP: MySQL is accessable via network.</br>
+          XAMPP: Normaly that's not recommended. Do you want me to turn it off? [yes] yes</br>
+          XAMPP: Turned off.</br>
+          XAMPP: Stopping MySQL...</br>
+          XAMPP: Starting MySQL...</br>
+          XAMPP: The MySQL/phpMyAdmin user pma has no password set!!!</br>
+          XAMPP: Do you want to set a password? [yes] yes</br>
+          XAMPP: Password: ******</br>
+          XAMPP: Password (again): ******</br>
+          XAMPP: Setting new MySQL pma password.</br>
+          XAMPP: Setting phpMyAdmin's pma password to the new one.</br>
+          XAMPP: MySQL has no root passwort set!!!</br>
+          XAMPP: Do you want to set a password? [yes] yes</br>
+          XAMPP: Write the passworde somewhere down to make sure you won't forget it!!!</br>
+          XAMPP: Password: ******</br>
+          XAMPP: Password (again): ******</br>
+          XAMPP: Setting new MySQL root password.</br>
+          XAMPP: Setting phpMyAdmin's root password to the new one.</br>
+          XAMPP: The FTP password for user 'nobody' is still set to 'lampp'.</br>
+          XAMPP: Do you want to change the password? [yes] yes</br>
+          XAMPP: Password: ******</br>
+          XAMPP: Password (again): ******</br>
+          XAMPP: Reload ProFTPD...</br>
+          XAMPP: Done.</br>
+        </code></p>
+        <p><%= t("(1) Setting a password will protect the XAMPP demo pages (http://localhost/xampp/) using this password. The user name is 'lampp'!")%></p>
+        <p><%= t("After calling this command your XAMPP installation should be more secure.") %></p>
+      </dd>
+      
+      <dt><%= t("How do I activate eAccelerator?") %></dt>
+      <dd>
+        <p><%= t("To activate eAccelerator simply find the following lines in your /opt/lampp/etc/php.ini:") %></p>
+        <p><code>;extension="eaccelerator.so"</br>
+          ;eaccelerator.shm_size="16"</br>
+          ;eaccelerator.cache_dir="/opt/lampp/tmp/eaccelerator"</br>
+          ;eaccelerator.enable="1"</br>
+          ;eaccelerator.optimizer="1"</br>
+          ;eaccelerator.check_mtime="1"</br>
+          ;eaccelerator.debug="0"</br>
+          ;eaccelerator.filter=""</br>
+          ;eaccelerator.shm_max="0"</br>
+          ;eaccelerator.shm_ttl="0"</br>
+          ;eaccelerator.shm_prune_period="0"</br>
+          ;eaccelerator.shm_only="0"</br>
+          ;eaccelerator.compress="1"</br>
+          ;eaccelerator.compress_level="9"</code></p>
+        <p><%= t("Remove the semicolon at the beginning of each line and restart XAMPP. eAccelerator is now active. For more information about eAccelerator, check the eAccelerator home page: %{eaccelerator}.",
+               eaccelerator: link_to("http://eaccelerator.net", "http://eaccelerator.net"))%></p>
+      </dd>
+      <dt><%= t("How do I activate the OCI8/Oracle extension for PHP?") %></dt>
+      <dd>
+        <p><%= t("To activate the OCI8/Oracle extension for PHP please execute the following command:") %></p>
+        <p><code>sudo /opt/lampp/lampp oci8</code></p>
+        <p><%= t("The following dialog will start:")%></p>
+        <p><code>Please enter the path to your Oracle or Instant Client installation:</br>
+          [/opt/lampp/lib/instantclient-11.2.0.3.0] </br>
+          installing symlinks...</br>
+          patching php.ini...</br>
+          OCI8 add-on activation likely successful.</br>
+          LAMPP: Stopping Apache with SSL...</br>
+          LAMPP: Starting Apache with SSL...</code></p>
+        <p><%= t("Now the extension should be active.")%></p>
+      </dd>
+      <dt><%= t("XAMPP runs, but why are none of the images being displayed?")%></dt>
+      <dd>
+        <p><%= t("That's a special problem with some Linux systems. Please open your /opt/lampp/etc/httpd.conf and look for these two lines:") %></p>
+        <p><code>#EnableMMAP off</br>
+          #EnableSendfile off</code></p>
+        <p><%= t("Remove the # in both lines and restart your Apache. Your images should be back.")%></p>
+      </dd>
+
+      <dt><%= t("How do I enable access to phpMyAdmin from the outside?")%></dt>
+      <dd>
+      <p><%= t("In the basic configuration of XAMPP, phpMyAdmin is accessible only from the same host that XAMPP is running on, at http://127.0.0.1 or http://localhost.")%></p>
+      <p><%= t("IMPORTANT: Enabling external access for phpMyAdmin in production environments is a significant security risk. You are strongly advised to only allow access from localhost. A remote attacker could take advantage of any existing vulnerability for executing code or for modifying your data.")%></p>
+      <p><%= t("To enable remote access to phpMyAdmin, follow these steps:")%></p>
+      <ul>
+        <li><%= t("Edit the /opt/lampp/etc/extra/httpd-xampp.conf file in your XAMPP installation directory.")%></li>
+        <li><%= t("Within this file, find the lines below.")%> 
+          <p><code>
+              Alias /phpmyadmin "/opt/lampp/phpmyadmin/"
+              &lt;Directory "/opt/lampp/phpmyadmin"&gt;
+                AllowOverride AuthConfig
+                Require local
+          </code></p>
+        </li>
+        <li><%= t("Then replace 'Require local' with 'Require all granted'.")%></li>
+          <p><code>
+              Alias /phpmyadmin "/opt/lampp/phpmyadmin/"
+              &lt;Directory "/opt/lampp/phpMyAdmin"&gt;
+                AllowOverride AuthConfig
+                Require all granted
+          </code></p>
+        <li><%= t("Restart the Apache server using the XAMPP control panel.")%></li>
+      </ul>
+      </dd>
+      
+      <dt><%= t("Where are the main XAMPP configuration files?")%></dt>
+      <dd>
+        <p><%= t("The main XAMPP configuration files are located as follows")%>:</p>
+        <ul>
+          <li><%= t("Apache configuration file")%>: /opt/lampp/etc/httpd.conf, /opt/lampp/etc/extra/httpd-xampp.conf</li>
+          <li><%= t("PHP configuration file")%>: /opt/lampp/etc/php.ini</li>
+          <li><%= t("MySQL configuration file")%>: /opt/lampp/etc/my.cnf</li>
+          <li><%= t("ProFTPD configuration file")%>: /opt/lampp/etc/proftpd.conf</li>
+        </ul>
+      </dd>
+
+      <dt><%= t("How do I send email with XAMPP?")%></dt>
+      <dd>
+        <p><%= t("To send email with XAMPP, use the PEAR Mail and Net_SMTP packages, which allow you to send email using an external SMTP account (such as a Gmail account). Follow these steps:")%></p>
+        <ul>
+          <li><%= t("Install the Mail and Net_SMTP PEAR modules:")%>
+          <code>
+          pear install Net_SMTP Mail
+          </code>
+          <%= t("Note that if these packages are already installed in your system you see the messages below when executing that command:")%>
+          <code>
+          Ignoring installed package pear/Net_SMTP
+          Ignoring installed package pear/Mail
+          Nothing to install
+          </code>
+          </li>
+          <li>
+          <%= t("Create the following example script in your \"htdocs\" directory to send an email:")%>
+          <code>
+          &lt;?php
+          require_once "Mail.php";
+
+          $from = "your-gmail-username@gmail.com";
+          $to = 'recipients@example.com';
+
+          $host = "ssl://smtp.gmail.com";
+          $port = "465";
+          $username = 'your-gmail-username@gmail.com';
+          $password = 'your-gmail-password';
+
+          $subject = "test";
+          $body = "test";
+
+          $headers = array ('From' => $from, 'To' => $to,'Subject' => $subject);
+          $smtp = Mail::factory('smtp',
+             array ('host' => $host,
+               'port' => $port,
+               'auth' => true,
+               'username' => $username,
+               'password' => $password));
+
+          $mail = $smtp->send($to, $headers, $body);
+
+          if (PEAR::isError($mail)) {
+            echo($mail->getMessage());
+          } else {
+            echo("Message successfully sent!\n");
+          }
+          ?>
+          </code>
+          <p><%= t("Remember to replace the dummy values shown with your actual Gmail address and account password. If you don't plan to use Gmail's SMTP server, replace the SMTP host details with appropriate values for your organization or ISP's SMTP server.")%></p>
+          </li>
+          <li>
+          <%= t("Execute the script by browsing to it using your Web browser. You should see a notification that the message was successfully sent, and the message should be delivered to the recipient email address.")%>
+          </li>
+        </ul>
+      </dd>
+      
+      <dt><%= t("How do I backup/restore my XAMPP system?")%></dt>
+      <dd>
+        <p><strong><%= t("Warning:")%></strong> <%= t("The backup and restore functionality is still under development and may not work correctly.")%></p>
+        <p><%= t("You can create the backup by calling:")%></p>
+        <p><code>sudo /opt/lampp/lampp backup</code></p>
+        <p><%= t("or")%></p>
+        <p><code>sudo /opt/lampp/lampp backup secret</code></p>
+        <p><%= t("Where \"secret\" is your MySQL root password. This command will create the following output:")%></p>
+        <p><code>Backing up databases...</br>
+          Backing up configuration, log and htdocs files...</br>
+          Calculating checksums...</br>
+          Building final backup file...</br>
+          Backup finished.</br>
+          Take care of /opt/lampp/backup/xampp-backup-22-01-14.sh</code></p>
+
+        <p><%= t("The file /opt/lampp/backup/xampp-backup-22-01-14.sh (in the example above) contains your backup data. Store this file in a safe place.")%></p>
+        <p><%= t("On the new machine you need the same version of XAMPP as on your original/source machine.")%></p>
+        <p><code>sudo sh xampp-backup-22-01-14.sh</code></p>
+        <p><%= t("You should see something like this:")%></p>
+        <p><code>Checking integrity of files...</br>
+          Restoring configuration, log and htdocs files...</br>
+          Checking versions...</br>
+          Installed: XAMPP 1.4.2</br>
+          Backup from: XAMPP 1.4.2</br>
+          Restoring MySQL databases...</br>
+          Restoring MySQL user databases...</br>
+          Backup complete. Have fun!</br>
+          You may need to restart XAMPP to complete the restore.</br>
+        </code></p>
+        <p><%= t("That's all. Keep in mind that it's a beta feature.")%></p>
+      </dd>
+    </dl>
+  </div>
+  <% unless is_xampp? %>
+    <div class="large-4 columns">
+      <aside>
+        <h4><%= t('FAQs') %></h4>
+        <ul>
+          <li><%= link_to "Linux #{t('FAQs')}",   localized_path("/faq_linux.html") %></li>
+          <li><%= link_to "Windows #{t('FAQs')}", localized_path("/faq_windows.html") %></li>
+          <li><%= link_to "OS X #{t('FAQs')}",    localized_path("/faq_osx.html") %></li>
+        </ul>
+        <h4><%= t("Support")%></h4>
+        <p><%= t("Visit our %{community} for additional help.",
+               community: localized_link_to("our community pages", "/community.html"))%></p>
+      </aside>
+    </div>
+  <% end %>
+</div>

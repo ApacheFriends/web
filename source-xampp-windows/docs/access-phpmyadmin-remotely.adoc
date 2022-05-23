@@ -1,0 +1,25 @@
+= Enable Remote Access to phpMyAdmin
+
+include::{docdir}/_includes/common/access-phpmyadmin-remotely/introduction.adoc[]
+
+To enable remote access to phpMyAdmin from other hosts, follow these steps:
+
+ . Edit the _apache/conf/extra/httpd-xampp.conf_ file in your XAMPP installation directory (usually, _C:\xampp_).
+ 
+ . Within this file, find the block below:
++ 
+  <Directory "/xampp/phpMyAdmin">
+    AllowOverride AuthConfig
+    Require local
+    ...
++  
+Update this block and replace _Require local_ with _Require all granted_, so that it looks like this:
++
+  <Directory "/xampp/phpMyAdmin">
+    AllowOverride AuthConfig
+    Require all granted
+    ...
+  
+  . Save the file and restart the Apache server using the XAMPP control panel.
+
+You should now be able to access phpMyAdmin from other hosts.  

@@ -1,0 +1,43 @@
+= Run PHP under FastCGI
+
+By default, XAMPP runs PHP as an Apache handler. An alternative approach is to run PHP under FastCGI, which can produce better performance in certain scenarios. To do this, follow these steps:
+
+ . Download a binary version of the _mod_fcgid_ Apache module from http://www.apachelounge.com/download/[the ApacheLounge website]. This module is included in the _modules-2.4.x-win32-VC11.zip_ archive. 
++
+NOTE: XAMPP for Windows only uses 32-bit Apache builds.
+
+ . Extract the _mod_fcgid.so_ file from the downloaded archive file and copy it to the _apache\modules_\ subdirectory of your XAMPP installation directory (usually, _C:\xampp_).
+
+ . Edit the _httpd-xampp.conf_ file in the _apache\conf\extra\_ subdirectory of your XAMPP installation directory. Within this file, make the following changes:
++
+ .. Search for the line
++
+ LoadModule php5_module "/xampp/php/php5apache2_4.dll"
++ 
++
+and modify it to read
++
+ LoadModule fcgid_module modules/mod_fcgid.so  
++
+ .. Find and delete the following lines:
++
+ <FilesMatch "\.php$">
+    SetHandler application/x-httpd-php
+ </FilesMatch>
+ <FilesMatch "\.phps$">
+    SetHandler application/x-httpd-php-source
+ </FilesMatch>
++
+ .. Add the following lines:
++
+ FcgidInitialEnv PHPRC "c:/xampp/php"
+ AddHandler fcgid-script .php  
+ FcgidWrapper "c:/xampp/php/php-cgi.exe" .php  
++
+NOTE: Remember to adjust the file and directory paths above to reflect valid paths on your system.
+
+ . Restart your Apache server through the XAMPP control panel for your changes to take effect.
+
+PHP should now be active using FastCGI. To verify this, browse to the URL http://localhost/xampp/phpinfo.php, which displays the output of the _phpinfo()_ command, and check the "Server API" value near the top of the page.
+
+image::use-php-fcgi/image1.png[]

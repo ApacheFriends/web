@@ -1,0 +1,27 @@
+---
+title: 404 Not Found
+---
+
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>404 <span>Not Found</span></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h2>The page you were looking for doesn't exist.</h2>
+    <p>Think this is an error? Please <%= link_to "let us know", "mailto: hello@apachefriends.org" %>.</p>
+    <form action="<%= localized_path("/search.html") %>" method="get">
+    <div class="row">
+      <div class="large-8 small-9 columns">
+        <input type="text" name="q" placeholder="<%= t("Search") %>..">
+      </div>
+      <div class="large-4 small-3 columns">
+        <input type="submit" class="success button postfix expand" value="<%= t('Search') %>"/>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>

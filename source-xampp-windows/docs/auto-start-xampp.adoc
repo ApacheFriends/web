@@ -1,0 +1,15 @@
+= Auto-Start XAMPP
+ 
+By default, you have to start XAMPP or its components manually every time you reboot your system. However, you can also configure XAMPP components to start automatically on system boot. Follow the steps below.
+
+ . Launch the XAMPP control panel.
+
+ . Stop all the running XAMPP components by clicking the "Stop" button next to each component.
+ 
+ . Click the "Service" button next to each component to install it as a service. Click "Yes" when prompted to confirm. This will install the corresponding service and set it to start automatically on boot.
++
+image::auto-start-xampp/image1.png[]
+
+ . Reboot your system and the selected components should start automatically. 
+
+To revert the changes, simply uncheck the selected services in the XAMPP control panel.

@@ -1,0 +1,3 @@
+== Useful Links
+ * https://cloud.google.com/[Google Cloud Platform]
+ * https://google.bitnami.com/[Bitnami Launchpad for Google Cloud Platform]

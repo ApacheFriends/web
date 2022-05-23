@@ -1,0 +1,1 @@
+http://xdebug.org/[Xdebug] is a powerful open source debugger and profiler for PHP. It is included with XAMPP and can be used to display stack traces, analyze code coverage and profile your PHP code.

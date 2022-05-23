@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Migrate from XAMPP WordPress to Bitnami WordPress Production-Ready  on AWS</title>
+
+    
+    
+
+    <link href="/stylesheets/normalize-ef7858ef.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all-6943501a.css" rel="stylesheet" type="text/css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/javascripts/modernizr-6bfc3ff0.js" type="text/javascript"></script>
+
+    <link rel="alternate" type="application/rss+xml" title="Apache Friends RSS Feed" href="/feed.xml" />
+
+    <link href="/images/favicon-18f9bd42.png" rel="icon" type="image/png" />
+
+      <script type="text/javascript">
+        //<![CDATA[
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-76894-1', 'auto');
+          ga('send', 'pageview');
+        //]]>
+      </script>
+
+  </head>
+
+  <body class="docs docs_migrate-wordpress-xampp-aws-ha">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=277385395761685";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <header class="header contain-to-grid">
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/index.html">Apache Friends</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Left Nav Section -->
+          <ul class="left">
+              <li class="item "><a href="/download.html">Download</a></li>
+              <li class="item "><a href="/add-ons.html">Add-ons</a></li>
+              <li class="item "><a href="/hosting.html">Hosting</a></li>
+              <li class="item "><a href="/community.html">Community</a></li>
+              <li class="item "><a href="/about.html">About</a></li>
+            </ul>
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="item has-form">
+                <form action="/search.html" method="get">
+                <div class="row collapse">
+                  <div class="large-8 small-9 columns">
+                    <label class="visuallyhidden" for="search-field">Search..</label>
+                    <input id="search-field" type="text" name="q" placeholder="Search..">
+                  </div>
+                  <div class="search-button large-4 small-3 columns">
+                    <input type="submit" class="success button expand" value="Search"/>
+                  </div>
+                </div>
+                </form>
+              </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Documentation</h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="sub-nav">
+      <li>
+<a class="pdf" target="_blank" href="/docs/migrate-wordpress-xampp-aws-ha.pdf">          Download PDF
+          <span>migrate-wordpress-xampp-aws-ha.pdf</span>
+</a>      </li>
+    </ul>
+    <article class="asciidoctor">
+        <aside>
+          <h3>Contents</h3>
+          <ol class="sections">
+              <li><a href="/docs/migrate-wordpress-xampp-aws-ha.html#introduction">Introduction</a></li>
+              <li><a href="/docs/migrate-wordpress-xampp-aws-ha.html#wordpress_production_ready">WordPress Production-Ready</a></li>
+              <li><a href="/docs/migrate-wordpress-xampp-aws-ha.html#assumptions">Assumptions</a></li>
+              <li><a href="/docs/migrate-wordpress-xampp-aws-ha.html#step_1_back_up_local_xampp_data">Step 1: Back up local XAMPP data</a></li>
+              <li><a href="/docs/migrate-wordpress-xampp-aws-ha.html#step_2_import_data_into_wordpress_production_ready">Step 2: Import data into WordPress Production-Ready</a></li>
+              <li><a href="/docs/migrate-wordpress-xampp-aws-ha.html#scalability">Scalability</a></li>
+              <li><a href="/docs/migrate-wordpress-xampp-aws-ha.html#upgrades">Upgrades</a></li>
+              <li><a href="/docs/migrate-wordpress-xampp-aws-ha.html#useful_links">Useful Links</a></li>
+              <li><a href="/docs/migrate-wordpress-xampp-aws-ha.html#about_author">About the author</a></li>
+          </ol>
+        </aside>
+      <h1>Migrate from XAMPP WordPress to Bitnami WordPress Production-Ready  on AWS</h1>
+<div class="sect1">
+<h2 id="introduction">Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you&#8217;re a WordPress developer, you already know about <a href="https://www.apachefriends.org/download.html">XAMPP</a>: it provides you with a local development environment to create and test your WordPress themes, plugins and content. But what happens once your WordPress application is ready to go live, and you need to move it over to a highly-available, secure and scalable deployment in the cloud?</p>
+</div>
+<div class="paragraph">
+<p>That&#8217;s where <a href="https://aws.amazon.com/marketplace/pp/B07PW4R98M">WordPress Production-Ready Certified by Bitnami and Automattic</a> comes in. It provides a highly-available WordPress environment on <a href="https://aws.amazon.com">Amazon Web Services (AWS)</a>, making it easy to transition your WordPress application from development to production in just a few clicks. WordPress Production-Ready installs WordPress on multiple Amazon EC2 instances in the AWS cloud, together with an Amazon Aurora relational database, to improve security and scalability.</p>
+</div>
+<div class="paragraph">
+<p>This guide walks you through the process of migrating your application code and data from WordPress running locally on XAMPP to WordPress Production-Ready running on Amazon Web Services.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="wordpress_production_ready">WordPress Production-Ready</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before starting the migration process, take a few minutes to understand the key components of <a href="https://aws.amazon.com/marketplace/pp/B07PW4R98M">WordPress Production-Ready</a>. The following diagram displays the topology:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/aws/wordpress-ha-architecture-b66497aa.png" alt="wordpress ha architecture">
+</div>
+</div>
+<div class="paragraph">
+<p>WordPress Production-Ready provides:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A highly available architecture that spans two Availability Zones</p>
+</li>
+<li>
+<p>A virtual private cloud (VPC) configured with public and private subnets according to AWS best practices. This provides the network infrastructure for your deployment.</p>
+</li>
+<li>
+<p>An internet gateway to provide access to the internet.</p>
+</li>
+<li>
+<p>In the public subnets, managed NAT gateways to allow outbound internet access for resources in the private subnets.</p>
+</li>
+<li>
+<p>In the public subnets, Linux bastion hosts in an Auto Scaling group to allow inbound Secure Shell (SSH) access to EC2 instances in public and private subnets.</p>
+</li>
+<li>
+<p>Elastic Load Balancing (ELB) to distribute HTTP and HTTPS requests across multiple WordPress instances.</p>
+</li>
+<li>
+<p>In the private subnets, EC2 instances that host the WordPress application on Apache. These instances are provisioned in an Auto Scaling group to ensure high availability.</p>
+</li>
+<li>
+<p>In the private subnets, Aurora DB instances administered by Amazon Relational Database Service (Amazon RDS) and Amazon ElastiCache Memcached in-memory data stores.</p>
+</li>
+<li>
+<p>In the private subnets, Amazon Elastic File System (Amazon EFS) to share assets (such as plugins, themes, and images) across WordPress instances.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="assumptions">Assumptions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This guide discusses a simple approach to migrating your WordPress application from your local XAMPP development environment to the AWS cloud using the pre-installed <a href="https://wordpress.org/plugins/all-in-one-wp-migration/">All-In-One WP Migration plugin</a>.</p>
+</div>
+<div class="paragraph">
+<p>This guide assumes that you have the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A local XAMPP deployment with the WordPress module. If you don&#8217;t, <a href="https://www.apachefriends.org/download.html">download XAMPP for your platform</a> and then <a href="https://bitnami.com/stack/xampp">download and install the WordPress module for XAMPP</a>.</p>
+</li>
+<li>
+<p>A running deployment of WordPress Production-Ready on AWS. If you don&#8217;t, <a href="https://aws.amazon.com/marketplace/pp/B07PW4R98M">deploy WordPress Production-Ready</a>.</p>
+</li>
+<li>
+<p>Administrator credentials for both local and cloud deployments of WordPress.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step_1_back_up_local_xampp_data">Step 1: Back up local XAMPP data</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Begin by activating the All-In-One WP Migration plugin in your local WordPress deployment, as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Log in to your local WordPress deployment as an administrator.</p>
+</li>
+<li>
+<p>Navigate to the "Plugins &#8594; Installed plugins" page.</p>
+</li>
+<li>
+<p>Activate the "All-In-One WP Migration" plugin.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/aws/activate-plugin-5e087d3f.png" alt="activate plugin">
+</div>
+</div>
+<div class="paragraph">
+<p>Then, use the plugin to export the contents of your WordPress deployment:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Navigate to the "All-in-One WP Migration &#8594; Export" page.</p>
+</li>
+<li>
+<p>Click the "Export" button and select the "File" option to export the entire content of your WordPress blog, including plugins and themes.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/aws/export-data-52288c32.png" alt="export data">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You will now be prompted to download a ZIP file containing the content to be migrated through your browser.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/aws/download-data-447d3084.png" alt="download data">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Download and save this file to the local system.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step_2_import_data_into_wordpress_production_ready">Step 2: Import data into WordPress Production-Ready</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Next, activate the All-In-One WP Migration plugin in the WordPress Production-Ready deployment and follow these steps to import the saved data:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Log in to the WordPress Production-Ready deployment as an administrator.</p>
+</li>
+<li>
+<p>Navigate to the "Plugins &#8594; Installed plugins" page.</p>
+</li>
+<li>
+<p>Activate the "All-In-One WP Migration" plugin.</p>
+</li>
+<li>
+<p>Navigate to the "All-in-One WP Migration &#8594; Import" page.</p>
+</li>
+<li>
+<p>Click the "Import" button and select the "File" option.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/aws/import-data-caa5a2d5.png" alt="import data">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Select the ZIP file created previously and wait for the file to be uploaded.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/aws/upload-data-96288fc4.png" alt="upload data">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Review the warning and click the "Proceed" button to finish the import process.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/aws/import-warning-325dae1f.png" alt="import warning">
+</div>
+</div>
+<div class="paragraph">
+<p>The exported content will be imported into the new WordPress Production-Ready deployment, overwriting any existing content. You will be prompted to log in to the WordPress dashboard again.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+At this point, you must log in using the credentials from your original WordPress deployment on XAMPP.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click the "Permalinks Settings" link on the success page.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/aws/import-success-c083c58c.png" alt="import success">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Verify the permalink settings. In most cases, no changes will be necessary. Click "Save Changes" to save your changes.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Your content should now be fully migrated and usable on the new WordPress Production-Ready deployment.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="scalability">Scalability</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>WordPress Production-Ready deploys an Auto Scaling group to ensure high availability. This makes it easy to scale your WordPress Production-Ready instances horizontally and vertically.</p>
+</div>
+<div class="paragraph">
+<p>To dynamically increase or decrease the number of instances, you can create horizontal scaling policies. When a scaling policy is in effect, the Auto Scaling group automatically launches or terminates instances as needed. By default, the solution configures a single policy to maintain the instances' average CPU utilization at 75%. You can also scale WordPress Production-Ready instances vertically by redeploying them on a different AWS EC2 instance type.</p>
+</div>
+<div class="paragraph">
+<p>Read more about how to scale WordPress Production-Ready instances on AWS.[<a href="https://docs.bitnami.com/aws-templates/apps/wordpress-production-ready/administration/scale-deployment/" class="bare">https://docs.bitnami.com/aws-templates/apps/wordpress-production-ready/administration/scale-deployment/</a>]</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="upgrades">Upgrades</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The easiest way to upgrade the WordPress Production-Ready is to upgrade the CloudFormation stack.</p>
+</div>
+<div class="paragraph">
+<p>Bitnami publishes a new version of the CloudFormation template, updating the AMIs used by it, whenever there&#8217;s a new version of the application or any subcomponent (such as PHP, Apache or OpenSSL) included on it. By replacing the template used by the WordPress Production-Ready stack, you will upgrade it.</p>
+</div>
+<div class="paragraph">
+<p>All the data, application files and database, are stored outside the application instances on Amazon EFS and Amazon Aurora (RDS) respectively. Therefore, replacing the AMIs does not result in any data loss.</p>
+</div>
+<div class="paragraph">
+<p>Read more about how to upgrade WordPress Production-Ready instances.[<a href="https://docs.bitnami.com/aws-templates/apps/wordpress-production-ready/administration/upgrade/" class="bare">https://docs.bitnami.com/aws-templates/apps/wordpress-production-ready/administration/upgrade/</a>]</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="useful_links">Useful Links</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.apachefriends.org/download.html">XAMPP</a></p>
+</li>
+<li>
+<p><a href="https://aws.amazon.com/marketplace/pp/B07PW4R98M">WordPress Production-Ready</a></p>
+</li>
+<li>
+<p><a href="https://docs.bitnami.com/aws-templates/apps/wordpress-production-ready/">WordPress Production-Ready documentation</a></p>
+</li>
+<li>
+<p><a href="https://aws.amazon.com">Amazon Web Services</a></p>
+</li>
+<li>
+<p><a href="https://bitnami.com/">Bitnami</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="about_author">About the author</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://vikram-vaswani.in/">Vikram Vaswani</a> is the founder of Melonfire, an open source software consultancy firm, and the author of seven books on PHP, MySQL and XML development. Read more about him at <a href="http://vikram-vaswani.in/" class="bare">http://vikram-vaswani.in/</a>.</p>
+</div>
+</div>
+</div>
+    </article>
+  </div>
+</div>
+
+    </div>
+
+    <footer class="footer row">
+      <div class="columns">
+        <div class="footer_lists-container row collapse">
+          <div class="footer_social columns large-2">
+            <ul class="social">
+  <li class="twitter"><a href="https://twitter.com/apachefriends">Follow us on Twitter</a></li>
+  <li class="facebook"><a href="https://www.facebook.com/we.are.xampp">Like us on Facebook</a></li>
+</ul>
+
+            <p class="footer_copyright">Copyright (c) 2022, Apache Friends</p>
+          </div>
+          <ul class="footer_links columns large-9">
+            <li><a href="https://www.apachefriends.org/blog.html">Blog</a></li>
+            <li><a href="/privacy_policy.html">Privacy Policy</a></li>
+            <li>
+<a target="_blank" href="http://www.fastly.com/">                CDN provided by
+                <img width="48" data-2x="/images/fastly-logo@2x-dad6aac3.png" src="/images/fastly-logo-08360cb5.png" />
+</a>            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/javascripts/all-d8620939.js" type="text/javascript"></script>
+  </body>
+</html>

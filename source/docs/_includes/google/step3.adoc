@@ -1,0 +1,40 @@
+== Step 3: Connect your Google Cloud Platform and Bitnami Accounts
+
+
+****
+At the end of this step, your Bitnami Launchpad for Google Cloud Platform will be configured and you will be ready to provision a cloud server.
+****
+
+The easiest way to set up your Google cloud server with LAMP packaged by Bitnami is via the https://google.bitnami.com/[Bitnami Launchpad for Google Cloud Platform], which gives you a simple control panel to provision, start, stop, connect to and check status of your cloud servers. However, to use it, you must first connect your Google Cloud Platform and Bitnami accounts.
+
+To do this:
+
+ * Log in to your Bitnami account if you're not already logged in.
+ * Browse to https://google.bitnami.com/[https://google.bitnami.com/].
+ * Select the "Sign in with Bitnami" link in the top right corner.
+
+image::{cloud}/image31.jpg[]
+
+The Launchpad will recognize your Bitnami credentials and automatically sign you in.
+
+The next step is to set up an administrative password and connect your Google Cloud Platform account with your Bitnami account. To do this:
+
+ * Select "Virtual Machines" in the Launchpad menu.
+ * Since this is your first time, you'll be prompted to set up your Bitnami password vault by entering an administrative password. Enter a hard-to-guess password.
++
+image::{cloud}/image32.jpg[]
++
+The Bitnami Vault password offers an additional level of protection against misuse: you'll need to enter it when performing certain operations, such as creating new cloud servers. Again, make sure you note it down for future reference.
++
+IMPORTANT: Your Bitnami Vault password is different from your Google Account password.
++
+ * Once your password has been accepted, you'll be redirected back to the Launchpad page. Select "Virtual Machines" again in the Launchpad menu.
+ * You'll be transferred to an authorization page, where you can confirm that the Bitnami Launchpad is authorized to connect to your Google Cloud Platform account. Click the "Accept" button on the page to proceed.
++
+image::{cloud}/image33.jpg[]
+
+ * You'll now be redirected back to the Bitnami Launchpad, and asked to select a project within which to launch new cloud servers. Enter the project ID you noted in Step 1.
++
+image::{cloud}/image34.jpg[]
+
+Your Google Cloud Platform and Bitnami accounts are now connected, and you can launch new cloud servers with Bitnami application stacks.

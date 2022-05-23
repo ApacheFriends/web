@@ -1,0 +1,83 @@
+= Start a New Zend Framework 2 Project
+
+include::{docdir}/_includes/common/create-framework-project-zf2/introduction.adoc[]
+
+NOTE: This guide uses the command-line git client for Linux. If you don't already have this, you can install it easily by running the command _sudo apt-get install git_ or _sudo yum install git_ from your Linux terminal.  It also assumes that the new Zend Framework 2 application will be accessible at the URL http://localhost/myapp/.
+
+Follow these steps:
+
+ . Open a new Linux terminal and ensure you are logged in as root.
+
+ . Within your XAMPP installation directory (usually _/opt/lampp_), create a new directory named _apps/_ (if it doesn't already exist). Then, within this new _apps/_ directory, create a directory to hold your Zend Framework 2 application and its related XAMPP configuration files. In this case, call the directory _myapp/_.
++
+ cd /opt/lampp
+ mkdir apps
+ mkdir apps/myapp
+
+ . Clone the Zend Framework 2 sample application repository to the _myapp/_ directory using _git_.
++
+ cd /opt/lampp/apps/myapp
+ git clone git://github.com/zendframework/ZendSkeletonApplication.git
++
+image::create-framework-project-zf2/image1.png[]
++
+This will produce a _ZendSkeletonApplication/_ subdirectory in the _myapp/_ directory. Rename this newly-created subdirectory to _htdocs_. 
++
+ cd /opt/lampp/apps/myapp/
+ mv ZendSkeletonApplication htdocs
++
+NOTE: This will be the main working directory for your Zend Framework 2 project.
+
+ . Change to the _myapp/htdocs/_ directory and run the following commands to update https://getcomposer.org/[Composer] (the PHP dependency manager) and install the Zend Framework 2 components.
++
+ cd /opt/lampp/apps/myapp/htdocs
+ /opt/lampp/bin/php composer.phar self-update
+ /opt/lampp/bin/php composer.phar install
++
+In case you encounter SSL errors when running the above commands, use the following command to let PHP know where to find your system's SSL certificates, then try again.
++
+ export SSL_CERT_DIR=/etc/ssl/certs
++
+Here's an example of what you might see as Composer downloads and installs dependencies.
++
+image::create-framework-project-zf2/image2.png[]
+
+ . Next, within the _myapp/_ directory, create a new conf/ subdirectory.
++
+ cd /opt/lampp/apps/myapp
+ mkdir conf
+
+ .. Within the new _conf_/ subdirectory, use your text editor to create and populate a file named _httpd-prefix.conf_ with the following content:
++
+ Alias /myapp/ "/opt/lampp/apps/myapp/htdocs/public/"
+ Alias /myapp "/opt/lampp/apps/myapp/htdocs/public"
+ Include "/opt/lampp/apps/myapp/conf/httpd-app.conf"
+
+ .. Within the _conf/_ subdirectory, also create and populate a file named _httpd-app.conf_ with the following content:
++
+ <Directory /opt/lampp/apps/myapp/htdocs/public>
+    Options +FollowSymLinks
+    AllowOverride All
+    Require all granted
+ </Directory>
+
+ . Edit the _httpd-xampp.conf_ file in the _etc/extra/_ subdirectory of your XAMPP installation directory and add the following line at the end to include the _httpd-prefix.conf_ created earlier.
++
+ Include "/opt/lampp/apps/myapp/conf/httpd-prefix.conf"
++
+NOTE: Remember to update the above file and directory paths so that they're valid for your system.
+
+ . Check that you have a directory structure like this:
++
+image::create-framework-project-zf2/image3.png[]
+
+ . Restart the Apache server using the XAMPP control panel.
+
+ . You should now be able to access the Zend Framework 2 skeleton application by browsing to http://localhost/myapp. Here is an example of the default welcome page you should see:
++
+image::create-framework-project-zf2/image4.png[]
+
+You can now begin developing your Zend Framework 2 application by modifying the skeleton application code. For more information, http://framework.zend.com/manual/2.3/en/user-guide/overview.html[refer to the Zend Framework 2 User Guide].
+
+
+

@@ -1,0 +1,1 @@
+XAMPP makes it easy to start developing with PHP, and http://framework.zend.com/[Zend Framework 2] is one of the most popular PHP development frameworks. This guide walks you through the process of initializing a new Zend Framework 2 project with XAMPP.

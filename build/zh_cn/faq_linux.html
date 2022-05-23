@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="zh_cn">
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>XAMPP FAQs for Linux</title>
+
+    <meta name="description" content="Instructions on how to install XAMPP for Linux distributions." />
+    
+
+    <link href="/stylesheets/normalize-ef7858ef.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all-6943501a.css" rel="stylesheet" type="text/css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/javascripts/modernizr-6bfc3ff0.js" type="text/javascript"></script>
+
+    <link rel="alternate" type="application/rss+xml" title="Apache Friends RSS Feed" href="/feed.xml" />
+
+    <link href="/images/favicon-18f9bd42.png" rel="icon" type="image/png" />
+
+      <script type="text/javascript">
+        //<![CDATA[
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-76894-1', 'auto');
+          ga('send', 'pageview');
+        //]]>
+      </script>
+
+  </head>
+
+  <body class="zh_cn zh_cn_faq_linux">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=277385395761685";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <header class="header contain-to-grid">
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/zh_cn/index.html">Apache Friends</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Left Nav Section -->
+          <ul class="left">
+              <li class="item "><a href="/zh_cn/download.html">下载</a></li>
+              <li class="item "><a href="/zh_cn/add-ons.html">扩展</a></li>
+              <li class="item "><a href="/zh_cn/hosting.html">托管</a></li>
+              <li class="item "><a href="/zh_cn/community.html">社区</a></li>
+              <li class="item "><a href="/zh_cn/about.html">关于</a></li>
+            </ul>
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="item has-form">
+                <form action="/zh_cn/search.html" method="get">
+                <div class="row collapse">
+                  <div class="large-8 small-9 columns">
+                    <label class="visuallyhidden" for="search-field">搜索..</label>
+                    <input id="search-field" type="text" name="q" placeholder="搜索..">
+                  </div>
+                  <div class="search-button large-4 small-3 columns">
+                    <input type="submit" class="success button expand" value="搜索"/>
+                  </div>
+                </div>
+                </form>
+              </li>
+              <li id="locales" class="item has-dropdown">
+<a href="#">                  <img src="/images/flags/zh_cn-9c7185e0.png" /> ZH CN
+</a>                <ul class="dropdown">
+                  <li>
+<a href="/de/faq_linux.html">                      <img src="/images/flags/de-1daf2d67.png" /> DE
+</a>                  </li>
+                  <li>
+<a href="/faq_linux.html">                      <img src="/images/flags/en-dd9e149e.png" /> EN
+</a>                  </li>
+                  <li>
+<a href="/es/faq_linux.html">                      <img src="/images/flags/es-a88880bf.png" /> ES
+</a>                  </li>
+                  <li>
+<a href="/fr/faq_linux.html">                      <img src="/images/flags/fr-0f67f12d.png" /> FR
+</a>                  </li>
+                  <li>
+<a href="/hu/faq_linux.html">                      <img src="/images/flags/hu-9a189d12.png" /> HU
+</a>                  </li>
+                  <li>
+<a href="/it/faq_linux.html">                      <img src="/images/flags/it-c786c15b.png" /> IT
+</a>                  </li>
+                  <li>
+<a href="/jp/faq_linux.html">                      <img src="/images/flags/jp-3c5b1754.png" /> JP
+</a>                  </li>
+                  <li>
+<a href="/pl/faq_linux.html">                      <img src="/images/flags/pl-e383eba9.png" /> PL
+</a>                  </li>
+                  <li>
+<a href="/pt_br/faq_linux.html">                      <img src="/images/flags/pt_br-e39a2058.png" /> PT BR
+</a>                  </li>
+                  <li>
+<a href="/ro/faq_linux.html">                      <img src="/images/flags/ro-f141b663.png" /> RO
+</a>                  </li>
+                  <li>
+<a href="/ru/faq_linux.html">                      <img src="/images/flags/ru-24b172c5.png" /> RU
+</a>                  </li>
+                  <li>
+<a href="/tr/faq_linux.html">                      <img src="/images/flags/tr-e1821d04.png" /> TR
+</a>                  </li>
+                  <li>
+<a href="/ur/faq_linux.html">                      <img src="/images/flags/ur-952dd97a.png" /> UR
+</a>                  </li>
+                  <li>
+<a href="/zh_cn/faq_linux.html">                      <img src="/images/flags/zh_cn-9c7185e0.png" /> ZH CN
+</a>                  </li>
+                  <li>
+<a href="/zh_tw/faq_linux.html">                      <img src="/images/flags/zh_tw-92fe4f80.png" /> ZH TW
+</a>                  </li>
+                </ul>
+              </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Linux <span>经常提到的问题</span></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="large-12 columns">
+    <dl class="accordion">
+      <dt>如何安装XAMPP？</dt>
+      <dd>
+        <p>请选择您的Linux操作系统版本,32位或64位.</p>
+        <p>为安装程序更改权限</p>
+        <p><code>chmod 755 xampp-linux-*-installer.run</code></p>
+        <p>运行安装程序</p>
+        <p><code>sudo ./xampp-linux-*-installer.run</code></p>
+        <p>XAMPP安装完成，安装目录：/opt/lampp            </p>
+      </dd>
+      <dt>Does XAMPP include MySQL or MariaDB?</dt>
+      <dd>
+      <p>Since XAMPP 5.5.30 and 5.6.14, XAMPP ships MariaDB instead of MySQL. The commands and tools are the same for both.</p>
+      </dd>
+      <dt>如何启动XAMPP？</dt>
+      <dd>
+        <p>使用该命令启动XAMPP：</p>
+        <p><code>sudo /opt/lampp/lampp start</code></p>
+        <p>现在你可以在屏幕上看到类似这样的东西：</p>
+        <p><code>Starting XAMPP 1.8.2...<br />
+          LAMPP: Starting Apache...<br />
+          LAMPP: Starting MySQL...<br />
+          LAMPP started.<br /><br />
+          Ready. Apache and MySQL are running.</code></p>
+        <p>如果收到任何错误信息，请访问 %{社区} 寻求帮助。</p>
+        <p>同时注意有一个图形化的工具使你易于维护你的服务器。你可以通过下面这些命令起动此工具。</p>
+        <p><code>cd /opt/lampp<br>
+          sudo ./manager-linux.run (or manager-linux-x64.run)</code></p> 
+      </dd>
+      <dt>如何停止运行XAMPP？</dt>
+      <dd>
+        <p>使用该命令停止运行XAMPP：</p>
+        <p><code>sudo /opt/lampp/lampp stop</code></p>
+        <p>现在你可以在屏幕上看到类似这样的东西：</p>
+        <p><code>Stopping XAMPP 1.8.2...<br />
+          LAMPP: Stopping Apache...<br />
+          LAMPP: Stopping MySQL...<br />
+          LAMPP stopped.<br /><br /></code></p>
+        <p>如果收到任何错误信息，请访问 %{社区} 寻求帮助。</p>
+        <p>同时注意有一个图形化的工具使你易于起动或停止你的服务器。你可以通过下面这些命令起动此工具。</p>
+        <p><code>cd /opt/lampp<br>
+          sudo ./manager-linux.run (or manager-linux-x64.run)</code></p> 
+      </dd>
+      <dt>我如何检查是否一切正常？</dt>
+      <dd>
+        <p>在你喜欢的浏览器中输入下面的链接：</p>
+        <p><code>http://localhost</code></p>
+        <p>You should see the XAMPP start page, as shown below.</p>
+        <img src="/images/screenshots/xampp-linux-start-bf779084.jpg" />
+      </dd>
+      <dt>XAMPP准备好了吗？</dt>
+      <dd>
+        <p>XAMPP是一个非常优秀而又实用的开发测试环境，XAMPP的配置是开放的，允许开发者任意去修改或配置适合您的开发环境。XAMPP并非商业运行环境，用于商业运作将是一个致命的环境！</p>
+        <p>如下是XAMPP不安全的配置：</p>
+        <ol>
+          <li>MySQL数据库管理帐号 (root)没设置密码。</li>
+          <li>MySQL数据库可以通过网络打开。</li>
+          <li>ProFTPD uses the password "lampp" for user "daemon".</li>
+        </ol>
+        <p>解决简单问题的安全命令：</p>
+        <p><code>sudo /opt/lampp/lampp security</code></p>
+        <p>为了让您安装的XAMMP更安全即将启动一个安全检查过程，例如，这可以防止通过默认的用户名('lampp') 和默认的密码组合非法访问XAMPP的演示页面。</p>
+      </dd>
+      <dt>看到有XAMPP启动时的错误信息?</dt>
+      <dd>
+        <p>你可能会得到一些XAMPP启动错误信息</p>
+        <p><code>LAMPP-Apache is already running.<br />
+          An Apache daemon is already running.</code></p>
+        <p>由于另外一个Apache正在运行，所以没能成功启动XAMPP-Apache。如想正常启动XAMPP-Apache，先把另外一个Apache停止运行。</p>
+        <p><code>LAMPP-MySQL is already running.<br />
+          A MySQL daemon is already running.</code></p>
+        <p>这主要是由于和上述错误同样的原因，LAMPP启动脚本发现一个MySQL守护进程已经在你的系统上运行。要正确启动LAMPP，你必须先停止该守护进程。</p>
+      </dd>
+      <dt>Apache doesn't seem to start. What can I do?</dt>
+      <dd>
+        <p>这个错误可能存在多种原因，Apache提示有多种错误的话，我们找出的错误：</p>
+        <p><code>tail -2 /opt/lampp/logs/error_log</code></p>
+        <p>如果收到任何错误信息，请访问 %{社区} 寻求帮助。</p>
+      </dd>
+      <dt>如果错误信息是“Cannot restore segment prot after reloc: Permission denied?（重定位后无法恢复段保护：权限不足？）”我该怎么办？</dt>
+      <dd>
+        <p>有些Linux版本默认启动了SELinux，这会导致XAMPP无法成功启动。你应该关闭SELinux以启动XMAPP服务器：</p>
+        <p><code>sudo /usr/sbin/setenforce 0</code></p>
+        <p>XAMMP现在应该重新工作正常了。</p>
+      </dd>
+      <dt>我重启我的Linux机器后，XAMPP不工作了！怎么修复？</dt>
+      <dd>
+        <p>正确。这是正常的Linux的行为（任何其它类Unix系统都会有类似的行为） 。这是管理员为确保一个特定的应用程序随操作系统启动应做的工作。</p>
+        <p>Linux操作系统的启动过程配置没有真正的标准方法，但是其中许多应该可以允许你通过下面的步骤确保XAMMP在系统启动后运行。</p>
+        <p><strong>Debian, Ubuntu.</strong> </p>
+        <p><code>sudo ln -s /opt/lampp/lampp /etc/init.d/lampp</br>
+          sudo update-rc.d lampp start 80 2 3 4 5 . stop 30 0 1 6 .</code></p>
+        <p><strong>RedHat, Fedora, CentOS.</strong> 如果你的Linux版本是使用“chkconfig”工具来安装服务的，你可以使用以下命令：</p>
+        <p><code>sudo ln -s /opt/lampp/lampp /etc/init.d/lampp<br/>
+          sudo chkconfig --add lampp</code></p>
+        <p><strong>SUSE</strong></p>
+        <p><code>sudo ln -s /opt/lampp/lampp /etc/init.d/lampp</br>
+          sudo chkconfig lampp 2345</code></p>
+      </dd>
+      <dt>如何让XAMPP更安全？</dt>
+      <dd>
+        <p>默认安装时，XAMPP没有设置密码，但是我们不推荐这种可以被其他人访问的配置来运行XAMPP</p>
+        <p>只需（以root用户）输入以下命令就可以进行简单的安全检察：</p>
+        <p><code>sudo /opt/lampp/lampp security</code></p>
+        <p>现在您应该可以在屏幕上看到如下对话框：</p>
+        <p><code>
+          XAMPP: Quick security check...</br>
+          XAMPP: MySQL is accessable via network.</br>
+          XAMPP: Normaly that's not recommended. Do you want me to turn it off? [yes] yes</br>
+          XAMPP: Turned off.</br>
+          XAMPP: Stopping MySQL...</br>
+          XAMPP: Starting MySQL...</br>
+          XAMPP: The MySQL/phpMyAdmin user pma has no password set!!!</br>
+          XAMPP: Do you want to set a password? [yes] yes</br>
+          XAMPP: Password: ******</br>
+          XAMPP: Password (again): ******</br>
+          XAMPP: Setting new MySQL pma password.</br>
+          XAMPP: Setting phpMyAdmin's pma password to the new one.</br>
+          XAMPP: MySQL has no root passwort set!!!</br>
+          XAMPP: Do you want to set a password? [yes] yes</br>
+          XAMPP: Write the passworde somewhere down to make sure you won't forget it!!!</br>
+          XAMPP: Password: ******</br>
+          XAMPP: Password (again): ******</br>
+          XAMPP: Setting new MySQL root password.</br>
+          XAMPP: Setting phpMyAdmin's root password to the new one.</br>
+          XAMPP: The FTP password for user 'nobody' is still set to 'lampp'.</br>
+          XAMPP: Do you want to change the password? [yes] yes</br>
+          XAMPP: Password: ******</br>
+          XAMPP: Password (again): ******</br>
+          XAMPP: Reload ProFTPD...</br>
+          XAMPP: Done.</br>
+        </code></p>
+        <p>（1）设置密码就会用这个密码来保护XAMPP演示的页面（http://localhost/xampp/）。用户名为‘lampp’！</p>
+        <p>通过调用这条命令您的XAMPP安装过程会更加安全。</p>
+      </dd>
+      
+      <dt>我如何启用eAccelerator（e加速器）？</dt>
+      <dd>
+        <p>要启动eAccelerator（e加速器）只需在你的/opt/lampp/etc/php.ini配置文件中找到如下行：</p>
+        <p><code>;extension="eaccelerator.so"</br>
+          ;eaccelerator.shm_size="16"</br>
+          ;eaccelerator.cache_dir="/opt/lampp/tmp/eaccelerator"</br>
+          ;eaccelerator.enable="1"</br>
+          ;eaccelerator.optimizer="1"</br>
+          ;eaccelerator.check_mtime="1"</br>
+          ;eaccelerator.debug="0"</br>
+          ;eaccelerator.filter=""</br>
+          ;eaccelerator.shm_max="0"</br>
+          ;eaccelerator.shm_ttl="0"</br>
+          ;eaccelerator.shm_prune_period="0"</br>
+          ;eaccelerator.shm_only="0"</br>
+          ;eaccelerator.compress="1"</br>
+          ;eaccelerator.compress_level="9"</code></p>
+        <p>删除每一行开始的分号，重启XAMPP。eAccelerator现在是活动的。想要获取更多关于eAccelerator的信息，请访问eAccelerator的主页：<a href="http://eaccelerator.net">http://eaccelerator.net</a>。</p>
+      </dd>
+      <dt>如何为PHP激活OCI8/Oracle扩展？</dt>
+      <dd>
+        <p>启动OCI8/Oracle的PHP扩展，请执行以下命令：</p>
+        <p><code>sudo /opt/lampp/lampp oci8</code></p>
+        <p>下面的对话框就会启动：</p>
+        <p><code>Please enter the path to your Oracle or Instant Client installation:</br>
+          [/opt/lampp/lib/instantclient-11.2.0.3.0] </br>
+          installing symlinks...</br>
+          patching php.ini...</br>
+          OCI8 add-on activation likely successful.</br>
+          LAMPP: Stopping Apache with SSL...</br>
+          LAMPP: Starting Apache with SSL...</code></p>
+        <p>现在扩展程序将会激活。</p>
+      </dd>
+      <dt>XAMPP运行了，但是为什么图片全都不能显示？</dt>
+      <dd>
+        <p>某些Linux系统会有这个特殊问题。请打开你的/opt/lampp/etc/httpd.conf配置文件，并且找到这两行：</p>
+        <p><code>#EnableMMAP off</br>
+          #EnableSendfile off</code></p>
+        <p>去掉#（井号），然后重启Apache。图片应该会显示出来。</p>
+      </dd>
+
+      <dt>How do I enable access to phpMyAdmin from the outside?</dt>
+      <dd>
+      <p>In the basic configuration of XAMPP, phpMyAdmin is accessible only from the same host that XAMPP is running on, at http://127.0.0.1 or http://localhost.</p>
+      <p>IMPORTANT: Enabling external access for phpMyAdmin in production environments is a significant security risk. You are strongly advised to only allow access from localhost. A remote attacker could take advantage of any existing vulnerability for executing code or for modifying your data.</p>
+      <p>To enable remote access to phpMyAdmin, follow these steps:</p>
+      <ul>
+        <li>Edit the etc/extra/httpd-xampp.conf file in your XAMPP installation directory.</li>
+        <li>Within this file, find the lines below. 
+          <p><code>
+              Alias /phpmyadmin "/opt/lampp/phpmyadmin/"
+              &lt;Directory "/opt/lampp/phpmyadmin"&gt;
+                AllowOverride AuthConfig
+                Require local
+          </code></p>
+        </li>
+        <li>Then replace 'Require local' with 'Require all granted'.</li>
+          <p><code>
+              Alias /phpmyadmin "/opt/lampp/phpmyadmin/"
+              &lt;Directory "/opt/lampp/phpMyAdmin"&gt;
+                AllowOverride AuthConfig
+                Require all granted
+          </code></p>
+        <li>Restart the Apache server using the XAMPP control panel.</li>
+      </ul>
+      </dd>
+      
+      <dt>Where are the main XAMPP configuration files?</dt>
+      <dd>
+        <p>The main XAMPP configuration files are located as follows:</p>
+        <ul>
+          <li>Apache configuration file: /opt/lampp/etc/httpd.conf, /opt/lampp/etc/extra/httpd-xampp.conf</li>
+          <li>PHP configuration file: /opt/lampp/etc/php.ini</li>
+          <li>MySQL configuration file: /opt/lampp/etc/my.cnf</li>
+          <li>ProFTPD configuration file: /opt/lampp/etc/proftpd.conf</li>
+        </ul>
+      </dd>
+
+      <dt>How do I send email with XAMPP?</dt>
+      <dd>
+        <p>To send email with XAMPP, use the PEAR Mail and Net_SMTP packages, which allow you to send email using an external SMTP account (such as a Gmail account). Follow these steps:</p>
+        <ul>
+          <li>Install the Mail and Net_SMTP PEAR modules:
+          <code>
+          pear install Net_SMTP Mail
+          </code>
+          Note that if these packages are already installed in your system you see the messages below when executing that command:
+          <code>
+          Ignoring installed package pear/Net_SMTP
+          Ignoring installed package pear/Mail
+          Nothing to install
+          </code>
+          </li>
+          <li>
+          Create the following example script in your "htdocs" directory to send an email:
+          <code>
+          &lt;?php
+          require_once "Mail.php";
+
+          $from = "your-gmail-username@gmail.com";
+          $to = 'recipients@example.com';
+
+          $host = "ssl://smtp.gmail.com";
+          $port = "465";
+          $username = 'your-gmail-username@gmail.com';
+          $password = 'your-gmail-password';
+
+          $subject = "test";
+          $body = "test";
+
+          $headers = array ('From' => $from, 'To' => $to,'Subject' => $subject);
+          $smtp = Mail::factory('smtp',
+             array ('host' => $host,
+               'port' => $port,
+               'auth' => true,
+               'username' => $username,
+               'password' => $password));
+
+          $mail = $smtp->send($to, $headers, $body);
+
+          if (PEAR::isError($mail)) {
+            echo($mail->getMessage());
+          } else {
+            echo("Message successfully sent!\n");
+          }
+          ?>
+          </code>
+          <p>Remember to replace the dummy values shown with your actual Gmail address and account password. If you don't plan to use Gmail's SMTP server, replace the SMTP host details with appropriate values for your organization or ISP's SMTP server.</p>
+          </li>
+          <li>
+          Execute the script by browsing to it using your Web browser. You should see a notification that the message was successfully sent, and the message should be delivered to the recipient email address.
+          </li>
+        </ul>
+      </dd>
+      
+      <dt>我如何备份/恢复我的XAMPP系统？</dt>
+      <dd>
+        <p><strong>警告：</strong> 备份和恢复功能目前还处于开发阶段，所以目前可能还不能工作。</p>
+        <p>你可以通过调用如下命令来创建备份：</p>
+        <p><code>sudo /opt/lampp/lampp backup</code></p>
+        <p>或</p>
+        <p><code>sudo /opt/lampp/lampp backup secret</code></p>
+        <p>”secret“代表你的MySQL root密码。这行命令会产生以下输出：</p>
+        <p><code>Backing up databases...</br>
+          Backing up configuration, log and htdocs files...</br>
+          Calculating checksums...</br>
+          Building final backup file...</br>
+          Backup finished.</br>
+          Take care of /opt/lampp/backup/xampp-backup-22-01-14.sh</code></p>
+
+        <p>这个文件 /opt/lampp/backup/xampp-backup-22-01-14.sh （在上面的例子中）包含了你的备份数据。请将此文件保存至安全处。</p>
+        <p>在新机器上，你需要一个和你的最初/源机器上相同版本的AXMPP.</p>
+        <p><code>sudo sh xampp-backup-22-01-14.sh</code></p>
+        <p>你会看到一些类似这样的东西：</p>
+        <p><code>Checking integrity of files...</br>
+          Restoring configuration, log and htdocs files...</br>
+          Checking versions...</br>
+          Installed: XAMPP 1.4.2</br>
+          Backup from: XAMPP 1.4.2</br>
+          Restoring MySQL databases...</br>
+          Restoring MySQL user databases...</br>
+          Backup complete. Have fun!</br>
+          You may need to restart XAMPP to complete the restore.</br>
+        </code></p>
+        <p>这样就可以了。记住那只是一个测试版本的功能。</p>
+      </dd>
+    </dl>
+  </div>
+    <div class="large-4 columns">
+      <aside>
+        <h4>常见问题</h4>
+        <ul>
+          <li><a href="/zh_cn/faq_linux.html">Linux 常见问题</a></li>
+          <li><a href="/zh_cn/faq_windows.html">Windows 常见问题</a></li>
+          <li><a href="/zh_cn/faq_osx.html">OS X 常见问题</a></li>
+        </ul>
+        <h4>支持</h4>
+        <p>访问我们的 <a href="/zh_cn/community.html">我们的社区页面</a> 来寻求更多帮助。</p>
+      </aside>
+    </div>
+</div>
+
+    </div>
+
+    <footer class="footer row">
+      <div class="columns">
+        <div class="footer_lists-container row collapse">
+          <div class="footer_social columns large-2">
+            <ul class="social">
+  <li class="twitter"><a href="https://twitter.com/apachefriends">Follow us on Twitter</a></li>
+  <li class="facebook"><a href="https://www.facebook.com/we.are.xampp">Like us on Facebook</a></li>
+</ul>
+
+            <p class="footer_copyright">版权所有(c) 2022, Apache Friends</p>
+          </div>
+          <ul class="footer_links columns large-9">
+            <li><a href="https://www.apachefriends.org/blog.html">博客</a></li>
+            <li><a href="/privacy_policy.html">隐私政策</a></li>
+            <li>
+<a target="_blank" href="http://www.fastly.com/">                CDN提供
+                <img width="48" data-2x="/images/fastly-logo@2x-dad6aac3.png" src="/images/fastly-logo-08360cb5.png" />
+</a>            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/javascripts/all-d8620939.js" type="text/javascript"></script>
+  </body>
+</html>

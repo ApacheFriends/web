@@ -1,0 +1,61 @@
+---
+title: Apache Friends XAMPP Community and Forums
+description: Join our forums and thousands of developers around the world who are part of the XAMPP community.
+keywords: XAMPP, community, forums, logos, mailing list, social links
+---
+
+<div class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1><%= t("Community") %></h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-8 columns">
+    <h3><%= t("Apache Friends Forums") %></h3>
+    <p><%= t("Forums are supported by XAMPP users around the world. Our forums were originally published in German, but you will find English and other other localized editions, too.") %></p>
+    <div class="text-center">
+      <% link_to settings.forum_domain, class: "button icon", id: "forum" do %>
+        <%= image_tag "xampp-logo.svg", :width => "50", :height => "50" %>Apache Friends <%= t("Forums") %>
+        <span><%= t("Click here to access the forums.") %></span>
+      <% end %>
+    </div>
+    <h3><%= t('News &amp; Release Notes') %></h3>
+    <ol class="no-number separate">
+      <% blog.articles[0..2].each do |article| %>
+        <li>
+          <h5><%= link_to article.title, article %></h5>
+          <%= article.summary(100).gsub("</p>", " " + link_to(t('Read more&nbsp;&raquo;'), article) + "</p>".html_safe) %>
+        </li>
+      <% end %>
+    </ol>
+    <h3><%= t("Get a XAMPP Stamp") %></h3>
+    <table id="stamps">
+      <tr>
+        <td><%= image_tag "stamps/stamp-80x15.gif" %></td>
+        <td><strong><%= t("XAMPP Micro Banner") %></strong> (80x15) by jokla</td>
+      </tr>
+      <tr>
+        <td><%= image_tag "stamps/stamp-88x31.gif" %></td>
+        <td><strong>XAMPP</strong> (88x31) by Kai 'Oswald' Seidler</td>
+      </tr>
+      <tr>
+        <td><%= image_tag "stamps/stamp-173x38.gif" %></td>
+        <td><strong><%= t("Powered by XAMPP") %></strong> (173x38) by Kai 'Oswald' Seidler</td>
+      </tr>
+    </table>
+  </div>
+  <div class="large-4 columns">
+    <aside>
+      <h4><%= t('Get Social!') %></h4>
+      <%= partial "social", locals: { large: true } %>
+      <h4><%= t("IRC") %></h4>
+      <p><%= t("You can get in touch with us on our Freenode IRC channel <strong>#Apachefriends</strong>. In order to access the channel, you will need an IRC client.") %></p>
+      <%= partial "mailing_list" %>
+      <h4><%= t('Overheard') %></h4>
+      <a class="twitter-timeline" href="https://twitter.com/search?q=xampp" data-widget-id="410861251766390784"><%= t('Tweets about XAMPP') %></a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </aside>
+  </div>
+</div>

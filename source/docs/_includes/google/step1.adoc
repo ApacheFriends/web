@@ -1,0 +1,43 @@
+== Step 1: Register with Google Cloud Platform
+
+****
+At the end of this step, you will have signed up for the Google Cloud Platform free trial.
+****
+
+Begin by creating a Google Cloud Platform account, by browsing to https://cloud.google.com/[https://cloud.google.com/] and choosing the "Start your free trial" option. You will need an existing Google account to log in and sign up for the free trial; if you don't have one, you can https://accounts.google.com/SignUp[create one here] (remember to keep track of your account username and password, because you'll need them in the next step).
+
+image::{cloud}/image11.jpg[]
+
+Once you've signed in, provide Google with some personal information and your credit card details.
+
+image::{cloud}/image12.jpg[]
+
+It's important to note that you're signing up for a free trial and your credit card won't be billed unless you migrate to a paid account. The trial includes $300 of free credit, valid for 60 days. Once the trial ends, your account will automatically be paused and you'll only be charged if you explicitly choose to upgrade to a paid account.
+
+The Google elves will go away for a minute or so to verify your information and if all is well, you will be redirected to the https://developers.google.com/console[Google Developers Console], which allows you to manage your billing account, create new projects and get support. You should see that your free trial is now active in the billing credits section.
+
+image::{cloud}/image13.jpg[]
+
+You should also receive an account confirmation email, which tells you that your account is good to go.
+
+Bitnami uses the Google Compute Engine API in order to manage and launch cloud servers, so this is a good time to enable the API. Plus, new cloud servers always launch within a project, so you'll also need to create a project. Both these tasks are easy to do from the Google Developers Console. Follow these steps:
+
+ * While you're logged in to the Google Developers Console, select the "Projects" menu item and click the "Create Project" button.  
+ * Enter a name for the project (such as "My Bitnami Project") and make a note of the auto-generated project ID.
++
+image::{cloud}/image14.jpg[]
+
+
+ * Click "Create" to create and activate the project. You should now see it in the project listing.
++
+image::{cloud}/image15.jpg[]
+
+ * Select the new project name in the project listing, and you'll be transferred to the project information page.
+ * Select the "APIs" menu item in the left navigation bar.
+ * Look through the list of APIs, or use the API search box to search for the term "compute engine". Find and turn on the Google Compute Engine API.
++
+image::{cloud}/image16.jpg[]
+
+ * Verify that the Google Compute Engine API now appears in the list of enabled APIs.
++
+image::{cloud}/image17.jpg[]

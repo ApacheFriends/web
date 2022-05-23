@@ -1,0 +1,2 @@
+== About the author
+http://vikram-vaswani.in/[Vikram Vaswani] is the founder of Melonfire, an open source software consultancy firm, and the author of seven books on PHP, MySQL and XML development. Read more about him at http://vikram-vaswani.in/.

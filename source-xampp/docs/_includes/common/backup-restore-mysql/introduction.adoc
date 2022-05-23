@@ -1,0 +1,5 @@
+As you use XAMPP, you might find that you need to backup or restore a MySQL or MariaDB database. There are two easy ways to do this with XAMPP: using the browser-based phpMyAdmin tool or using MySQL/MariaDB's command-line tools. This guide describes both options.
+
+This guide assumes that you already have a PHP application that uses a MySQL/MariaDB database deployed on XAMPP. The example application used in this guide is WordPress, although the steps outlined below will work for any application.
+
+TIP: Remember that you can install WordPress quickly using the https://bitnami.com/stack/xampp#wordpress[Bitnami WordPress module for XAMPP]. 

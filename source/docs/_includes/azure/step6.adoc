@@ -1,0 +1,93 @@
+== Step 6: Configure Server Security
+
+****
+At the end of this step, you will have updated the default account passwords and configured key-based SSH authentication to make your cloud server more secure.
+****
+
+Although this is an optional step, it's best practice to secure your server by changing default passwords and configuring SSH key-based access. For example, the default MySQL installation uses 'bitnami' as the root password, so this should be changed right away, by using the command shown below (replace 'guessme' with your new password):
+
+----
+shell> mysqladmin -u root password guessme
+----
+
+You can also change the password of the default 'bitnami1' account, as shown below:
+
+----
+shell> passwd
+----
+
+You will be prompted to enter the current password, then a new password.
+
+To further secure the server, it's a good idea to replace SSH's password-based authentication with key-based authentication. This ensures that only users with access to the correct key can log in to the server.
+
+To do this:
+
+ * Launch PuTTY's key generation tool _puttygen.exe_. 
+ * Select "SSH-2 RSA" as the key type.
+ * Set the number of bits to 2048. 
+ * Click the "Generate" button to start the process of generating a public/private key pair.
+ * Move your mouse around to generate some randomness for the key.
+
+image::{cloud}/image61.jpg[]
+
+PuTTY will generate the keys and display the public key, as in the screenshot below.
+
+image::{cloud}/image62.jpg[]
+
+ * Select "Save private key" and select a file name and location for the private key file - in this example, _bitnami.ppk_. 
+ * For added security, enter a passphrase. Leave it blank for faster, passphrase-less authentication.
+
+image::{cloud}/image63.jpg[]
+
+ * On the cloud server, edit the _~/.ssh/authorized_keys_ file and copy the public key from the PuTTY key generator into it. Ensure that the public key is pasted on a single line.
+
+----
+shell> cd ~
+shell> vi ~/.ssh/authorized_keys
+----
+
+ * Save the _~/.ssh/authorized_keys_ file. Here's what the file should look like:
+
+image::{cloud}/image64.jpg[]
+
+ * Log out of the cloud server. 
+ * On your desktop, start PuTTY with the _putty.exe_ file.
+ * In the PuTTY configuration window, select the session from the "Saved Sessions" list.
+ * Click "Load" to load the session.
+
+image::{cloud}/image65.jpg[]
+
+ * In the "Connection → SSH → Auth" section, select the private key file you saved a few steps ago.
+
+image::{cloud}/image66.jpg[]
+
+ * In the "Connection → Data" section, enter the username into the "Auto-login username" field.
+
+image::{cloud}/image67.jpg[]
+
+ * Go back to the "Session" section and save your changes by clicking the "Save" button. 
+
+Now, open a new connection to the cloud server by clicking "Open". This time, PuTTY should use the private key to automatically log you in to the cloud server, without requiring you to enter a password.
+
+image::{cloud}/image68.jpg[]
+
+Assuming it all worked, the final step is to turn off password-based authentication. 
+
+ * Edit the _/etc/ssh/sshd_config_ file on the cloud server.
+
+----
+shell> vi /etc/ssh/sshd_config
+----
+
+ * Find the line containing 'PasswordAuthentication yes' and change it to 'PasswordAuthentication no'.
+
+image::{cloud}/image69.jpg[]
+
+ * Restart the SSH daemon
+
+----
+shell> sudo service ssh restart
+----
+
+At this point, your private SSH key is the only way of gaining access to your cloud server - so keep it safe!
+

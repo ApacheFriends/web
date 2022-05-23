@@ -1,0 +1,69 @@
+
+****
+At the end of this step, your PHP/MariaDB application will be running in the cloud.
+****
+
+Your cloud server is now provisioned, secured and has a functional PHP/MariaDB environment. All that's left is for you to transfer your application code from your local XAMPP environment to your cloud server and set up the database.
+
+The easiest way to transfer files to the server is with FTP or SFTP. Although you can use any FTP/SFTP client, I like https://filezilla-project.org/[FileZilla], a cross-platform, open source and feature-rich client. Download it from https://filezilla-project.org/[the FileZilla website] and install it using the automated installer - it's a quick process, only requiring you to agree to the license, choose the components (the default selection is usually fine) and specify the installation directory.
+
+image::{cloud}/image71.jpg[]
+
+Once FileZilla is installed, launch it and you'll arrive at the main split-screen interface, one side for your local directories and the other for remote directories.
+
+image::{cloud}/image72.jpg[]
+
+To connect to the cloud server and deploy your application, follow these steps:
+
+ * Use the "Edit → Settings" command to bring up FileZilla's configuration settings. 
+ * Within the "Connection → SFTP" section, use the "Add keyfile" command to select the private key file for your server. FileZilla will use this private key to log in to the cloud server.
+
+image::{cloud}/image73.jpg[]
+
+ * Use the "File → Site Manager → New Site" command to bring up the FileZilla Site Manager, where you can set up a connection to your cloud server. 
+ * Enter your server host name or IP address and user name. 
+ * Select "SFTP" as the protocol and "Normal" as the logon type.
+
+image::{cloud}/image74.jpg[]
+
+ * Use the "Connect" button to connect to the cloud server and begin an SFTP session.
+ * On the remote server side of the window, change to the _/opt/bitnami/apache2/htdocs_ directory
+ * On the local server side of the window, change to the directory containing your application code.
+ * Upload your XAMPP application code to the remote directory by dragging and dropping the files from the local server to the cloud server (you can back up the original contents of the directory if you wish, by downloading them first).
+
+image::{cloud}/image75.jpg[]
+
+ * Once the files are transferred, log in to the server console using PuTTY. 
+ * Create a database for the application using the MariaDB command-line client (you can use phpMyAdmin if you prefer a graphical interface). For example, since the application is a to-do list, let's call the database 'tasks'.
+
+----
+mysql> CREATE DATABASE tasks;
+----
+
+ * Follow best practices and create a separate MariaDB user with privileges to access only this database.
+
+----
+mysql> GRANT ALL ON tasks.* TO 'tasks'@'localhost' IDENTIFIED BY 'klio89';
+----
+
+image::common/mariadb-create-database.jpg[]
+
+ * If required, update database credentials in your application. Then, install the application schema in the new database (assuming you already uploaded it with the application code). For example, you can use the following command with the MariaDB command-line client:
+
+----
+shell> mysql -u tasks -D tasks -p < schema/tasks.sql
+----
+
+image::{cloud}/image77.jpg[]
+
+If you're logged in to phpMyAdmin, you can also import the database schema from your local XAMPP system. To do this, select the "Import" tab of the phpMyAdmin dashboard, select the file containing the schema, and click "Go" to have the tables created in your selected database.
+
+image::{cloud}/image78.jpg[]
+
+You can also https://docs.phpmyadmin.net/en/latest/faq.html#using-phpmyadmin[learn more about using phpMyAdmin to back up and restore databases].
+
+Browse to your cloud server's host name and your application should be active. Here are a few screenshots of the example to-do list application running on the cloud server.
+
+image::{cloud}/image79.jpg[]
+
+Congratulations! You've successfully deployed your XAMPP application in the cloud.

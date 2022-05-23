@@ -1,0 +1,52 @@
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/Gemfile'
+    - '**/config.ru'
+    - '**/gem_rake_helper.rb'
+  Exclude:
+    - 'script/**/*'
+    - 'vendor/**/*'
+    - '**/tmp/**/*'
+    - '**/bin/**/*'
+    - 'middleman-core/lib/middleman-core/step_definitions/**/*'
+    - 'middleman-core/lib/vendored-middleman-deps/**/*'
+    - 'middleman-core/fixtures/**/*'
+    - 'middleman-core/features/**/*'
+    - 'middleman-core/spec/**/*'
+LineLength:
+  Enabled: false
+MethodLength:
+  Enabled: false
+ClassLength:
+  Enabled: false
+Documentation:
+  Enabled: false
+Encoding:
+  Enabled: false
+HashSyntax:
+  EnforcedStyle: ruby19
+SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: no_space
+Blocks:
+  Enabled: false
+PerlBackrefs:
+  Enabled: false
+ClassAndModuleChildren:
+  Enabled: false
+AssignmentInCondition:
+  Enabled: false
+CyclomaticComplexity:
+  Enabled: false
+HandleExceptions:
+  Enabled: false
+EndAlignment:
+  AlignWith: variable
+SignalException:
+  Enabled: false
+RegexpLiteral:
+  Enabled: false
+FormatString:
+  Enabled: false
+CaseIndentation:
+  IndentWhenRelativeTo: end

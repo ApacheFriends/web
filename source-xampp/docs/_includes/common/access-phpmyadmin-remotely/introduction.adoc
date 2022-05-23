@@ -1,0 +1,3 @@
+XAMPP includes http://www.phpmyadmin.net/[phpMyAdmin], an open-source, browser-based tool for managing MySQL/MariaDB database servers. By default, for security reasons, phpMyAdmin is configured to only accept connections from the host on which XAMPP is installed. Attempting to access phpMyAdmin from any other host will produce the error below:
+
+image::access-phpmyadmin-remotely/image1.png[]

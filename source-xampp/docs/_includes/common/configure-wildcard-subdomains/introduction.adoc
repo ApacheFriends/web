@@ -1,0 +1,7 @@
+Apache's virtual hosting feature makes it easy to host multiple websites or web applications on the same server, each accessible with a different domain name. However, when you have a large number of virtual hosts sharing almost-identical configuration, wildcard-based subdomains simplify maintenance and reduce the effort involved in adding a new virtual host.
+
+With wildcard subdomains, it's no longer necessary to edit the Apache configuration file or restart the server to initialize a new virtual host. Instead, you simply need to create a subdirectory matching the subdomain name on the server with your content, and Apache will automatically use that directory to serve requests for the corresponding subdomain.
+
+NOTE: Virtual hosts created in this manner will not be accessible from other systems, unless those systems are separately configured to associate the custom domains used by virtual hosts with the IP address of the XAMPP server.
+
+This guide walks you through the process of setting up wildcard virtual hosts with XAMPP, such that requests for _subdomain.localhost_ are automatically served by the _subdomain/_ directory of the main server document root. Follow the steps below:

@@ -1,0 +1,32 @@
+== Step 1: Register with Amazon Web Services
+
+****
+At the end of this step, you will have signed up for the Amazon Web Services free tier. If you already have an Amazon Web Services account, you may skip this step.
+****
+
+You will need an existing Amazon account to log in and sign up. To create it, follow these steps:
+
+* Browse to https://aws.amazon.com and click the "Create an AWS account" button at the top of the page.
+* In the resulting page, enter an email address, a password, and an AWS account name. Then, click "Continue" to start the registration process.
+
+image::{cloud}/aws-account-info.png[Start the AWS account creation]
+
+* Once you've signed in to Amazon, sign up for AWS by selecting the account type and providing some basic contact information and your mobile phone number.
+
+image::{cloud}/aws-account-contact-info.png[AWS account contact information]
+
+* Once that's done, proceed to the next stage by entering your credit card information. Click the "Secure Submit" button to continue with the account creation.
+
+image::{cloud}/aws-account-credit-card.png[Enter your credit card information]
+
+If you're worried about how much you'll be billed for services, relax. When you first sign up for AWS, you get automatic access to the https://aws.amazon.com/free/[AWS Free Tier], which entitles you to 12 months of free usage up to certain limits. This includes 750 hours per month of free usage of https://aws.amazon.com/ec2/[Amazon EC2] micro servers, which are just right for development or low-traffic website hosting. So long as your usage falls within the limits of the free tier, your credit card will never be billed. However, Amazon still needs your credit card information for security purposes, to avoid service misuse and to confirm your identity.
+
+IMPORTANT: You should fully understand https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-limits.html[the limits of the AWS free tier] to avoid being unduly charged for service usage.
+
+* Amazon will now verify your identity, by making an automated call to your mobile phone number and prompting you to enter the PIN number displayed on the screen.
+
+* Once your identity is verified, choose the "Basic" support plan (also free) and confirm your account.
+
+NOTE: At this point, make sure that you have subscribed a plan, even if you decide to register for the free tier or "Basic" support plan.
+
+The AWS account registration machine will churn away for a minute or so, and you will then be redirected to a welcome page, which includes a link to the AWS management console. You should also receive an account confirmation email, which tells you that your account is good to go.

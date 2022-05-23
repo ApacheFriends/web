@@ -1,0 +1,23 @@
+== Improve Application Performance
+
+Web application performance problems are hard to debug at the best of times, and more so when your server is in the cloud and running a pre-packaged stack. The responsiveness of your application at any given moment depends on numerous factors: server type, network bandwidth, cloud provider load, database load, caching system in use, application code structure, query structure and various other variables.
+
+IMPORTANT: LAMP packaged by Bitnami already uses the https://httpd.apache.org/docs/2.2/mod/event.html[Apache Event MPM] and https://php-fpm.org/[PHP-FPM] for reduced memory usage and an increase in the number of simultaneous requests that the server can handle (more information). It also comes with the https://developers.google.com/speed/pagespeed/module[mod_pagespeed Apache module] activated to rewrite pages on the fly and improve latency.
+
+If you're finding that your PHP/MariaDB application's performance is not up to scratch, here are a few general tips you can consider:
+
+ * LAMP packaged by Bitnami includes https://php.net/manual/en/book.apcu.php[APCu], a popular PHP bytecode cache. Usually, when a PHP script is executed, the PHP compiler converts the script to opcodes and then executes the opcodes. APC provides a framework for opcode caching, thereby speeding up PHP applications without needing any code changes. Make sure your APC cache has enough memory and a long TTL. https://php.net/manual/en/book.apcu.php[Read more about APCu] and https://docs.bitnami.com/aws/infrastructure/lamp/configuration/install-modules-php/#apcu[how to use APC with PHP and Bitnami].
+
+ * LAMP packaged by Bitnami also includes the https://php.net/manual/en/memcache.installation.php[PHP memcache extension]. https://memcached.org/[Memcache] is a high-performance, distributed memory object caching system. Consider using memcache to store frequently-accessed fragments of data in memory as arrays, thereby reducing the load on your MariaDB database server. Read more about https://php.net/manual/en/book.memcache.php[memcache in PHP].
+
+ * Turn on MariaDB's https://mariadb.com/kb/en/slow-query-log-overview/[slow query log] and set MariaDB's 'long_query_time' variable to a low number. This lets you track which of your queries are performing inefficiently and adjust them, either structurally or by applying table indexes as needed, to improve performance. You can use tools like https://mariadb.com/kb/en/mysqldumpslow/l[mysqldumpslow] or https://code.google.com/p/mysql-slow-query-log-visualizer/[mysql-slow-query-log-visualizer] to parse and analyze the slow query logs generated.
+
+ * If your application is database-heavy, you'll gain performance by giving the MariaDB server more memory. 
+You may use the https://mariadb.com/kb/en/optimization-and-tuning/[MariaDB Optimization and Tuning guides],
+to identify which server parameters need tuning, and incrementally make changes to your server's cache and buffers to improve performance. For example, if your tables are all MyISAM, disable InnoDB in your _my.cnf_ file to save further memory.
+
+ * Unload Apache modules which you don't need to save memory, and adjust the log level to errors only.
+
+ * Minify your JavaScript code, and consider using a CDN for static content like images.
+
+Good luck, and happy coding!

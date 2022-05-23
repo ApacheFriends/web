@@ -1,0 +1,5 @@
+User-agent: *
+<% for lang in langs %>
+Disallow: <%= localized_path("/search", lang) %>
+<% end %>
+Sitemap: <% domain %>/sitemap.xml

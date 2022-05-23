@@ -1,0 +1,44 @@
+= Use SQLite and PHP
+
+include::{docdir}/_includes/common/use-sqlite/introduction.adoc[]
+
+Begin by creating and populating a new database using the SQLite command-line client, as below:
+
+ . Open a new Linux terminal.
+
+ . Change to the _htdocs/_ subdirectory of your XAMPP installation directory (typically _/opt/lampp_) and create a new SQLite database file named _mydb.sq3_ with the SQLite command-line client:
++
+ cd /opt/lampp/htdocs
+ /opt/lampp/bin/sqlite3 mydb.sq3
++
+You should now see an SQLite prompt, as below:
++
+image::use-sqlite/image1.png[]
++
+NOTE: In case your user privileges don't let you write to the _htdocs/_ sub-directory, prefix your commands with _sudo_.
+
+ . At the _sqlite>_ prompt, create a new table to hold your data. In this example, the table is named items and it contains 3 columns, for item ID, item name and item cost. You can use standard CREATE TABLE syntax to create the table, and you can http://www.sqlite.org/datatype3.html[learn more about SQLite's built-in datatypes here].
+
+ CREATE TABLE items (id INTEGER PRIMARY KEY, name TEXT, price REAL);
+
+ . Add some data to the new inventory table using INSERT commands, as shown below:
+
+ INSERT INTO items VALUES ('1001', 'Salt', 3.15);
+ INSERT INTO items VALUES ('1002', 'Pepper', 2.75);
+ INSERT INTO items VALUES ('1003', 'Eggs', 2.00);
+ INSERT INTO items VALUES ('1004', 'Bacon', 7.25);
+ INSERT INTO items VALUES ('1005', 'Milk', 1.15);
+ INSERT INTO items VALUES ('1006', 'Strawberries', 8.73);
+ INSERT INTO items VALUES ('1007', 'Cereal', 2.65);
+
+ . You can now also run a SELECT query on the data. For example, the query below returns all items that cost less than $3:
++
+ SELECT * FROM items WHERE price < 3.00;
++
+image::use-sqlite/image2.png[]
+
+ . Once you're done using the database, exit it by typing _.quit_ at the _sqlite>_ prompt.
+
+IMPORTANT: The database file (in this example, _mydb.sq3_) contains all your tables and data, so you should remember to back it up regularly.
+
+include::{docdir}/_includes/common/use-sqlite/php-access.adoc[]

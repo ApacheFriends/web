@@ -1,0 +1,102 @@
+== Step 3: Connect your AWS and Bitnami Accounts
+
+****
+At the end of this step, your Bitnami Launchpad for AWS Cloud will be configured and you will be ready to provision a cloud server.
+****
+
+The easiest way to set up your AWS cloud server with LAMP packaged by Bitnami is via https://aws.bitnami.com/[Bitnami Launchpad for AWS Cloud], which gives you a simple control panel to provision, start, stop and check status of your AWS cloud servers.
+However, to use it, you must first connect your AWS and Bitnami accounts, by obtaining security credentials for your AWS account and saving those credentials in your Bitnami Launchpad account.
+
+Once your AWS account has been activated, the next step is to create an AWS Identity and Access Management (IAM) user and generate an AWS Access Key ID and Secret Access Key. You will need this to connect your AWS account with Bitnami. To do this:
+
+* Log in to the https://console.aws.amazon.com/console/home[AWS Console].
+* In the AWS services menu, scroll down until you see the "Security, Identity & Compliance" section. Select the IAM service.
+
+image::{cloud}/lp-tutorial-image21.png[AWS IAM service]
+
+* Select the "Policies" section in the left navigation bar and click the "Get Started" button.
+* Click the "Create Policy" button.
+
+image::{cloud}/lp-tutorial-image22.png[AWS create policy]
+
+* On the next page, select the JSON tab and enter the following content:
+
+        {
+          "Version": "2012-10-17",
+          "Statement": [{
+            "Effect": "Allow",
+            "Action": [ "sts:GetFederationToken", "ec2:*", "cloudwatch:GetMetricStatistics", "cloudformation:*" ],
+            "Resource": [ "*" ]
+          }]
+        }
+
+image::{cloud}/lp-tutorial-image23.png[AWS JSON policy]
+
+* Click "Review Policy" to proceed.
+
+* Set the policy name to "BitnamiConsole" and click "Create Policy" to save the new policy.
+
+image::{cloud}/lp-tutorial-image24.png[AWS finish policy creation]
+
+* Select the "Users" section in the left navigation bar and click the "Add user" button.
+
+image::{cloud}/lp-tutorial-image25.png[AWS IAM users]
+
+* On the "Details" page, enter a user name for use with Bitnami. Ensure that the "Programmatic access" checkbox in the "Select AWS access type" section is selected. Click the "Next: Permissions" button to proceed.
+
+image::{cloud}/lp-tutorial-image26.png[AWS IAM user creation]
+
+* On the "Permissions" page, select the option to "Attach existing policies directly". From the list of policies, find the new "BitnamiConsole" policy. Select it and click the "Next: Review" button.
+
+image::{cloud}/lp-tutorial-image27.png[AWS IAM policy attachment]
+
+* On the "Review" page, review the selected options and click the "Create user" button.
+
+image::{cloud}/lp-tutorial-image28.png[AWS IAM finish user creation]
+
+* A new user and corresponding key pair, consisting of an "Access Key ID" and "Secret Access Key", will be generated and displayed. The "Secret Access Key" value will not be displayed again, so it is important to accurately note down the "Access Key ID" and "Secret Access Key" values displayed on the screen at this point.
+
+image::{cloud}/lp-tutorial-image29.png[AWS access keys creation]
+
+Your IAM user account and access keys are now ready for use.
+
+* Note the Access Key ID and Secret Access Key.
+
+
+You're now ready to connect AWS with Bitnami. To do this:
+
+* Log in to your Bitnami account if you're not already logged in.
+* Browse to https://aws.bitnami.com/.
+* Select the "Sign in with Bitnami" link in the top right corner.
+
+image::{cloud}/lp-tutorial-image41.png[Bitnami login]
+
+The Launchpad will recognize your Bitnami credentials and automatically sign you in.
+
+The next step is to set up an administrative password and connect your AWS cloud account with your Bitnami account. To do this:
+
+* Select "Virtual Machines" in the Launchpad menu.
+
+Since this is your first time, you'll be prompted to set up your Bitnami Vault password by entering an administrative password. Enter a hard-to-guess password.
+
+image::{cloud}/lp-tutorial-image42.png[Bitnami Vault setup]
+
+The Bitnami Vault password offers an additional level of protection against misuse: you'll need to enter it when performing certain operations, such as creating new cloud servers. Again, make sure you note it down for future reference.
+
+IMPORTANT: Your Bitnami Vault password is different from your Amazon Web Services password.
+
+* Once your password has been accepted, you'll be redirected back to the Launchpad page. Select "Accounts -> Cloud Accounts" in the Launchpad menu.
+
+* Click the "Add Cloud Account" button.
+
+image::{cloud}/lp-tutorial-image43.png[Bitnami account connection]
+
+* You'll be transferred to an authorization page, where you will need to enter the Access Key ID and Secure Access Key. Enter this information and click "Continue" to proceed. An authorization check will now be performed.
+
+image::{cloud}/lp-tutorial-image44.png[Bitnami account connection]
+
+NOTE: If you are using a recently-created AWS account, you may need to wait until your account is verified by AWS before you can complete the process of connecting your AWS Cloud and Bitnami accounts.
+
+Your AWS and Bitnami accounts will now be connected.
+
+image::{cloud}/lp-tutorial-image45.png[Bitnami account connection]

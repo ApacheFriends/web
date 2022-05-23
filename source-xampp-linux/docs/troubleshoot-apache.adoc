@@ -1,0 +1,27 @@
+= Troubleshoot Apache Startup Problems
+
+Are you having difficulty getting your Apache server started? Here is a list of common problems and their solutions.
+
+NOTE: The information in this document is based on https://community.apachefriends.org/f/viewtopic.php?f=16&t=69784[this ApacheFriends community forum thread]. 
+
+== Another Web Server Daemon is Already Running
+
+XAMPP displays a message like:
+
+ Another web server daemon is already running.
+
+To solve this problem, follow these steps:
+
+ . Open a new Linux terminal.
+
+ . Use the netstat command to identify which other service is currently using port 80 and/or 443.
+
+ sudo netstat -tunap | grep LISTEN
++
+image::troubleshoot-apache/image1.png[]
+
+ . Terminate services currently using those ports - for example, using a command like _service [process-name] stop_.
+
+You should now be able to start Apache successfully.
+
+TIP: If the problem persists even after performing these steps, refer to http://askubuntu.com/questions/105952/cannot-start-xampp[this source thread] and http://ubuntuforums.org/showthread.php?t=1192606[this forum post] for alternative solutions.

@@ -1,0 +1,1599 @@
+# Loco Gettext template
+msgid ""
+msgstr ""
+"Project-Id-Version: en.yml conversion\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Wed, 22 Jan 2014 01:45:15 +0000\n"
+"PO-Revision-Date: 2016-05-03 15:11+0000\n"
+"Last-Translator: pidduini <pidduini@libero.it>\n"
+"Language-Team: Translated <info@translated.net>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-POOTLE-MTIME: 1462288294.0\n"
+
+#: en.download.title
+msgid "Download"
+msgstr "Scarica"
+
+#: en.download.description
+msgid "XAMPP is an easy to install Apache distribution containing MariaDB, PHP, and Perl. Just download and start the installer. It's that easy."
+msgstr ""
+"XAMPP è una distribuzione di Apache semplice da installare che contiene "
+"MySQL, PHP e Perl. Scarica ed avvia il file di installazione. È davvero "
+
+#: en.download.whats_included
+msgid "What's Included?"
+msgstr "Cosa è incluso?"
+
+#: en.download.requirements.title
+msgid "Requirements"
+msgstr "Requisiti"
+
+#: en.download.requirements.linux
+msgid "Most all distributions of Linux are supported, including Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+msgstr ""
+"Sono supportate le maggiori distribuzioni Linux, fra le quali Debian, "
+"RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch e SUSE."
+
+#: en.download.requirements.windows
+msgid "XAMPP 1.8.2 (with PHP 5.4): Windows 2003, 2008, 2012, XP,  Vista, 7, 8"
+msgstr "XAMPP 1.8.2 (con PHP 5.4): Windows 2003, 2008, 2012, XP, Vista, 7, 8"
+
+#: en.download.requirements.windows.1
+msgid "XAMPP 1.8.3 (with PHP 5.5): (Important: XP or 2003 not supported) 2008, 2012, Vista, 7, 8."
+msgstr ""
+"XAMPP 1.8.3 (con PHP 5.5): (Importante: XP o 2003 non sono supportati) 2008, "
+"2012, Vista, 7, 8."
+
+#: en.download.requirements.apple
+msgid "Mac OS X 10.6 or later."
+msgstr "Mac OS X 10.6 o superiore."
+
+#: en.download.more
+msgid "More Downloads"
+msgstr "Altri download"
+
+#: en.download.includes
+msgid "Includes"
+msgstr "Includi"
+
+#: en.download.version
+msgid "Version"
+msgstr "Versione"
+
+#: en.download.checksum
+msgid "Checksum"
+msgstr "Codice di controllo"
+
+#: en.download.size
+msgid "Size"
+msgstr "Dimensione"
+
+#: en.download.success
+msgid "Awesome!"
+msgstr "Fantastico!"
+
+#: en.download.starting
+msgid "Your download will start automatically. If it doesn't, %{download}."
+msgstr ""
+"Il download inizierà automaticamente. Se non dovesse partire, %{download}."
+
+#: en.click_here
+msgid "click here"
+msgstr "clicca qui"
+
+#: en.release_notes
+msgid "Release Notes"
+msgstr "Note di Rilascio"
+
+#: en.reading.title
+msgid "Reading"
+msgstr "Lettura"
+
+#: en.reading.intro
+msgid "Be sure to read the install instructions and FAQs:"
+msgstr "Leggi le istruzioni di installazione e le FAQ:"
+
+#: en.reading.description
+msgid "You can find additional help on our %{forums} or %{stack_overflow}."
+msgstr ""
+"Puoi ricevere ulteriore aiuto sui nostri %{forums} o su %{stack_overflow}."
+
+#: en.faqs.title
+msgid "FAQs"
+msgstr "Domande frequenti"
+
+#: en.add_ons.title
+msgid "Add-ons"
+msgstr "Componenti aggiuntivi"
+
+#: en.add_ons.full_title
+msgid "XAMPP Add-ons"
+msgstr "Componenti Aggiuntivi di XAMPP"
+
+#: en.add_ons.description
+msgid "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP. Visit %{bitnami_xampp} to download the installer."
+msgstr ""
+"Bitnami fornisce uno strumento gratuito all-in-one per installare WordPress su "
+"XAMPP. Visita %{bitnami_xampp}"
+
+#: en.add_ons.download_description
+msgid "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP."
+msgstr "Bitnami fornisce uno strumento gratuito tutto in uno per installare WordPress su XAMPP."
+
+#: en.hosting.title
+msgid "Hosting"
+msgstr "Hosting"
+
+#: en.hosting.full_title
+msgid "XAMPP Hosting"
+msgstr "Hosting con XAMPP"
+
+#: en.documentation.title
+msgid "Documentation"
+msgstr "Documentazione"
+
+#: en.documentation.full_title
+msgid "XAMPP Documentation"
+msgstr "Documentazione di XAMPP"
+
+#: en.about.title
+msgid "About"
+msgstr "Chi siamo"
+
+#: en.about.description
+msgid "Many people know from their own experience that it's not easy to install an Apache web server and it gets harder if you want to add MariaDB, PHP and Perl. The goal of XAMPP is to build an easy to install distribution for developers to get into the world of Apache. To make it convenient for developers, XAMPP is configured with all features turned on. In the case of commercial use please take a look at the product licenses, from the XAMPP point of view commercial use is also free. There are currently distributions for Windows, Linux, and OS X."
+msgstr ""
+"Molte persone sanno per esperienza personale che non è facile installare un "
+"server web Apache, e le difficoltà aumentano se si vuole aggiungere anche "
+"MySQL, PHP e Perl. L'obiettivo di XAMPP è quello di fornire gli sviluppatori "
+"di una distribuzione di facile installazione per entrare nel mondo di "
+"Apache. Per comodità degli sviluppatori, tutte le funzioni di XAMPP sono già "
+"attive e pronte all'uso. In caso di utilizzo commerciale si prega di dare "
+"un'occhiata alle licenze dei vari prodotti, dal punto di vista di XAMPP "
+"anche l'uso commerciale è gratuito. Al momento sono disponibili "
+"distribuzioni per Windows, Linux e OS X."
+
+#: en.search
+msgid "Search"
+msgstr "Cerca"
+
+#: en.contact.title
+msgid "Contact"
+msgstr "Contattaci"
+
+#: en.contact.description
+msgid "Visit our %{forums} for any questions. Email %{email} for any security issues."
+msgstr ""
+"Per qualsiasi domanda visita i nostri %{forums}. Per problemi legati alla "
+"sicurezza inviaci una mail a %{email}."
+
+#: en.sitemap
+msgid "Sitemap"
+msgstr "Mappa del Sito"
+
+#: en.blog
+msgid "Blog"
+msgstr "Blog"
+
+#: en.news_and_releases
+msgid "News &amp; Release Notes"
+msgstr "Novità e note di rilascio"
+
+#: en.forums.title
+msgid "Forums"
+msgstr "Forum"
+
+#: en.forums.full_title
+msgid "Apache Friends Forums"
+msgstr "Forum di Apache Friends"
+
+#: en.forums.description
+msgid "Forums are supported by XAMPP users around the world. Our forums were originally published in German, but you will find English and other other localized editions, too."
+msgstr ""
+"I forum sono supportati da utenti XAMPP di tutto il mondo. I nostri forum "
+"sono stati inizialmente pubblicati in tedesco, ma ora sono disponibili anche "
+"in inglese e in molte altre lingue."
+
+#: en.forums.button
+msgid "Click here to access the forums."
+msgstr "Clicca qui per accedere ai forum."
+
+#: en.mailing_list.title
+msgid "Mailing List"
+msgstr "Mailing List"
+
+#: en.mailing_list.description
+msgid "Do you want to be kept up-to-date on the latest news about XAMPP or our project? Our newsletter will inform you about new XAMPP releases as well as news about the Apache Friends project. It's a low frequency-list: only about one mail a month."
+msgstr ""
+"Vuoi essere sempre aggiornato sulle ultime novità riguardanti XAMPP o il "
+"nostro progetto? La nostra newsletter vi informerà sulle nuove versioni di "
+"XAMPP rilasciate e sulle novità riguardo il progetto Apache Friends. Si "
+"tratta di una newsletter a bassa frequenza: solo circa una email al mese."
+
+#: en.mailing_list.widget.unprocessed
+msgid "Unfortunately, an error occurred. Please contact us to subscribe."
+msgstr ""
+"Purtroppo, si è verificato un errore. Vi preghiamo di contattarci per "
+"iscriversi alla mailing list."
+
+#: en.mailing_list.widget.invalid
+msgid "The email you provided is not a valid email address. Please fix it and try again."
+msgstr ""
+"L'email da te fornita non è un indirizzo valido. Si prega di correggerlo e "
+"riprovare."
+
+#: en.mailing_list.widget.success
+msgid "Thanks for subscribing."
+msgstr "Grazie per esserti iscritto."
+
+#: en.mailing_list.widget.submit_text
+msgid "Subscribe"
+msgstr "Iscriviti"
+
+#: en.privacy_policy
+msgid "Privacy Policy"
+msgstr "Politica sulla privacy"
+
+#: en.fastly
+msgid "CDN provided by"
+msgstr "CDN fornito da"
+
+#: en.terms_of_use
+msgid "Terms of Use"
+msgstr "Termini d'utilizzo"
+
+#: en.copyright
+msgid "Copyright (c) %{year}, Apache Friends"
+msgstr "Copyright (c) %{year}, Apache Friends"
+
+#: en.xampp_title
+msgid "XAMPP <span>Apache + MariaDB + PHP + Perl</span>"
+msgstr "XAMPP <span>Apache + MariaDB + PHP + Perl</span>"
+
+#: en.what_is_xampp.title
+msgid "What is XAMPP?"
+msgstr "Cos'è XAMPP?"
+
+#: en.what_is_xampp.intro
+msgid "XAMPP is the most popular PHP development environment"
+msgstr "XAMPP è il più popolare ambiente di sviluppo PHP"
+
+#: en.what_is_xampp.description
+msgid "XAMPP is a completely free, easy to install Apache distribution containing MariaDB, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use."
+msgstr ""
+"XAMPP è una distribuzione di Apache completamente gratuita e semplice da "
+"installare, contenente MySQL, PHP e Perl. Il pacchetto open source XAMPP è "
+"stato creato per essere estremamente facile da installare e utilizzare."
+
+#: en.why_use_xampp.title
+msgid "Why use XAMPP?"
+msgstr "Perché usare XAMPP?"
+
+#: en.why_use_xampp.reasons
+msgid "The most popular PHP dev package"
+msgstr "Il più popolare pacchetto di sviluppo PHP"
+
+#: en.why_use_xampp.reasons.1
+msgid "For Windows, Mac OS X &amp; Linux"
+msgstr "Per Windows, Mac OS X &amp; Linux"
+
+#: en.why_use_xampp.reasons.2
+msgid "Easy installation and configuration"
+msgstr "Facile da installare e da configurare"
+
+#: en.why_use_xampp.reasons.3
+msgid "Completely free of charge"
+msgstr "Completamente gratuito"
+
+#: en.click_other_versions
+msgid "Click here for other versions"
+msgstr "Clicca qui per altre versioni"
+
+#: en.xampp_for_os
+msgid "XAMPP for <strong>%{os}</strong>"
+msgstr "XAMPP per <strong>%{os}</strong>"
+
+#: en.read_more
+msgid "Read more&nbsp;&raquo;"
+msgstr "Per saperne di più&nbsp;&raquo;"
+
+#: en.about_apache_friends.title
+msgid "About Apache Friends"
+msgstr "A proposito di Apache Friends"
+
+#: en.about_apache_friends.description
+msgid "Apache Friends is a non-profit project to promote the Apache web server and is home to the XAMPP project. XAMPP is an easy to install Apache distribution containing MariaDB, PHP, and Perl."
+msgstr ""
+"Apache Friends è un progetto no profit per supportare il web server Apache e "
+"ospitante il progetto XAMPP. XAMPP è una distribuzione Apache semplice da "
+"installare contenente MySQL, PHP e Perl."
+
+#: en.community.title
+msgid "Community"
+msgstr "Comunità"
+
+#: en.community.description
+msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}."
+msgstr ""
+"XAMPP è in uso da circa 10 anni ed ha alle sue spalle un'enorme community. "
+"Anche tu puoi farne parte partecipando ai nostri %{forums}, iscrivendoti "
+"alla %{mailing_list}, cliccando mi piace nella nostra pagina %{facebook}, "
+"oppure seguendo i nostri post su %{twitter}."
+
+#: en.recent_discussions
+msgid "Recent Discussions"
+msgstr "Discussioni recenti"
+
+#: en.follow_xampp
+msgid "Follow XAMPP"
+msgstr "Seguire XAMPP"
+
+#: en.overheard
+msgid "Overheard"
+msgstr "Comunicazione"
+
+#: en.irc.title
+msgid "IRC"
+msgstr "IRC"
+
+#: en.irc.description
+msgid "You can get in touch with us on our Freenode IRC channel <strong>#Apachefriends</strong>. In order to access the channel, you will need an IRC client."
+msgstr ""
+"Puoi metterti in contatto con noi sul nostro canale IRC Freenode "
+"<strong>#Apachefriends</strong>. Per accedere al canale, hai bisogno di un "
+"client IRC."
+
+#: en.tweets_about_xampp
+msgid "Tweets about XAMPP"
+msgstr "Tweet su XAMPP"
+
+#: en.get_social
+msgid "Get Social!"
+msgstr "Seguici!"
+
+#: en.stamps.title
+msgid "Get a XAMPP Stamp"
+msgstr "Ottieni il logo XAMPP"
+
+#: en.stamps.micro_banner
+msgid "XAMPP Micro Banner"
+msgstr "XAMPP Micro Banner"
+
+#: en.stamps.powered_by
+msgid "Powered by XAMPP"
+msgstr "Powered by XAMPP"
+
+#: en.our_team.title
+msgid "Our Team"
+msgstr "Il nostro team"
+
+#: en.our_team.founders.title
+msgid "Founders"
+msgstr "Fondatori"
+
+#: en.our_team.founders.oswald_bio
+msgid "Oswald was one of the original co-founders of Apache Friends. He graduated 1999 from Technical University of Berlin with a Diplom-Informatiker degree (equivalent to a Master's degree in Computer Science). In the 90's he created and managed Germany's biggest IRCnet server irc.fu-berlin.de, and co-managed one of the world's largest anonymous FTP server ftp.cs.tu-berlin.de. From 1993 until 1998 he was member of the internationally renowned &quot;Projektgruppe Kulturraum Internet&quot;, a Berlin-based research project on net culture and network organization. In 2006, his third book, Das XAMPP-Handbuch, was published by Addison Wesley. From 2009 to 2011, he served as Technology Evangelist for Web Tier Products at Sun Microsystems/Oracle."
+msgstr ""
+"Oswald è uno degli originali co-fondatori di Apache Friends. Si è laureato "
+"nel 1999 presso l'Università Tecnica di Berlino come Diplom-Informatiker "
+"(equivalente all'ingegneria del software). Negli anni '90 ha "
+"fondato e gestito il più grande server IRCnet tedesco irc.fu-berlin.de, e "
+"co-gestito uno dei più grandi server anonimi FTP del mondo ftp.cs.tu-"
+"berlin.de. Dal 1993 al 1998 è stato membro del \"Projektgruppe Kulturraum "
+"Internet\", un rinomato progetto di ricerca di livello internazionale con "
+"sede a Berlino sulla cultura e organizzazione della rete. Nel 2006 è stato "
+"pubblicato dalla casa editrice Addison Wesley il suo terzo libro, \"Das "
+"XAMPP-Handbuch\". Dal 2009 al 2011 ha ricoperto il ruolo di Technology "
+"Evangelist per i prodotti Web Tier alla Sun Microsystems/Oracle."
+
+#: en.our_team.founders.vogelgesang_bio
+msgid "Together with Oswald, Kay co-founded the Apache Friends project in 2002. He currently works as freelance System Engineer and wrote several books about web technologies like Apache, MySQL and XAMPP itself."
+msgstr ""
+"Insieme a Oswald, Kay co-fondò il progetto Apache Friends nel 2002. "
+"Attualmente lavora come System Engineer freelance e ha scritto diversi libri "
+"su tecnologie web come Apache, MySQL e XAMPP."
+
+#: en.our_team.maintainers.title
+msgid "Current Maintainers"
+msgstr "Gestori attuali"
+
+#: en.our_team.maintainers.beltran_bio
+msgid "Beltran is a project manager at Bitnami. He fell in love with open source and Linux since an early age and enjoys tinkering with web technologies and speaking at developer events. Beltran graduated from the Seville Engineering School with a Master's degree in Telecommunication."
+msgstr ""
+"Beltran è project manager presso Bitnami. Egli si innamorò dell'open source "
+"e Linux in giovane età e si diverte a lavorare con le tecnologie web e a "
+"parlare a eventi per sviluppatori. Beltran è laureato in ingegneria delle "
+"telecomunicazioni presso la Facoltà di Ingegneria di Siviglia."
+
+#: en.our_team.maintainers.daniel_bio
+msgid "Daniel is a co-founder of Bitnami. Previously, he contributed to various web infrastructure open source projects, published multiple technical books on web technologies and became a member of the Apache Software Foundation. Daniel graduated from the Seville Engineering School with a Master's degree in Telecommunication and holds a Ms. Sc. on Optical Networking from DTU in Denmark."
+msgstr ""
+"Daniel è co-fondatore di Bitnami. In precedenza ha contribuito a diversi "
+"progetti sulle infrastrutture web open source, ha pubblicato diversi libri "
+"sulle tecnologie web e divenne un membro della Apache Software Foundation. "
+"Daniel è laureato in ingegneria delle telecomunicazioni presso la Facoltà "
+"di Ingegneria di Siviglia e la DTU "
+"in Danimarca."
+
+#: en.our_team.past_advisors.title
+msgid "Past Advisors"
+msgstr "Ex gestori"
+
+#: en.our_team.support_qa.title
+msgid "Support &amp; QA"
+msgstr "Supporto &amp; QA"
+
+msgid "Security"
+msgstr "Sicurezza"
+
+msgid "We want to thank the following individuals for reporting vulnerabilities responsibly and helping improve XAMPP."
+msgstr ""
+"Vogliamo ringraziare le seguenti persone per aver segnalato le vulnerabilità "
+"in modo responsabile e contribuire a migliorare XAMPP."
+
+msgid "Retired"
+msgstr "Ritirato"
+
+#: en.licence.title
+msgid "The Licence"
+msgstr "La Licenza"
+
+#: en.licence.description
+msgid "XAMPP is a compilation of free software (comparable to a Linux distribution), it's free of charge and it's free to copy under the terms of the GNU General Public Licence. But it is only the compilation of XAMPP that is published under GPL. Please check every single licence of the contained products to get an overview of what is, and what isn't, allowed. In the case of commercial use please take a look at the product licences (especially MySQL), from the XAMPP point of view commercial use is also free."
+msgstr ""
+"XAMPP è una raccolta di software libero (paragonabile ad una distribuzione "
+"Linux), è gratuito e può essere copiato liberamente secondo i termini della "
+"GNU General Public Licence. A essere pubblicata sotto licenza GPL è però "
+"solo la raccolta di XAMPP. Si prega di controllare ogni singola licenza dei "
+"prodotti ivi contenuti per una panoramica di ciò che è, o non è, consentito. "
+"In caso di utilizzo commerciale si prega di consultare le licenze dei "
+"prodotti (in particolare MySQL). Dal punto di vista di XAMPP anche l'uso a "
+"fini commerciali è gratuito."
+
+#: en.warranty.title
+msgid "Warranty"
+msgstr "Garanzia"
+
+#: en.warranty.description
+msgid "This program is distributed in the hope that it will be useful, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose. (See the %{gnu} for more details)"
+msgstr ""
+"Questo programma è distribuito nella speranza che possa essere utile, ma "
+"senza alcuna garanzia; senza neppure la garanzia implicita di "
+"commerciabilità o idoneità per uno scopo particolare. (Vedere la %{gnu} per "
+"maggiori dettagli)"
+
+#: en.trademarks.title
+msgid "Trademarks"
+msgstr "Marchi"
+
+#: en.trademarks.description
+msgid "XAMPP and Apache Friends are registered trademarks of BitRock. Microsoft, DOS, and Windows are registered trademarks of Microsoft Corporation. Intel, Pentium, i386, i486 are registered trademarks of Intel Corporation. SUN, Sparc are registered trademarks of Oracle, Inc. Apple, Mac, and OS X are registered trademarks of Apple Inc."
+msgstr ""
+"XAMPP e Apache Friends sono marchi registrati di BitRock. Microsoft, DOS e "
+"Windows sono marchi registrati di Microsoft Corporation. Intel, Pentium, "
+"i386, i486 sono marchi registrati di Intel Corporation. SUN e Sparc sono "
+"marchi registrati di Oracle Inc. Apple, Mac e OS X sono marchi registrati di "
+"Apple Inc."
+
+#: en.trademarks.remarks
+msgid "All other company and product names may be trademarks of their respective companies."
+msgstr ""
+"Tutti gli altri nomi di società e di prodotti sono marchi delle rispettive "
+"società."
+
+#: en.thanks.title
+msgid "Special Thanks"
+msgstr "Ringraziamenti speciali"
+
+#: en.thanks.sourceforge
+msgid "SourceForge has been hosting XAMPP since the very start!"
+msgstr "SourceForge ha ospitato XAMPP fin dal principio!"
+
+#: en.documentation.title
+msgid "Documentation/FAQs"
+msgstr "Documentazione/Domande frequenti"
+
+#: en.documentation.description
+msgid "There is no real manual or handbook for XAMPP. We wrote the documentation in the form of FAQs. Have a burning question that's not answered here? Try the %{forums} or %{stack_overflow}."
+msgstr ""
+"Non esiste un vero e proprio manuale o una guida per XAMPP. Abbiamo scritto "
+"la documentazione sotto forma di FAQ. Avete qualche domanda importante a cui "
+"non avete travato risposta qui? Provate i %{forums} o %{stack_overflow}."
+
+#: en.twitter.title
+msgid "Tell Your Friends about XAMPP"
+msgstr "Parla di XAMPP ai tuoi amici"
+
+#: en.twitter.message
+msgid "I just got #XAMPP from @ApacheFriends https://www.apachefriends.org #opensource."
+msgstr ""
+"Ho appena scaricato #XAMPP da @ApacheFriends https://www.apachefriends.org "
+"#opensource."
+
+#: en.twitter.submit
+msgid "Tweet!"
+msgstr "Tweet!"
+
+#: en.translations.title
+msgid "Translations"
+msgstr "Traduzioni"
+
+#: en.translations.intro
+msgid "Contribute to XAMPP translation at %{translate}."
+msgstr "Contribuisci a tradurre XAMPP su %{translate}."
+
+#: en.translations.description
+msgid "Can you help translate XAMPP for other community members? We need your help to translate XAMPP into different languages. We have set up a site, %{translate}, where users can contribute translations."
+msgstr ""
+"Puoi aiutarci a tradurre XAMPP per altri membri della comunità? Abbiamo "
+"bisogno del tuo aiuto per tradurre XAMPP in diverse lingue. Abbiamo "
+"allestito un sito, %{translate}, dove gli utenti possono contribuire alle "
+"traduzioni."
+
+msgid "How do I install XAMPP?"
+msgstr "Come faccio ad installare XAMPP?"
+
+msgid "Choose your flavor for your linux OS, the 32-bit or 64-bit version."
+msgstr ""
+"Scegli la distro giusta per il tuo sistema operativo Linux, la versione a "
+"32-bit o 64-bit."
+
+msgid "Change the permissions to the installer"
+msgstr "Modificare le autorizzazioni per l'installazione"
+
+msgid "Run the installer"
+msgstr "Eseguire il programma di installazione"
+
+msgid "That's all. XAMPP is now installed below the /opt/lampp directory."
+msgstr "Questo è tutto. XAMPP è ora installato sotto la cartella /opt/lampp."
+
+msgid "How do I start XAMPP?"
+msgstr "Come posso avviare XAMPP?"
+
+msgid "To start XAMPP simply call this command:"
+msgstr "Per avviare XAMPP basta utilizzare questo semplice comando:"
+
+msgid "You should now see something like this on your screen:"
+msgstr "Ora dovreste vedere qualcosa come questo:"
+
+msgid "If you get any error messages visit %{community} for help."
+msgstr ""
+"Se ricevete un qualsiasi messaggio d'errore visitate %{community} per "
+"ricevere aiuto."
+
+msgid "Also, note that there is a graphical tool that you can use to manage your servers easily. You can start this tool with the following commands:"
+msgstr ""
+"Inoltre, c'è uno strumento grafico che vi consente di gestire i vostri "
+"server facilmente. È possibile avviare questo strumento con i seguenti "
+"comandi:"
+
+msgid "How do I stop XAMPP?"
+msgstr "Come faccio a fermare XAMPP?"
+
+msgid "To stop XAMPP simply call this command:"
+msgstr "Per fermare XAMPP utilizzare questo semplice comando:"
+
+msgid "You should now see something like this on your screen:"
+msgstr "Ora dovreste vedere sullo schermo qualcosa di simile:"
+
+msgid "Also, note that there is a graphical tool that you can use to start/stop your servers easily. You can start this tool with the following commands:"
+msgstr ""
+"Inoltre, c'è uno strumento grafico che da la possibilità di "
+"avviare/arrestare i vostri server facilmente. È possibile avviare questo "
+"strumento con i seguenti comandi:"
+
+msgid "How can I test that everything worked?"
+msgstr "Come posso verificare che tutto funzioni?"
+
+msgid "Type in the following URL at your favourite web browser:"
+msgstr "Digitare il seguente URL sul vostro browser web preferito:"
+
+msgid "Now you should see the XAMPP start page containing some links to check the status of the installed software and some small programming examples."
+msgstr ""
+"Ora si dovrebbe vedere la pagina iniziale di XAMPP che contiene alcuni link "
+"per controllare lo stato del software installato e alcuni piccoli esempi di "
+"programmazione."
+
+msgid "Is XAMPP production ready?"
+msgstr "Il prodotto XAMPP e' pronto?"
+
+msgid "XAMPP is not meant for production use but only for development environments. The way XAMPP is configured is to be open as possible to allow the developer anything he/she wants. For development environments this is great but in a production environment it could be fatal."
+msgstr ""
+"XAMPP non è inteso per la produzione ma solo per ambienti di sviluppo. Il "
+"modo in cui XAMPP è configurato è quello di essere più aperto possibile per "
+"permettere allo sviluppatore lui/lei di personalizzarlo. Per ambienti di "
+"sviluppo questo è ottimo ma in un ambiente di produzione potrebbe essere "
+"pericoloso."
+
+msgid "Here a list of missing security in XAMPP:"
+msgstr "Ecco una lista delle impostazioni di sicurezza mancanti in XAMPP:"
+
+msgid "The MySQL administrator (root) has no password."
+msgstr "L'amministratore di MySQL (root) non ha password."
+
+msgid "The MySQL daemon is accessible via network."
+msgstr "Il demone MySQL è accessibile via rete."
+
+msgid "ProFTPD uses the password \"lampp\" for user \"daemon\"."
+msgstr "ProFTPD usa come password \"lampp\" e come user \"daemon\"."
+
+msgid "PhpMyAdmin is accessible via network."
+msgstr "PhpMyAdmin è accessibile via rete."
+
+# it would be good to put those results, the sample so as to see what the best form and
+msgid "Examples are accessible via network."
+msgstr "Gli esempi sono accessibili via rete."
+
+msgid "To fix most of the security weaknesses simply call the following command:"
+msgstr ""
+"Per risolvere la maggior parte delle carenze di sicurezza e' sufficiente "
+"digitare il seguente comando"
+
+msgid "It starts a small security check and makes your XAMPP installation secure. For example this protects the XAMPP demo pages by a username ('lampp') and password combination."
+msgstr ""
+"Si avvia un piccolo controllo di sicurezza e rende l'installazione di XAMPP "
+"sicura. Per esempio, questo protegge le pagine demo XAMPP da un nome utente "
+"('lampp') e password."
+
+msgid "What is the meaning of the error messages I see when starting XAMPP?"
+msgstr ""
+"Qual è il significato dei messaggi di errore che vedo quando si avvia XAMPP?"
+
+msgid "You may get several error messages while starting XAMPP:"
+msgstr ""
+"È possibile ottenere diversi messaggi di errore durante l'avvio di XAMPP"
+
+msgid "The LAMPP startup script did not start XAMPP-Apache because there is an Apache instance already running. To start XAMPP properly, first you have to stop this daemon."
+msgstr ""
+"Lo script di avvio LAMPP non è stato avviato XAMPP-Apache perché c'è un "
+"'istanza di Apache già in esecuzione. Per avviare XAMPP correttamente, prima "
+"devi fermare questo demone."
+
+msgid "This is mostly due to the same reasons as the above error. The LAMPP startup script found a MySQL daemon already running on your system. To start LAMPP properly, you have to stop this daemon first."
+msgstr ""
+"Ciò è in gran parte dovuto alle stesse ragioni all'errore precedente. Lo "
+"script di avvio LAMPP trovato un demone MySQL già in esecuzione sul vostro "
+"sistema. Per avviare correttamente LAMPP, prima devi fermare questo demone."
+
+msgid "Apache doesn't seems to start. What can I do? "
+msgstr "Apache non sembra avviarsi. Cosa posso fare?"
+
+msgid "This error can exist for multiple reasons. Apache displays this error under several circumstances. To find the exact reason we have to do some research:"
+msgstr ""
+"Questo errore può esistere per diverse ragioni. Apache viene visualizzato "
+"questo errore in diverse circostanze. Per trovare l'esatta ragione dobbiamo "
+"fare qualche ricerca"
+
+msgid "What do I do if the error message is \"Cannot restore segment prot after reloc: Permission denied?\""
+msgstr ""
+"Cosa faccio in caso di errore \"Cannot restore segment prot after reloc: "
+"Permission denied?\""
+
+msgid "Some Linux distributions have SELinux activated by default and this is preventing the successful start of XAMPP. You should deactivate it in order to start the XAMPP servers:"
+msgstr ""
+"Alcune distribuzioni Linux hanno SELinux attivato di default e questo "
+"impedisce l'avvio positivo di XAMPP. Si consiglia di disattivarlo per poter "
+"avviare i server XAMPP"
+
+msgid "Now XAMPP should work fine again."
+msgstr "Ora XAMPP dovrebbe funzionare di nuovo bene."
+
+msgid "After I rebooted my Linux box XAMPP stopped running! How can I fix this?"
+msgstr ""
+"Dopo che ho riavviato la mia Linux box XAMPP ha smesso di funzionare! Come "
+"posso risolvere questo problema?"
+
+msgid "Correct. That's normal Linux behaviour (which applies to any other Unix-like system). It's the admin's job to make sure a particular application is started at bootup."
+msgstr ""
+"Corretto. Questo è il normale comportamento di Linux (che si applica a "
+"qualsiasi altro sistema di tipo Unix). E 'compito dell'amministratore "
+"assicurarsi che una particolare applicazione venga avviata automaticamente "
+"al boot."
+
+msgid "There is no real standard way to configure the boot process of a Linux system, but most of them should allow you to start XAMPP at boot time using the following steps."
+msgstr ""
+"Non esiste un vero e proprio modo standard per configurare il processo di "
+"avvio di un sistema Linux, ma la maggior parte di loro dovrebbe consentire "
+"di avviare XAMPP al momento del boot eseguendo le seguenti operazioni."
+
+msgid "If your Linux distro uses \"update-rc.d\" tool to install the services:"
+msgstr "Se la tua distro Linux usa \"update-rc.d\" per installare i servizi:"
+
+msgid "If your Linux distro uses \"chkconfig\" tool to install the services you can run the following commands:"
+msgstr ""
+"Se la tua distro Linux usa lo strumento \"chkconfig\" per installare i servizi "
+"è possibile eseguire i seguenti comandi:"
+
+msgid "How can I make my XAMPP installation more secure?"
+msgstr "Come posso rendere la mia installazione XAMPP più sicura?"
+
+msgid "In the default installation, XAMPP has no passwords set and it is not recommended to run XAMPP with this configuration accessible by others."
+msgstr ""
+"In una installazione predefinita, XAMPP non ha password impostate e non è "
+"consigliabile eseguire XAMPP con questa configurazione essendo accessibile "
+"da altri."
+
+msgid "Simply type the following command (as root) to start a simple security check:"
+msgstr ""
+"Basta digitare il seguente comando (come root) per avviare un semplice "
+"controllo di sicurezza"
+
+msgid "Now you should see the following dialog on your screen:"
+msgstr "Ora si dovrebbe vedere la seguente finestra di dialogo sullo schermo"
+
+msgid "(1) Setting a password will protect the XAMPP demo pages (http://localhost/xampp/) using this password. The user name is 'lampp'!"
+msgstr ""
+"(1) L'impostazione di una password proteggerà le pagine dimostrative di "
+"XAMPP (http://localhost/xampp/) usando questa password. Il nome utente è "
+"'lampp'!"
+
+msgid "After calling this command your XAMPP installation should be more secure."
+msgstr ""
+"Dopo aver digitato questo comando la tua installazione XAMPP dovrebbe essere "
+"più sicuro."
+
+msgid "How do I activate eAccelerator?"
+msgstr "Come faccio ad attivare eAccelerator?"
+
+msgid "To activate eAccelerator simply find the following lines in your /opt/lampp/etc/php.ini:"
+msgstr ""
+"Per attivare eAccelerator semplicemente trova le seguenti righe in "
+"/opt/lampp/etc/php.ini:"
+
+msgid "Remove the semicolon at the beginning of each line and restart XAMPP. eAccelerator is now active. For more information about eAccelerator, check the eAccelerator home page: %{eaccelerator}."
+msgstr ""
+"Rimuovere il punto e virgola all'inizio di ogni riga e riavviare XAMPP. "
+"eAccelerator è ora attivo. Per ulteriori informazioni su eAccelerator, "
+"controlla home page eAccelerator% {eAccelerator}."
+
+msgid "How do I activate the OCI8/Oracle extension for PHP?"
+msgstr "Come faccio ad attivare l'estensione OCI8/Oracle per PHP?"
+
+msgid "To activate the OCI8/Oracle extension for PHP please execute the following command:"
+msgstr ""
+"Per attivare l'estensione OCI8/Oracle per PHP si prega di eseguire il "
+"seguente comando:"
+
+msgid "The following dialog will start:"
+msgstr "Apparirà la seguente finestra di dialogo:"
+
+msgid "Now the extension should be active."
+msgstr "Ora l'estensione dovrebbe essere attiva."
+
+msgid "XAMPP runs, but why are none of the images being displayed?"
+msgstr "XAMPP gira, perché nessun immagini viene visualizzata?"
+
+msgid "That's a special problem with some Linux systems. Please open your /opt/lampp/etc/httpd.conf and look for these two lines:"
+msgstr ""
+"Questo è un problema speciale con alcuni sistemi Linux. Si prega di aprire "
+"il file /opt/lampp/etc/httpd.conf ed individuare queste due righe:"
+
+msgid "Remove the # in both lines and restart your Apache. Your images should be back."
+msgstr ""
+"Rimuovere il # in entrambe le linee e riavviare il Apache. Le immagini "
+"ritorneranno di nuovo."
+
+msgid "How do I backup/restore my XAMPP system?"
+msgstr "Come faccio il backup/ripristino mio sistema XAMPP?"
+
+msgid "Warning:"
+msgstr "Attenzione:"
+
+msgid "The backup and restore functionality is still under development and may not work correctly."
+msgstr ""
+"Il backup e ripristinare la funzionalità è ancora in fase di sviluppo e "
+"potrebbero non funzionare correttamente."
+
+msgid "You can create the backup by calling:"
+msgstr "È possibile creare il backup digitando"
+
+msgid "or"
+msgstr "oppure"
+
+msgid "Where \"secret\" is your MySQL root password. This command will create the following output:"
+msgstr ""
+"Dove \"secret\" è la password di root di MySQL. Questo comando creerà il "
+"seguente output:"
+
+msgid "The file /opt/lampp/backup/xampp-backup-22-01-14.sh (in the example above) contains your backup data. Store this file in a safe place."
+msgstr ""
+"Il file /opt/lampp/backup/xampp-backup-22-01-14.sh (nell'esempio sopra) "
+"contiene i tuoi dati di backup. Salva il file in un luogo sicuro."
+
+msgid "On the new machine you need the same version of XAMPP as on your original/source machine."
+msgstr ""
+"Sulla nuova macchina hai bisogno della stessa versione di XAMPP come sulla "
+"macchina originale / sorgente."
+
+msgid "You should see something like this:"
+msgstr "Dovresti vedere qualcosa come questo"
+
+msgid "That's all. Keep in mind that it's a beta feature."
+msgstr ""
+"Questo è tutto. Tenete in mente che si tratta di una caratteristica beta."
+
+msgid "Frequently Asked Questions"
+msgstr "Domande frequenti"
+
+msgid "How do I do install XAMPP for Mac OS X?"
+msgstr "Come faccio installare XAMPP per Mac OS X?"
+
+msgid "To install XAMPP just do the following:"
+msgstr "Per installare XAMPP basta procedere nel modo seguente:"
+
+msgid "Open the DMG-Image."
+msgstr "Aprire il DMG-immagine."
+
+msgid "Double-click on the image to start the installation process."
+msgstr ""
+"Fare doppio clic sull' file immagine per avviare il processo di "
+"installazione."
+
+msgid "That's all. XAMPP is now installed below the /Applications/XAMPP directory."
+msgstr ""
+"Questo è tutto. XAMPP è ora installato sotto la cartella "
+"/Applications/XAMPP."
+
+msgid "To start XAMPP simply open XAMPP Control and start Apache, MySQL and ProFTPD. The name of the XAMPP Control is \"manager-osx\"."
+msgstr ""
+"Per avviare XAMPP è sufficiente aprire XAMPP controll e avviare Apache, "
+"MySQL e ProFTPD. Il nome del XAMPP controll è 'manager-osx'."
+
+msgid "To stop XAMPP simply open XAMPP Control and stop the servers. The name of the XAMPP Control is \"manager-osx\"."
+msgstr ""
+"Per fermare XAMPP è sufficiente aprire XAMPP controll e fermare i server. Il "
+"nome del controllo XAMPP è 'manager-osx'."
+
+msgid "Type in the following URL in a web browser:"
+msgstr "Digitare il seguente URL in un browser Web"
+
+msgid "It will kick off a a small security check to make the XAMPP installation secure."
+msgstr ""
+"Si darà il via a un piccolo controllo di sicurezza per rendere sicura "
+"l'installazione XAMPP."
+
+msgid "The file /Applications/XAMPP/xamppfiles/backup/xampp-backup-22-01-14.sh (in the example above) contains your backuped data. Get this file to a save place."
+msgstr ""
+"Il file /Applications/XAMPP/xamppfiles/backup/xampp-backup-22-01-14.sh "
+"(nell'esempio sopra) contiene i dati backuped. Tieni questo file in un luogo "
+"sicuro."
+
+msgid "XAMPP for Windows exists in three different flavors:"
+msgstr "XAMPP per Windows esiste in tre diversi modelli:"
+
+msgid "Installer:"
+msgstr "Installatore"
+
+msgid "Probably the easiest way to install XAMPP."
+msgstr "Probabilmente il modo più semplice per installare XAMPP."
+
+msgid "For purists: XAMPP as ordinary ZIP archive."
+msgstr ""
+"Il pannello di controllo XAMPP per avviare ed interrompere Apache, MySQL, "
+"FileZilla &amp; Mercury o per installare questi server come servizi."
+
+msgid "For purists with low bandwidth: XAMPP as 7zip archive."
+msgstr ""
+"Per i puristi con bassa larghezza di banda XAMPP e disponibile come archivio "
+"7zip."
+
+msgid "Note: If you extract the files, there can be false-positives virus warnings."
+msgstr ""
+"Nota: se avete estratto i file, possono essere presenti degli avvisi di "
+"virus falsi-positivi."
+
+msgid "Using the installer:"
+msgstr "Utilizzare il programma di installazione:"
+
+msgid "Using the installer from the Downloads page is the easiest way to install XAMPP. After the installation is complete, you will find XAMPP under Start | Programs | XAMPP. You can use the XAMPP Control Panel to start/stop all server and also install/uninstall services."
+msgstr ""
+"Utilizzando il programma di installazione dalla pagina di download è il modo "
+"più semplice per installare XAMPP. Dopo aver completato l'installazione, "
+"troverete XAMPP in Start | Programmi | XAMPP. È possibile utilizzare il "
+"Pannello di controllo XAMPP per avviare/arrestare tutti i server e anche "
+"installare/disinstallare servizi."
+
+msgid "The XAMPP control panel for start/stop Apache, MySQL, FileZilla & Mercury or install these server as services."
+msgstr ""
+"Il pannello di controllo di XAMPP per avviare ed interrompere Apache, MySQL, "
+"FileZilla &amp; Mercury od installare questi server come servizi."
+
+msgid "Unzip the zip archives into the folder of your choice. XAMPP is extracting to the subdirectory \"C:\\xampp\" below the selected target directory. Now start the file \"setup_xampp.bat\", to adjust the XAMPP configuration to your system."
+msgstr ""
+"Decomprimere gli archivi zip nella cartella di vostra scelta. XAMPP verra "
+"estratto nella sottodirectory 'C \\ \\ xampp' sotto la directory di "
+"destinazione selezionata. Ora avviare il file 'setup_xampp.bat', per "
+"regolare la configurazione XAMPP al vostro sistema."
+
+msgid "If you choose a root directory \"C:\\\" as target, you must not start \"setup_xampp.bat\"."
+msgstr ""
+"Se si sceglie una radice directory 'C \\ ' come obbietivo, non devi avviare "
+"'setup_xampp.bat'."
+
+msgid "Like with the installer version, you can now use the \"XAMPP Control Panel\" for additional tasks."
+msgstr ""
+"Come con la versione installer, è ora possibile utilizzare il 'Pannello di "
+"controllo di XAMPP' per ulteriori compiti."
+
+msgid "How can I start XAMPP without setup?"
+msgstr "Come posso avviare XAMPP senza installazione?"
+
+msgid "If you extract XAMPP in a top level folder like \"C:\\" or \"D:\\", you can start most servers like Apache or MySQL directly without execution of the file \"setup_xampp.bat\"."
+msgstr ""
+"Se si estrae XAMPP in una cartella di livello superiore come 'C \\ ' o 'D \\ "
+"', è possibile avviare la maggior parte dei server come Apache o MySQL "
+"direttamente senza l'esecuzione del file 'setup_xampp.bat'."
+
+msgid "Not using the setup script, or selecting relative paths in the setup script, is preferred if you are installing XAMPP on a usb drive. Because on each pc such a drive can have an other drive letter. You can switch from absolute to relative paths at any time with the setup script."
+msgstr ""
+"Non usando lo script di installazione, oppure selezionando i percorsi "
+"relativi nello script di setup, è preferibile se si sta installando XAMPP su "
+"un drive usb. Perché su ogni pc una tale unità possa avere un'altra lettera "
+"di unità. È possibile passare da assoluto a percorsi relativi in ​​ogni "
+"momento con lo script di installazione."
+
+msgid "Using the installer from our Downloads page is the easiest way to install XAMPP. After the installation is complete, you will find XAMPP under   Start | Programs | XAMPP. You can use the XAMPP Control Panel to start/stop all server and also install/uninstall services."
+msgstr ""
+"Utilizzando il programma di installazione dalla nostra pagina di download è "
+"il modo più semplice per installare XAMPP.Dopo aver completato "
+"l'installazione, troverete XAMPP sotto  Start | Programmi | XAMPP. È "
+"possibile utilizzare il Pannello di controllo di XAMPP per avviare / "
+"arrestare tutti i server e anche installare / disinstallare servizi."
+
+msgid "The universal control center is the \"XAMPP Control Panel\" (thanks  www.nat32.com). It is started with:"
+msgstr ""
+"Il centro di controllo universale è il 'Pannello di XAMPP Control' (grazie "
+"www.nat32.com). Si è iniziato con:"
+
+msgid "How do I start and stop XAMPP?"
+msgstr "Come faccio ad avviare o stoppare XAMPP?"
+
+msgid "You can also use some batchfiles to start/stop the servers:"
+msgstr ""
+"È inoltre possibile utilizzare alcuni batchfiles per avviare/arrestare i "
+"server:"
+
+msgid "Apache &amp; MySQL start:"
+msgstr "Avvio Apache &amp; MySQL:"
+
+msgid "Apache &amp; MySQL stop:"
+msgstr "Apache &amp; MySQL stop:"
+
+msgid "Apache start:"
+msgstr "Avvia Apache:"
+
+msgid "Apache stop:"
+msgstr "Ferma Apache:"
+
+msgid "MySQL start:"
+msgstr "Avvia Mysql:"
+
+msgid "MySQL stop:"
+msgstr "Ferma MySQL:"
+
+msgid "Mercury Mailserver start:"
+msgstr "Avvia Mercury Mailserve:"
+
+msgid "Mercury Mailserver stop:"
+msgstr "Ferma Mercury Mailserver:"
+
+msgid "FileZilla Server start:"
+msgstr "Avvia FileZilla Server:"
+
+msgid "FileZilla Server stop:"
+msgstr "Ferma FileZilla Server:"
+
+msgid "How can I install a server as a service?"
+msgstr "Come posso installare un server come servizio?"
+
+msgid "Each server in XAMPP you can install also as Windows service. You can also install it from the XAMPP Control Panel. In this case it is necessary to run the scripts or the Control Panel with Administrator privileges."
+msgstr ""
+"Per ogni server XAMPP è possibile installare come servizio di Windows. È "
+"inoltre possibile installare dal pannello di controllo di XAMPP. In questo "
+"caso è necessario eseguire gli script o il pannello di controllo con "
+"privilegi di amministratore."
+
+msgid "Apache service install: \xampp\apache\apache_installservice.bat"
+msgstr "Installare il servizio Apache:\\xampp\\apache\\apache_installservice.bat"
+
+msgid "Apache service uninstall: \xampp\apache\apache_uninstallservice.bat"
+msgstr ""
+"Disinstallazione del servizio "
+"Apache:\\xampp\\apache\\apache_uninstallservice.bat"
+
+msgid "MySQL service install: \xampp\mysql\mysql_installservice.bat"
+msgstr "Installazione del servizio MySQL: \\xampp\\mysql\\mysql_installservice.bat"
+
+msgid "MySQL service uninstall: \xampp\mysql\mysql_uninstallservice.bat"
+msgstr ""
+"Disinstallazione sel servizio MySQL: \\xampp\\mysql\\mysql_uninstallservice.bat"
+
+msgid "FileZilla service (un)install: \xampp\filezilla_setup.bat"
+msgstr ""
+"FileZilla (Server FTP) installazione/disinstallazione del servizio: "
+"\\xampp\\filezilla_setup.bat"
+
+msgid "Mercury: No service installation available"
+msgstr "Mercury Nessuna installazione disponibile per il servizio"
+
+msgid "The XAMPP demopage is accessible via network."
+msgstr "XAMPP la pagina demo è accessibile dalla rete."
+
+msgid "The default users of Mercury and FileZilla are known."
+msgstr ""
+"L'impostazione predefinita, gli utenti di Mercury e FileZilla sono noti."
+
+msgid "All points can be a huge security risk. Especially if XAMPP is accessible via network and people outside your LAN. It can also help to use a firewall or a (NAT) router. In case of a router or firewall, your PC is normally not accessible via network. It is up to you to fix these problems. As a small help there is the \"XAMPP Security console\"."
+msgstr ""
+"Tutti i punti possono essere un enorme rischio per la sicurezza. Soprattutto "
+"se XAMPP è accessibile tramite la rete e le persone al di fuori della LAN. "
+"Può inoltre essere utile per utilizzare un firewall o un router NAT (Network "
+"Address Translation). In caso di un router o un firewall, il PC è "
+"normalmente non accessibili tramite la rete. A voi il compito di risolvere "
+"questi problemi. Come un piccolo aiuto c'è il \"XAMPP Security console\"."
+
+msgid "Please secure XAMPP before publishing anything online. A firewall or an external router are only sufficient for low levels of security. For slightly more security, you can run the \"XAMPP Security console\" and assign passwords."
+msgstr ""
+"Mettere in sicurezza XAMPP prima di pubblicare qualcosa online. UN firewall "
+"o un router esterno sono sufficienti solo per bassi livelli di sicurezza. "
+"Per più sicurezza, è possibile eseguire il \"XAMPP Security console' e "
+"assegnare le password."
+
+msgid "If you want have your XAMPP accessible from the internet, you should go to the following URI which can fix some problems:"
+msgstr ""
+"Se volete avere il vostro XAMPP accessibili da Internet, si dovrebbe andare "
+"al seguente URI che può risolvere alcuni problemi"
+
+msgid "With the security console you can set a password for the MySQL user \"root\" and phpMyAdmin. You can also enable a authentication for the XAMPP demopages."
+msgstr ""
+"Con la console di sicurezza è possibile impostare una password per l'utente "
+"'root' MySQL e phpMyAdmin. È inoltre possibile attivare l'autenticazione per "
+"i demopages XAMPP."
+
+msgid "This web based tool does not fix any additional security issues! Especially the FileZilla FTP server and the Mercury mail server you must secure yourself."
+msgstr ""
+"Questo strumento web-based non risolve tutti i problemi di sicurezza "
+"aggiuntivi! Soprattutto il server FileZilla FTP e il server di posta Mercury "
+"è necessario proteggerti."
+
+msgid "How do I uninstall XAMPP?"
+msgstr "Come faccio a disinstallare XAMPP?"
+
+msgid "If you installed XAMPP using the installer version, please use the Uninstaller. The Uninstaller will delete all XAMPP entries from your registry and it will uninstall some installed services included with XAMPP. We highly recommend that you use the Uninstall program for removing XAMPP installations from the Installer version.Please backup all the data you want to keep before uninstalling XAMPP."
+msgstr ""
+"Se avete installato XAMPP utilizzando la versione installer, si prega di "
+"utilizzare il programma di disinstallazione. Il programma di "
+"disinstallazione cancella tutte le voci di XAMPP dal registro di sistema e "
+"disinstallera' alcuni servizi installati con XAMPP. Consigliamo vivamente di "
+"utilizzare il programma di disinstallazione per rimuovere le installazioni "
+"di XAMPP . Effettuate un backup del Installer version.Per salvare tutti i "
+"dati che si desidera conservare prima di disinstallare XAMPP."
+
+msgid "If you installed XAMPP using the ZIP and 7zip versions, shut down all XAMPP servers and exit all panels. If you installed any services, uninstall and shut them down too. Now simply delete the entire folder where XAMPP is installed. There are no registry entries and no environment variables to  clean up."
+msgstr ""
+"Se avete installato XAMPP utilizzando le versioni ZIP e 7zip, arrestare "
+"tutti i server XAMPP e chiudere tutti i pannelli. Se avete installato tutti "
+"i servizi, disinstallare e farli chiudere.Ora basta eliminare l'intera "
+"cartella dove è installato XAMPP.Non ci sono voci di registro e non "
+"variabili d'ambiente da ripulire."
+
+msgid "What is the \"lite\" version of XAMPP?"
+msgstr "Qual è la versione 'lite' di XAMPP?"
+
+msgid "XAMPP Lite (means \"light\" as in \"light-weight\") is a smaller bundle of XAMPP components, which is recommended for quick work using only PHP and MySQL. Some servers or tools such as Mercury Mail and FileZilla FTP are missing in the Lite version."
+msgstr ""
+"XAMPP Lite (significa 'luce', come in 'leggero') è un insieme minore di "
+"componenti XAMPP, che è raccomandato per un lavoro veloce usando solo PHP e "
+"MySQL. Alcuni server o strumenti come Mercury Mail e FileZilla FTP mancano "
+"nella versione Lite"
+
+msgid "Where should I place my web content?"
+msgstr "Dove devo inserire i miei contenuti web?"
+
+msgid "The main directory for all WWW documents is \xampp\htdocs. If you put a file \"test.html\" in this directory, you can access it with the URI \"http://localhost/test.html\"."
+msgstr ""
+"La directory principale per tutti i documenti WWW è \\xampp\\htdocs. Se "
+"inserisci un file \"test.html\" in questa directory, è possibile consultarlo "
+"con l'URI \"http://localhost/test.html\"."
+
+msgid "And \"test.php\"? Just use \"http://localhost/test.php\". A simple testscript can be:"
+msgstr ""
+"E \"test.php\"? Basta usare \"http://localhost/test.php\". Un semplice script di "
+"test può essere:"
+
+msgid "A new subdirectory for your web? Just make a new directory (e.g. \"new\") inside the directory \"\xampp\htdocs\" (best without whitespaces and only ASCII), create a test file in this directory and access it with \"http://localhost/new/test.php\"."
+msgstr ""
+"Una nuova sottodirectory per il web? Basta fare una nuova directory (p.e. "
+"\"nuova\") all'interno della directory \"\\xampp\\htdocs\" (meglio senza spazi "
+"vuoti e solo ASCII), creare un file di prova in questa directory e accedervi "
+"con \"http://localhost/nuova/test.php\"."
+
+msgid "Further specifics"
+msgstr "Ulteriori specifiche"
+
+msgid "Executable:"
+msgstr "Eseguibile:"
+
+msgid "Allowed endings:"
+msgstr "Ammessi finali:"
+
+msgid "basic package"
+msgstr "Pacchetto basico"
+
+msgid "Can I move the XAMPP installation?"
+msgstr "Posso spostare l'installazione di XAMPP?"
+
+msgid "Yes. After moving of the XAMPP directory, you must execute \"setup_xampp.bat\". The paths in the configuration files will be adjusted with this step."
+msgstr ""
+"Sì. Dopo lo spostamento della directory XAMPP, è necessario eseguire "
+"'setup_xampp.bat'. I percorsi dei file di configurazione verranno regolati "
+"con questo passo."
+
+msgid "If you have installed any server as Windows service, you must first remove the Windows service, and after the moving you can install the service again."
+msgstr ""
+"Se avete installato un server come servizio di Windows, è necessario prima "
+"rimuovere il servizio Windows, e dopo lo spostamento è possibile installare "
+"nuovamente il servizio."
+
+msgid "Warning: The configuration files from your own scripts, like PHP applications, are not adjusted. But it's possible to write a \"plug-in\" for the installer. With such a plug-in, the installer can adjust such files too."
+msgstr ""
+"Attenzione I file di configurazione dei tuoi script, come le applicazioni "
+"PHP, non sono adeguati. Ma è possibile scrivere un 'plug-in' per "
+"l'installatore. Con tale plug-in, l'installatore può regolare tali file."
+
+msgid "What are \"Automatic start pages\" for the WWW directories?"
+msgstr "Quali sono le 'pagine avvio automatico »per le directory WWW?"
+
+msgid "The standard filename for the Apache function \"DirectoryIndex\" is \"index.html\" or \"index.php\". Every time you are just browsing to a folder (e.g. \"http://localhost/xampp/\"), and Apache can find such a file, Apache is displaying this file instead of a directory listing."
+msgstr ""
+"Il nome del file standard per la funzione di Apache 'DirectoryIndex' è "
+"'index.html' o 'index.php'. Ogni volta che si sta solo navigando in una "
+"cartella (ad esempio 'http / / localhost / xampp /'), e Apache può trovare "
+"un file, Apache sta visualizzando questo file invece di un elenco di "
+"directory."
+
+msgid "Where can I change the configuration?"
+msgstr "Come posso cambiare la configurazione?"
+
+msgid "Almost all settings in XAMPP you can change with configuration files. Just open the file in a textedit and change the setting you want. Only FileZilla and Mercury should be configured with the application config tool."
+msgstr ""
+"Quasi tutte le impostazioni di XAMPP si possono modificare dal file di "
+"configurazione. Basta aprire il file in TextEdit e modificare l'impostazione "
+"che si desidera. Solo FileZilla e Mercurio devono essere configurati con lo "
+"strumento di configurazione dell'applicazione."
+
+msgid "Why can't XAMPP work on Windows XP SP2?"
+msgstr "Perché non è possibile che XAMPP funzioni su Windows XP SP2?"
+
+msgid "Microsoft delivers a better firewall with service pack 2 (SP2), which starts automatically. This firewall now blocks the necessary ports 80 (http) and 443 (https) and Apache can't start."
+msgstr ""
+"Microsoft con Service Pack 2 (SP2), offre un firewall migliore che si avvia "
+"automaticamente. Questo firewall blocca le porte necessarie 80 (http) e 443 "
+"(https) e Apache non può avviarsi."
+
+msgid "The fast solution:"
+msgstr "La soluzione piu veloce:"
+
+msgid "Disable the Microsoft firewall with the toolbar and try to start XAMPP onces more. The better solution is to define an exception within the security center."
+msgstr ""
+"Disattivare il firewall di Microsoft dalla barra degli strumenti e tentare "
+"di avviare XAMPP un altra volta. La soluzione migliore è quella di definire "
+"un'eccezione all'interno del centro di sicurezza."
+
+msgid "The following ports are used for basic functionality:"
+msgstr "Le seguenti porte sono utilizzate per le funzionalità di base:"
+
+msgid "Why doesn't XAMPP work on Vista?"
+msgstr "Perché XAMPP non funziona su Vista?"
+
+msgid "our community pages"
+msgstr "le nostre pagine di comunità"
+
+msgid "User Account Control (UAC)"
+msgstr "Controllo dell'account utente (UAC)"
+
+msgid "In the directory \"C:\program files\" you don't have full write privileges, even as Admin. Or you have only limited privileges (e.g. for \".\xampp\htdocs\"). In this case you can't edit a file."
+msgstr ""
+"Nella directory \"C: \\program files\" non avete i privilegi di scrittura, "
+"anche come Admin. O hai solo privilegi limitati (ad esempio per i ' "
+".\\xampp\\htdocs\" ). In questo caso non è possibile modificare un file."
+
+msgid "Solution:"
+msgstr "Soluzione:"
+
+msgid "Raise your privileges within explorer (right click / security) or deactivate the user account control (UAC)."
+msgstr ""
+"Elevare i tuoi privilegi in explorer (clic tasto destro/protezione) e "
+"disattivare il controllo dell'account utente (UAC)."
+
+msgid "You have installed Apache/MySQL in \"C:\xampp\" as Windows service. But you can't start/stop the services with the \"XAMPP Control Panel\" or can't uninstall them."
+msgstr ""
+"È stato installato Apache/MySQL in \"C:\\xampp\" come servizio di Windows. Ma "
+"non è possibile avviare/arrestare i servizi con il \"Pannello di controllo di "
+"XAMPP\" o non è possibile disinstallarli."
+
+msgid "Use the service management console from Windows or deactivate UAC."
+msgstr ""
+"Utilizzate la console di gestione del servizio da Windows o disabilitare "
+"UAC."
+
+msgid "Disabling the User Account Control (UAC)"
+msgstr "Disabilitare il controllo account utente (UAC)"
+
+msgid "To deactivate the UAC, use the program \"msconfig\". In \"msconfig\" go to \"Tools\", select \"disable user account control\" and verify your selection. Now you must restart Windows. At the same time, you can enable the UAC again."
+msgstr ""
+"Per disabilitare l'UAC, utilizzare il programma 'msconfig'. In 'msconfig' "
+"vai a 'Strumenti', selezionare 'controllo dell'account utente disabilita' e "
+"verificare la selezione. Ora è necessario riavviare Windows. Allo stesso "
+"tempo, è possibile attivare nuovamente l'UAC."
+
+msgid "How do I check the md5 checksum?"
+msgstr "Come faccio a controllare il checksum MD5?"
+
+msgid "To compare files, often checksums are used. A standard to create this checksum md5 (Message Digest Algorithm 5)."
+msgstr ""
+"Per confrontare i file, vengono utilizzati spesso i checksum. Uno standard "
+"per creare questa checksum MD5 (Message Digest Algorithm 5)."
+
+msgid "With this md5 checksum you can test, if your download of the XAMPP package is correct or not. Of course you need a program which can create these checksums. For Windows you can use a tool from Microsoft:"
+msgstr ""
+"Con questo md5 checksum è possibile verificare se il download del pacchetto "
+"XAMPP è corretta o meno. Naturalmente è necessario un programma che può "
+"creare questi checksum. Per Windows è possibile utilizzare uno strumento di "
+"Microsoft:"
+
+msgid "Availability and description of the File Checksum Integrity Verifier utility"
+msgstr ""
+"La disponibilità e la descrizione del File Integrità Checksum Verifica "
+"utility "
+
+msgid "It's also possible to use any other program which can create md5 checksums, like the GNU md5sum."
+msgstr ""
+"È anche possibile utilizzare qualsiasi altro programma che può creare md5 "
+"checksum, come la GNU md5sum."
+
+msgid "As you have installed such a program (e.g. fciv.exe), you can do following steps:"
+msgstr ""
+"Come avete installato un programma del genere (per esempio fciv.exe), si può "
+"fare seguendo i passaggi:"
+
+msgid "Download XAMPP (f.e. xampp-win32-1.8.2-0.exe)"
+msgstr "Scarica XAMPP (f.e. xampp-win32-1.8.2-0.exe)"
+
+msgid "Create the checksum with:"
+msgstr "Creare il checksum con:"
+
+msgid "And now you can compare this checksum with that one you can find on the XAMPP for Windows homepage."
+msgstr ""
+"E ora si può paragonare questo checksum con quello lo puoi trovare su XAMPP "
+"per homepage di Windows."
+
+msgid "If both checksums equal, all is ok. If not, the download is broken or the file has been changed."
+msgstr ""
+"Se entrambi i checksum sono uguali, tutto è ok. In caso contrario, il "
+"download è dannegiato o il file è stato modificato."
+
+msgid "Why have changes in my php.ini not taken effect?"
+msgstr "Perché i cambiamenti del mio php.ini non hanno avuto effetto?"
+
+msgid "If a change in the \"php.ini\" has no effect, it's possible PHP is using a different one. You can verify this with phpinfo(). Go to the URI  http://localhost/xampp/phpinfo.php and search for \"Loaded Configuration File\". This value shows you the \"php.ini\" PHP is really using."
+msgstr ""
+"Se una variazione del \"php.ini\" non ha alcun effetto, è possibile che PHP ne "
+"stia utilizzando uno differente. È possibile verificarlo con phpinfo(). Vai "
+"alla URI http://localhost/xampp/phpinfo.php e cercare\"Loaded Configuration "
+"File\". Questo valore indica il \"php.ini\" realmente utilizzato da PHP."
+
+msgid "Note:"
+msgstr "Note:"
+
+msgid "After changing the \"php.ini\" you have to restart Apache so that Apache/PHP can read the new settings."
+msgstr ""
+"Dopo aver modificato la 'php.ini' si deve riavviare Apache in modo che "
+"Apache/PHP possa leggere le nuove impostazioni."
+
+msgid "Help! There is a virus in XAMPP!"
+msgstr "Aiuto! C'è un virus in XAMPP!"
+
+msgid "Some antivirus programs mistake XAMPP for a virus, typically flagging the file xampp-manager.exe This is a false positive meaning that the antivirus erroneously identified it as a virus, when it is not. Before we release each new version of XAMPP we run it through virus scanning software. At the moment we are using"
+msgstr ""
+"Alcuni programmi antivirus scambiano XAMPP per un virus, in genere "
+"segnalando il file xampp-manager.exe Questo è un significativo falso "
+"positivo che l'antivirus erroneamente identificato come un virus, quando non "
+"lo è. Prima di rilasciare ogni nuova versione di XAMPP testiamo attraverso "
+"software antivirus. Al momento stiamo utilizzando"
+
+msgid "You can also use the online tool"
+msgstr "Puoi utilizzare anche lo strumento in linea"
+
+msgid "for scanning XAMPP or send us an email to security (at) apachefriends (dot) org if you find any issue."
+msgstr "for scanning XAMPP or send us an email to security (at) apachefriends (dot) org if you find any issue."
+
+msgid "How do I configure my antivirus application?"
+msgstr "Come faccio a configurare il mio antivirus?"
+
+msgid "We have included all dependences and servers required for running the bundled web application, so you will find that XAMPP installs large numbers of files. If you are installing a XAMPP application on a Windows machine with an antivirus app enabled, this may slow down the installation significantly, and there is also a chance that one of the servers (web server, database server) may be blocked by the antivirus software. If you have an antivirus tool enabled, check the following settings for running XAMPP without performance issues:"
+msgstr ""
+"Abbiamo incluso tutte le dipendenze ei server necessari per l'esecuzione di "
+"applicazioni web in bundle, quindi troveremo che XAMPP installa un gran "
+"numero di file. Se si installa un'applicazione XAMPP su una macchina Windows "
+"con un app antivirus abilitato, puo 'rallentare l'installazione in modo "
+"significativo, e c'è anche la possibilità che uno dei server (web server, "
+"database server) possono essere bloccati dal software antivirus .Se si "
+"dispone di uno strumento antivirus attivato, controllare le seguenti "
+"impostazioni per l'esecuzione XAMPP senza problemi di prestazioni:"
+
+msgid "Add exceptions in the firewall: for Apache, MySQL or any other server."
+msgstr ""
+"Aggiungere eccezioni nel firewall per Apache, MySQL o qualsiasi altro "
+"server."
+
+msgid "Scan files when executing: If you have enabled the antivirus scan for all files, the executable files for the servers may slow down."
+msgstr ""
+"Eseguire la scansione dei file durante l'esecuzione Se è stata attivata la "
+"scansione antivirus di tutti i file, e i file eseguibili per i server si "
+"potranno rallentare."
+
+msgid "Scan the traffic for different URLs: If you are developing with XAMPP on your own machine, you can exclude \"localhost\" traffic in the Antivirus settings."
+msgstr ""
+"Eseguire la scansione del traffico per URL diversi Se si sta sviluppando con "
+"XAMPP sulla propria macchina, è possibile escludere 'localhost' traffico "
+"nelle impostazioni antivirus."
+
+msgid "Why doesn't the Apache server start on my system?"
+msgstr "Perché il server Apache non si avvia sul mio sistema?"
+
+msgid "This problem can be one of several reasons:"
+msgstr "Il problema potrebbe essere uno dei seguenti motivi:"
+
+msgid "You have started more then one HTTP Server (IIS, Sambar, ZEUS and so on). Only one Server can use port 80. This error message indicate the problem:"
+msgstr ""
+"È stato avviato più di un Server HTTP (IIS, Sambar, ZEUS e così via). Solo "
+"un Server può utilizzare la porta 80. Questo messaggio di errore di indica "
+"il problema:"
+
+msgid "You have other software, such as the Internet Telephone \"Skype\" which also blocks the port 80. If the problem is \"Skype\", you can go in Skype to Actions --> Options --> Connection --> remove the check mark at \"use port 80 for an alternate port\" and restart Skype. Now it should work."
+msgstr ""
+"Se hai altri software, come Internet Telephone 'Skype', che blocca anche la "
+"porta 80. Se il problema è 'Skype', si può andare in Skype per Azioni -> "
+"Opzioni -> Connessione -> togliere il segno di spunta alla porta 80 per "
+"l'uso di una porta alternativa' e riavviare Skype. Ora dovrebbe funzionare."
+
+msgid "You have a firewall which blocks the Apache port. Not all firewalls are compatible with Apache, and sometimes deactivating the firewall is not enough and you must deinstall it. This error message indicates a firewall:"
+msgstr ""
+"Se si dispone di un firewall che blocca la porta di Apache. Non tutti i "
+"firewall sono compatibili con Apache, e, talvolta, disattivare il firewall "
+"non è sufficiente ed è necessario disinstallare esso. Questo messaggio di "
+"errore indica un firewall:"
+
+msgid "Also if Apache can start, but your browser can't connect to it it could be due to one of the following:"
+msgstr ""
+"Anche se Apache e' avviato , ma il vostro browser non riesce a connettersi "
+"ad esso potrebbe essere dovuto ad uno dei seguenti casi:"
+
+msgid "Some virus scanners can cause this in the same way that firewalls can interfere."
+msgstr ""
+"Alcuni antivirus possono causare quest' errore nello stesso modo del "
+"interferenza dei firewall."
+
+msgid "You have XP Professional without service pack 1. You must have at least SP1 for XAMPP."
+msgstr ""
+"Hai XP Professional senza service pack 1. È necessario avere almeno SP1 per "
+"XAMPP."
+
+msgid "Tip:"
+msgstr "Suggerimenti:"
+
+msgid "If you have problems with used ports, you can try the tool \"xampp-portcheck.exe\". Maybe it can help."
+msgstr ""
+"Se hai problemi con le porte usate, puoi provare lo strumento \"xampp-"
+"portcheck.exe\". Forse ti può essere d'aiuto."
+
+msgid "Why is my CPU load for Apache almost 99%?"
+msgstr "Perché il carico della CPU per Apache e quasi al 99%?"
+
+msgid "There is one of two scenarios at play here. Either your CPU is maxing out, or you can browser connect to the server, but not see anything (the system is trying unsucessfully to load the page). In either case you can find the following message in the Apache log file:"
+msgstr ""
+"C'è uno dei due scenari in gioco. Sia la CPU non più sufficienti, o browser "
+"è possibile collegarsi al server, ma non vedo nulla (il sistema tenta "
+"unsucessfully per caricare la pagina).In entrambi i casi è possibile trovare "
+"il messaggio seguente nel file log di Apache:"
+
+msgid "The MPM falls back to a safer implementation, but some client requests were not processed correctly. In order to avoid this error, use \"AcceptFilter\" with accept filter \"none\" in the \"\xampp\apache\conf\extra\httpd-mpm.conf\" file."
+msgstr ""
+"MPM lavora per salvaguardia su un'implementazione più sicura, ma alcune "
+"richieste client non sono state elaborate correttamente. Per evitare questo "
+"errore, usa \"AcceptFilter\" con il filtro di accesso \"none\" nel file "
+"\"\\xampp\\apache\\conf\\extra\\httpd-mpm.conf\"."
+
+msgid "Why are pictures and style-sheets not displayed?"
+msgstr "Perché le immagini e i fogli di stile non vengono visualizzati?"
+
+msgid "Sometimes there are problems with displaying pictures and style-sheets. Especially if these files are located on a network drive. In this case you can enable (or add) one if the following lines in the file \"\xampp\apache\conf\httpd.conf\":"
+msgstr ""
+"A volte ci sono problemi con la visualizzazione di immagini e fogli di "
+"stile. Soprattutto se questi file si trovano su un'unità di rete. In questo "
+"caso è possibile attivare (o aggiungere) uno se le seguenti righe nel file "
+"'\\xampp\\apache\\conf\\httpd.conf'"
+
+msgid "This problem can also be caused by programs for regulating bandwidth, like NetLimiter."
+msgstr ""
+"Questo problema può essere causato anche da programmi per la regolazione "
+"della larghezza di banda, come NetLimiter."
+
+msgid "How can I set a root password in MySQL?"
+msgstr "Come posso impostare una password di root in MySQL?"
+
+msgid "The easiest way is to use the security console, which you can access at http://localhost/security/ This console creates a password for the MySQL user root and adjusts the phpMyAdmin configuration."
+msgstr ""
+"Il modo più semplice è quello di utilizzare la console di sicurezza, cui è "
+"possibile accedere all'indirizzo http//localhost/security/Questa console "
+"crea una password per l'utente root di MySQL e regola la configurazione di "
+"phpMyAdmin."
+
+msgid "Another approach is to configure it with the \"XAMPP Shell\" (command prompt). Open the shell and execute this command:"
+msgstr ""
+"Un altro approccio è quello di configurarlo con il 'XAMPP Shell' (prompt dei "
+"comandi). Aprire la shell ed eseguire il comando:"
+
+msgid "Can I use my own MySQL server?"
+msgstr "Posso utilizzare il mio server MySQL?"
+
+msgid "Yes. Simply don't start the MySQL from the XAMPP package. Please note that two servers cannot be started on the same port. If you have set a password for \"root\", please do not forget to edit the file \"\xampp\phpMyAdmin\config.inc.php\"."
+msgstr ""
+"Sì. Semplicemente non avviare il MySQL dal pacchetto XAMPP. Si prega di "
+"notare che due server non possono essere avviati sulla stessa porta. Se è "
+"stata impostata una password per 'root', si prega di non dimenticare di "
+"modificare il file '\\xampp\\phpMyAdmin\\config.inc.ph\"."
+
+msgid "How do I restrict access to phpMyAdmin from the outside?"
+msgstr "Come faccio a limitare l'accesso a phpMyAdmin dall'esterno?"
+
+msgid "In the basic configuration of XAMPP, phpMyAdmin have public access."
+msgstr "La configurazione di base di XAMPP, phpMyAdmin hanno accesso pubblico."
+
+msgid "You can change the MySQL root password and choose the authentication method for phpMyAdmin from the security console at http://localhost/security/"
+msgstr ""
+"È possibile modificare la password di root di MySQL e scegliere il metodo di "
+"autenticazione per phpMyAdmin dalla console sicurezza a "
+"http://localhost/security/"
+
+msgid "Before you can access the MySQL server, phpMyAdmin will prompt you for a user name and password. Don't forget to set a password for the user \"root\" first."
+msgstr ""
+"Prima di poter accedere al server MySQL, phpMyAdmin vi chiederà un nome "
+"utente e una password. Non dimenticare di impostare una password per "
+"l'utente 'root' prima."
+
+msgid "Where is the IMAP support for PHP?"
+msgstr "Dove si trova il supporto IMAP per PHP?"
+
+msgid "As default, the IMAP support for PHP is deactivated in XAMPP due to some mysterious initialization errors with some home versions like Windows 98. If you work with NT systems, you can open the file \"\xampp\php\php.ini\" to activate the php exstension by removing the beginning semicolon at the line \";extension=php_imap.dll\". It should be:"
+msgstr ""
+"Come impostazione predefinita, il supporto IMAP per PHP è disattivato in "
+"XAMPP a causa di alcuni errori di inizializzazione misteriosi con alcune "
+"versioni home come Windows 98. Se si lavora con sistemi NT, è possibile "
+"aprire il file '\\xampp\\php\\php.ini'. Per attivare la exstension php "
+"rimuovendo il punto e virgola a partire dalla linea '; estensione "
+"php_imap.dll'. Dovrebbe essere:"
+
+msgid "Now restart Apache and IMAP should work. You can use the same steps for every extension, which is not enabled in the default configuration."
+msgstr ""
+"Ora riavviate Apache e IMAP dovrebbe funzionare. È possibile utilizzare la "
+"stessa procedura per ogni estensione, che non è abilitata nella "
+"configurazione predefinita."
+
+msgid "Why don't some PHP open source apps work with XAMPP on Windows?"
+msgstr ""
+"Perché alcune applicazioni open source PHP non lavorano con XAMPP su "
+"Windows?"
+
+msgid "A lot of PHP applications or extensions that have been written for Linux haven’t been ported to Windows."
+msgstr ""
+"Molte applicazioni PHP o estensioni che sono state scritte per Linux non "
+"sono state portate su di Windows"
+
+msgid "Can I delete the \"install\" directory after installation?"
+msgstr "Eliminare la cartellla \"install\" dopo l'installazione?"
+
+msgid "It's better not to. The scripts here are still needed for all additional packages (add-ons) and upgrades of XAMPP."
+msgstr ""
+"E 'meglio non farlo. Sono ancora necessari gli script per tutti i pacchetti "
+"aggiuntivi (add-on) e aggiornamenti di XAMPP."
+
+msgid "How do I activate the eaccelerator?"
+msgstr "Come faccio ad attivare la eAccelerator?"
+
+msgid "Like other (Zend) extensions, you can activate it in \"php.ini\". In this file, enable the line \";zend_extension = \"\xampp\php\ext\php_eaccelerator.dll\"\". It should be:"
+msgstr ""
+"Come altri (Zend), le estensioni, è possibile attivarlo in 'php.ini'. In "
+"questo file, abilitare la riga '; zend_extension' "
+"\\xampp\\php\\ext\\php_eaccelerator.dll''. Dovrebbe essere:"
+
+msgid "How do I fix a connection error to my MS SQL server?"
+msgstr "Come posso risolvere un errore di connessione al mio server MS SQL?"
+
+msgid "If the mssql extension was loaded in the php.ini, sometimes problems appear when only TCP/IP is used. You can fix that problem with a newer \"ntwdblib.dll\" from Microsoft. Please replace the older file in \"\xampp\apache\bin\" and \"\xampp\php\" with the new one. Because of the license, we can't package a newer version of this file with XAMPP."
+msgstr ""
+"Se l'estensione mssql è stato caricato nel php.ini, talvolta problemi solo "
+"quando viene utilizzato il protocollo TCP/IP. È possibile risolvere il "
+"problema con un nuovo 'ntwdblib.dll\" di Microsoft. Sostituire il vecchio "
+"file in '\\xampp\\apache\\bin' e '\\xampp\\php\" con quello nuovo. A causa della "
+"licenza, non vi e un pacchetto di una versione più recente del file con "
+"XAMPP."
+
+msgid "How do I work with the PHP mcrypt extension?"
+msgstr "Come faccio a lavorare con il PHP mcrypt è per lo più una estensione?"
+
+msgid "For this, we have opened a topic in the forum with examples and possible solutions: %{mcrypt}"
+msgstr ""
+"Per questo, abbiamo aperto una discussione nel forum con gli esempi e le "
+"possibili soluzioni: % {mcrypt è per lo più una}"
+
+msgid "MCrypt topic"
+msgstr "Argomento MCrypt"
+
+msgid "Do Microsoft Activer Server Pages (ASP) work with XAMPP?"
+msgstr "Microsoft Active Server Pages (ASP) lavora con XAMPP?"
+
+msgid "No. And Apache::ASP with the Perl Add-On is not the same. Apache::ASP only knows Perl-Script, but ASP from the Internet Information Server (IIS) also knows the normal VBScript. But for ASP .NET, there is a 3rd party Apache module available."
+msgstr ""
+"No, e Apache::ASP con il Perl Add-on non e uguale.Apache::ASP conosce solo "
+"Perl-Script,ma ASP da Internet Information Server (IIS) conosce anche il "
+"normale VBScript.Ma per ASP .NET c'è un modulo di 3rd party Apache "
+"disponibile."
+
+msgid "Support"
+msgstr "Supporto"
+
+msgid "Visit our %{community} for additional help."
+msgstr "Visita la nostra pagina% {community} per ulteriore assistenza."
+
+msgid "Installing from ZIP"
+msgstr "Installazione da file ZIP"
+
+msgid "Mostly due to the same reasons as the above error, the LAMPP startup script found a MySQL daemon already running on your system. To start LAMPP properly, you have to stop this daemon first."
+msgstr ""
+"Principalmente a causa delle stesse ragioni l'errore precedente, lo script "
+"di avvio LAMPP trovato un demone MySQL già in esecuzione sul vostro sistema. "
+"Per avviare correttamente LAMPP, devi fermare questo demone prima."
+
+msgid "Unzip the zip archives into the folder of your choice. XAMPP is extracting to the subdirectory \"C:\xampp\" below the selected target directory. Now start the file \"setup_xampp.bat\", to adjust the XAMPP configuration to your system."
+msgstr ""
+"Decomprimere gli archivi zip nella cartella di vostra scelta. XAMPP verrà "
+"estratto nella sottodirectory \"C:\\xampp\" sotto la directory di destinazione "
+"selezionata. Ora avviare il file \"setup_xampp.bat\", per regolare la "
+"configurazione XAMPP al vostro sistema."
+
+msgid "If you choose a root directory \"C:\\" as target, you must not start \"setup_xampp.bat\"."
+msgstr ""
+"Se si sceglie una radice directory 'C \\ ' come obbietivo, non devi avviare "
+"'setup_xampp.bat'."
+
+msgid "show"
+msgstr "visualizza"
+
+msgid "Applications"
+msgstr "Applicazioni"
+
+msgid "Installing an App on XAMPP"
+msgstr "Installare un'Applicazione in XAMPP"
+
+msgid "See how easy it is to install your favorite apps with XAMPP:"
+msgstr ""
+"Scopri quanto è facile installare le tue applicazioni preferite con XAMPP:"
+
+#~ msgid "The XAMPP control panel for start/stop Apache, MySQL, FilaZilla & Mercury or install these server as services."
+#~ msgstr ""
+#~ "Il pannello di controllo XAMPP per avviare/arrestare Apache, MySQL, "
+#~ "FilaZilla * Mercurio o installare questi server come servizi."
+
+#, fuzzy
+#~ msgid "I just got #XAMPP from @ApacheFriends http://apachefriends.org #opensource."
+#~ msgstr ""
+#~ "Ho appena ricevuto # XAMPP da @ ApacheFriends http / / apachefriends.org # "
+#~ "opensource."

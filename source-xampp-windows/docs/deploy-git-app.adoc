@@ -1,0 +1,38 @@
+= Deploy an Application Using Git
+
+include::{docdir}/_includes/common/deploy-git-app/introduction.adoc[]
+NOTE: This guide uses http://code.google.com/p/gitextensions/[Git Extensions], an open source git client that's available for Windows, Linux and Mac OS, and assumes that you have already downloaded and installed this software. If you don't already have this, you can http://code.google.com/p/gitextensions/[download it from the official Git Extensions website], and http://git-extensions-documentation.readthedocs.org/en/latest/getting_started.html[install it using these instructions].
+
+To download Slim (or any other application) from its git repository, follow these steps:
+
+ . Ensure that your Apache server is running.
+
+ . Obtain the repository's clone URL. On Github, this can be easily obtained by visiting the project's Github page and copying the clone URL from the right side of the page. For third-party or private git repositories, you can obtain the clone URL by asking the project team directly. Make a note of the clone URL, as you'll need it in subsequent steps.
++
+image::deploy-git-app/image1.png[]
+
+ . Launch Git Extensions by double-clicking the icon in the Windows Start menu or Start screen.
+
+ . Click the "Clone repository" link or use the "Start -> Clone repository..." menu item.
++
+image::deploy-git-app/image2.png[]
+
+ . In the resulting "Clone" dialog box, enter the clone URL obtained in the first step. Set the destination directory to the _htdocs\_ subdirectory of your XAMPP installation directory (typically, _C:\xampp_). Optionally, change the name of the subdirectory that will hold the downloaded code.
++
+image::deploy-git-app/image3.png[]
+
+ . Click the "Clone" button to start cloning the repository. Git Extensions will display a progress dialog as it downloads the code from the source repository.
++
+image::deploy-git-app/image4.png[]
+
+ . Once the repository has been cloned, Git Extensions will prompt you to open the new repository. Click "Yes".
++
+You should now see the entire commit history of the repository in a graphical tree structure, together with details on the changes made in each commit.
++
+image::deploy-git-app/image5.png[]
+
+At this point, the code has been downloaded from the remote git repository and you can begin using it. In this particular case, since the Slim framework includes a starter application, you can simply browse to the URL http://localhost/Slim and you should see the example application's welcome page, as shown below.
+
+image::deploy-git-app/image6.png[]
+
+NOTE: You can use Git Extensions to create a new branch of the codebase should you wish to make any changes to it. Any changes you make will be automatically reflected in the Git Extensions interface, and if you have appropriate privileges, you can also commit your changes back to the remote repository. http://git-scm.com/book[Learn more about git], or https://git-extensions-documentation.readthedocs.org/[read the Git Extensions documentation].

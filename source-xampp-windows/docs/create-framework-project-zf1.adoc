@@ -1,0 +1,51 @@
+= Start a New Zend Framework 1 Project
+
+include::{docdir}/_includes/common/create-framework-project-zf1/introduction.adoc[]
+
+ . http://framework.zend.com/downloads/latest[Download the latest version of the Zend Framework 1 minimal package] as a ZIP archive.
+
+ . Within your XAMPP installation directory (usually _C:\xampp_), create a new directory named _apps\_ (if it doesn't already exist). Then, within this new _apps\_ directory, create a directory to hold your Zend Framework application and its related XAMPP configuration files. In this example, call the directory _myapp\_.
+
+ . Extract the contents of the ZIP archive to the _myapp\ directory. This will produce a _ZendFramework-[x.y]-minimal.zip\_ subdirectory in the _myapp_\ directory. Rename this newly-created subdirectory to _htdocs_. 
++
+NOTE: This new _htdocs_ directory will be the main working directory for your Zend Framework project.
+
+ . Within the _myapp\_ directory, create a new _conf\_ subdirectory.
+
+ .. Within the new _conf_\ subdirectory, use your text editor to create and populate a file named _ttpd-prefix.conf_ with the following content:
+
+ Alias /myapp/ "C:/xampp/apps/myapp/htdocs/public/"
+ Alias /myapp "C:/xampp/apps/myapp/htdocs/public"
+ Include "C:/xampp/apps/myapp/conf/httpd-app.conf"
+
+ .. Within the _conf_\ subdirectory, also create and populate a file named _httpd-app.conf_ with the following content:
+
+ <Directory C:/xampp/apps/myapp/htdocs/public>
+    Options +FollowSymLinks
+    AllowOverride All
+    Require all granted
+ </Directory>
+
+ . Edit the _httpd-xampp.conf_ file in the _apache\conf\extra\_ subdirectory of your XAMPP installation directory and add the following line at the end to include the _httpd-prefix.conf_ file created earlier.
++
+ Include "C:/xampp/apps/myapp/conf/httpd-prefix.conf"
++
+NOTE: Remember to update the above file and directory paths so that they're valid for your system.
+
+ . Launch a new Windows command shell using the "Shell" button in the XAMPP control panel.
+
+ . Within the command shell, change to the _myapp\htdocs\_ directory and run the following commands to create a new stub project.
+
+ bin\zf.bat create project .
+
+ . Check that you have a directory structure like this:
++
+image::create-framework-project-zf1/image1.png[]
+
+ . Restart the Apache server using the XAMPP control panel.
+
+You should be able to access the Zend Framework skeleton application by browsing to http://localhost/myapp. Here's what the default welcome page looks like:
+
+image::create-framework-project-zf1/image2.png[]
+
+You can now begin developing your Zend Framework application by modifying the skeleton application code. For more information, http://framework.zend.com/manual/1.12/en/learning.html[refer to the Zend Framework documentation].

@@ -1,0 +1,13 @@
+= Change the MySQL Temporary Files Directory
+
+By default, MySQL's temporary files are stored in the system temporary directory, usually _/tmp_. In case you wish to change the location of these files, follow these steps:
+
+ . Edit the _my.cnf_ file in the _etc/_ subdirectory of your XAMPP installation directory (usually, _/opt/lampp_). Within this file, find the _tmpdir_ variable in the [mysqld] section and change it to reflect your new desired location. For example:
++
+ tmpdir = "/mnt/sdb2/tmp"
+
+ . Save your changes to the file.
+
+ . Restart the MySQL server.
+
+MySQL's temporary files should now get created in the new location.

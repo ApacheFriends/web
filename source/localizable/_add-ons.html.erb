@@ -1,0 +1,37 @@
+<% if !defined?(applications) || applications %>
+  <div>
+    <h3><a name="xampp-applications"><%= t("Applications") %></a></h3>
+    <p id="intro">
+      <%= t("Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP.") %>
+    </p>
+    <p>
+      <i>
+        These software listings are packaged by Bitnami. The respective trademarks mentioned in the offerings
+        are owned by the respective companies, and use of them does not imply any affiliation or endorsement.
+        The software is licensed to you subject to one or more open source licenses and Bitnami provides the software on an AS-IS basis.
+      </i>
+    </p>
+    <ul id="stack-list">
+      <% settings.xampp_stacks.each do |stack, type| %>
+        <li>
+        <%
+          if type.is_a?(Hash)
+            stack_key = type[:key]
+            image_key = type[:image_key]
+            url_key = type[:url_key]
+            type = type[:type]
+          end
+          stack_key ||= /([^!\?]+)/.match(stack).captures.first.downcase
+          image_key ||= stack_key.gsub(/\s/,'')
+          url_key ||= stack_key.gsub(/\s/,'-')
+        %>
+        <% link_to "//bitnami.com/stack/xampp##{url_key}" do %>
+          <%= image_tag "//bitnami.com/assets/stacks/#{image_key}/img/#{image_key}-stack-110x117.png", :"data-2x" => "//bitnami.com/assets/stacks/#{image_key}/img/#{image_key}-stack-220x234.png", :width => "110", :height => "117", :alt => stack %>
+          <span><%= stack %></span>
+          <span class="type"><%= type %></span>
+        <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

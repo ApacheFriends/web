@@ -1,0 +1,61 @@
+---
+linux:
+  -
+    version: 1.8.3
+    php_version: 5.5
+    whats_included: "Apache 2.4.7, MySQL 5.6.14, PHP 5.5.6 & PEAR + SQLite 2.8.17/3.7.17 + multibyte (mbstring) support, Perl 5.16.3, ProFTPD 1.3.4c, phpMyAdmin 4.0.9, OpenSSL 1.0.1e, GD 2.0.35, Freetype2 2.4.8, libjpeg 8d, libpng 1.5.9, gdbm 1.8.3, zlib 1.2.3, expat 2.0.1, Sablotron 1.0.3, libxml 2.8.0, Ming 0.4.5, Webalizer 2.23-05, pdf class 0.11.7, ncurses 5.9, mod_perl 2.0.8, FreeTDS 0.91, gettext 0.18.1.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.21, mcrypt 2.5.8, mhash 0.9.9.9, eAccelerator 0.9.6.1, cURL 7.30.0, libxslt 1.1.28, libapreq 2.12, FPDF 1.7, bzip 1.0.6, ICU4C Library 4.8.1, APR (1.4.6), APR-utils (1.5.1)"
+    requirements: "Most all distributions of Linux are supported, including Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+    checksum_md5: "1558d0623a648dccff4a1abaa71fa69f"
+    checksum_sha1:
+    size_32: "124 Mb"
+    size_64: "124 Mb"
+    url_32: "http://sourceforge.net/projects/xampp/files/XAMPP%20Linux/1.8.3/xampp-linux-1.8.3-2-installer.run/download"
+    url_64: "http://sourceforge.net/projects/xampp/files/XAMPP%20Linux/1.8.3/xampp-linux-x64-1.8.3-2-installer.run"
+  -
+    version: 1.8.3
+    php_version: 5.5
+    whats_included: "Apache 2.4.7, MySQL 5.6.14, PHP 5.5.6 & PEAR + SQLite 2.8.17/3.7.17 + multibyte (mbstring) support, Perl 5.16.3, ProFTPD 1.3.4c, phpMyAdmin 4.0.9, OpenSSL 1.0.1e, GD 2.0.35, Freetype2 2.4.8, libjpeg 8d, libpng 1.5.9, gdbm 1.8.3, zlib 1.2.3, expat 2.0.1, Sablotron 1.0.3, libxml 2.8.0, Ming 0.4.5, Webalizer 2.23-05, pdf class 0.11.7, ncurses 5.9, mod_perl 2.0.8, FreeTDS 0.91, gettext 0.18.1.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.21, mcrypt 2.5.8, mhash 0.9.9.9, eAccelerator 0.9.6.1, cURL 7.30.0, libxslt 1.1.28, libapreq 2.12, FPDF 1.7, bzip 1.0.6, ICU4C Library 4.8.1, APR (1.4.6), APR-utils (1.5.1)"
+    requirements: "Most all distributions of Linux are supported, including Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+    checksum_md5: "1558d0623a648dccff4a1abaa71fa69f"
+    checksum_sha1:
+    size_32: "124 Mb"
+    url_32: "http://sourceforge.net/projects/xampp/files/XAMPP%20Linux/1.8.3/xampp-linux-1.8.3-2-installer.run/download"
+    url_64: "http://sourceforge.net/projects/xampp/files/XAMPP%20Linux/1.8.3/xampp-linux-x64-1.8.3-2-installer.run"
+windows:
+  -
+    version: 1.8.3
+    php_version: 5.5
+    whats_included: "Apache 2.4.7, MySQL 5.6.14, PHP 5.5.6 & PEAR + SQLite 2.8.17/3.7.17 + multibyte (mbstring) support, Perl 5.16.3, ProFTPD 1.3.4c, phpMyAdmin 4.0.9, OpenSSL 1.0.1e, GD 2.0.35, Freetype2 2.4.8, libjpeg 8d, libpng 1.5.9, gdbm 1.8.3, zlib 1.2.3, expat 2.0.1, Sablotron 1.0.3, libxml 2.8.0, Ming 0.4.5, Webalizer 2.23-05, pdf class 0.11.7, ncurses 5.9, mod_perl 2.0.8, FreeTDS 0.91, gettext 0.18.1.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.21, mcrypt 2.5.8, mhash 0.9.9.9, eAccelerator 0.9.6.1, cURL 7.30.0, libxslt 1.1.28, libapreq 2.12, FPDF 1.7, bzip 1.0.6, ICU4C Library 4.8.1, APR (1.4.6), APR-utils (1.5.1)"
+    requirements: "Most all distributions of Linux are supported, including Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+    checksum_md5: "1558d0623a648dccff4a1abaa71fa69f"
+    checksum_sha1:
+    size_32: "124 Mb"
+    url_32: "http://sourceforge.net/projects/xampp/files/XAMPP%20Linux/1.8.3/xampp-linux-1.8.3-2-installer.run/download"
+  -
+    version: 1.8.3
+    php_version: 5.5
+    whats_included: "Apache 2.4.7, MySQL 5.6.14, PHP 5.5.6 & PEAR + SQLite 2.8.17/3.7.17 + multibyte (mbstring) support, Perl 5.16.3, ProFTPD 1.3.4c, phpMyAdmin 4.0.9, OpenSSL 1.0.1e, GD 2.0.35, Freetype2 2.4.8, libjpeg 8d, libpng 1.5.9, gdbm 1.8.3, zlib 1.2.3, expat 2.0.1, Sablotron 1.0.3, libxml 2.8.0, Ming 0.4.5, Webalizer 2.23-05, pdf class 0.11.7, ncurses 5.9, mod_perl 2.0.8, FreeTDS 0.91, gettext 0.18.1.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.21, mcrypt 2.5.8, mhash 0.9.9.9, eAccelerator 0.9.6.1, cURL 7.30.0, libxslt 1.1.28, libapreq 2.12, FPDF 1.7, bzip 1.0.6, ICU4C Library 4.8.1, APR (1.4.6), APR-utils (1.5.1)"
+    requirements: "Most all distributions of Linux are supported, including Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+    checksum_md5: "1558d0623a648dccff4a1abaa71fa69f"
+    checksum_sha1:
+    size_32: "124 Mb"
+    url_32: "http://sourceforge.net/projects/xampp/files/XAMPP%20Linux/1.8.3/xampp-linux-1.8.3-2-installer.run/download"
+apple:
+    -
+      version: 1.8.3
+      php_version: 5.5
+      whats_included: "Apache 2.4.7, MySQL 5.6.14, PHP 5.5.6 & PEAR + SQLite 2.8.17/3.7.17 + multibyte (mbstring) support, Perl 5.16.3, ProFTPD 1.3.4c, phpMyAdmin 4.0.9, OpenSSL 1.0.1e, GD 2.0.35, Freetype2 2.4.8, libjpeg 8d, libpng 1.5.9, gdbm 1.8.3, zlib 1.2.3, expat 2.0.1, Sablotron 1.0.3, libxml 2.8.0, Ming 0.4.5, Webalizer 2.23-05, pdf class 0.11.7, ncurses 5.9, mod_perl 2.0.8, FreeTDS 0.91, gettext 0.18.1.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.21, mcrypt 2.5.8, mhash 0.9.9.9, eAccelerator 0.9.6.1, cURL 7.30.0, libxslt 1.1.28, libapreq 2.12, FPDF 1.7, bzip 1.0.6, ICU4C Library 4.8.1, APR (1.4.6), APR-utils (1.5.1)"
+      requirements: "Most all distributions of Linux are supported, including Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+      checksum_md5: "1558d0623a648dccff4a1abaa71fa69f"
+      checksum_sha1:
+      size_32: "124 Mb"
+      url_32: "http://sourceforge.net/projects/xampp/files/XAMPP%20Linux/1.8.3/xampp-linux-1.8.3-2-installer.run/download"
+    -
+      version: 1.8.3
+      php_version: 5.5
+      whats_included: "Apache 2.4.7, MySQL 5.6.14, PHP 5.5.6 & PEAR + SQLite 2.8.17/3.7.17 + multibyte (mbstring) support, Perl 5.16.3, ProFTPD 1.3.4c, phpMyAdmin 4.0.9, OpenSSL 1.0.1e, GD 2.0.35, Freetype2 2.4.8, libjpeg 8d, libpng 1.5.9, gdbm 1.8.3, zlib 1.2.3, expat 2.0.1, Sablotron 1.0.3, libxml 2.8.0, Ming 0.4.5, Webalizer 2.23-05, pdf class 0.11.7, ncurses 5.9, mod_perl 2.0.8, FreeTDS 0.91, gettext 0.18.1.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.21, mcrypt 2.5.8, mhash 0.9.9.9, eAccelerator 0.9.6.1, cURL 7.30.0, libxslt 1.1.28, libapreq 2.12, FPDF 1.7, bzip 1.0.6, ICU4C Library 4.8.1, APR (1.4.6), APR-utils (1.5.1)"
+      requirements: "Most all distributions of Linux are supported, including Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+      checksum_md5: "1558d0623a648dccff4a1abaa71fa69f"
+      checksum_sha1:
+      size_32: "124 Mb"
+      url_32: "http://sourceforge.net/projects/xampp/files/XAMPP%20Linux/1.8.3/xampp-linux-1.8.3-2-installer.run/download"

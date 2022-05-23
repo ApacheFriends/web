@@ -1,0 +1,51 @@
+== Step 4: Provision an AWS Cloud Server
+
+****
+At the end of this step, your AWS cloud server will be running and you will be able to access it through your Web browser.
+****
+
+To provision your AWS cloud server:
+
+ * Select "Library" in the https://aws.bitnami.com[Launchpad] menu.
+
+ * Look through the list of applications available in Bitnami until you find LAMP Stack. Select it and click "Launch". If required, enter your administrative password.
+
+image::{cloud}/image41.png[]
+
+ * Define a name and domain name for your AWS server. The default server configuration is a "Micro" serveR, 1000 MB RAM and 10 GB EBS storage, which is eligible for the AWS free tier. 
+ * Define a name, size and region for your cloud server. You can choose from a "micro" server, which uses a shared CPU to a "high CPU" server, which has 16 dedicated virtual cores. For more information, refer to https://aws.amacon.com/ec2/pricing/[the AWS pricing sheet]. The default server configuration is a "Micro" server, 1GB RAM and 10 GB EBS storage, which is eligible for the AWS free tier.
++
+TIP: A "micro" server will work just fine for most PHP application development tasks.
++
+image::{cloud}/image42.png[]
+
+ * Confirm your selection by hitting the "Create Virtual Machine" button at the end of the page.
+
+The Bitnami Launchpad will now begin spinning up the new server. The process usually takes a few minutes: a status indicator on the page provides a progress update.
+
+image::{cloud}/image43.png[]
+
+Once the cloud server has been provisioned, the status indicator will show that it's "running", and the Bitnami Launchpad page will display the server details, including its IP address.
+
+image::{cloud}/image44.png[]
+
+At this point, you should be able to browse to the cloud server, either by clicking the link in the Bitnami Launchpad (a new browser tab will open) or entering the cloud server IP address directly into your browser's address bar. You should see a welcome page like the one below (just so you know, it's served up by Apache, which is part of LAMP packaged by Bitnami).
+
+image::{cloud}/image45.png[]
+
+
+Once the server is provisioned, you need to gather the security credentials you will need to begin using it. To do this:
+
+ * Go back to the Bitnami Launchpad for AWS Cloud page and in the "Virtual Machines" section, select the running server. This will launch the server information page.
+
+ * From the server information page, download the _.ppk_ file which contains the SSH access credentials you will need to connect to the server. Typically, this file is named using the format _bitnami-[google-project]-[nn].ppk_. If you're using Mac OS X or Linux, you should instead download the corresponding _.pem_ file.
++
+image::{cloud}/image46.png[]
+
+ * By default, Bitnami Launchpad creates a user account named 'user' and an auto-generated password when a new server is provisioned. You will need this password when accessing Bitnami-supplied applications (including MySQL). Go back to the server information screen, look in the "Credentials" section of the "Application Info" panel, and display and make a note of the application password.
++
+image::{cloud}/image47.png[]
+
+The Launchpad page also includes controls to reboot, shut down or delete the server.
+
+image::{cloud}/image48.png[]

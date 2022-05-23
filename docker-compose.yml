@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  middleman:
+    build: .
+    ports:
+      - 4567:4567
+    volumes:
+      - .:/app
+    tty: true
+    entrypoint: /app/scripts/entrypoint.sh
+    command: bundle exec middleman server
+    environment:
+      VIRTUAL_PORT: 4567
