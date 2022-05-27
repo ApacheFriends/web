@@ -16,8 +16,8 @@ keywords:
     <div style="text-align: center; margin-bottom: 1em;">
       <%= retina_image_tag 'xampp-cloud.png', width: 465 %>
     </div>
-    <p><%= t("XAMPP provides an ideal local development environment, but is not meant for production deployments. We want to make hosting PHP applications created with XAMPP as easy as possible. We are starting by providing in-depth tutorials on how to run <strong>XAMPP in the cloud</strong> using %{azure}, %{google} and %{aws}.", azure: link_to('Microsoft Azure', './docs/hosting-xampp-on-azure.html'), google: link_to('Google Cloud Platform', './docs/hosting-xampp-on-google.html'), aws: link_to('Amazon Web Services', './docs/hosting-xampp-on-aws.html')) %>
-    <%= t("You can also %{migrate}.", migrate: link_to('migrate your WordPress application from XAMPP to a high-availability, production-ready WordPress deployment on Amazon Web Services', './docs/migrate-wordpress-xampp-aws-ha.html')) %>
+    <p><%= t("XAMPP provides an ideal local development environment, but is not meant for production deployments. We want to make hosting PHP applications created with XAMPP as easy as possible. We are starting by providing in-depth tutorials on how to run <strong>XAMPP in the cloud</strong> using %{azure}, %{google} and %{aws}.", azure: link_to('Microsoft Azure', 'https://apachefriends.org/docs/hosting-xampp-on-azure.html'), google: link_to('Google Cloud Platform', 'https://apachefriends.org/docs/hosting-xampp-on-google.html'), aws: link_to('Amazon Web Services', 'https://apachefriends.org/docs/hosting-xampp-on-aws.html')) %>
+    <%= t("You can also %{migrate}.", migrate: link_to('migrate your WordPress application from XAMPP to a high-availability, production-ready WordPress deployment on Amazon Web Services', 'https://apachefriends.org/docs/migrate-wordpress-xampp-aws-ha.html')) %>
     </p>
     <p><%= t("Please contact us at hello (at) apachefriends.org if you have feedback about the guides or would like to contribute a translation.") %></p>
   </div>
@@ -25,10 +25,10 @@ keywords:
     <aside>
       <h3><%= t("Documentation") %></h3>
       <ul>
-        <li><%= link_to t('Host your Application in the %{name} Cloud with XAMPP and Bitnami', name: 'Amazon'), './docs/hosting-xampp-on-aws.html' %>
-        <li><%= link_to t('Host your Application in the %{name} Cloud with XAMPP and Bitnami', name: 'Azure'), './docs/hosting-xampp-on-azure.html' %>
-        <li><%= link_to t('Host your Application in the %{name} Cloud with XAMPP and Bitnami', name: 'Google'), './docs/hosting-xampp-on-google.html' %>
-        <li><%= link_to t('Migrate from XAMPP WordPress to Bitnami WordPress Production-Ready on AWS'), './docs/migrate-wordpress-xampp-aws-ha.html' %>
+        <li><%= link_to t('Host your Application in the %{name} Cloud with XAMPP and Bitnami', name: 'Amazon'), 'https://apachefriends.org/docs/hosting-xampp-on-aws.html' %>
+        <li><%= link_to t('Host your Application in the %{name} Cloud with XAMPP and Bitnami', name: 'Azure'), 'https://apachefriends.org/docs/hosting-xampp-on-azure.html' %>
+        <li><%= link_to t('Host your Application in the %{name} Cloud with XAMPP and Bitnami', name: 'Google'), 'https://apachefriends.org/docs/hosting-xampp-on-google.html' %>
+        <li><%= link_to t('Migrate from XAMPP WordPress to Bitnami WordPress Production-Ready on AWS'), 'https://apachefriends.org/docs/migrate-wordpress-xampp-aws-ha.html' %>
       </ul>
     </aside>
   </div>
