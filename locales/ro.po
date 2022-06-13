@@ -322,11 +322,11 @@ msgid "Community"
 msgstr "Comunitate"
 
 #: en.community.description
-msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}."
+msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, liking us on %{facebook}, or following our exploits on %{twitter}."
 msgstr ""
 "XAMPP este alături de noi de mai bine de 10 ani &ndash; există o imensă "
 "comunitate în spatele lui. Poţi să te implici alăturându-te %{forums} "
-"noastre, adăugându-te în %{mailing_list}, ţinând legătura cu noi pe %"
+"noastre, ţinând legătura cu noi pe %"
 "{facebook} sau urmărindu-ne postările pe %{twitter}."
 
 #: en.recent_discussions

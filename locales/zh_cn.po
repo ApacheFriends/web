@@ -287,9 +287,9 @@ msgid "Community"
 msgstr "社区"
 
 #: en.community.description
-msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}."
+msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, liking us on %{facebook}, or following our exploits on %{twitter}."
 msgstr ""
-"XAMPP已经存在了大约十多年——在它背后有一个巨大的社区。你可以通过加入我们的%{forums}，把自己加入到%{mailing_list}，在%"
+"XAMPP已经存在了大约十多年——在它背后有一个巨大的社区。你可以通过加入我们的%{forums}，在%"
 "{facebook}上喜欢我们，在%{twitter}上关注我们的成就。"
 
 #: en.recent_discussions

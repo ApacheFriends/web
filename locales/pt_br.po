@@ -319,11 +319,11 @@ msgid "Community"
 msgstr "Comunidade"
 
 #: en.community.description
-msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}."
+msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, liking us on %{facebook}, or following our exploits on %{twitter}."
 msgstr ""
 "XAMPP já existe há mais de 10 anos &ndash; há uma grande comunidade por trás "
-"dele. Você pode se envolver associando-se em nosso %{forums}, adicionando-"
-"se ao %{mailing_list}, e curtindo nossa página no %{facebook} ou seguindo "
+"dele. Você pode se envolver associando-se em nosso %{forums}, "
+"e curtindo nossa página no %{facebook} ou seguindo "
 "nossas façanhas no %{twitter}."
 
 #: en.recent_discussions

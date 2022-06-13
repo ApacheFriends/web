@@ -318,11 +318,11 @@ msgid "Community"
 msgstr "Közösség"
 
 #: en.community.description
-msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}."
+msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, liking us on %{facebook}, or following our exploits on %{twitter}."
 msgstr ""
 "A XAMPP már több mint 10 éves &ndash; egy hatalmas közösség áll mögötte. "
 "Részt vehet benne, ha csatlakozik és igénybe veszi a %{forums} "
-"szolgáltatását, a %{mailing_list} tagja lesz és lájkol minket a %{facebook} "
+"szolgáltatását, lájkol minket a %{facebook} "
 "közösségi oldalán vagy követi a közzétételeinket a %{twitter}."
 
 #: en.recent_discussions

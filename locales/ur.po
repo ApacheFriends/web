@@ -315,7 +315,7 @@ msgstr "کمیونٹی"
 msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}."
 msgstr ""
 "xampp کی 10 سے زیادہ سال کے لئے کے ارد گرد کیا گیا ہے - اس کے پیچھے ایک بہت "
-"بڑی کمیونٹی ہے. آپ، ہماری {forums}% میں شامل ہونے کے {mailing_list}% اپنے آپ "
+"بڑی کمیونٹی ہے. آپ، ہماری {forums}% میں شامل ہونے کے  اپنے آپ "
 "کو انہوں نے مزید کہا، اور{facebook}% ہمیں پسند یا {twitter}% پر ہمارے "
 "کارناموں کے بعد."
 
