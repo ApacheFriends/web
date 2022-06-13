@@ -226,7 +226,7 @@ msgstr ""
 msgid "Community"
 msgstr ""
 #: en.community.description
-msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook} or following our exploits on %{twitter}."
+msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, liking us on %{facebook} or following our exploits on %{twitter}."
 msgstr ""
 #: en.recent_discussions
 msgid "Recent Discussions"

@@ -273,7 +273,7 @@ msgstr "社區"
 #: en.community.description
 msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}."
 msgstr ""
-"XAMPP已經存在了大約十多年——在它背後有一個巨大的社區。你可以通過加入我們的%{forums}，把自己加入到%{mailing_list}，在%"
+"XAMPP已經存在了大約十多年——在它背後有一個巨大的社區。你可以通過加入我們的%{forums}，在%"
 "{facebook}上喜歡我們，在%{twitter}上關注我們的成就。"
 
 #: en.recent_discussions

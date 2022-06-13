@@ -55,14 +55,13 @@ title: XAMPP Download Success
   </div>
   <div class="large-4 columns">
     <h3><%= t("Community") %></h3>
-    <p><%= t("XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}.",
+    <p><%= t("XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, liking us on %{facebook}, or following our exploits on %{twitter}.",
       twitter: link_to("Twitter", "https://twitter.com/apachefriends"),
       facebook: link_to("Facebook", "https://www.facebook.com/we.are.xampp"),
-      mailing_list: link_to(t("Mailing List"), "/community.html#mailing_list"),
       forums: link_to(t("Forums"), "https://community.apachefriends.org")
     ) %></p>
   </div>
-  <div class="large-4 columns">
+  <!--<div class="large-4 columns">
     <%= partial "mailing_list" %>
-  </div>
+  </div>-->
 </div>

@@ -302,10 +302,10 @@ msgid "Community"
 msgstr "コミュニティー"
 
 #: en.community.description
-msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}."
+msgid "XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, liking us on %{facebook}, or following our exploits on %{twitter}."
 msgstr ""
 "XAMPP は10年以上の実績があります &ndash; よってその背後には大きなコミュニティーが存在します。弊社の %{forums} に参加、 %"
-"{mailing_list} に電子メールアドレスを登録、および %{facebook} で「いいね」ボタンを押す、%{twitter} でフォロー、このコミュニティーに参加することができます。"
+"および %{facebook} で「いいね」ボタンを押す、%{twitter} でフォロー、このコミュニティーに参加することができます。"
 
 #: en.recent_discussions
 msgid "Recent Discussions"
