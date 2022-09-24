@@ -37,9 +37,8 @@ msgstr "Системные требования!"
 
 #: en.download.requirements.linux
 msgid "Most all distributions of Linux are supported, including Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
-msgstr ""
-"Поддерживается большинство дистрибутивов Linux, включая Debian, RedHat, "
-"CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+msgstr "Практически все дистрибутивы Linux поддерживаются, включая Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+
 
 #: en.download.requirements.windows
 msgid "XAMPP 1.8.2 (with PHP 5.4): Windows 2003, 2008, 2012, XP,  Vista, 7, 8"
@@ -116,15 +115,15 @@ msgstr "Расширения"
 
 #: en.add_ons.full_title
 msgid "XAMPP Add-ons"
-msgstr "XAMPP Расширения"
+msgstr "Дополнения XAMPP"
 
 #: en.add_ons.description
 msgid "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP. Visit %{bitnami_xampp} to download the installer."
-msgstr "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP. Visit %{bitnami_xampp} to download the installer."
+msgstr "Bitnami предоставляет бесплатный универсальный инструмент для установки WordPress поверх XAMPP. Visit %{bitnami_xampp} to download the installer."
 
 #: en.add_ons.download_description
 msgid "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP."
-msgstr "Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP."
+msgstr "Bitnami предоставляет бесплатный универсальный инструмент для установки WordPress поверх XAMPP."
 
 #: en.hosting.title
 msgid "Hosting"
@@ -196,8 +195,8 @@ msgstr "Apache Friends Forums"
 #: en.forums.description
 msgid "Forums are supported by XAMPP users around the world. Our forums were originally published in German, but you will find English and other other localized editions, too."
 msgstr ""
-"На форуме поддерживаются пользователи XAMPP по всему миру. Наши форумы  "
-"первоначально были опубликованы на немецком языке, но вы найдете и на "
+"На форуме поддерживаются пользователи XAMPP по всему миру. Наши форумы "
+"первоначально были опубликованы на немецком языке, но вы найдете форумы и на "
 "английском, и на других локализованных версиях, тоже."
 
 #: en.forums.button
@@ -363,7 +362,7 @@ msgstr "Получить XAMPP Stamp"
 
 #: en.stamps.micro_banner
 msgid "XAMPP Micro Banner"
-msgstr "XAMPP микро баннер"
+msgstr "Микро баннер XAMPP"
 
 #: en.stamps.powered_by
 msgid "Powered by XAMPP"
@@ -586,7 +585,7 @@ msgstr ""
 "запустить этот инструмент с помощью следующих команд:"
 
 msgid "How can I test that everything worked?"
-msgstr "Как я мне проверить что всё сработало?"
+msgstr "Как мне проверить, что всё сработало?"
 
 msgid "Type in the following URL at your favourite web browser:"
 msgstr "Введите следующую URL в ваш любимый браузер:"
@@ -657,7 +656,7 @@ msgstr ""
 "LAMPP правильно, сначала вам нужно остановить этот процесс."
 
 msgid "Apache doesn't seems to start. What can I do? "
-msgstr "Apache кажется не запускается. Что я могу сделать?"
+msgstr "Apache, похоже, не запускается. Что я могу сделать?"
 
 msgid "This error can exist for multiple reasons. Apache displays this error under several circumstances. To find the exact reason we have to do some research:"
 msgstr ""
@@ -667,7 +666,7 @@ msgstr ""
 
 msgid "What do I do if the error message is \"Cannot restore segment prot after reloc: Permission denied?\""
 msgstr ""
-"Что делать если я получаю сообщение об ошибке \"Cannot restore segment prot "
+"Что делать, если я получаю сообщение об ошибке \"Cannot restore segment prot "
 "after reloc: Permission denied?\""
 
 msgid "Some Linux distributions have SELinux activated by default and this is preventing the successful start of XAMPP. You should deactivate it in order to start the XAMPP servers:"
@@ -1558,7 +1557,7 @@ msgstr "Установка приложений XAMPP"
 
 msgid "See how easy it is to install your favorite apps with XAMPP:"
 msgstr ""
-"Посмотрите, как легко можно установить свои любимые приложения с XAMPP :"
+"Посмотрите, как легко можно установить свои любимые приложения с XAMPP:"
 
 #~ msgid "The XAMPP control panel for start/stop Apache, MySQL, FilaZilla & Mercury or install these server as services."
 #~ msgstr ""
@@ -1570,3 +1569,129 @@ msgstr ""
 #~ msgstr ""
 #~ "Я просто получил #XAMPP из @ApacheFriends http://apachefriends.org "
 #~ "#opensource."
+
+msgid "Bitnami for XAMPP"
+msgstr "Bitnami для XAMPP"
+
+msgid "Bitnami for XAMPP greatly simplifies the development of PHP applications on top of ApacheFriends XAMPP, by installing WordPress and many more open source applications on top of XAMPP."
+msgstr "Bitnami для XAMPP очень упрощает разработку приложений на PHP поверх ApacheFriends XAMPP, путем установки WordPress и многих других приложений с открытым исходным кодом поверх XAMPP."
+
+msgid "System Requirements"
+msgstr "Системные требования"
+
+msgid "Bitnami XAMPP modules require either XAMPP or a Bitnami LAMP, MAMP or WAMP stack already installed. They can be used with XAMPP (installer or zip file) v1.7.4 or later on Windows, v1.8.1 or later on Linux, and v1.8.2 or later on Mac OS X."
+msgstr "Модули Bitnami XAMPP требуют XAMPP или Bitnami LAMP, MAMP или WAMP стеки уже установленными. Они могут быть использованны с помощью XAMPP (установщик или zip-архив) версии 1.7.4 или позднее на Windows, версии 1.8.1 или позднее на Linux, и версии 1.8.2 или позднее на Mac OS X."
+
+msgid "Download Bitnami XAMPP modules"
+msgstr "Скачать модули Bitnami XAMPP"
+
+msgid "Bitnami for XAMPP works properly on top of the portable version. Due to application requirements, once you install an application, you cannot move or rename your XAMPP directory."
+msgstr "Bitnami для XAMPP работает корректно поверх портативной версии. Из-за требований приложения, после установки приложения вы не можете переместить или переименовать свою папку с XAMPP."
+
+msgid "Installation"
+msgstr "Установка"
+
+msgid "Bitnami XAMPP modules require either XAMPP or a Bitnami LAMP, MAMP or WAMP stack already installed. They can be used with XAMPP (installer or zip file) v1.7.4 or later on Windows, v1.8.1 or later on Linux, and v1.8.2 or later on Mac OS X."
+msgstr "Модули Bitnami XAMPP требуют XAMPP или Bitnami LAMP, MAMP или WAMP стеки уже установленными. Они могут быть использованны с помощью XAMPP (установщик или zip-архив) версии 1.7.4 или позднее на Windows, версии 1.8.1 или позднее на Linux, и версии 1.8.2 или позднее на Mac OS X."
+
+msgid "Download Bitnami XAMPP modules"
+msgstr "Скачать модули Bitnami XAMPP"
+
+msgid "Ensure that the XAMPP MySQL server is running before beginning module installation."
+msgstr "Перед началом установки модуля убедитесь, что сервер XAMPP MySQL запущен."
+
+msgid "During the installation process, you will be prompted for the XAMPP installation directory. The default installation directory is typically C:\xampp on Windows, /opt/lampp on Linux and /Applications/XAMPP on Mac OS X."
+msgstr "Во время процесса установки, вам будет предложено указать папку установки XAMPP. Каталог установки по умолчанию обычно C:\xampp на Windows, /opt/lampp на Linux и /Applications/XAMPP на Mac OS X."
+
+msgid "Bitnami for XAMPP modules require the MySQL root password to create the application databases. The default XAMPP password for the MySQL root account is an empty string. If you have changed this password, you will be prompted for it during the module installation process."
+msgstr "Модули Bitnami для XAMPP требуют root пароля MySQL для создания баз данных приложения. Пароль XAMPP по умолчанию для учетной записи MySQL root — пустая строка. Если вы изменили этот пароль, вам будет необходимо ввести его в процессе установки модуля."
+
+msgid "File Locations"
+msgstr "Расположение файлов"
+
+msgid "Bitnami applications will be installed within your XAMPP installation directory, in the apps/ subdirectory. All the applications are configured with their files in the following locations:"
+msgstr "Приложения Bitnami будут установлены в папке XAMPP, в подкаталоге apps/. Все приложения настроены со своими файлами в следующих местах:"
+
+msgid "INSTALL-DIR/apps/APP-NAME/htdocs"
+msgstr "INSTALL-DIR/apps/APP-NAME/htdocs"
+
+msgid "Application files"
+msgstr "Файлы приложений"
+
+msgid "INSTALL-DIR/apache/conf/httpd.conf"
+msgstr "INSTALL-DIR/apache/conf/httpd.conf"
+
+msgid "Apache configuration file"
+msgstr "Файлы конфигурации Apache"
+
+msgid "INSTALL-DIR/apps/APP-NAME/conf/httpd-prefix.conf"
+msgstr "INSTALL-DIR/apps/APP-NAME/conf/httpd-prefix.conf"
+
+msgid "in previous versions, "
+msgstr "в предыдущих версиях, "
+
+msgid "wordpress.conf"
+msgstr "wordpress.conf"
+
+msgid "Apache configuration file for application"
+msgstr "Файл конфигурации Apache для приложения"
+
+msgid "To access an application, browse to the URL http://localhost/APP-NAME. For example, WordPress will be accessible at http://localhost/wordpress. You can also access applications from the XAMPP welcome page, under the \"Applications\" tab."
+msgstr "Чтобы получить доступ к приложению, перейдите на http://localhost/НАЗВАНИЕ-ПРИЛОЖЕНИЯ. К примеру, WordPress будет доступен на веб-странице http://localhost/wordpress. Вы также можете получить доступ к приложениям с главной страницы XAMPP под вкладкой \"Applications\" или \"Приложения\"."
+
+msgid "Find more information about how to configure Bitnami applications"
+msgstr "Найдите больше информации о том, как настраивать приложения Bitnami"
+
+msgid "Credentials"
+msgstr "Реквизиты для входа"
+
+msgid "Administrator credentials for each application are configured from the installer. The default username is \"user\" and the password is the one configured during the installation process."
+msgstr "Реквизиты администратора для каждого приложения могут быть настроены из установщик. Стандартное имя пользователя - \"user\", а пароль, какой вы ставили при установке."
+
+msgid "Graphical Manager"
+msgstr "Графический менедженр"
+
+msgid "Since XAMPP v1.8.2-beta2, XAMPP for Linux and Mac OS X ship a new graphical manager, as shown below:"
+msgstr "С момента выхода XAMPP v1.8.2-beta2, XAMPP для Linux и для Mac OS X предусматривает новый графический менеджер, как показано ниже:"
+
+msgid "You can also continue using the regular /opt/lampp/lampp script from the command line on Linux, as shown below:"
+msgstr "Вы также можете продолжить использовать обычный скрипт /opt/lampp/lampp из командной строки Linux, как показано ниже:"
+
+msgid "Shell"
+msgstr "Командная строка"
+
+msgid "Some applications include a command-line scripting tool, such as Drush for Drupal. Access these command-line tools from the XAMPP Shell, included with XAMPP for Windows."
+msgstr "Некоторые приложения включают в себя инструмент для создания сценариев командной строки, такой как Drush для Drupal. Получите доступ к этим инструментам командной строки из оболочки командной строки XAMPP, включенной в XAMPP для Windows."
+
+msgid "XAMPP FAQs for Linux"
+msgstr "ЧаВО XAMPP для Linux"
+
+msgid "Does XAMPP include MySQL or MariaDB?"
+msgstr "XAMPP включает в себя MySQL или MariaDB?"
+
+msgid "Since XAMPP 5.5.30 and 5.6.14, XAMPP ships MariaDB instead of MySQL. The commands and tools are the same for both."
+msgstr "С момента выхода XAMPP 5.5.30 и 5.6.14, XAMPP предоставляет MariaDB вместо MySQL. Команды и инструменты для обоих одни и те же."
+
+msgid "How do I enable access to phpMyAdmin from the outside?"
+msgstr "Как мне включить доступ к phpMyAdmin извне?"
+
+msgid "In the basic configuration of XAMPP, phpMyAdmin is accessible only from the same host that XAMPP is running on, at http://127.0.0.1 or http://localhost."
+msgstr "В базовой конфигурации XAMPP phpMyAdmin доступен только с того же хоста, на котором запущен XAMPP, по адресу <a href="http://127.0.0.1">http://127.0.0.1</a> или <a href="http://localhost">http://localhost</a>."
+
+msgid "IMPORTANT: Enabling external access for phpMyAdmin in production environments is a significant security risk. You are strongly advised to only allow access from localhost. A remote attacker could take advantage of any existing vulnerability for executing code or for modifying your data."
+msgstr "ВАЖНО: Включение внешнего доступа для phpMyAdmin в производственных средах представляет собой значительный риск для безопасности. Вам настоятельно рекомендуется разрешать доступ только с localhost. Удаленный злоумышленник может воспользоваться любой существующей уязвимостью для выполнения кода или изменения ваших данных."
+
+msgid "To enable remote access to phpMyAdmin, follow these steps:"
+msgstr "Чтобы включить удалённый доступ к phpMyAdmin, следуйте шагам ниже:"
+
+msgid "Edit the xamppfiles/etc/extra/httpd-xampp.conf file in your XAMPP installation directory."
+msgstr "Измените файл xamppfiles/etc/extra/httpd-xampp.conf в папке с установкой XAMPP."
+
+msgid "Within this file, find the lines below."
+msgstr "В этом файле, найдите строки, указанные снизу."
+
+msgid "Then replace 'Require local' with 'Require all granted'."
+msgstr "Затем, замените 'Require local' на 'Require all granted'."
+
+msgid "Restart the Apache server using the XAMPP control panel."
+msgstr "Перезапустите сервер Apache, используя панель управления XAMPP."
