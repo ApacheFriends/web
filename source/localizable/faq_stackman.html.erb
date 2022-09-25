@@ -114,6 +114,14 @@ keywords:
                community: link_to(t("our community pages"), "/community.html") ) %></p>
       </dd>
 
+      <dt><%= t("When I try to start the VM, it fails, with an error message, \"cannot calculate MAC address\". How do I resolve this?")%></dt>
+      <dd>
+        <p><%= t("This is most often a symptom of the VM running on a computer with an Apple M1 (arm64) CPU. The VM components do not support the M1 CPU (as of September 2022). You can only use the VM on computers with intel (x64) CPUs. On computers with the M1 CPU, please use the XAMPP native installers instead.")%>
+        </p>
+        <p><%= t("If you get any error messages visit %{community} for help.",
+               community: link_to(t("our community pages"), "/community.html") ) %></p>
+      </dd>
+
       <dt><%= t("How can I make my XAMPP-VM installation more secure?")%></dt>
       <dd>
         <p><%= t("In the default installation, XAMPP-VM has no passwords set and it is not recommended to run XAMPP-VM with this configuration accessible by others.")%><%= t("To make the installation more secure:")%></p>
@@ -252,6 +260,14 @@ LAMPP: Starting Apache with SSL...</code></p>
           </code></p>
         <li><%= t("Save the file and restart the Apache service using the stack manager.")%></li>
       </ul>
+      </dd>
+
+      <dt><%= t("Does XAMPP-VM support Apple M1 (arm64) CPUs?")%></dt>
+      <dd>
+        <p><%= t("No. The components within the VM do not presently support Apple M1 (arm64) CPUs. The VM may only be used on Apple computers with intel (x64) CPUs.")%>
+        </p>
+        <p><%= t("This is the situation as of September 2022. We hope that the VM components will support Apple M1 CPUs in the future, so that XAMPP VMs will be usable on those Apple computers as well.")%>
+        </p>
       </dd>
 
       <dt><%= t("How do I install XAMPP-VM add-ons?")%></dt>

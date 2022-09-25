@@ -2117,3 +2117,21 @@ msgstr "Restore all the data backed up from the previous version, by copying it 
 
 msgid "Migrate from XAMPP WordPress to Bitnami WordPress Production-Ready on AWS"
 msgstr "Migrate from XAMPP WordPress to Bitnami WordPress Production-Ready on AWS"
+
+msgid "Does XAMPP-VM support Apple M1 (arm64) CPUs?"
+msgstr "Does XAMPP-VM support Apple M1 (arm64) CPUs?"
+
+msgid "No. The components within the VM do not presently support Apple M1 (arm64) CPUs. The VM may only be used on Apple computers with intel (x64) CPUs."
+msgstr "No. The components within the VM do not presently support Apple M1 (arm64) CPUs. The VM may only be used on Apple computers with intel (x64) CPUs."
+
+msgid "This is the situation as of September 2022. We hope that the VM components will support Apple M1 CPUs in the future, so that XAMPP VMs will be usable on those Apple computers as well."
+msgstr "This is the situation as of September 2022. We hope that the VM components will support Apple M1 CPUs in the future, so that XAMPP VMs will be usable on those Apple computers as well."
+
+msgid "When I try to start the VM, it fails, with an error message, \"cannot calculate MAC address\". How do I resolve this?
+msgstr "When I try to start the VM, it fails, with an error message, \"cannot calculate MAC address\". How do I resolve this?"
+
+msgid "This is most often a symptom of the VM running on a computer with an Apple M1 (arm64) CPU. The VM components do not support the M1 CPU (as of September 2022). You can only use the VM on computers with intel (x64) CPUs. On computers with the M1 CPU, please use the XAMPP native installers instead."
+msgstr "This is most often a symptom of the VM running on a computer with an Apple M1 (arm64) CPU. The VM components do not support the M1 CPU (as of September 2022). You can only use the VM on computers with intel (x64) CPUs. On computers with the M1 CPU, please use the XAMPP native installers instead."
+
+msgid ""
+msgstr ""
