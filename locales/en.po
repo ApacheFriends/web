@@ -51,8 +51,8 @@ msgstr ""
 "2012, Vista, 7, 8."
 
 #: en.download.requirements.apple
-msgid "Mac OS X 10.6 or later."
-msgstr "Mac OS X 10.6 or later."
+msgid "Mac OS X 10.6 or later. For VMs: Mac OS X 10.6 or later and intel (x64) CPU; not supported on M1 (arm64) CPUs."
+msgstr "Mac OS X 10.6 or later. For VMs: Mac OS X 10.6 or later and intel (x64) CPU; not supported on M1 (arm64) CPUs."
 
 #: en.download.more
 msgid "More Downloads"

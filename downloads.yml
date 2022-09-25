@@ -116,7 +116,7 @@ apple:
     0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
     cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
     1.5.2, APR-utils 1.5.4
-  requirements: Mac OS X 10.6 or later.
+  requirements: Mac OS X 10.6 or later. For VMs: Mac OS X 10.6 or later and intel (x64) CPU; not supported on M1 (arm64) CPUs
   downloads:
     x64:
       checksum_md5: c0d69fc34787a4dc829ca7e9d5c58954
@@ -135,7 +135,7 @@ apple:
     0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
     cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
     1.5.2, APR-utils 1.5.4
-  requirements: Mac OS X 10.6 or later.
+  requirements: Mac OS X 10.6 or later. For VMs: Mac OS X 10.6 or later and intel (x64) CPU; not supported on M1 (arm64) CPUs
   downloads:
     x64:
       checksum_md5: 37385630ad699277b07cf41f483c08ac
@@ -154,7 +154,7 @@ apple:
     0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
     cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
     1.5.2, APR-utils 1.5.4
-  requirements: Mac OS X 10.6 or later.
+  requirements: Mac OS X 10.6 or later. For VMs: Mac OS X 10.6 or later and intel (x64) CPU; not supported on M1 (arm64) CPUs
   downloads:
     x64:
       checksum_md5: 1c01fcd8fd4285e5aee8dce7526b0765
@@ -173,7 +173,7 @@ apple:
     0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
     cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
     1.5.2, APR-utils 1.5.4
-  requirements: Mac OS X 10.6 or later.
+  requirements: Mac OS X 10.6 or later. For VMs: Mac OS X 10.6 or later and intel (x64) CPU; not supported on M1 (arm64) CPUs
   downloads:
     x64:
       checksum_md5: 75ed765a396aca5df7ff485e73244751
@@ -192,7 +192,7 @@ apple:
     0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
     cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
     1.5.2, APR-utils 1.5.4
-  requirements: Mac OS X 10.6 or later.
+  requirements: Mac OS X 10.6 or later. For VMs: Mac OS X 10.6 or later and intel (x64) CPU; not supported on M1 (arm64) CPUs
   downloads:
     x64:
       checksum_md5: f7e34419b6a260fec76654f6d3becb10
@@ -211,7 +211,7 @@ apple:
     0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9,
     cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR
     1.5.2, APR-utils 1.5.4
-  requirements: Mac OS X 10.6 or later.
+  requirements: Mac OS X 10.6 or later. For VMs: Mac OS X 10.6 or later and intel (x64) CPU; not supported on M1 (arm64) CPUs
   downloads:
     x64:
       checksum_md5: 2b499b18a5880a1e8b8a5460e6ebfb06
