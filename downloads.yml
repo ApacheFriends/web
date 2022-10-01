@@ -1,7 +1,7 @@
 linux:
-- version: 7.4.29
-  php_version: 7.4.29
-  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 7.4.29 + SQLite 2.8.17/3.38.5
+- version: 7.4.30
+  php_version: 7.4.30
+  whats_included: Apache 2.4.54, MariaDB 10.4.24, PHP 7.4.30 + SQLite 2.8.17/3.38.5
     + multibyte (mbstring) support, Perl 5.34.1, ProFTPD 1.3.6, phpMyAdmin 5.2.0,
     OpenSSL 1.1.1o, GD 2.2.5, Freetype2 2.4.8, libpng 1.6.37, gdbm 1.8.3, zlib 1.2.11,
     expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf
@@ -13,15 +13,15 @@ linux:
     CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE.
   downloads:
     x64:
-      checksum_md5: c2df7e009a8d428ac8ddc1b2495ec286
-      checksum_sha1: c70ba064b5922035ba96cba2e2a747e6c8865798
-      checksum_sha256: 0fccb4823d9279ae665c29497d81bc9de231c68a75dbb102af069a414e980768
-      size: 153 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/7.4.29/xampp-linux-x64-7.4.29-1-installer.run?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/7.4.29/xampp-linux-x64-7.4.29-1-installer.run
-- version: 8.0.19
-  php_version: 8.0.19
-  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 8.0.19 & PEAR + SQLite 2.8.17/3.38.5
+      checksum_md5: 84dbf9f731fbc3a009892e375ac9e62c
+      checksum_sha1: 93b63ab0d8fb2cb1a44015a72840c23437a09b2f
+      checksum_sha256: e50c3ac78565fa75371c14a10473ae9a3d4d85c64123fe67b894373c51c10486
+      size: 148 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/7.4.30/xampp-linux-x64-7.4.30-1-installer.run?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/7.4.30/xampp-linux-x64-7.4.30-1-installer.run
+- version: 8.0.23
+  php_version: 8.0.23
+  whats_included: Apache 2.4.54, MariaDB 10.4.24, PHP 8.0.23 & PEAR + SQLite 2.8.17/3.38.5
     + multibyte (mbstring) support, Perl 5.34.1, ProFTPD 1.3.6, phpMyAdmin 5.2.0,
     OpenSSL 1.1.1o, GD 2.2.5, Freetype2 2.4.8, libpng 1.6.37, gdbm 1.8.3, zlib 1.2.11,
     expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf
@@ -33,15 +33,15 @@ linux:
     CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE.
   downloads:
     x64:
-      checksum_md5: e7529e68d1f124e9033d8f3c4e76924f
-      checksum_sha1: a8b83fff3dca5557ad85185ac973b668732735cc
-      checksum_sha256: 30286d183ba36d7fc60d6ea4f86a5044da73d199993e3eb04b9497d1ab411a19
+      checksum_md5: c4560285bba16c75bb7b9f157c2e22f4
+      checksum_sha1: 9ca2c23782739622fc9042b23b911d283ece9956
+      checksum_sha256: a892ca1df4aa40f2c76f89296d06600ed03df76af65aa34f79129d5f2aba7955
       size: 152 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/8.0.19/xampp-linux-x64-8.0.19-0-installer.run?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/8.0.19/xampp-linux-x64-8.0.19-0-installer.run
-- version: 8.1.6
-  php_version: 8.1.6
-  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 8.1.6 & PEAR + SQLite 2.8.17/3.38.5
+      url: https://downloadsapachefriends.global.ssl.fastly.net/8.0.23/xampp-linux-x64-8.0.23-0-installer.run?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/8.0.23/xampp-linux-x64-8.0.23-0-installer.run
+- version: 8.1.10
+  php_version: 8.1.10
+  whats_included: Apache 2.4.54, MariaDB 10.4.24, PHP 8.1.10 & PEAR + SQLite 2.8.17/3.38.5
     + multibyte (mbstring) support, Perl 5.34.1, ProFTPD 1.3.6, phpMyAdmin 5.2.0,
     OpenSSL 1.1.1o, GD 2.2.5, Freetype2 2.4.8, libpng 1.6.37, gdbm 1.8.3, zlib 1.2.11,
     expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf
@@ -53,58 +53,58 @@ linux:
     CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE.
   downloads:
     x64:
-      checksum_md5: 807a1fa6799b631d78b4fdfe50870e38
-      checksum_sha1: 4f9a48f5000cafe3408b18062604b9d8cdb23c93
-      checksum_sha256: 4d9a90ec073ad3437e7dcbb8e68d075ea9bbefa7e1e0aea678e47df67fdd7816
+      checksum_md5: 0752c9f82aa2f3a68f2002c5ac35c970
+      checksum_sha1: 483ccf71be29f5ab5186833a6db60a8c496b4918
+      checksum_sha256: b1d79c066b5c524a4a9631ecef3226a10446f0b4a8e052e13e98e4fe793ce034
       size: 152 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-linux-x64-8.1.6-0-installer.run?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/8.1.6/xampp-linux-x64-8.1.6-0-installer.run
+      url: https://downloadsapachefriends.global.ssl.fastly.net/8.1.10/xampp-linux-x64-8.1.10-0-installer.run?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/8.1.10/xampp-linux-x64-8.1.10-0-installer.run
 windows:
-- version: 7.4.29
-  php_version: 7.4.29
-  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 7.4.29, phpMyAdmin 5.2.0, OpenSSL
+- version: 7.4.30
+  php_version: 7.4.30
+  whats_included: Apache 2.4.54, MariaDB 10.4.24, PHP 7.4.30, phpMyAdmin 5.2.0, OpenSSL
     1.1.1, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System
     4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.78 (with mod_proxy_ajp as connector),
     Strawberry Perl 5.32.1.1 Portable
   requirements: 'Windows 2008, 2012, Vista, 7, 8 (Important: XP or 2003 not supported)'
   downloads:
     x64:
-      checksum_md5: e7cc3f8ff98a8f05b04d465f72747774
-      checksum_sha1: 4304e515895038e73dcf50e7dfadbbba34ffbcec
-      checksum_sha256: 811361c4127c64d405cc8f18c80006526614c2ff16c08ca4fcce7e5e9592f37b
-      size: 159 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/7.4.29/xampp-windows-x64-7.4.29-1-VC15-installer.exe?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/7.4.29/xampp-windows-x64-7.4.29-1-VC15-installer.exe
-- version: 8.0.19
-  php_version: 8.0.19
-  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 8.0.19, phpMyAdmin 5.2.0, OpenSSL
+      checksum_md5: d5c6d656cb645fee1ffe136595da9fac
+      checksum_sha1: 61b9dc705efc9449f960ca02e869786d4c21614e
+      checksum_sha256: 7946e834aff853c3e46a7d29de9fc1d9e48be83f8ac072a7b0942a7f52016546
+      size: 141 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/7.4.30/xampp-windows-x64-7.4.30-1-VC15-installer.exe?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/7.4.30/xampp-windows-x64-7.4.30-1-VC15-installer.exe
+- version: 8.0.23
+  php_version: 8.0.23
+  whats_included: Apache 2.4.54, MariaDB 10.4.24, PHP 8.0.23, phpMyAdmin 5.2.0, OpenSSL
     1.1.1, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System
     4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.78 (with mod_proxy_ajp as connector),
     Strawberry Perl 5.32.1.1 Portable
   requirements: 'Windows 2008, 2012, Vista, 7, 8 (Important: XP or 2003 not supported)'
   downloads:
     x64:
-      checksum_md5: cfebea222ca868bb496f4c62b94654b3
-      checksum_sha1: 9727eef62c7d5589126cf8f87966addb7cdd5db7
-      checksum_sha256: c1c739ca8046a35b5f9db6db639be4ad87d057bde0db29888a4766bc7acd2f2e
-      size: 161 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/8.0.19/xampp-windows-x64-8.0.19-0-VS16-installer.exe?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.0.19/xampp-windows-x64-8.0.19-0-VS16-installer.exe
-- version: 8.1.6
-  php_version: 8.1.6
-  whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 8.1.6, phpMyAdmin 5.2.0, OpenSSL
+      checksum_md5: 6f8ce5695af8cadc720862e9b37d4e21
+      checksum_sha1: 5747f0dceb75ee73548866a0f0b7145897b7e53f
+      checksum_sha256: 3036cf4eeed3a8a376126aa16556d95d3eb12f1d3fc2f60c1f3a18abb2178810
+      size: 143 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/8.0.23/xampp-windows-x64-8.0.23-0-VS16-installer.exe?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.0.23/xampp-windows-x64-8.0.23-0-VS16-installer.exe
+- version: 8.1.10
+  php_version: 8.1.10
+  whats_included: Apache 2.4.54, MariaDB 10.4.24, PHP 8.1.10, phpMyAdmin 5.2.0, OpenSSL
     1.1.1, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System
     4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.78 (with mod_proxy_ajp as connector),
     Strawberry Perl 5.32.1.1 Portable
   requirements: 'Windows 2008, 2012, Vista, 7, 8 (Important: XP or 2003 not supported)'
   downloads:
     x64:
-      checksum_md5: 64cbffd072e4771d84f77ae7236b6672
-      checksum_sha1: ad545da7b99e6a5be3d8a8096095b22f887aeb9a
-      checksum_sha256: ea3be132739e02a4c5b83014085daa3e1266cdd3f6bcd8f506ab434f37f0f85d
-      size: 164 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-windows-x64-8.1.6-0-VS16-installer.exe?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.1.6/xampp-windows-x64-8.1.6-0-VS16-installer.exe
+      checksum_md5: ef1e38c208d6494f9bded76aef3d200c
+      checksum_sha1: e569539e91c9b40665d521b94158b3963d7d8cda
+      checksum_sha256: 1ff7f2cb3d40a18a77d9753cb730325843147c69f9e1ac95d869da935584183d
+      size: 147 Mb
+      url: https://downloadsapachefriends.global.ssl.fastly.net/8.1.10/xampp-windows-x64-8.1.10-0-VS16-installer.exe?from_af=true
+      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.1.10/xampp-windows-x64-8.1.10-0-VS16-installer.exe
 apple:
 - version: 7.4.29
   php_version: 7.4.29
