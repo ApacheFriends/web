@@ -68,6 +68,9 @@ keywords: xampp, apache, php, perl, mysql, windows, linux, osx
           <% if os == 'windows' %>
             <p>Windows XP or 2003 are not supported. You can download a compatible version of XAMPP for these platforms <%= link_to 'here', 'http://sourceforge.net/projects/xampp/files/XAMPP%20Windows/1.8.2/' %>.</p>
           <% end %>
+          <% if os == 'apple' %>
+            <p>A Native installer installs MariaDB, PHP, Perl, etc. directly onto your macOS system. It supports intel (x64) or Apple M1 (arm64) CPUs.<br/>A Virtual Machine (VM) installs a virtual machine onto your macOS system. MariaDB, PHP, and Perl are installed on Linux within the virtual machine and it does not support Apple M1 (arm64) CPUs. Learn more about the VM option at the <a href="/faq_stackman.html">XAMPP-VM Frequently Asked Questions</a>.</p>
+          <% end %>
         </li>
       <% end %>
     </ul>
