@@ -17,8 +17,7 @@ linux:
       checksum_sha1: 93b63ab0d8fb2cb1a44015a72840c23437a09b2f
       checksum_sha256: e50c3ac78565fa75371c14a10473ae9a3d4d85c64123fe67b894373c51c10486
       size: 148 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/7.4.30/xampp-linux-x64-7.4.30-1-installer.run?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/7.4.30/xampp-linux-x64-7.4.30-1-installer.run
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/7.4.30/xampp-linux-x64-7.4.30-1-installer.run
 - version: 8.0.23
   php_version: 8.0.23
   whats_included: Apache 2.4.54, MariaDB 10.4.24, PHP 8.0.23 & PEAR + SQLite 2.8.17/3.38.5
@@ -37,8 +36,7 @@ linux:
       checksum_sha1: 9ca2c23782739622fc9042b23b911d283ece9956
       checksum_sha256: a892ca1df4aa40f2c76f89296d06600ed03df76af65aa34f79129d5f2aba7955
       size: 152 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/8.0.23/xampp-linux-x64-8.0.23-0-installer.run?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/8.0.23/xampp-linux-x64-8.0.23-0-installer.run
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.0.23/xampp-linux-x64-8.0.23-0-installer.run
 - version: 8.1.10
   php_version: 8.1.10
   whats_included: Apache 2.4.54, MariaDB 10.4.24, PHP 8.1.10 & PEAR + SQLite 2.8.17/3.38.5
@@ -57,8 +55,7 @@ linux:
       checksum_sha1: 483ccf71be29f5ab5186833a6db60a8c496b4918
       checksum_sha256: b1d79c066b5c524a4a9631ecef3226a10446f0b4a8e052e13e98e4fe793ce034
       size: 152 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/8.1.10/xampp-linux-x64-8.1.10-0-installer.run?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/8.1.10/xampp-linux-x64-8.1.10-0-installer.run
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.1.10/xampp-linux-x64-8.1.10-0-installer.run
 windows:
 - version: 7.4.30
   php_version: 7.4.30
@@ -73,8 +70,7 @@ windows:
       checksum_sha1: 61b9dc705efc9449f960ca02e869786d4c21614e
       checksum_sha256: 7946e834aff853c3e46a7d29de9fc1d9e48be83f8ac072a7b0942a7f52016546
       size: 141 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/7.4.30/xampp-windows-x64-7.4.30-1-VC15-installer.exe?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/7.4.30/xampp-windows-x64-7.4.30-1-VC15-installer.exe
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/7.4.30/xampp-windows-x64-7.4.30-1-VC15-installer.exe
 - version: 8.0.23
   php_version: 8.0.23
   whats_included: Apache 2.4.54, MariaDB 10.4.24, PHP 8.0.23, phpMyAdmin 5.2.0, OpenSSL
@@ -88,8 +84,7 @@ windows:
       checksum_sha1: 5747f0dceb75ee73548866a0f0b7145897b7e53f
       checksum_sha256: 3036cf4eeed3a8a376126aa16556d95d3eb12f1d3fc2f60c1f3a18abb2178810
       size: 143 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/8.0.23/xampp-windows-x64-8.0.23-0-VS16-installer.exe?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.0.23/xampp-windows-x64-8.0.23-0-VS16-installer.exe
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.0.23/xampp-windows-x64-8.0.23-0-VS16-installer.exe
 - version: 8.1.10
   php_version: 8.1.10
   whats_included: Apache 2.4.54, MariaDB 10.4.24, PHP 8.1.10, phpMyAdmin 5.2.0, OpenSSL
@@ -103,8 +98,7 @@ windows:
       checksum_sha1: e569539e91c9b40665d521b94158b3963d7d8cda
       checksum_sha256: 1ff7f2cb3d40a18a77d9753cb730325843147c69f9e1ac95d869da935584183d
       size: 147 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/8.1.10/xampp-windows-x64-8.1.10-0-VS16-installer.exe?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.1.10/xampp-windows-x64-8.1.10-0-VS16-installer.exe
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.1.10/xampp-windows-x64-8.1.10-0-VS16-installer.exe
 apple:
 - version: 7.4.29
   php_version: 7.4.29
@@ -123,8 +117,7 @@ apple:
       checksum_sha1: b7f4cd593acc9d04c606710756bc4de9dc4dc6e8
       checksum_sha256: c21aa7631a6ed075a1aae991c11188238cf7c9bca6e19c2cd4fe41884651686b
       size: 163 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/7.4.29/xampp-osx-7.4.29-1-installer.dmg?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/7.4.29/xampp-osx-7.4.29-1-installer.dmg
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/7.4.29/xampp-osx-7.4.29-1-installer.dmg
 - version: 8.0.19
   php_version: 8.0.19
   whats_included: Apache 2.4.53, MariaDB 10.4.21, PHP 8.0.19 & PEAR + SQLite 2.8.17/3.38.5
@@ -142,8 +135,7 @@ apple:
       checksum_sha1: 27819f2bced6f890967bf782c7ceb48133088967
       checksum_sha256: 5ee829e61ff9715761da6a0b4a3c26814f545baec2602a8ebba26ee0783fe010
       size: 162 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/8.0.19/xampp-osx-8.0.19-0-installer.dmg?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/8.0.19/xampp-osx-8.0.19-0-installer.dmg
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/8.0.19/xampp-osx-8.0.19-0-installer.dmg
 - version: 8.1.6
   php_version: 8.1.6
   whats_included: Apache 2.4.53, MariaDB 10.4.21, PHP 8.1.6 & PEAR + SQLite 2.8.17/3.38.5
@@ -161,8 +153,7 @@ apple:
       checksum_sha1: 5089cf70a73a2a025c7cb9b2b8341a7af17f7698
       checksum_sha256: 7dbe27c23f176b1ec32b1415b225f31ed081d820cab25233dac99241d7a84222
       size: 163 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-osx-8.1.6-0-installer.dmg?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/8.1.6/xampp-osx-8.1.6-0-installer.dmg
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/8.1.6/xampp-osx-8.1.6-0-installer.dmg
 - version: 7.4.29
   php_version: 7.4.29
   whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 7.4.29 + SQLite 2.8.17/3.38.5
@@ -180,8 +171,7 @@ apple:
       checksum_sha1: e55c53a16e49552ba2cd58643cb20b4871395588
       checksum_sha256: 91cfd7d2ded2f6dfb73e1c703de47b39cada3878d915396b65a6c80e01967db9
       size: 360 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/7.4.29/xampp-osx-7.4.29-1-vm.dmg?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/7.4.29/xampp-osx-7.4.29-1-vm.dmg
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/7.4.29/xampp-osx-7.4.29-1-vm.dmg
 - version: 8.0.19
   php_version: 8.0.19
   whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 8.0.19 & PEAR + SQLite 2.8.17/3.38.5
@@ -199,8 +189,7 @@ apple:
       checksum_sha1: bea9b59bc31e993414bb23afcb0fb4524cf19e8c
       checksum_sha256: 5d9cd561908c51d12f2df1b7598dde8b35d0e2b943ab4df2b69c52b5c0850875
       size: 360 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/8.0.19/xampp-osx-8.0.19-0-vm.dmg?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/8.0.19/xampp-osx-8.0.19-0-vm.dmg
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/8.0.19/xampp-osx-8.0.19-0-vm.dmg
 - version: 8.1.6
   php_version: 8.1.6
   whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 8.1.6 & PEAR + SQLite 2.8.17/3.38.5
@@ -218,5 +207,4 @@ apple:
       checksum_sha1: cd2dc8892601caa2c86b5465b52dd6426d2d7cbe
       checksum_sha256: 11be67f9c8bd955a07bbc93af9cf126fda20ba2b60eef66f8c92bb655776cedb
       size: 361 Mb
-      url: https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-osx-8.1.6-0-vm.dmg?from_af=true
-      alternative_url: http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/8.1.6/xampp-osx-8.1.6-0-vm.dmg
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/8.1.6/xampp-osx-8.1.6-0-vm.dmg
