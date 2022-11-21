@@ -270,33 +270,6 @@ LAMPP: Starting Apache with SSL...</code></p>
         </p>
       </dd>
 
-      <dt><%= t("How do I install XAMPP-VM add-ons?")%></dt>
-      <dd id='how-do-i-install-xampp-add-ons'>
-        <p><%= t("To install a new Bitnami add-on for XAMPP-VM, follow these steps:")%></p>
-        <ul>
-          <li><%= t("Download the Linux installer for the add-on from the Bitnami website.")%></li>
-          <%= image_tag "screenshots/xampp-macosx-download-installer.jpg" %>
-          <li><%= t("Launch the stack manager by double-clicking the XAMPP icon in the mounted disk image.")%></li>
-          <li><%= t("Ensure that all services are running in the \"Services\" tab of the stack manager (or start them as needed).")%></li>
-          <li><%= t("Navigate to the \"Network\" tab and ensure that port forwarding (port 80 of the stack to port 8080 of the host system) over SSH is enabled.")%></li>
-          <%= image_tag "screenshots/xampp-macosx-stack-manager-network.jpg" %>
-          <li><%= t("Mount the /opt/lampp directory from the \"Volumes\" tab of the stack manager and click the \"Explore\" button to open the file manager.")%></li>
-          <%= image_tag "screenshots/xampp-macosx-stack-manager-volumes.jpg" %>
-          <li><%= t("Copy the Linux installer from the host system to the /opt/lampp/temp directory on the mounted volume.")%></li>
-          <li><%= t("Open a new terminal from the \"General\" tab of the stack manager and run the following commands in it. Replace INSTALLER_FILENAME with the name of the downloaded installer.")%>
-            <p><code>cd /opt/lampp/temp
-            chmod +x ./INSTALLER_FILENAME.sh
-            ./INSTALLER_FILENAME.sh
-            </code></p>
-          <p><%= t("This will start the installer in text mode, as shown below:")%></p>
-          <%= image_tag "screenshots/xampp-macosx-run-installer.jpg" %>
-          </li>
-          <li><%= t("Enter the required details when prompted and wait for the installation to complete.")%></li>
-        </ul>
-        <p><%= t("You should now be able to access the add-on through your browser. For example, to access WordPress, browse to http://localhost:8080/wordpress.")%></p>
-        <%= image_tag "screenshots/xampp-macosx-wordpress.jpg" %>
-      </dd>
-
       <dt><%= t("Where are the XAMPP-VM virtual machine files and logs?")%></dt>
       <dd>
         <p><%= t("The XAMPP-VM virtual machine files and logs are stored within your home directory on the OS X host, in the ~/.bitnami/stackman/machines/xampp/vm and ~/.bitnami/stackman/machines/xampp/log directories respectively.")%></p>

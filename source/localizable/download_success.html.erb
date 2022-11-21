@@ -47,13 +47,6 @@ title: XAMPP Download Success
 </div>
 <div class="row">
   <div class="large-4 columns">
-    <h3><%= t("Add-ons") %></h3> 
-    <% link_to "https://bitnami.com/" do %>
-      <%= retina_image_tag "stack-icons.png", :width => "220" %>
-    <% end %>
-    <p><%= t("Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP. Visit %{bitnami_xampp} to download the installer.", bitnami_xampp: link_to("Bitnami XAMPP", "https://bitnami.com/stack/xampp"), add_ons: link_to(t("Add-ons").downcase, localized_path("/add-ons.html"))) %></p>
-  </div>
-  <div class="large-4 columns">
     <h3><%= t("Community") %></h3>
     <p><%= t("XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, liking us on %{facebook}, or following our exploits on %{twitter}.",
       twitter: link_to("Twitter", "https://twitter.com/apachefriends"),

@@ -52,7 +52,6 @@ keywords: xampp, apache, php, perl, mysql, windows, linux, osx
           </table>
           <ul class="inline-list">
             <li><%= link_to t("Requirements"), "#", :"data-dropdown" => "#{os}-requirements" %></li>
-            <li><%= localized_link_to "Add-ons", "/add-ons.html" %></li>
             <li><%= link_to "#{t('More Downloads')} &raquo;", "http://sourceforge.net/projects/xampp/files/" %></li>
           </ul>
           <% releases.each do |release| %>
@@ -74,12 +73,6 @@ keywords: xampp, apache, php, perl, mysql, windows, linux, osx
         </li>
       <% end %>
     </ul>
-    <h2><%= t("Add-ons") %></h2>
-    <hr />
-    <%= partial "add-ons" %>
-    <div class="right">
-      <%= link_to t("XAMPP Add-ons") + " &rarr;".html_safe, localized_path("/add-ons.html"), :class => "button small" %>
-    </div>
   </div>
   <div class="large-4 columns">
     <aside>
@@ -91,11 +84,6 @@ keywords: xampp, apache, php, perl, mysql, windows, linux, osx
         <li><%= link_to "OS X #{t('FAQs')}",    localized_path("/faq_osx.html") %></li>
         <li><%= link_to "OS X XAMPP-VM #{t('FAQs')}",    localized_path("/faq_stackman.html") %></li>
       </ul>
-      <h4><%= t("Add-ons") %></h4>
-      <% link_to localized_path("/add-ons.html") do %>
-          <%= retina_image_tag "stack-icons.png", :width => "60" %>
-      <% end %>
-      <p><%= t("Bitnami provides a free all-in-one tool to install WordPress on top of XAMPP. Visit %{bitnami_xampp} to download the installer.", bitnami_xampp: link_to("Bitnami XAMPP", "https://bitnami.com/stack/xampp"), add_ons: link_to(t("Add-ons").downcase, localized_path("/add-ons.html"))) %></p>
     </aside>
   </div>
 </div>
