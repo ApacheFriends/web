@@ -154,6 +154,7 @@ apple:
       checksum_sha256: 7dbe27c23f176b1ec32b1415b225f31ed081d820cab25233dac99241d7a84222
       size: 163 Mb
       url: https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/8.1.6/xampp-osx-8.1.6-0-installer.dmg
+appleVM:
 - version: 7.4.29
   php_version: 7.4.29
   whats_included: Apache 2.4.53, MariaDB 10.4.24, PHP 7.4.29 + SQLite 2.8.17/3.38.5
