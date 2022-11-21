@@ -36,6 +36,7 @@ keywords: xampp, apache, php, perl, mysql, open source distribution
       </div>
     </div>
     <% downloads.each do |os, downloads| %>
+    <% if os != 'appleVM' %>
       <div class="large-3 columns">
         <%
           last_main_version = downloads.last
@@ -43,10 +44,11 @@ keywords: xampp, apache, php, perl, mysql, open source distribution
           x64_url = last_main_version["downloads"]["x64"].try(:[], "url")
         %>
         <% link_to x32_url || x64_url, :target => "_blank", :"data-x64-href" => x32_url && x64_url, :"data-delayed-href" => localized_path("/download_success.html") do %>
-          <%= image_tag("#{os}-logo.png") + t('XAMPP for <strong>%{os}</strong>', os: DownloadBuilder::FRIENDLY_NAMES[os] || os.titleize).html_safe %>
-          <span><%= last_main_version["version"] %> (PHP <%= last_main_version["php_version"] %>)</span>
+            <%= image_tag("#{os}-logo.png") + t('XAMPP for <strong>%{os}</strong>', os: DownloadBuilder::FRIENDLY_NAMES[os] || os.titleize).html_safe %>
+            <span><%= last_main_version["version"] %> (PHP <%= last_main_version["php_version"] %>)</span>
         <% end %>
       </div>
+    <% end %>
     <% end %>
   </div>
 </div>

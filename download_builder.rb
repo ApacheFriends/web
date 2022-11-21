@@ -1,9 +1,10 @@
 class DownloadBuilder < Middleman::Extension
   option :source, "./downloads.yml", "Source manifest (.yml)"
 
-  DISPLAY_ORDER = %w[windows linux apple]
+  DISPLAY_ORDER = %w[windows linux apple appleVM]
   FRIENDLY_NAMES = {
-    "apple" => "OS X"
+    "apple" => "OS X",
+    "appleVM" => "OS X (VM)",
   }
 
   def initialize(app, options_hash={}, &block)
