@@ -70,13 +70,11 @@
                 <ul class="dropdown">
                   <li><%= localized_link_to "Release Notes", "/download.html#releasenotes" %></li>
                   <li><%= localized_link_to "FAQs", "/download.html#faqs" %></li>
-                  <li><%= localized_link_to "Add-ons", "/add-ons.html" %></li>
                 </ul>
               </li>
             <% end %>
             <% unless is_xampp? %>
               <li class="item <%= "active" if page_classes.include?("download") %>"><%= af_localized_link_to "Download", "/download.html" %></li>
-              <li class="item <%= "active" if page_classes.include?("addons") %>"><%= af_localized_link_to "Add-ons", "/add-ons.html" %></li>
               <li class="item <%= "active" if page_classes.include?("hosting") %>"><%= af_localized_link_to "Hosting", "/hosting.html" %></li>
               <li class="item <%= "active" if page_classes.include?("community") %>"><%= af_localized_link_to "Community", "/community.html" %></li>
               <li class="item <%= "active" if page_classes.include?("about") %>"><%= af_localized_link_to "About", "/about.html" %></li>
