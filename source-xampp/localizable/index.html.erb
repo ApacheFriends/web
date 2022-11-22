@@ -28,12 +28,6 @@ keywords: xampp, apache, php, perl, mariadb, open source distribution
     </p>
     <p>
       <%= t('XAMPP is meant only for development purposes. It has certain configuration settings that make it easy to develop locally but that are insecure if you want to have your installation accessible to others.') %>
-      <%= t('If you want have your XAMPP accessible from the internet, make sure you understand the implications and you checked the %{faq} to learn how to protect your site. Alternatively you can use %{wamp}, %{mamp} or %{lamp} which are similar packages which are more suitable for production.',
-          faq: localized_link_to("FAQs", "/faq.html"),
-          wamp: link_to("WAMP", "https://bitnami.com/stack/wamp"),
-          lamp: link_to("LAMP", "https://bitnami.com/stack/lamp"),
-          mamp: link_to("MAMP", "https://bitnami.com/stack/mamp")
-          ) %>
     </p>
     <p>
       <%= t('Start the XAMPP Control Panel to check the server status.') %>
@@ -48,7 +42,7 @@ keywords: xampp, apache, php, perl, mariadb, open source distribution
 <div class="row">
   <div class="large-12 columns">
     <p>
-      <%= t('XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, adding yourself to the %{mailing_list}, and liking us on %{facebook}, or following our exploits on %{twitter}.',
+      <%= t('XAMPP has been around for more than 10 years &ndash; there is a huge community behind it. You can get involved by joining our %{forums}, liking us on %{facebook}, or following our exploits on %{twitter}.',
             twitter: link_to("Twitter", "https://twitter.com/apachefriends"),
             facebook: link_to("Facebook", "https://www.facebook.com/we.are.xampp"),
             mailing_list: af_localized_link_to("Mailing List", "/community.html#mailing_list"),
@@ -57,23 +51,4 @@ keywords: xampp, apache, php, perl, mariadb, open source distribution
     </p>
   </div>
 </div>
-<div class="row">
-  <div class="large-12 columns">
-    <h3><%= t('Install applications on XAMPP using Bitnami') %></h3>
-  </div>
-</div>
-<div class="row">
-  <div class="large-12 columns">
-    <p>
-    <%= t('Apache Friends and Bitnami are cooperating to make open source applications available on XAMPP, for free. Bitnami WordPress packaged applications can be deployed with one-click installers.') %>
-    <%= t('Visit the %{bitnami_xampp} for details on the currently available apps.',
-          bitnami_xampp: link_to(t("Bitnami XAMPP page"), "https://bitnami.com/stack/xampp?utm_source=bitnami&utm_medium=installer&utm_campaign=XAMPP%2BModule", target: "_blank")
-    ) %>
-    </p>
-  </div>
-</div>
-<div class="row">
-  <div class="large-12 columns">
-    <a href="https://bitnami.com/stack/xampp?utm_source=bitnami&utm_medium=installer&utm_campaign=XAMPP%2BModule" target="_blank"><%= image_tag "bitnami-xampp.png", alt: t("Bitnami XAMPP page") %></a>
-  </div>
-</div>
+
