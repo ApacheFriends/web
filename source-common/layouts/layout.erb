@@ -95,7 +95,6 @@
                 </form>
               </li>
             <% else %>
-              <li class="item <%= "active" if page_classes.include?("applications") %>"><%= link_to "Applications", "/applications.html" %></li>
               <li class="item <%= "active" if page_classes.include?("faq") %>"><%= localized_link_to "FAQs", "/faq.html" %></li>
               <li class="item <%= "active" if page_classes.include?("howto") || page_classes.include?("docs") %>"><%= localized_link_to "HOW-TO Guides", "/howto.html" %></li>
               <li class="item <%= "active" if page_classes.include?("phpinfo") %>"><%= link_to "PHPInfo", "#{http_prefix}/phpinfo.php", target: "_blank" %></li>
