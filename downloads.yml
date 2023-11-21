@@ -57,48 +57,48 @@ linux:
       size: 151 Mb
       url: https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.2.4/xampp-linux-x64-8.2.4-0-installer.run
 windows:
-- version: 8.0.28
-  php_version: 8.0.28
-  whats_included: Apache 2.4.56, MariaDB 10.4.28, PHP 8.0.28, phpMyAdmin 5.2.1, OpenSSL
-    1.1.1t, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System
-    4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.87 (with mod_proxy_ajp as connector),
+- version: 8.0.30
+  php_version: 8.0.30
+  whats_included: Apache 2.4.58, MariaDB 10.4.32, PHP 8.0.30, phpMyAdmin 5.2.1, OpenSSL
+    3.1.3, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System
+    4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.96 (with mod_proxy_ajp as connector),
     Strawberry Perl 5.32.1.1 Portable
   requirements: 'Windows 2008, 2012, Vista, 7, 8 (Important: XP or 2003 not supported)'
   downloads:
     x64:
-      checksum_md5: 79328bd60910485737bd48ce07c79293
-      checksum_sha1: 76561bf33478cfbf4fff7c586eb7092ac743ed70
-      checksum_sha256: f25577ad00361c4502037f93e0e7111b2337f50aa311b4903df917fb0e36dc3e
+      checksum_md5: 80f8baaa4ce2ce5777593704e3738ec7
+      checksum_sha1: 1dc1cf4a86c6f078f1365c56f1a250819ab8ef48
+      checksum_sha256: 90dc4546df0dc0cad38daaf62ef2c21b4ae47e6f7a2b2dd7b1c64b41edfb669c
       size: 144 Mb
-      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.0.28/xampp-windows-x64-8.0.28-0-VS16-installer.exe
-- version: 8.1.17
-  php_version: 8.1.17
-  whats_included: Apache 2.4.56, MariaDB 10.4.28, PHP 8.1.17, phpMyAdmin 5.2.1, OpenSSL
-    1.1.1t, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System
-    4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.87 (with mod_proxy_ajp as connector),
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.0.30/xampp-windows-x64-8.0.30-0-VS16-installer.exe
+- version: 8.1.25
+  php_version: 8.1.25
+  whats_included: Apache 2.4.58, MariaDB 10.4.32, PHP 8.1.25, phpMyAdmin 5.2.1, OpenSSL
+    3.1.3, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System
+    4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.96 (with mod_proxy_ajp as connector),
     Strawberry Perl 5.32.1.1 Portable
   requirements: 'Windows 2008, 2012, Vista, 7, 8 (Important: XP or 2003 not supported)'
   downloads:
     x64:
-      checksum_md5: 84ed36d548d269504189578c67702daf
-      checksum_sha1: 5148fc936e81ca703a004378bb87e3101d395cb5
-      checksum_sha256: 0830ba83481c0223766c0dbbe143f0e406f1685a0f167450bb6ccfb1d27f87f2
+      checksum_md5: 99450c5258a5e5a693b44d1c17762ae3
+      checksum_sha1: 51535424fe7a89ed27e566ac4d357e9d7930cef4
+      checksum_sha256: 352d16335e7c83422e0bed4091e6679357ce7663cd164e8fd9d7a77108782a8f
       size: 148 Mb
-      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.1.17/xampp-windows-x64-8.1.17-0-VS16-installer.exe
-- version: 8.2.4
-  php_version: 8.2.4
-  whats_included: Apache 2.4.56, MariaDB 10.4.28, PHP 8.2.4, phpMyAdmin 5.2.1, OpenSSL
-    1.1.1t, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System
-    4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.87 (with mod_proxy_ajp as connector),
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.1.25/xampp-windows-x64-8.1.25-0-VS16-installer.exe
+- version: 8.2.12
+  php_version: 8.2.12
+  whats_included: Apache 2.4.58, MariaDB 10.4.32, PHP 8.2.12, phpMyAdmin 5.2.1, OpenSSL
+    3.1.3, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System
+    4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.96 (with mod_proxy_ajp as connector),
     Strawberry Perl 5.32.1.1 Portable
   requirements: 'Windows 2008, 2012, Vista, 7, 8 (Important: XP or 2003 not supported)'
   downloads:
     x64:
-      checksum_md5: d0d11acc0ac88a141efdb815310b9d66
-      checksum_sha1: 31222f65cc003be122e980d3cdaa67bd80f9f8c2
-      checksum_sha256: 6f3e20916627060365a90dfd361ea42bffcda0cf5890e937217c4c3fcb9f0ed0
+      checksum_md5: c09aeaef58e6a7614563303636ec3810
+      checksum_sha1: b6549ee720dff786e95c2fc596c2d5221e4ef72f
+      checksum_sha256: 12e818ce5aec79fe646606df3a80b35da865ec0213646ad7c92044dcfcec7535
       size: 149 Mb
-      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.4/xampp-windows-x64-8.2.4-0-VS16-installer.exe
+      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.12/xampp-windows-x64-8.2.12-0-VS16-installer.exe
 apple:
 - version: 8.0.28
   php_version: 8.0.28
