@@ -13,6 +13,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the website
-      run: docker-compose run --rm middleman bundle exec middleman build
+      - uses: actions/checkout@v3
+      
+      - name: Build the website
+        run: docker-compose run --rm middleman bundle exec middleman build
+  
+      - name: Deploy the website
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
