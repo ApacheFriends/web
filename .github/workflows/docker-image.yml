@@ -1,8 +1,10 @@
-name: Build & Deploy
+name: Website CI
 
 on:
   push:
-    branches: [ main ]
+    branches: main
+  pull_request:
+    branches: main
 
 jobs:
 
@@ -17,6 +19,7 @@ jobs:
         run: docker-compose run --rm middleman bundle exec middleman build
   
       - name: Deploy the website
+        if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
