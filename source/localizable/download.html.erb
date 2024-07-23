@@ -13,7 +13,10 @@ keywords: xampp, apache, php, perl, mysql, windows, linux, osx
 </div>
 <div class="row">
   <div class="large-8 columns">
-    <p><%= t("XAMPP is an easy to install Apache distribution containing MariaDB, PHP, and Perl. Just download and start the installer. It's that easy.") %></p>
+    <p>
+      <%= t("XAMPP is an easy to install Apache distribution containing MariaDB, PHP, and Perl. Just download and start the installer. It's that easy.") %>
+      <%= t("Installers created using <a target='_blank' href='https://installbuilder.com'>InstallBuilder</a>.") %>
+    </p>
     <ul id="downloads">
       <% downloads.each do |os, releases| %>
         <li id="download-<%= os %>">

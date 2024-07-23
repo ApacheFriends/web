@@ -25,8 +25,9 @@
       text-decoration: underline;
     }
   }
-
-
+  .bright {
+      color: $light;
+  }
   .footer_lists-container.row {
 
     & > *:not(:last-child) {
