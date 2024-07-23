@@ -140,10 +140,7 @@
             <li><%= link_to t('Blog'), "https://www.apachefriends.org/blog.html" %></li>
             <li><%= link_to t('Privacy Policy'), "/privacy_policy.html" %></li>
             <li>
-              <% link_to "http://www.fastly.com/", target: "_blank" do %>
-                <%= t('CDN provided by') %>
-                <%= retina_image_tag('fastly-logo.png', :width => 48) %>
-              <% end %>
+              <%= link_to t("Multiplatform installers by <strong class='bright'>InstallBuilder</strong>"), "https://installbuilder.com", target: "_blank" %>
             </li>
           </ul>
         </div>

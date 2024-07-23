@@ -252,6 +252,14 @@ msgstr "Subscribir"
 msgid "Privacy Policy"
 msgstr "Política de privacidad"
 
+#: en.installbuilder
+msgid "Multiplatform installers by <strong class='bright'>InstallBuilder</strong>"
+msgstr "Instaladores creados con <strong class='bright'>InstallBuilder</strong>"
+
+#: en.installers_created_using_installbuilder
+msgid "Installers created using <a target='_blank' href='https://installbuilder.com'>InstallBuilder</a>."
+msgstr "Instaladores creados usando <a target='_blank' href='https://installbuilder.com'>InstallBuilder</a>."
+
 #: en.fastly
 msgid "CDN provided by"
 msgstr "CDN proporcionado por"
