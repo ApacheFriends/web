@@ -36,7 +36,7 @@ keywords: xampp, apache, php, perl, mysql, open source distribution
       </div>
     </div>
     <% downloads.each do |os, downloads| %>
-    <% if os != 'appleVM' %>
+    <% if os != 'appleVM' && os != 'browsers' %>
       <div class="large-3 columns">
         <%
           last_main_version = downloads.last

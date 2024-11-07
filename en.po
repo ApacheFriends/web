@@ -24,6 +24,9 @@ msgstr ""
 #: en.download.whats_included
 msgid "What's Included?"
 msgstr ""
+#: en.download.run_in_browser
+msgid "Run in browser"
+msgstr "Lanzar en el navegador"
 #: en.download.requirements.title
 msgid "Requirements"
 msgstr ""

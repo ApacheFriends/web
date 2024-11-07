@@ -30,6 +30,10 @@ msgstr ""
 msgid "What's Included?"
 msgstr "¿Qué está incluido?."
 
+#: en.download.run_in_browser
+msgid "Run in browser"
+msgstr "Abrir en el navegador"
+
 #: en.download.requirements.title
 msgid "Requirements"
 msgstr "Requisitos"
