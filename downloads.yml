@@ -154,3 +154,17 @@ apple:
       checksum_sha256: eb9888f2e3b131ae9a5fbec063a6b642a7285e065a8e5f5e97c699b71e2d7ac5
       size: 150 Mb
       url: https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/8.2.4/xampp-osx-8.2.4-0-installer.dmg
+browsers:
+- version: 8.3.12
+  php_version: 8.3.12
+  whats_included: Alpine Linux 3.20, Apache 2.4.62, MariaDB 10.11-8, PHP 8.3.12 & PEAR + multibyte (mbstring) support, 
+      Perl 5.38.2, phpMyAdmin 5.2.1
+  requirements: 'Tested on Desktop versions of Chrome and derivatives'
+  downloads:
+    x64:
+      checksum_md5: Not required
+      checksum_sha1: Not required
+      checksum_sha256: Not required
+      size: '-'
+      browser_app: true 
+      url: https://endor.dev/s/lamp

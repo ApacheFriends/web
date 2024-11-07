@@ -42,7 +42,11 @@ keywords: xampp, apache, php, perl, mysql, windows, linux, osx
                       </ul>
                     </td>
                     <td class="text-right">
-                      <%= download_link_to "#{t('Download')} (#{bits[1..-1]} bit)", download["url"], :class => "button" %>
+                      <% if download["browser_app"] == true %>
+                        <%= link_to t('Run in the browser'), download["url"], :class => "button", :target => "_blank" %>
+                      <% else %>
+                        <%= download_link_to "#{t('Download')} (#{bits[1..-1]} bit)", download["url"], :class => "button" %>
+                      <% end %>
                     </td>
                     <td class="show-for-medium-up"><%= download["size"] %></td>
                 <% end %>

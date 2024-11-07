@@ -1,7 +1,7 @@
 class DownloadBuilder < Middleman::Extension
   option :source, "./downloads.yml", "Source manifest (.yml)"
 
-  DISPLAY_ORDER = %w[windows linux apple appleVM]
+  DISPLAY_ORDER = %w[windows browsers linux apple appleVM]
   FRIENDLY_NAMES = {
     "apple" => "OS X",
     "appleVM" => "OS X (VM)",
