@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Build the website
-      run: docker-compose run --rm middleman bundle exec middleman build
+      run: docker compose run --rm middleman bundle exec middleman build
