@@ -159,7 +159,7 @@ browsers:
   php_version: 8.3.12
   whats_included: Alpine Linux 3.20, Apache 2.4.62, MariaDB 10.11-8, PHP 8.3.12 & PEAR + multibyte (mbstring) support, 
       Perl 5.38.2, phpMyAdmin 5.2.1
-  requirements: 'Firefox, Safari, or any Chromium based browser like Google Chrome or Bing. The mobile versions for Apple iOS are not supported yet.'
+  requirements: 'Tested on Desktop versions of Chrome and derivatives'
   downloads:
     x64:
       checksum_md5: Not required
