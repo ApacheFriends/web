@@ -1,4 +1,4 @@
-FROM bitnami/ruby:2.6.6-debian-10-r29
+FROM ruby:2.6.6-buster
 
 # Deploying requirements
 
