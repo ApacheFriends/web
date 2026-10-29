@@ -1,0 +1,153 @@
+
+name: Build and release XAMPP htdocs
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+      # Date style (we expect 20xx year, it will byte us in 70 years...)
+      - "20[0-9]*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (defaults to today's date, YYYYMMDD)"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.release_tag.outputs.tag }}
+      publish_allowed: ${{ steps.release_policy.outputs.allowed }}
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Determine release tag
+        id: release_tag
+        env:
+          INPUT_TAG: ${{ inputs.tag }}
+          REF_TYPE: ${{ github.ref_type }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          if [ "$REF_TYPE" = "tag" ]; then
+            tag="$REF_NAME"
+          elif [ -n "$INPUT_TAG" ]; then
+            tag="$INPUT_TAG"
+          else
+            tag="$(date +%Y%m%d)"
+          fi
+
+          if [[ ! "$tag" =~ ^[A-Za-z0-9._-]+$ ]]; then
+            echo "Invalid tag: use only letters, digits, dots, underscores and hyphens."
+            exit 1
+          fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+      - name: Check release policy
+        id: release_policy
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REF: ${{ github.ref }}
+          COMMIT: ${{ github.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          allowed=false
+
+          if [[ "$EVENT_NAME" == "push" &&
+                  ("$REF" == refs/tags/v* || "$REF" =~ ^refs/tags/20[0-9]{6}$ ) ]]; then
+            git fetch origin main >/dev/null 2>&1;
+            if git merge-base --is-ancestor \
+                "$COMMIT" origin/main >/dev/null 2>&1; then
+              allowed=true
+            else
+              echo "Tag commit is not reachable from main; artifacts only."
+            fi
+          fi
+          echo "allowed=$allowed" >> "$GITHUB_OUTPUT"
+
+      - name: Build assets
+        env:
+          RELEASE_TAG: ${{ steps.release_tag.outputs.tag }}
+        run: docker compose run --rm middleman scripts/build-htdocs-xampp.sh "$RELEASE_TAG"
+
+      - name: Verify assets
+        env:
+          RELEASE_TAG: ${{ steps.release_tag.outputs.tag }}
+        run: |
+          set -euo pipefail
+          files=()
+          for platform in linux osx windows stackman; do
+            file="xampp-htdocs-${platform}-${RELEASE_TAG}.tar.gz"
+            if [ ! -s "$file" ]; then
+              echo "Missing or empty asset: $file"
+              exit 1
+            fi
+            files+=("$file")
+          done
+          sha256sum "${files[@]}" > SHA256SUMS
+          cat SHA256SUMS
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: xampp-htdocs-${{ steps.release_tag.outputs.tag }}
+          path: |
+            xampp-htdocs-linux-${{ steps.release_tag.outputs.tag }}.tar.gz
+            xampp-htdocs-osx-${{ steps.release_tag.outputs.tag }}.tar.gz
+            xampp-htdocs-windows-${{ steps.release_tag.outputs.tag }}.tar.gz
+            xampp-htdocs-stackman-${{ steps.release_tag.outputs.tag }}.tar.gz
+            SHA256SUMS
+          if-no-files-found: error
+          retention-days: 14
+
+  publish:
+    needs: build
+    if: needs.build.outputs.publish_allowed == 'true'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: xampp-htdocs-${{ needs.build.outputs.tag }}
+          path: dist
+      - name: Ensure release does not already exist
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ needs.build.outputs.tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            echo "Release $RELEASE_TAG already exists; refusing to overwrite it."
+            exit 1
+          fi
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ steps.release_tag.outputs.tag }}
+          target_commitish: ${{ github.sha }}
+          token: ${{ github.token }}
+          name: ${{ steps.release_tag.outputs.tag }}
+          generate_release_notes: true
+          fail_on_unmatched_files: true
+          files: |
+            dist/xampp-htdocs-linux-${{ needs.build.outputs.tag }}.tar.gz
+            dist/xampp-htdocs-osx-${{ needs.build.outputs.tag }}.tar.gz
+            dist/xampp-htdocs-windows-${{ needs.build.outputs.tag }}.tar.gz
+            dist/xampp-htdocs-stackman-${{ needs.build.outputs.tag }}.tar.gz
+            dist/SHA256SUMS

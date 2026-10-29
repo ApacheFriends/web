@@ -1,15 +1,20 @@
-#!/bin/bash
+#!/bin/bash -e
 #It builds the xampp-htdocs tarballs per platform for XAMPP
 
+set -Eeuo pipefail
 
-AFDIR=`pwd`/../
-DATE=`date +%Y%m%d`
+AFDIR="$(cd "$(dirname "$0")/.." && pwd)"
 
-cd $AFDIR
+TAG="${1:-$(date +%Y%m%d)}"
+
+
+cd "$AFDIR"
 for platform in linux osx windows stackman; do
     echo "Building XAMPP htdocs for $platform"
-    rm -r $AFDIR/build-xampp-$platform-* $AFDIR/xampp-htdocs-$platform-*
-    APP=xampp platform=$platform bin/middleman build
-    mv build-xampp-$platform xampp-htdocs-$platform
-    tar -czvf xampp-htdocs-$platform-$DATE.tar.gz xampp-htdocs-$platform
+    rm -rf -- "$AFDIR/build-xampp-$platform"
+    rm -rf -- "$AFDIR/xampp-htdocs-$platform"
+    rm -rf -- "$AFDIR/xampp-htdocs-$platform-"*.tar.gz
+    APP=xampp platform="$platform" bin/middleman build
+    mv "build-xampp-$platform" "xampp-htdocs-$platform"
+    tar -czvf "xampp-htdocs-$platform-$TAG.tar.gz" "xampp-htdocs-$platform"
 done
