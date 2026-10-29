@@ -10,10 +10,25 @@ The Apache Friends website is based on [Middleman](https://middlemanapp.com/).
 ## TL;DR;
 
 ```console
-$ docker-compose run --rm middleman bundle exec middleman build 
+$ docker compose run --rm middleman bundle exec middleman build
 ```
 
 The static website is built at the `build/` folder.
+
+## Building the XAMPP htdocs dashboard
+
+```console
+$ docker compose run --rm middleman scripts/build-htdocs-xampp.sh
+$ ls xampp-htdocs-*gz
+xampp-htdocs-linux-20261029.tar.gz  xampp-htdocs-osx-20261029.tar.gz  xampp-htdocs-stackman-20261029.tar.gz  xampp-htdocs-windows-20261029.tar.gz
+```
+
+It can be also built in github by pushing a tag with the date:
+
+```
+$ git tag 20261029
+$ git push origin 20261029
+```
 
 ## License
 
