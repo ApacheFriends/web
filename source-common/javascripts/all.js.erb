@@ -23,54 +23,53 @@ $(document).ready(function() {
   }
 <% end %>
 
-  // tweet it form
-  $('form#tweet').submit(function(event) {
-    window.open($(this).attr('action') + '?' + $(this).serialize(), '_blank', 'scrollbars=no,menubar=no,height=400,width=500,resizable=yes,toolbar=no,status=no');
-    event.preventDefault();
-  });
- 
-  // substitute @2x images where available
-  if (window.isRetina()) {
-    console.log("loading retina images..");
-    var replacement;
-    $('img[data-2x]').each(function(i, img) {
-      replacement = $(img).clone().attr('src', $(img).data('2x')) || img;
-      // only replace once the replacement is loaded
-      replacement.load(function() {
-        $(img).replaceWith($(this));
-      });
-    });
-  }
-
-  if (window.isLinux64) {
-    $('a[data-x64-href]').each(function(i) {
-      $(this).attr('href', $(this).data('x64-href'));
-    });
-  }
-
-  $('a[data-delayed-href]').click(function(event) {
-    window.open($(this).data('delayed-href'), '_blank');
-    window.location = $(this).attr('href');
-    event.preventDefault();
-  });
-
-  // FAQ accordions
-  var panels = $('dl.accordion > dd').hide();
-  var draws = $('dl.accordion > dt').css('cursor', 'pointer');
-  draws.click(function() {
-    panels.slideUp();
-    var next = $(this).next()
-    if (next.is(':hidden'))
-      next.slideDown();
-    return false;
-  });
-
-  // Show section if anchor provided
-  var anchor = window.location.hash;
-  if(anchor !== ''){
-    $('dl.accordion > dd' + anchor).show();
-  }
+// tweet it form
+$('form#tweet').submit(function(event) {
+  window.open($(this).attr('action') + '?' + $(this).serialize(), '_blank', 'scrollbars=no,menubar=no,height=400,width=500,resizable=yes,toolbar=no,status=no');
+  event.preventDefault();
 });
+
+// substitute @2x images where available
+if (window.isRetina()) {
+  console.log("loading retina images..");
+  var replacement;
+  $('img[data-2x]').each(function(i, img) {
+    replacement = $(img).clone().attr('src', $(img).data('2x')) || img;
+    // only replace once the replacement is loaded
+    replacement.load(function() {
+      $(img).replaceWith($(this));
+    });
+  });
+}
+
+if (window.isLinux64) {
+  $('a[data-x64-href]').each(function(i) {
+    $(this).attr('href', $(this).data('x64-href'));
+  });
+}
+
+$('a[data-delayed-href]').click(function(event) {
+  window.open($(this).data('delayed-href'), '_blank');
+  window.location = $(this).attr('href');
+  event.preventDefault();
+});
+
+// FAQ accordions
+var panels = $('dl.accordion > dd').hide();
+var draws = $('dl.accordion > dt').css('cursor', 'pointer');
+draws.click(function() {
+  panels.slideUp();
+  var next = $(this).next()
+  if (next.is(':hidden'))
+    next.slideDown();
+  return false;
+});
+
+// Show section if anchor provided
+var anchor = window.location.hash;
+if(anchor !== ''){
+  $('dl.accordion > dd' + anchor).show();
+}
 
 function truncate(text, length) {
   length = length || 100;
@@ -84,7 +83,7 @@ function strip(html) {
 }
 
 // Retina detection
-window.isRetina = function() {
+function isRetina() {
   var mediaQuery = "(-webkit-min-device-pixel-ratio: 1.5),\
                     (min--moz-device-pixel-ratio: 1.5),\
                     (-o-min-device-pixel-ratio: 3/2),\
@@ -94,6 +93,6 @@ window.isRetina = function() {
 }
 
 // Linux x64 detection
-window.isLinux64 = function() {
+function isLinux64() {
   return window.navigator.platform.substr(0, 5) == "Linux" && window.navigator.platform.substr(-2,2) == "64";
 }
