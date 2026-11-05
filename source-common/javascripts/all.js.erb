@@ -3,8 +3,8 @@
 
 $(document).foundation();
 
-<% unless is_xampp? %>
 $(document).ready(function() {
+  <% unless is_xampp? %>
   // Load latest forum posts
   var discussions = $('#discussions'), limit = <%= settings.forum_post_count %>;
   if ( $('#discussions').length !== 0 ) {
@@ -21,7 +21,7 @@ $(document).ready(function() {
       }
     });
   }
-<% end %>
+  <% end %>
 
   // tweet it form
   $('form#tweet').submit(function(event) {
@@ -42,7 +42,7 @@ $(document).ready(function() {
     });
   }
 
-  if (window.isLinux64) {
+  if (window.isLinux64()) {
     $('a[data-x64-href]').each(function(i) {
       $(this).attr('href', $(this).data('x64-href'));
     });
@@ -84,7 +84,7 @@ function strip(html) {
 }
 
 // Retina detection
-window.isRetina = function() {
+function isRetina() {
   var mediaQuery = "(-webkit-min-device-pixel-ratio: 1.5),\
                     (min--moz-device-pixel-ratio: 1.5),\
                     (-o-min-device-pixel-ratio: 3/2),\
@@ -94,6 +94,6 @@ window.isRetina = function() {
 }
 
 // Linux x64 detection
-window.isLinux64 = function() {
+function isLinux64() {
   return window.navigator.platform.substr(0, 5) == "Linux" && window.navigator.platform.substr(-2,2) == "64";
 }
