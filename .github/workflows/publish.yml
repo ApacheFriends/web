@@ -1,0 +1,52 @@
+name: Deploy Website CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build the website
+        run: docker compose run --build --rm middleman bundle exec middleman build
+
+      - name: Upload the build artifact for pages
+        if: github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "./build"
+      - name: Archive the built website
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-build
+          path: ./build
+          if-no-files-found: error
+          retention-days: 30
+
+  deploy:
+    if: github.event_name == 'push'
+    needs: build
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment  # required to display the deployment url in the workflow
+        uses: actions/deploy-pages@v4
