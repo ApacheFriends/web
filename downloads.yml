@@ -32,19 +32,6 @@ windows:
         checksum_sha256: c23b29639715d3a9800dc86b0274f6cacc4b5114556f474a84f42d4cbba7e640
         size: "193 Mb"
         url: "http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.5.13/xampp-windows-x64-8.5.13-0-VS17-installer.exe"
-browsers:
-  - version: 8.3.12
-    php_version: 8.3.12
-    whats_included: Alpine Linux 3.20, Apache 2.4.62, MariaDB 10.11-8, PHP 8.3.12 & PEAR + multibyte (mbstring) support, Perl 5.38.2, phpMyAdmin 5.2.1
-    requirements: 'Tested on Desktop versions of Chrome and derivatives'
-    downloads:
-      x64:
-        checksum_md5: Not required
-        checksum_sha1: Not required
-        checksum_sha256: Not required
-        size: '-'
-        browser_app: true
-        url: https://endor.dev/s/lamp
 linux-x64:
   - version: 8.3.37
     php_version: 8.3.37
@@ -113,3 +100,16 @@ apple:
         checksum_sha256: 1a0579ff260a7c61cff20c3d889e4256232d43e71b0a9bf3fdea2ef7ab4170d1
         size: "167 Mb"
         url: "http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/8.5.13/xampp-osx-arm64-8.5.13-0-installer.dmg"
+browsers:
+  - version: 8.3.12
+    php_version: 8.3.12
+    whats_included: Alpine Linux 3.20, Apache 2.4.62, MariaDB 10.11-8, PHP 8.3.12 & PEAR + multibyte (mbstring) support, Perl 5.38.2, phpMyAdmin 5.2.1
+    requirements: 'Tested on Desktop versions of Chrome and derivatives'
+    downloads:
+      x64:
+        checksum_md5: Not required
+        checksum_sha1: Not required
+        checksum_sha256: Not required
+        size: '-'
+        browser_app: true
+        url: https://endor.dev/s/lamp
