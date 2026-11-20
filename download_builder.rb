@@ -3,8 +3,8 @@ class DownloadBuilder < Middleman::Extension
 
   DISPLAY_ORDER = %w[windows browsers linux apple appleVM]
   FRIENDLY_NAMES = {
-    "apple" => "OS X",
-    "appleVM" => "OS X (VM)",
+    "apple" => "macOS",
+    "appleVM" => "macOS (VM)",
   }
 
   def initialize(app, options_hash={}, &block)
