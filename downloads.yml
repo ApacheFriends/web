@@ -1,60 +1,115 @@
 windows:
-- version: 8.5.12
-  php_version: 8.5.12
-  whats_included: Apache 2.4.65, MariaDB 10.11.16, PHP 8.5.12, phpMyAdmin 5.2.3, OpenSSL
-    3.5.1, XAMPP Control Panel 3.3.0, Webalizer 2.23-04, Mercury Mail Transport System
-    4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.99 (with mod_proxy_ajp as connector),
-    Strawberry Perl 5.42.1.1 Portable
-  requirements: 'Windows 2008, 2012, Vista, 7, 8, 10, 11 (Important: XP or 2003 not supported)'
-  downloads:
-    x64:
-      checksum_md5: f20fa7cdb417969fd88e1e1d0824c581
-      checksum_sha1: 876d0ed73a4fa52d997a127a6d9897f90303bb37
-      checksum_sha256: 54c4c492def0734fa156843b571036bddbb7020f89e9881ba9d8c02db124263c
-      size: 191 Mb
-      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.5.12/xampp-windows-x64-8.5.12-0-VS17-installer.exe
-
-- version: 8.4.27
-  php_version: 8.4.27
-  whats_included: Apache 2.4.65, MariaDB 10.11.16, PHP 8.4.27, phpMyAdmin 5.2.3, OpenSSL
-    3.5.1, XAMPP Control Panel 3.3.0, Webalizer 2.23-04, Mercury Mail Transport System
-    4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.99 (with mod_proxy_ajp as connector),
-    Strawberry Perl 5.42.1.1 Portable
-  requirements: 'Windows 2008, 2012, Vista, 7, 8, 10, 11 (Important: XP or 2003 not supported)'
-  downloads:
-    x64:
-      checksum_md5: 7fa696f971c0a7ed1749990fb1fe2f3d
-      checksum_sha1: 16c483407f38d4593772dae892f069c42df2d69a
-      checksum_sha256: 080311a5cb600f1bf8b14df0543af17eed7ff6b255510ad8497f21d126cd64a9
-      size: 190 Mb
-      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.4.27/xampp-windows-x64-8.4.27-0-VS17-installer.exe
-
-- version: 8.3.36
-  php_version: 8.3.36
-  whats_included: Apache 2.4.65, MariaDB 10.11.16, PHP 8.3.36, phpMyAdmin 5.2.3, OpenSSL
-    3.5.1, XAMPP Control Panel 3.3.0, Webalizer 2.23-04, Mercury Mail Transport System
-    4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.99 (with mod_proxy_ajp as connector),
-    Strawberry Perl 5.42.1.1 Portable
-  requirements: 'Windows 2008, 2012, Vista, 7, 8, 10, 11 (Important: XP or 2003 not supported)'
-  downloads:
-    x64:
-      checksum_md5: c567da50293421485e9bf925048dc944
-      checksum_sha1: 1d3163ed383fbb99f7e59d2f1a09f4150c2806e9
-      checksum_sha256: dd54667c0c379cc137a92889857bd809c24a619f18eacb09c7376ef914391bbf
-      size: 187 Mb
-      url: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.3.36/xampp-windows-x64-8.3.36-0-VC16-installer.exe
-
+  - version: 8.3.37
+    php_version: 8.3.37
+    whats_included: "Apache 2.4.71, MariaDB 10.11.19, PHP 8.3.37, phpMyAdmin 5.2.3, OpenSSL 3.6.5, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System 4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.99 (with mod_proxy_ajp as connector), Strawberry Perl 5.42.2.1 Portable"
+    requirements: 'Windows 2008, 2012, Vista, 7, 8, 10, 11 (Important: XP or 2003 not supported)'
+    downloads:
+      x64:
+        checksum_md5: 090de128936efd3d85796bf6c99274f8
+        checksum_sha1: b424d857091a774af2b4e8da5428e0426ed55110
+        checksum_sha256: 10bac17ff0be4cedc6e58d2ea880299d7a3ec8bbb51a3ec1f8e4b7a0c0cfdc06
+        size: "190 Mb"
+        url: "http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.3.37/xampp-windows-x64-8.3.37-0-VC16-installer.exe"
+  - version: 8.4.28
+    php_version: 8.4.28
+    whats_included: "Apache 2.4.71, MariaDB 10.11.19, PHP 8.4.28, phpMyAdmin 5.2.3, OpenSSL 3.6.5, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System 4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.99 (with mod_proxy_ajp as connector), Strawberry Perl 5.42.2.1 Portable"
+    requirements: 'Windows 2008, 2012, Vista, 7, 8, 10, 11 (Important: XP or 2003 not supported)'
+    downloads:
+      x64:
+        checksum_md5: ca57754ff6cb034f500ca4c6be0f91cb
+        checksum_sha1: 3f3344e7efe586013ee8d17f30e5b1f2df5bd931
+        checksum_sha256: 814568e2134633b98f6a4c02423472cf7a0c6c92f1f07bd0ae3486d205f76abb
+        size: "192 Mb"
+        url: "http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.4.28/xampp-windows-x64-8.4.28-0-VS17-installer.exe"
+  - version: 8.5.13
+    php_version: 8.5.13
+    whats_included: "Apache 2.4.71, MariaDB 10.11.19, PHP 8.5.13, phpMyAdmin 5.2.3, OpenSSL 3.6.5, XAMPP Control Panel 3.2.4, Webalizer 2.23-04, Mercury Mail Transport System 4.63, FileZilla FTP Server 0.9.41, Tomcat 8.5.99 (with mod_proxy_ajp as connector), Strawberry Perl 5.42.2.1 Portable"
+    requirements: 'Windows 2008, 2012, Vista, 7, 8, 10, 11 (Important: XP or 2003 not supported)'
+    downloads:
+      x64:
+        checksum_md5: b88f4fd2d775effe560a75957fd41502
+        checksum_sha1: d640ba84a330179856d2079943863c67cd5e17d8
+        checksum_sha256: c23b29639715d3a9800dc86b0274f6cacc4b5114556f474a84f42d4cbba7e640
+        size: "193 Mb"
+        url: "http://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.5.13/xampp-windows-x64-8.5.13-0-VS17-installer.exe"
+linux-x64:
+  - version: 8.3.37
+    php_version: 8.3.37
+    whats_included: "Apache 2.4.71, MariaDB 10.11.19, PHP 8.3.37 & PEAR + SQLite 3.54.01 + multibyte (mbstring) support, Perl 5.44.0, ProFTPD 1.3.9e, phpMyAdmin 5.2.3, OpenSSL 3.6.5, GD 2.3.3, Freetype2 2.15.0, libpng 1.6.59, gdbm 1.8.3, zlib 1.4, expat 2.9.0, Sablotron 1.0.3, libxml 2.9.0, Webalizer 2.23-05, pdf class 0.11.7, ncurses 6.6, pdf class 0.11.7, mod_perl 2.0.13, FreeTDS 1.5.16, gettext 0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.7.2, mcrypt 2.5.8, mhash 0.9.9.9, cUrl 8.23.0, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR 1.7.6, APR-utils 1.6.5"
+    requirements: "Most all distributions of Linux are supported, including Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+    downloads:
+      x64:
+        checksum_md5: fa875d42269b7e702eed083907d13abe
+        checksum_sha1: aede64f2961772d9b380fd67fc173e3666c46ffc
+        checksum_sha256: 80e78109b98b2621b5f9eb14c9cd091a57a5dc616c2f225735c8b2da854a31d1
+        size: "169 Mb"
+        url: "http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/8.3.37/xampp-linux-x64-8.3.37-0-installer.run"
+  - version: 8.4.28
+    php_version: 8.4.28
+    whats_included: "Apache 2.4.71, MariaDB 10.11.19, PHP 8.4.28 & PEAR + SQLite 3.54.01 + multibyte (mbstring) support, Perl 5.44.0, ProFTPD 1.3.9e, phpMyAdmin 5.2.3, OpenSSL 3.6.5, GD 2.3.3, Freetype2 2.15.0, libpng 1.6.59, gdbm 1.8.3, zlib 1.4, expat 2.9.0, Sablotron 1.0.3, libxml 2.9.0, Webalizer 2.23-05, pdf class 0.11.7, ncurses 6.6, pdf class 0.11.7, mod_perl 2.0.13, FreeTDS 1.5.16, gettext 0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.7.2, mcrypt 2.5.8, mhash 0.9.9.9, cUrl 8.23.0, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR 1.7.6, APR-utils 1.6.5"
+    requirements: "Most all distributions of Linux are supported, including Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+    downloads:
+      x64:
+        checksum_md5: e01eb6abcfbfcaf50536ba4f6088b21c
+        checksum_sha1: aec20160e73f3ae11f8672cebde5e51979f6cd4f
+        checksum_sha256: 324d0b6caa7898e9dd634339356e3c4677644da3195545ff57ce2080de6b4535
+        size: "171 Mb"
+        url: "http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/8.4.28/xampp-linux-x64-8.4.28-0-installer.run"
+  - version: 8.5.13
+    php_version: 8.5.13
+    whats_included: "Apache 2.4.71, MariaDB 10.11.19, PHP 8.5.13 & PEAR + SQLite 3.54.01 + multibyte (mbstring) support, Perl 5.44.0, ProFTPD 1.3.9e, phpMyAdmin 5.2.3, OpenSSL 3.6.5, GD 2.3.3, Freetype2 2.15.0, libpng 1.6.59, gdbm 1.8.3, zlib 1.4, expat 2.9.0, Sablotron 1.0.3, libxml 2.9.0, Webalizer 2.23-05, pdf class 0.11.7, ncurses 6.6, pdf class 0.11.7, mod_perl 2.0.13, FreeTDS 1.5.16, gettext 0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.7.2, mcrypt 2.5.8, mhash 0.9.9.9, cUrl 8.23.0, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR 1.7.6, APR-utils 1.6.5"
+    requirements: "Most all distributions of Linux are supported, including Debian, RedHat, CentOS, Ubuntu, Fedora, Gentoo, Arch, SUSE."
+    downloads:
+      x64:
+        checksum_md5: 9390d025aed5c1ed59d57ec372b111c0
+        checksum_sha1: c63397cd18f224c4e4cfffccd5671228e3306f85
+        checksum_sha256: 549e52357f6f75a5a3e0b167697d5ee6682187fce4f823ff07bcc9f031a52777
+        size: "175 Mb"
+        url: "http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/8.5.13/xampp-linux-x64-8.5.13-0-installer.run"
+apple:
+  - version: 8.3.37
+    php_version: 8.3.37
+    whats_included: "Apache 2.4.71, MariaDB 10.11.19, PHP 8.3.37 & PEAR + SQLite 3.54.01 + multibyte (mbstring) support, Perl 5.44.0, ProFTPD 1.3.9e, phpMyAdmin 5.2.3, OpenSSL 3.6.5, GD 2.3.3, Freetype2 2.15.0, libpng 1.6.59, gdbm 1.8.3, zlib 1.4, expat 2.9.0, Sablotron 1.0.3, libxml 2.9.0, Webalizer 2.23-05, pdf class 0.11.7, ncurses 6.6, pdf class 0.11.7, mod_perl 2.0.13, FreeTDS 1.5.16, gettext 0.19.8.1, OpenLDAP (client) 2.7.2, mhash 0.9.9.9, cUrl 8.23.0, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR 1.7.6, APR-utils 1.6.5"
+    requirements: "Mac OS X 10.6 or later."
+    downloads:
+      arm64:
+        checksum_md5: 9e5268ff5537206ff5e1c9596a0a2a36
+        checksum_sha1: 1f8404aa5ff3b5bc049486a8132132d4c80bcbe4
+        checksum_sha256: b05565ee3abf8579da3f077ccf35a80a8f8ba67b6d869af761da87ef46940315
+        size: "164 Mb"
+        url: "http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/8.3.37/xampp-osx-arm64-8.3.37-0-installer.dmg"
+  - version: 8.4.28
+    php_version: 8.4.28
+    whats_included: "Apache 2.4.71, MariaDB 10.11.19, PHP 8.4.28 & PEAR + SQLite 3.54.01 + multibyte (mbstring) support, Perl 5.44.0, ProFTPD 1.3.9e, phpMyAdmin 5.2.3, OpenSSL 3.6.5, GD 2.3.3, Freetype2 2.15.0, libpng 1.6.59, gdbm 1.8.3, zlib 1.4, expat 2.9.0, Sablotron 1.0.3, libxml 2.9.0, Webalizer 2.23-05, pdf class 0.11.7, ncurses 6.6, pdf class 0.11.7, mod_perl 2.0.13, FreeTDS 1.5.16, gettext 0.19.8.1, OpenLDAP (client) 2.7.2, mhash 0.9.9.9, cUrl 8.23.0, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR 1.7.6, APR-utils 1.6.5"
+    requirements: "Mac OS X 10.6 or later."
+    downloads:
+      arm64:
+        checksum_md5: fdd99bc725b6e11fe10bc68d1f35e71e
+        checksum_sha1: 94c59999659013072c4fdaa48a0f4187b1f8d25a
+        checksum_sha256: 8b09f59777fc1511c0fd7b5c54cedf33065f76b9a109defff8ad3b8ae3c37ada
+        size: "167 Mb"
+        url: "http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/8.4.28/xampp-osx-arm64-8.4.28-0-installer.dmg"
+  - version: 8.5.13
+    php_version: 8.5.13
+    whats_included: "Apache 2.4.71, MariaDB 10.11.19, PHP 8.5.13 & PEAR + SQLite 3.54.01 + multibyte (mbstring) support, Perl 5.44.0, ProFTPD 1.3.9e, phpMyAdmin 5.2.3, OpenSSL 3.6.5, GD 2.3.3, Freetype2 2.15.0, libpng 1.6.59, gdbm 1.8.3, zlib 1.4, expat 2.9.0, Sablotron 1.0.3, libxml 2.9.0, Webalizer 2.23-05, pdf class 0.11.7, ncurses 6.6, pdf class 0.11.7, mod_perl 2.0.13, FreeTDS 1.5.16, gettext 0.19.8.1, OpenLDAP (client) 2.7.2, mhash 0.9.9.9, cUrl 8.23.0, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR 1.7.6, APR-utils 1.6.5"
+    requirements: "Mac OS X 10.6 or later."
+    downloads:
+      arm64:
+        checksum_md5: 055ab26f6d8f3698d2cafcc0c43b4542
+        checksum_sha1: b848430a4d28c3fa538c165bd8ea86e6e0a672ba
+        checksum_sha256: 1a0579ff260a7c61cff20c3d889e4256232d43e71b0a9bf3fdea2ef7ab4170d1
+        size: "167 Mb"
+        url: "http://downloads.sourceforge.net/project/xampp/XAMPP%20Mac%20OS%20X/8.5.13/xampp-osx-arm64-8.5.13-0-installer.dmg"
 browsers:
-- version: 8.3.12
-  php_version: 8.3.12
-  whats_included: Alpine Linux 3.20, Apache 2.4.62, MariaDB 10.11-8, PHP 8.3.12 & PEAR + multibyte (mbstring) support,
-      Perl 5.38.2, phpMyAdmin 5.2.1
-  requirements: 'Tested on Desktop versions of Chrome and derivatives'
-  downloads:
-    x64:
-      checksum_md5: Not required
-      checksum_sha1: Not required
-      checksum_sha256: Not required
-      size: '-'
-      browser_app: true
-      url: https://endor.dev/s/lamp
+  - version: 8.3.12
+    php_version: 8.3.12
+    whats_included: Alpine Linux 3.20, Apache 2.4.62, MariaDB 10.11-8, PHP 8.3.12 & PEAR + multibyte (mbstring) support, Perl 5.38.2, phpMyAdmin 5.2.1
+    requirements: 'Tested on Desktop versions of Chrome and derivatives'
+    downloads:
+      x64:
+        checksum_md5: Not required
+        checksum_sha1: Not required
+        checksum_sha256: Not required
+        size: '-'
+        browser_app: true
+        url: https://endor.dev/s/lamp
